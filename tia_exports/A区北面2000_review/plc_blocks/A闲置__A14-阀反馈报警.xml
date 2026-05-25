@@ -1,0 +1,1442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-04-13T11:12:43.4155725Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="补氮阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="进氮阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="泄压阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="气流雾化阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="输送进风阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="开式排风隔断阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="闭式排风隔断阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="开式进风隔断阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="闭式进风隔断阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="一级冷却水阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="二级冷冻水阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="一级排液阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="二级排液阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="除雾排液阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="溶剂回收排放阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="进风冷却水阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="塔顶清洗球阀" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="清洗伸缩气缸" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="71阀开关报警_Instance" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="71阀开关报警_Instance_1" Datatype="&quot;A8-阀开关报警&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input" /><Section Name="Output"><Member Name="阀开报警" Datatype="Bool" /><Member Name="阀关报警" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="阀状态" Datatype="Bool" /><Member Name="阀开信号" Datatype="Bool" /><Member Name="阀关信号" Datatype="Bool" /></Section><Section Name="Static"><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON2" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>A14-阀反馈报警</Name>
+      <Number>20</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <NewLine Num="1" UId="21" />
+  <Access Scope="Call" UId="22">
+    <CallInfo UId="23" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="24">
+        <Component Name="补氮阀" UId="25" />
+      </Instance>
+      <Token Text="(" UId="26" />
+      <Parameter Name="阀开报警" UId="27">
+        <Blank Num="1" UId="28" />
+        <Token Text="=&gt;" UId="29" />
+        <Blank Num="1" UId="30" />
+        <Access Scope="GlobalVariable" UId="31">
+          <Symbol UId="32">
+            <Component Name="ABD补氮阀开报警" UId="33" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="34" />
+      <NewLine Num="1" UId="35" />
+      <Blank Num="5" UId="36" />
+      <Parameter Name="阀关报警" UId="37">
+        <Blank Num="1" UId="38" />
+        <Token Text="=&gt;" UId="39" />
+        <Blank Num="1" UId="40" />
+        <Access Scope="GlobalVariable" UId="41">
+          <Symbol UId="42">
+            <Component Name="ABD补氮阀关报警" UId="43" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="44" />
+      <NewLine Num="1" UId="45" />
+      <Blank Num="5" UId="46" />
+      <Parameter Name="阀状态" UId="47">
+        <Blank Num="1" UId="48" />
+        <Token Text=":=" UId="49" />
+        <Access Scope="GlobalVariable" UId="50">
+          <Symbol UId="51">
+            <Component Name="QBD补氮阀" UId="52" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="53" />
+      <NewLine Num="1" UId="54" />
+      <Blank Num="5" UId="55" />
+      <Parameter Name="阀开信号" UId="56">
+        <Blank Num="1" UId="57" />
+        <Token Text=":=" UId="58" />
+        <Blank Num="1" UId="59" />
+        <Access Scope="GlobalVariable" UId="60">
+          <Symbol UId="61">
+            <Component Name="IBD补氮阀开反馈" UId="62" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="63" />
+      <NewLine Num="1" UId="64" />
+      <Blank Num="5" UId="65" />
+      <Parameter Name="阀关信号" UId="66">
+        <Blank Num="1" UId="67" />
+        <Token Text=":=" UId="68" />
+        <Blank Num="1" UId="69" />
+        <Access Scope="GlobalVariable" UId="70">
+          <Symbol UId="71">
+            <Component Name="IBD补氮阀关反馈" UId="72" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="73" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="74" />
+  <NewLine Num="2" UId="75" />
+  <Access Scope="Call" UId="76">
+    <CallInfo UId="77" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="78">
+        <Component Name="进氮阀" UId="79" />
+      </Instance>
+      <Token Text="(" UId="80" />
+      <Parameter Name="阀开报警" UId="81">
+        <Blank Num="1" UId="82" />
+        <Token Text="=&gt;" UId="83" />
+        <Blank Num="1" UId="84" />
+        <Access Scope="GlobalVariable" UId="85">
+          <Symbol UId="86">
+            <Component Name="AJD进氮阀开报警" UId="87" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="88" />
+      <NewLine Num="1" UId="89" />
+      <Blank Num="5" UId="90" />
+      <Parameter Name="阀关报警" UId="91">
+        <Blank Num="1" UId="92" />
+        <Token Text="=&gt;" UId="93" />
+        <Blank Num="1" UId="94" />
+        <Access Scope="GlobalVariable" UId="95">
+          <Symbol UId="96">
+            <Component Name="AJD进氮阀关报警" UId="97" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="98" />
+      <NewLine Num="1" UId="99" />
+      <Blank Num="5" UId="100" />
+      <Parameter Name="阀状态" UId="101">
+        <Blank Num="1" UId="102" />
+        <Token Text=":=" UId="103" />
+        <Blank Num="1" UId="104" />
+        <Access Scope="GlobalVariable" UId="105">
+          <Symbol UId="106">
+            <Component Name="QJD进氮阀" UId="107" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="108" />
+      <NewLine Num="1" UId="109" />
+      <Blank Num="5" UId="110" />
+      <Parameter Name="阀开信号" UId="111">
+        <Blank Num="1" UId="112" />
+        <Token Text=":=" UId="113" />
+        <Blank Num="1" UId="114" />
+        <Access Scope="GlobalVariable" UId="115">
+          <Symbol UId="116">
+            <Component Name="IJD进氮阀开反馈" UId="117" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="118" />
+      <NewLine Num="1" UId="119" />
+      <Blank Num="5" UId="120" />
+      <Parameter Name="阀关信号" UId="121">
+        <Blank Num="1" UId="122" />
+        <Token Text=":=" UId="123" />
+        <Blank Num="1" UId="124" />
+        <Access Scope="GlobalVariable" UId="125">
+          <Symbol UId="126">
+            <Component Name="IJD进氮阀关反馈" UId="127" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="128" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="129" />
+  <NewLine Num="3" UId="130" />
+  <Access Scope="Call" UId="131">
+    <CallInfo UId="132" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="133">
+        <Component Name="泄压阀" UId="134" />
+      </Instance>
+      <Token Text="(" UId="135" />
+      <Parameter Name="阀开报警" UId="136">
+        <Blank Num="1" UId="137" />
+        <Token Text="=&gt;" UId="138" />
+        <Blank Num="1" UId="139" />
+        <Access Scope="GlobalVariable" UId="140">
+          <Symbol UId="141">
+            <Component Name="AXY泄压阀开报警" UId="142" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="143" />
+      <NewLine Num="1" UId="144" />
+      <Blank Num="5" UId="145" />
+      <Parameter Name="阀关报警" UId="146">
+        <Blank Num="1" UId="147" />
+        <Token Text="=&gt;" UId="148" />
+        <Blank Num="1" UId="149" />
+        <Access Scope="GlobalVariable" UId="150">
+          <Symbol UId="151">
+            <Component Name="AXY泄压阀关报警" UId="152" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="153" />
+      <NewLine Num="1" UId="154" />
+      <Blank Num="5" UId="155" />
+      <Parameter Name="阀状态" UId="156">
+        <Blank Num="1" UId="157" />
+        <Token Text=":=" UId="158" />
+        <Blank Num="1" UId="159" />
+        <Access Scope="GlobalVariable" UId="160">
+          <Symbol UId="161">
+            <Component Name="QXY泄压阀" UId="162" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="163" />
+      <NewLine Num="1" UId="164" />
+      <Blank Num="5" UId="165" />
+      <Parameter Name="阀开信号" UId="166">
+        <Blank Num="1" UId="167" />
+        <Token Text=":=" UId="168" />
+        <Blank Num="1" UId="169" />
+        <Access Scope="GlobalVariable" UId="170">
+          <Symbol UId="171">
+            <Component Name="IXY泄压阀开反馈" UId="172" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="173" />
+      <NewLine Num="1" UId="174" />
+      <Blank Num="5" UId="175" />
+      <Parameter Name="阀关信号" UId="176">
+        <Blank Num="1" UId="177" />
+        <Token Text=":=" UId="178" />
+        <Blank Num="1" UId="179" />
+        <Access Scope="GlobalVariable" UId="180">
+          <Symbol UId="181">
+            <Component Name="IXY泄压阀关反馈" UId="182" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="183" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="184" />
+  <NewLine Num="2" UId="185" />
+  <Access Scope="Call" UId="186">
+    <CallInfo UId="187" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="188">
+        <Component Name="气流雾化阀" UId="189" />
+      </Instance>
+      <Token Text="(" UId="190" />
+      <Parameter Name="阀开报警" UId="191">
+        <Blank Num="1" UId="192" />
+        <Token Text="=&gt;" UId="193" />
+        <Blank Num="1" UId="194" />
+        <Access Scope="GlobalVariable" UId="195">
+          <Symbol UId="196">
+            <Component Name="AQL气流雾化阀开报警" UId="197" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="198" />
+      <NewLine Num="1" UId="199" />
+      <Blank Num="7" UId="200" />
+      <Parameter Name="阀关报警" UId="201">
+        <Blank Num="1" UId="202" />
+        <Token Text="=&gt;" UId="203" />
+        <Blank Num="1" UId="204" />
+        <Access Scope="GlobalVariable" UId="205">
+          <Symbol UId="206">
+            <Component Name="AQL气流雾化阀关报警" UId="207" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="208" />
+      <NewLine Num="1" UId="209" />
+      <Blank Num="7" UId="210" />
+      <Parameter Name="阀状态" UId="211">
+        <Blank Num="1" UId="212" />
+        <Token Text=":=" UId="213" />
+        <Blank Num="1" UId="214" />
+        <Access Scope="GlobalVariable" UId="215">
+          <Symbol UId="216">
+            <Component Name="QQL气流雾化阀" UId="217" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="218" />
+      <NewLine Num="1" UId="219" />
+      <Blank Num="7" UId="220" />
+      <Parameter Name="阀开信号" UId="221">
+        <Blank Num="1" UId="222" />
+        <Token Text=":=" UId="223" />
+        <Blank Num="1" UId="224" />
+        <Access Scope="GlobalVariable" UId="225">
+          <Symbol UId="226">
+            <Component Name="IQL气流雾化阀开反馈" UId="227" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="228" />
+      <NewLine Num="1" UId="229" />
+      <Blank Num="7" UId="230" />
+      <Parameter Name="阀关信号" UId="231">
+        <Blank Num="1" UId="232" />
+        <Token Text=":=" UId="233" />
+        <Blank Num="1" UId="234" />
+        <Access Scope="GlobalVariable" UId="235">
+          <Symbol UId="236">
+            <Component Name="IQL气流雾化阀关反馈" UId="237" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="238" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="239" />
+  <NewLine Num="2" UId="240" />
+  <Access Scope="Call" UId="241">
+    <CallInfo UId="242" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="243">
+        <Component Name="输送进风阀" UId="244" />
+      </Instance>
+      <Token Text="(" UId="245" />
+      <Parameter Name="阀开报警" UId="246">
+        <Blank Num="1" UId="247" />
+        <Token Text="=&gt;" UId="248" />
+        <Blank Num="1" UId="249" />
+        <Access Scope="GlobalVariable" UId="250">
+          <Symbol UId="251">
+            <Component Name="ASS输送进风阀开报警" UId="252" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="253" />
+      <NewLine Num="1" UId="254" />
+      <Blank Num="7" UId="255" />
+      <Parameter Name="阀关报警" UId="256">
+        <Blank Num="1" UId="257" />
+        <Token Text="=&gt;" UId="258" />
+        <Blank Num="1" UId="259" />
+        <Access Scope="GlobalVariable" UId="260">
+          <Symbol UId="261">
+            <Component Name="ASS输送进风阀关报警" UId="262" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="263" />
+      <NewLine Num="1" UId="264" />
+      <Blank Num="7" UId="265" />
+      <Parameter Name="阀状态" UId="266">
+        <Blank Num="1" UId="267" />
+        <Token Text=":=" UId="268" />
+        <Blank Num="1" UId="269" />
+        <Access Scope="GlobalVariable" UId="270">
+          <Symbol UId="271">
+            <Component Name="QSS输送进风阀" UId="272" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="273" />
+      <NewLine Num="1" UId="274" />
+      <Blank Num="7" UId="275" />
+      <Parameter Name="阀开信号" UId="276">
+        <Blank Num="1" UId="277" />
+        <Token Text=":=" UId="278" />
+        <Blank Num="1" UId="279" />
+        <Access Scope="GlobalVariable" UId="280">
+          <Symbol UId="281">
+            <Component Name="ISF输送进风阀开反馈" UId="282" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="283" />
+      <NewLine Num="1" UId="284" />
+      <Blank Num="7" UId="285" />
+      <Parameter Name="阀关信号" UId="286">
+        <Blank Num="1" UId="287" />
+        <Token Text=":=" UId="288" />
+        <Blank Num="1" UId="289" />
+        <Access Scope="GlobalVariable" UId="290">
+          <Symbol UId="291">
+            <Component Name="ISF输送进风阀关反馈" UId="292" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="293" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="294" />
+  <NewLine Num="3" UId="295" />
+  <Access Scope="Call" UId="296">
+    <CallInfo UId="297" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="298">
+        <Component Name="开式排风隔断阀" UId="299" />
+      </Instance>
+      <Token Text="(" UId="300" />
+      <Parameter Name="阀开报警" UId="301">
+        <Blank Num="1" UId="302" />
+        <Token Text="=&gt;" UId="303" />
+        <Blank Num="1" UId="304" />
+        <Access Scope="GlobalVariable" UId="305">
+          <Symbol UId="306">
+            <Component Name="AKS开式排风隔断阀开报警" UId="307" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="308" />
+      <NewLine Num="1" UId="309" />
+      <Blank Num="9" UId="310" />
+      <Parameter Name="阀关报警" UId="311">
+        <Blank Num="1" UId="312" />
+        <Token Text="=&gt;" UId="313" />
+        <Blank Num="1" UId="314" />
+        <Access Scope="GlobalVariable" UId="315">
+          <Symbol UId="316">
+            <Component Name="AKS开式排风隔断阀关报警" UId="317" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="318" />
+      <NewLine Num="1" UId="319" />
+      <Blank Num="9" UId="320" />
+      <Parameter Name="阀状态" UId="321">
+        <Blank Num="1" UId="322" />
+        <Token Text=":=" UId="323" />
+        <Blank Num="1" UId="324" />
+        <Access Scope="GlobalVariable" UId="325">
+          <Symbol UId="326">
+            <Component Name="QKS开式排风隔断阀" UId="327" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="328" />
+      <NewLine Num="1" UId="329" />
+      <Blank Num="9" UId="330" />
+      <Parameter Name="阀开信号" UId="331">
+        <Blank Num="1" UId="332" />
+        <Token Text=":=" UId="333" />
+        <Blank Num="1" UId="334" />
+        <Access Scope="GlobalVariable" UId="335">
+          <Symbol UId="336">
+            <Component Name="IKS开式排风隔断阀开反馈" UId="337" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="338" />
+      <NewLine Num="1" UId="339" />
+      <Blank Num="9" UId="340" />
+      <Parameter Name="阀关信号" UId="341">
+        <Blank Num="1" UId="342" />
+        <Token Text=":=" UId="343" />
+        <Blank Num="1" UId="344" />
+        <Access Scope="GlobalVariable" UId="345">
+          <Symbol UId="346">
+            <Component Name="IKS开式排风隔断阀关反馈" UId="347" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="348" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="349" />
+  <NewLine Num="2" UId="350" />
+  <Access Scope="Call" UId="351">
+    <CallInfo UId="352" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="353">
+        <Component Name="闭式排风隔断阀" UId="354" />
+      </Instance>
+      <Token Text="(" UId="355" />
+      <Parameter Name="阀开报警" UId="356">
+        <Blank Num="1" UId="357" />
+        <Token Text="=&gt;" UId="358" />
+        <Blank Num="1" UId="359" />
+        <Access Scope="GlobalVariable" UId="360">
+          <Symbol UId="361">
+            <Component Name="ABS闭式排风隔断阀开报警" UId="362" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="363" />
+      <NewLine Num="1" UId="364" />
+      <Blank Num="9" UId="365" />
+      <Parameter Name="阀关报警" UId="366">
+        <Blank Num="1" UId="367" />
+        <Token Text="=&gt;" UId="368" />
+        <Blank Num="1" UId="369" />
+        <Access Scope="GlobalVariable" UId="370">
+          <Symbol UId="371">
+            <Component Name="ABS闭式排风隔断阀关报警" UId="372" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="373" />
+      <NewLine Num="1" UId="374" />
+      <Blank Num="9" UId="375" />
+      <Parameter Name="阀状态" UId="376">
+        <Blank Num="1" UId="377" />
+        <Token Text=":=" UId="378" />
+        <Blank Num="1" UId="379" />
+        <Access Scope="GlobalVariable" UId="380">
+          <Symbol UId="381">
+            <Component Name="QBS闭式排风隔断阀" UId="382" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="383" />
+      <NewLine Num="1" UId="384" />
+      <Blank Num="9" UId="385" />
+      <Parameter Name="阀开信号" UId="386">
+        <Blank Num="1" UId="387" />
+        <Token Text=":=" UId="388" />
+        <Blank Num="1" UId="389" />
+        <Access Scope="GlobalVariable" UId="390">
+          <Symbol UId="391">
+            <Component Name="IBS闭式排风隔断阀开反馈" UId="392" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="393" />
+      <NewLine Num="1" UId="394" />
+      <Blank Num="9" UId="395" />
+      <Parameter Name="阀关信号" UId="396">
+        <Blank Num="1" UId="397" />
+        <Token Text=":=" UId="398" />
+        <Blank Num="1" UId="399" />
+        <Access Scope="GlobalVariable" UId="400">
+          <Symbol UId="401">
+            <Component Name="IBS闭式排风隔断阀关反馈" UId="402" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="403" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="404" />
+  <NewLine Num="3" UId="405" />
+  <Access Scope="Call" UId="406">
+    <CallInfo UId="407" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="408">
+        <Component Name="开式进风隔断阀" UId="409" />
+      </Instance>
+      <Token Text="(" UId="410" />
+      <Parameter Name="阀开报警" UId="411">
+        <Blank Num="1" UId="412" />
+        <Token Text="=&gt;" UId="413" />
+        <Blank Num="1" UId="414" />
+        <Access Scope="GlobalVariable" UId="415">
+          <Symbol UId="416">
+            <Component Name="AKS开式进风隔断阀开报警" UId="417" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="418" />
+      <NewLine Num="1" UId="419" />
+      <Blank Num="9" UId="420" />
+      <Parameter Name="阀关报警" UId="421">
+        <Blank Num="1" UId="422" />
+        <Token Text="=&gt;" UId="423" />
+        <Blank Num="1" UId="424" />
+        <Access Scope="GlobalVariable" UId="425">
+          <Symbol UId="426">
+            <Component Name="AKS开式进风隔断阀关报警" UId="427" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="428" />
+      <NewLine Num="1" UId="429" />
+      <Blank Num="9" UId="430" />
+      <Parameter Name="阀状态" UId="431">
+        <Blank Num="1" UId="432" />
+        <Token Text=":=" UId="433" />
+        <Blank Num="1" UId="434" />
+        <Access Scope="GlobalVariable" UId="435">
+          <Symbol UId="436">
+            <Component Name="QKS开式进风隔断阀" UId="437" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="438" />
+      <NewLine Num="1" UId="439" />
+      <Blank Num="9" UId="440" />
+      <Parameter Name="阀开信号" UId="441">
+        <Blank Num="1" UId="442" />
+        <Token Text=":=" UId="443" />
+        <Blank Num="1" UId="444" />
+        <Access Scope="GlobalVariable" UId="445">
+          <Symbol UId="446">
+            <Component Name="IKS开式进风隔断阀开反馈" UId="447" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="448" />
+      <NewLine Num="1" UId="449" />
+      <Blank Num="9" UId="450" />
+      <Parameter Name="阀关信号" UId="451">
+        <Blank Num="1" UId="452" />
+        <Token Text=":=" UId="453" />
+        <Blank Num="1" UId="454" />
+        <Access Scope="GlobalVariable" UId="455">
+          <Symbol UId="456">
+            <Component Name="IKS开式进风隔断阀关反馈" UId="457" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="458" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="459" />
+  <NewLine Num="2" UId="460" />
+  <Access Scope="Call" UId="461">
+    <CallInfo UId="462" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="463">
+        <Component Name="闭式进风隔断阀" UId="464" />
+      </Instance>
+      <Token Text="(" UId="465" />
+      <Parameter Name="阀开报警" UId="466">
+        <Blank Num="1" UId="467" />
+        <Token Text="=&gt;" UId="468" />
+        <Blank Num="1" UId="469" />
+        <Access Scope="GlobalVariable" UId="470">
+          <Symbol UId="471">
+            <Component Name="ABS闭式进风隔断阀开报警" UId="472" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="473" />
+      <NewLine Num="1" UId="474" />
+      <Blank Num="9" UId="475" />
+      <Parameter Name="阀关报警" UId="476">
+        <Blank Num="1" UId="477" />
+        <Token Text="=&gt;" UId="478" />
+        <Blank Num="1" UId="479" />
+        <Access Scope="GlobalVariable" UId="480">
+          <Symbol UId="481">
+            <Component Name="ABS闭式进风隔断阀关报警" UId="482" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="483" />
+      <NewLine Num="1" UId="484" />
+      <Blank Num="9" UId="485" />
+      <Parameter Name="阀状态" UId="486">
+        <Blank Num="1" UId="487" />
+        <Token Text=":=" UId="488" />
+        <Blank Num="1" UId="489" />
+        <Access Scope="GlobalVariable" UId="490">
+          <Symbol UId="491">
+            <Component Name="QBS闭式进风隔断阀" UId="492" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="493" />
+      <NewLine Num="1" UId="494" />
+      <Blank Num="9" UId="495" />
+      <Parameter Name="阀开信号" UId="496">
+        <Blank Num="1" UId="497" />
+        <Token Text=":=" UId="498" />
+        <Blank Num="1" UId="499" />
+        <Access Scope="GlobalVariable" UId="500">
+          <Symbol UId="501">
+            <Component Name="IBS闭式进风隔断阀开反馈" UId="502" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="503" />
+      <NewLine Num="1" UId="504" />
+      <Blank Num="9" UId="505" />
+      <Parameter Name="阀关信号" UId="506">
+        <Blank Num="1" UId="507" />
+        <Token Text=":=" UId="508" />
+        <Blank Num="1" UId="509" />
+        <Access Scope="GlobalVariable" UId="510">
+          <Symbol UId="511">
+            <Component Name="IBS闭式进风隔断阀关反馈" UId="512" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="513" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="514" />
+  <NewLine Num="2" UId="515" />
+  <Access Scope="Call" UId="516">
+    <CallInfo UId="517" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="518">
+        <Component Name="一级冷却水阀" UId="519" />
+      </Instance>
+      <Token Text="(" UId="520" />
+      <Parameter Name="阀开报警" UId="521">
+        <Blank Num="1" UId="522" />
+        <Token Text="=&gt;" UId="523" />
+        <Blank Num="1" UId="524" />
+        <Access Scope="GlobalVariable" UId="525">
+          <Symbol UId="526">
+            <Component Name="AYJ一级冷却水阀开报警" UId="527" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="528" />
+      <NewLine Num="1" UId="529" />
+      <Blank Num="8" UId="530" />
+      <Parameter Name="阀关报警" UId="531">
+        <Blank Num="1" UId="532" />
+        <Token Text="=&gt;" UId="533" />
+        <Blank Num="1" UId="534" />
+        <Access Scope="GlobalVariable" UId="535">
+          <Symbol UId="536">
+            <Component Name="AYJ一级冷却水阀关报警" UId="537" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="538" />
+      <NewLine Num="1" UId="539" />
+      <Blank Num="8" UId="540" />
+      <Parameter Name="阀状态" UId="541">
+        <Blank Num="1" UId="542" />
+        <Token Text=":=" UId="543" />
+        <Blank Num="1" UId="544" />
+        <Access Scope="GlobalVariable" UId="545">
+          <Symbol UId="546">
+            <Component Name="QYJ一级冷却水阀" UId="547" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="548" />
+      <NewLine Num="1" UId="549" />
+      <Blank Num="8" UId="550" />
+      <Parameter Name="阀开信号" UId="551">
+        <Blank Num="1" UId="552" />
+        <Token Text=":=" UId="553" />
+        <Blank Num="1" UId="554" />
+        <Access Scope="GlobalVariable" UId="555">
+          <Symbol UId="556">
+            <Component Name="IYJ一级冷却水阀开反馈" UId="557" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="558" />
+      <NewLine Num="1" UId="559" />
+      <Blank Num="8" UId="560" />
+      <Parameter Name="阀关信号" UId="561">
+        <Blank Num="1" UId="562" />
+        <Token Text=":=" UId="563" />
+        <Blank Num="1" UId="564" />
+        <Access Scope="GlobalVariable" UId="565">
+          <Symbol UId="566">
+            <Component Name="IYJ一级冷却水阀关反馈" UId="567" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="568" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="569" />
+  <NewLine Num="3" UId="570" />
+  <Access Scope="Call" UId="571">
+    <CallInfo UId="572" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="573">
+        <Component Name="二级冷冻水阀" UId="574" />
+      </Instance>
+      <Token Text="(" UId="575" />
+      <Parameter Name="阀开报警" UId="576">
+        <Blank Num="1" UId="577" />
+        <Token Text="=&gt;" UId="578" />
+        <Blank Num="1" UId="579" />
+        <Access Scope="GlobalVariable" UId="580">
+          <Symbol UId="581">
+            <Component Name="AEJ二级冷冻水阀开报警" UId="582" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="583" />
+      <NewLine Num="1" UId="584" />
+      <Blank Num="8" UId="585" />
+      <Parameter Name="阀关报警" UId="586">
+        <Blank Num="1" UId="587" />
+        <Token Text="=&gt;" UId="588" />
+        <Blank Num="1" UId="589" />
+        <Access Scope="GlobalVariable" UId="590">
+          <Symbol UId="591">
+            <Component Name="AEJ二级冷冻水阀关报警" UId="592" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="593" />
+      <NewLine Num="1" UId="594" />
+      <Blank Num="8" UId="595" />
+      <Parameter Name="阀状态" UId="596">
+        <Blank Num="1" UId="597" />
+        <Token Text=":=" UId="598" />
+        <Blank Num="1" UId="599" />
+        <Access Scope="GlobalVariable" UId="600">
+          <Symbol UId="601">
+            <Component Name="QEJ二级冷冻水阀" UId="602" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="603" />
+      <NewLine Num="1" UId="604" />
+      <Blank Num="8" UId="605" />
+      <Parameter Name="阀开信号" UId="606">
+        <Blank Num="1" UId="607" />
+        <Token Text=":=" UId="608" />
+        <Blank Num="1" UId="609" />
+        <Access Scope="GlobalVariable" UId="610">
+          <Symbol UId="611">
+            <Component Name="IEJ二级冷冻水阀开反馈" UId="612" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="613" />
+      <NewLine Num="1" UId="614" />
+      <Blank Num="8" UId="615" />
+      <Parameter Name="阀关信号" UId="616">
+        <Blank Num="1" UId="617" />
+        <Token Text=":=" UId="618" />
+        <Blank Num="1" UId="619" />
+        <Access Scope="GlobalVariable" UId="620">
+          <Symbol UId="621">
+            <Component Name="IEJ二级冷冻水阀关反馈" UId="622" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="623" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="624" />
+  <NewLine Num="2" UId="625" />
+  <Access Scope="Call" UId="626">
+    <CallInfo UId="627" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="628">
+        <Component Name="一级排液阀" UId="629" />
+      </Instance>
+      <Token Text="(" UId="630" />
+      <Parameter Name="阀开报警" UId="631">
+        <Blank Num="1" UId="632" />
+        <Token Text="=&gt;" UId="633" />
+        <Blank Num="1" UId="634" />
+        <Access Scope="GlobalVariable" UId="635">
+          <Symbol UId="636">
+            <Component Name="AYJ一级排液阀开报警" UId="637" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="638" />
+      <NewLine Num="1" UId="639" />
+      <Blank Num="7" UId="640" />
+      <Parameter Name="阀关报警" UId="641">
+        <Blank Num="1" UId="642" />
+        <Token Text="=&gt;" UId="643" />
+        <Blank Num="1" UId="644" />
+        <Access Scope="GlobalVariable" UId="645">
+          <Symbol UId="646">
+            <Component Name="AYJ一级排液阀关报警" UId="647" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="648" />
+      <NewLine Num="1" UId="649" />
+      <Blank Num="7" UId="650" />
+      <Parameter Name="阀状态" UId="651">
+        <Blank Num="1" UId="652" />
+        <Token Text=":=" UId="653" />
+        <Blank Num="1" UId="654" />
+        <Access Scope="GlobalVariable" UId="655">
+          <Symbol UId="656">
+            <Component Name="QYJ一级排液阀" UId="657" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="658" />
+      <NewLine Num="1" UId="659" />
+      <Blank Num="7" UId="660" />
+      <Parameter Name="阀开信号" UId="661">
+        <Blank Num="1" UId="662" />
+        <Token Text=":=" UId="663" />
+        <Blank Num="1" UId="664" />
+        <Access Scope="GlobalVariable" UId="665">
+          <Symbol UId="666">
+            <Component Name="IYJ一级排液阀开反馈" UId="667" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="668" />
+      <NewLine Num="1" UId="669" />
+      <Blank Num="7" UId="670" />
+      <Parameter Name="阀关信号" UId="671">
+        <Blank Num="1" UId="672" />
+        <Token Text=":=" UId="673" />
+        <Blank Num="1" UId="674" />
+        <Access Scope="GlobalVariable" UId="675">
+          <Symbol UId="676">
+            <Component Name="IYJ一级排液阀关反馈" UId="677" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="678" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="679" />
+  <NewLine Num="3" UId="680" />
+  <Access Scope="Call" UId="681">
+    <CallInfo UId="682" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="683">
+        <Component Name="二级排液阀" UId="684" />
+      </Instance>
+      <Token Text="(" UId="685" />
+      <Parameter Name="阀开报警" UId="686">
+        <Blank Num="1" UId="687" />
+        <Token Text="=&gt;" UId="688" />
+        <Blank Num="1" UId="689" />
+        <Access Scope="GlobalVariable" UId="690">
+          <Symbol UId="691">
+            <Component Name="AEJ二级排液阀开报警" UId="692" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="693" />
+      <NewLine Num="1" UId="694" />
+      <Blank Num="7" UId="695" />
+      <Parameter Name="阀关报警" UId="696">
+        <Blank Num="1" UId="697" />
+        <Token Text="=&gt;" UId="698" />
+        <Blank Num="1" UId="699" />
+        <Access Scope="GlobalVariable" UId="700">
+          <Symbol UId="701">
+            <Component Name="AEJ二级排液阀关报警" UId="702" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="703" />
+      <NewLine Num="1" UId="704" />
+      <Blank Num="7" UId="705" />
+      <Parameter Name="阀状态" UId="706">
+        <Blank Num="1" UId="707" />
+        <Token Text=":=" UId="708" />
+        <Blank Num="1" UId="709" />
+        <Access Scope="GlobalVariable" UId="710">
+          <Symbol UId="711">
+            <Component Name="QEJ二级排液阀" UId="712" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="713" />
+      <NewLine Num="1" UId="714" />
+      <Blank Num="7" UId="715" />
+      <Parameter Name="阀开信号" UId="716">
+        <Blank Num="1" UId="717" />
+        <Token Text=":=" UId="718" />
+        <Blank Num="1" UId="719" />
+        <Access Scope="GlobalVariable" UId="720">
+          <Symbol UId="721">
+            <Component Name="IEJ二级排液阀开反馈" UId="722" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="723" />
+      <NewLine Num="1" UId="724" />
+      <Blank Num="7" UId="725" />
+      <Parameter Name="阀关信号" UId="726">
+        <Blank Num="1" UId="727" />
+        <Token Text=":=" UId="728" />
+        <Blank Num="1" UId="729" />
+        <Access Scope="GlobalVariable" UId="730">
+          <Symbol UId="731">
+            <Component Name="IEJ二级排液阀关反馈" UId="732" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="733" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="734" />
+  <NewLine Num="2" UId="735" />
+  <Access Scope="Call" UId="736">
+    <CallInfo UId="737" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="738">
+        <Component Name="除雾排液阀" UId="739" />
+      </Instance>
+      <Token Text="(" UId="740" />
+      <Parameter Name="阀开报警" UId="741">
+        <Blank Num="1" UId="742" />
+        <Token Text="=&gt;" UId="743" />
+        <Blank Num="1" UId="744" />
+        <Access Scope="GlobalVariable" UId="745">
+          <Symbol UId="746">
+            <Component Name="ACW除雾排液阀开报警" UId="747" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="748" />
+      <NewLine Num="1" UId="749" />
+      <Blank Num="7" UId="750" />
+      <Parameter Name="阀关报警" UId="751">
+        <Blank Num="1" UId="752" />
+        <Token Text="=&gt;" UId="753" />
+        <Blank Num="1" UId="754" />
+        <Access Scope="GlobalVariable" UId="755">
+          <Symbol UId="756">
+            <Component Name="ACW除雾排液阀关报警" UId="757" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="758" />
+      <NewLine Num="1" UId="759" />
+      <Blank Num="7" UId="760" />
+      <Parameter Name="阀状态" UId="761">
+        <Blank Num="1" UId="762" />
+        <Token Text=":=" UId="763" />
+        <Blank Num="1" UId="764" />
+        <Access Scope="GlobalVariable" UId="765">
+          <Symbol UId="766">
+            <Component Name="QCW除雾排液阀" UId="767" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="768" />
+      <NewLine Num="1" UId="769" />
+      <Blank Num="7" UId="770" />
+      <Parameter Name="阀开信号" UId="771">
+        <Blank Num="1" UId="772" />
+        <Token Text=":=" UId="773" />
+        <Blank Num="1" UId="774" />
+        <Access Scope="GlobalVariable" UId="775">
+          <Symbol UId="776">
+            <Component Name="ICW除雾排液阀开反馈" UId="777" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="778" />
+      <NewLine Num="1" UId="779" />
+      <Blank Num="7" UId="780" />
+      <Parameter Name="阀关信号" UId="781">
+        <Blank Num="1" UId="782" />
+        <Token Text=":=" UId="783" />
+        <Blank Num="1" UId="784" />
+        <Access Scope="GlobalVariable" UId="785">
+          <Symbol UId="786">
+            <Component Name="ICW除雾排液阀关反馈" UId="787" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="788" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="789" />
+  <NewLine Num="2" UId="790" />
+  <Access Scope="Call" UId="791">
+    <CallInfo UId="792" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="793">
+        <Component Name="溶剂回收排放阀" UId="794" />
+      </Instance>
+      <Token Text="(" UId="795" />
+      <Parameter Name="阀开报警" UId="796">
+        <Blank Num="1" UId="797" />
+        <Token Text="=&gt;" UId="798" />
+        <Blank Num="1" UId="799" />
+        <Access Scope="GlobalVariable" UId="800">
+          <Symbol UId="801">
+            <Component Name="ARJ溶剂回收排放阀开报警" UId="802" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="803" />
+      <NewLine Num="1" UId="804" />
+      <Blank Num="9" UId="805" />
+      <Parameter Name="阀关报警" UId="806">
+        <Blank Num="1" UId="807" />
+        <Token Text="=&gt;" UId="808" />
+        <Blank Num="1" UId="809" />
+        <Access Scope="GlobalVariable" UId="810">
+          <Symbol UId="811">
+            <Component Name="ARJ溶剂回收排放阀关报警" UId="812" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="813" />
+      <NewLine Num="1" UId="814" />
+      <Blank Num="9" UId="815" />
+      <Parameter Name="阀状态" UId="816">
+        <Blank Num="1" UId="817" />
+        <Token Text=":=" UId="818" />
+        <Blank Num="1" UId="819" />
+        <Access Scope="GlobalVariable" UId="820">
+          <Symbol UId="821">
+            <Component Name="QRJ溶剂回收排放阀" UId="822" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="823" />
+      <NewLine Num="1" UId="824" />
+      <Blank Num="9" UId="825" />
+      <Parameter Name="阀开信号" UId="826">
+        <Blank Num="1" UId="827" />
+        <Token Text=":=" UId="828" />
+        <Blank Num="1" UId="829" />
+        <Access Scope="GlobalVariable" UId="830">
+          <Symbol UId="831">
+            <Component Name="IRJ溶剂回收排放阀开反馈" UId="832" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="833" />
+      <NewLine Num="1" UId="834" />
+      <Blank Num="9" UId="835" />
+      <Parameter Name="阀关信号" UId="836">
+        <Blank Num="1" UId="837" />
+        <Token Text=":=" UId="838" />
+        <Blank Num="1" UId="839" />
+        <Access Scope="GlobalVariable" UId="840">
+          <Symbol UId="841">
+            <Component Name="IRJ溶剂回收排放阀关反馈" UId="842" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="843" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="844" />
+  <NewLine Num="3" UId="845" />
+  <Access Scope="Call" UId="846">
+    <CallInfo UId="847" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="848">
+        <Component Name="进风冷却水阀" UId="849" />
+      </Instance>
+      <Token Text="(" UId="850" />
+      <Parameter Name="阀开报警" UId="851">
+        <Blank Num="1" UId="852" />
+        <Token Text="=&gt;" UId="853" />
+        <Blank Num="1" UId="854" />
+        <Access Scope="GlobalVariable" UId="855">
+          <Symbol UId="856">
+            <Component Name="AJF进风冷却水阀开报警" UId="857" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="858" />
+      <NewLine Num="1" UId="859" />
+      <Blank Num="8" UId="860" />
+      <Parameter Name="阀关报警" UId="861">
+        <Blank Num="1" UId="862" />
+        <Token Text="=&gt;" UId="863" />
+        <Blank Num="1" UId="864" />
+        <Access Scope="GlobalVariable" UId="865">
+          <Symbol UId="866">
+            <Component Name="AJF进风冷却水阀关报警" UId="867" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="868" />
+      <NewLine Num="1" UId="869" />
+      <Blank Num="8" UId="870" />
+      <Parameter Name="阀状态" UId="871">
+        <Blank Num="1" UId="872" />
+        <Token Text=":=" UId="873" />
+        <Blank Num="1" UId="874" />
+        <Access Scope="GlobalVariable" UId="875">
+          <Symbol UId="876">
+            <Component Name="QJF进风冷却水阀" UId="877" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="878" />
+      <NewLine Num="1" UId="879" />
+      <Blank Num="8" UId="880" />
+      <Parameter Name="阀开信号" UId="881">
+        <Blank Num="1" UId="882" />
+        <Token Text=":=" UId="883" />
+        <Blank Num="1" UId="884" />
+        <Access Scope="GlobalVariable" UId="885">
+          <Symbol UId="886">
+            <Component Name="IJF进风冷却水阀开反馈" UId="887" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="888" />
+      <NewLine Num="1" UId="889" />
+      <Blank Num="8" UId="890" />
+      <Parameter Name="阀关信号" UId="891">
+        <Blank Num="1" UId="892" />
+        <Token Text=":=" UId="893" />
+        <Blank Num="1" UId="894" />
+        <Access Scope="GlobalVariable" UId="895">
+          <Symbol UId="896">
+            <Component Name="IJF进风冷却水阀关反馈" UId="897" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="898" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="899" />
+  <NewLine Num="2" UId="900" />
+  <Access Scope="Call" UId="901">
+    <CallInfo UId="902" BlockType="FB" Name="A8-阀开关报警">
+      <Instance Scope="LocalVariable" UId="903">
+        <Component Name="塔顶清洗球阀" UId="904" />
+      </Instance>
+      <Token Text="(" UId="905" />
+      <Parameter Name="阀开报警" UId="906">
+        <Blank Num="1" UId="907" />
+        <Token Text="=&gt;" UId="908" />
+        <Blank Num="1" UId="909" />
+        <Access Scope="GlobalVariable" UId="910">
+          <Symbol UId="911">
+            <Component Name="ATD塔顶清洗球阀开报警" UId="912" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="913" />
+      <NewLine Num="1" UId="914" />
+      <Blank Num="8" UId="915" />
+      <Parameter Name="阀关报警" UId="916">
+        <Blank Num="1" UId="917" />
+        <Token Text="=&gt;" UId="918" />
+        <Blank Num="1" UId="919" />
+        <Access Scope="GlobalVariable" UId="920">
+          <Symbol UId="921">
+            <Component Name="ATD塔顶清洗球阀关报警" UId="922" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="923" />
+      <NewLine Num="1" UId="924" />
+      <Blank Num="8" UId="925" />
+      <Parameter Name="阀状态" UId="926">
+        <Blank Num="1" UId="927" />
+        <Token Text=":=" UId="928" />
+        <Blank Num="1" UId="929" />
+        <Access Scope="GlobalVariable" UId="930">
+          <Symbol UId="931">
+            <Component Name="QTD塔顶清洗球阀" UId="932" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="933" />
+      <NewLine Num="1" UId="934" />
+      <Blank Num="8" UId="935" />
+      <Parameter Name="阀开信号" UId="936">
+        <Blank Num="1" UId="937" />
+        <Token Text=":=" UId="938" />
+        <Blank Num="1" UId="939" />
+        <Access Scope="GlobalVariable" UId="940">
+          <Symbol UId="941">
+            <Component Name="ITD塔顶清洗球阀开反馈" UId="942" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="943" />
+      <NewLine Num="1" UId="944" />
+      <Blank Num="8" UId="945" />
+      <Parameter Name="阀关信号" UId="946">
+        <Blank Num="1" UId="947" />
+        <Token Text=":=" UId="948" />
+        <Blank Num="1" UId="949" />
+        <Access Scope="GlobalVariable" UId="950">
+          <Symbol UId="951">
+            <Component Name="ITD塔顶清洗球阀关反馈" UId="952" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="953" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="954" />
+  <NewLine Num="3" UId="955" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="956">
+    <Text UId="957"> #清洗伸缩气缸(阀开报警 =&gt; "AQX清洗伸缩气缸开报警",
+        阀关报警 =&gt; "AQX清洗伸缩气缸关报警",
+        阀状态 := "QQG气缸升降阀",
+        阀开信号 := "IQX清洗伸缩气缸开反馈",
+        阀关信号 := "IQX清洗伸缩气缸关反馈"); </Text>
+  </LineComment>
+  <NewLine Num="1" UId="958" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="E" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="F" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="10" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="11" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

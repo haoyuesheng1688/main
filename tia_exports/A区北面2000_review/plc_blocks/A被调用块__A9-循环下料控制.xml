@@ -1,0 +1,1014 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-04-13T11:12:41.7444866Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="下料启动开关" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="上卸料阀工作时间" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="上卸料阀关闭时间" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="下卸料阀工作时间" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="下卸料阀关闭时间" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="上阀实际工作时间" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="上阀实际停止时间" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="下阀实际工作时间" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="下阀实际停止时间" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="InOut">
+    <Member Name="上下料阀" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="下下料阀" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="振动筛" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Static">
+    <Member Name="上下料阀实际工作时间" Datatype="Time" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="上下料阀实际停止时间" Datatype="Time" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="下下料阀实际工作时间" Datatype="Time" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="下下料阀实际停止时间" Datatype="Time" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="循环间隔实际时间" Datatype="Time" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="上阀打开辅助" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="上阀关闭辅助" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="下阀打开辅助" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="下阀关闭辅助" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="循环工作时间延时" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member>
+    <Member Name="上阀打开检测1" Datatype="R_TRIG" Version="1.0" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="CLK" Datatype="Bool" /></Section><Section Name="Output"><Member Name="Q" Datatype="Bool" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="Stat_Bit" Datatype="Bool" /></Section></Sections></Member>
+    <Member Name="上阀打开检测2" Datatype="R_TRIG" Version="1.0" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="CLK" Datatype="Bool" /></Section><Section Name="Output"><Member Name="Q" Datatype="Bool" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="Stat_Bit" Datatype="Bool" /></Section></Sections></Member>
+    <Member Name="上阀工作时间延时" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member>
+    <Member Name="上阀停止时间延时" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member>
+    <Member Name="下阀工作时间延时" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member>
+    <Member Name="下阀停止时间延时" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member>
+    <Member Name="下阀打开检测" Datatype="R_TRIG" Version="1.0" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="CLK" Datatype="Bool" /></Section><Section Name="Output"><Member Name="Q" Datatype="Bool" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="Stat_Bit" Datatype="Bool" /></Section></Sections></Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>A9-循环下料控制</Name>
+      <Number>15</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <NewLine Num="1" UId="21" />
+  <Access Scope="LocalVariable" UId="22">
+    <Symbol UId="23">
+      <Component Name="上下料阀实际工作时间" UId="24" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="25" />
+  <Token Text=":=" UId="26" />
+  <Blank Num="1" UId="27" />
+  <Access Scope="Call" UId="28">
+    <Instruction Name="DINT_TO_TIME" UId="29">
+      <Token Text="(" UId="30" />
+      <NamelessParameter UId="31">
+        <Access Scope="Call" UId="32">
+          <Instruction Name="REAL_TO_DINT" UId="33">
+            <Token Text="(" UId="34" />
+            <NamelessParameter UId="35">
+              <Access Scope="LocalVariable" UId="36">
+                <Symbol UId="37">
+                  <Component Name="上卸料阀工作时间" UId="38" />
+                </Symbol>
+              </Access>
+              <Token Text="*" UId="39" />
+              <Access Scope="LiteralConstant" UId="40">
+                <Constant UId="41">
+                  <ConstantValue UId="43">1000.0</ConstantValue>
+                </Constant>
+              </Access>
+            </NamelessParameter>
+            <Token Text=")" UId="45" />
+          </Instruction>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="47" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="48" />
+  <NewLine Num="1" UId="49" />
+  <Access Scope="LocalVariable" UId="50">
+    <Symbol UId="51">
+      <Component Name="上下料阀实际停止时间" UId="52" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="53" />
+  <Token Text=":=" UId="54" />
+  <Blank Num="1" UId="55" />
+  <Access Scope="Call" UId="56">
+    <Instruction Name="DINT_TO_TIME" UId="57">
+      <Token Text="(" UId="58" />
+      <NamelessParameter UId="59">
+        <Access Scope="Call" UId="60">
+          <Instruction Name="REAL_TO_DINT" UId="61">
+            <Token Text="(" UId="62" />
+            <NamelessParameter UId="63">
+              <Access Scope="LocalVariable" UId="64">
+                <Symbol UId="65">
+                  <Component Name="上卸料阀关闭时间" UId="66" />
+                </Symbol>
+              </Access>
+              <Blank Num="1" UId="67" />
+              <Token Text="*" UId="68" />
+              <Blank Num="1" UId="69" />
+              <Access Scope="LiteralConstant" UId="70">
+                <Constant UId="71">
+                  <ConstantValue UId="73">1000.0</ConstantValue>
+                </Constant>
+              </Access>
+            </NamelessParameter>
+            <Token Text=")" UId="75" />
+          </Instruction>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="77" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="78" />
+  <NewLine Num="1" UId="79" />
+  <Access Scope="LocalVariable" UId="80">
+    <Symbol UId="81">
+      <Component Name="下下料阀实际工作时间" UId="82" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="83" />
+  <Token Text=":=" UId="84" />
+  <Blank Num="1" UId="85" />
+  <Access Scope="Call" UId="86">
+    <Instruction Name="DINT_TO_TIME" UId="87">
+      <Token Text="(" UId="88" />
+      <NamelessParameter UId="89">
+        <Access Scope="Call" UId="90">
+          <Instruction Name="REAL_TO_DINT" UId="91">
+            <Token Text="(" UId="92" />
+            <NamelessParameter UId="93">
+              <Access Scope="LocalVariable" UId="94">
+                <Symbol UId="95">
+                  <Component Name="下卸料阀工作时间" UId="96" />
+                </Symbol>
+              </Access>
+              <Blank Num="1" UId="97" />
+              <Token Text="*" UId="98" />
+              <Blank Num="1" UId="99" />
+              <Access Scope="LiteralConstant" UId="100">
+                <Constant UId="101">
+                  <ConstantValue UId="103">1000.0</ConstantValue>
+                </Constant>
+              </Access>
+            </NamelessParameter>
+            <Token Text=")" UId="105" />
+          </Instruction>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="107" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="108" />
+  <NewLine Num="1" UId="109" />
+  <Access Scope="LocalVariable" UId="110">
+    <Symbol UId="111">
+      <Component Name="下下料阀实际停止时间" UId="112" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="113" />
+  <Token Text=":=" UId="114" />
+  <Blank Num="1" UId="115" />
+  <Access Scope="Call" UId="116">
+    <Instruction Name="DINT_TO_TIME" UId="117">
+      <Token Text="(" UId="118" />
+      <NamelessParameter UId="119">
+        <Access Scope="Call" UId="120">
+          <Instruction Name="REAL_TO_DINT" UId="121">
+            <Token Text="(" UId="122" />
+            <NamelessParameter UId="123">
+              <Access Scope="LocalVariable" UId="124">
+                <Symbol UId="125">
+                  <Component Name="下卸料阀关闭时间" UId="126" />
+                </Symbol>
+              </Access>
+              <Blank Num="1" UId="127" />
+              <Token Text="*" UId="128" />
+              <Blank Num="1" UId="129" />
+              <Access Scope="LiteralConstant" UId="130">
+                <Constant UId="131">
+                  <ConstantValue UId="133">1000.0</ConstantValue>
+                </Constant>
+              </Access>
+            </NamelessParameter>
+            <Token Text=")" UId="135" />
+          </Instruction>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="137" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="138" />
+  <NewLine Num="2" UId="139" />
+  <Access Scope="LocalVariable" UId="140">
+    <Symbol UId="141">
+      <Component Name="上阀打开检测1" UId="142" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="143">
+    <Instruction UId="144">
+      <Token Text="(" UId="145" />
+      <Parameter Name="CLK" UId="146">
+        <Token Text=":=" UId="147" />
+        <Access Scope="LocalVariable" UId="148">
+          <Symbol UId="149">
+            <Component Name="下料启动开关" UId="150" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="151" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="152" />
+  <NewLine Num="3" UId="153" />
+  <Token Text="IF" UId="154" />
+  <Blank Num="1" UId="155" />
+  <Access Scope="LocalVariable" UId="156">
+    <Symbol UId="157">
+      <Component Name="上阀打开检测1" UId="158" />
+      <Token Text="." UId="159" />
+      <Component Name="Q" UId="160" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="161" />
+  <Token Text="THEN" UId="162" />
+  <NewLine Num="1" UId="163" />
+  <Blank Num="4" UId="164" />
+  <Access Scope="LocalVariable" UId="165">
+    <Symbol UId="166">
+      <Component Name="上阀打开辅助" UId="167" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="168" />
+  <Token Text=":=" UId="169" />
+  <Blank Num="1" UId="170" />
+  <Access Scope="LiteralConstant" UId="171">
+    <Constant UId="172">
+      <ConstantValue UId="174">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="175" />
+  <NewLine Num="1" UId="176" />
+  <Token Text="END_IF" UId="177" />
+  <Token Text=";" UId="178" />
+  <NewLine Num="2" UId="179" />
+  <Blank Num="1" UId="180" />
+  <NewLine Num="1" UId="181" />
+  <Access Scope="LocalVariable" UId="182">
+    <Symbol UId="183">
+      <Component Name="上阀工作时间延时" UId="184" />
+    </Symbol>
+  </Access>
+  <Token Text="." UId="185" />
+  <Access Scope="Call" UId="186">
+    <Instruction Name="TON" UId="187">
+      <Token Text="(" UId="188" />
+      <Parameter Name="IN" UId="189">
+        <Token Text=":=" UId="190" />
+        <Access Scope="LocalVariable" UId="191">
+          <Symbol UId="192">
+            <Component Name="上阀打开辅助" UId="193" />
+          </Symbol>
+        </Access>
+        <Blank Num="1" UId="194" />
+        <Token Text="AND" UId="195" />
+        <Blank Num="1" UId="196" />
+        <Access Scope="LocalVariable" UId="197">
+          <Symbol UId="198">
+            <Component Name="下料启动开关" UId="199" />
+          </Symbol>
+        </Access>
+        <Blank Num="1" UId="200" />
+        <Token Text="AND" UId="201" />
+        <Blank Num="1" UId="202" />
+        <Token Text="NOT" UId="203" />
+        <Blank Num="1" UId="204" />
+        <Access Scope="LocalVariable" UId="205">
+          <Symbol UId="206">
+            <Component Name="下阀停止时间延时" UId="207" />
+            <Token Text="." UId="208" />
+            <Component Name="Q" UId="209" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="210" />
+      <Parameter Name="PT" UId="211">
+        <Token Text=":=" UId="212" />
+        <Access Scope="LocalVariable" UId="213">
+          <Symbol UId="214">
+            <Component Name="上下料阀实际工作时间" UId="215" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="216" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="217" />
+  <NewLine Num="2" UId="218" />
+  <Access Scope="LocalVariable" UId="219">
+    <Symbol UId="220">
+      <Component Name="上阀停止时间延时" UId="221" />
+    </Symbol>
+  </Access>
+  <Token Text="." UId="222" />
+  <Access Scope="Call" UId="223">
+    <Instruction Name="TON" UId="224">
+      <Token Text="(" UId="225" />
+      <Parameter Name="IN" UId="226">
+        <Token Text=":=" UId="227" />
+        <Access Scope="LocalVariable" UId="228">
+          <Symbol UId="229">
+            <Component Name="上阀工作时间延时" UId="230" />
+            <Token Text="." UId="231" />
+            <Component Name="Q" UId="232" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="233" />
+      <Parameter Name="PT" UId="234">
+        <Token Text=":=" UId="235" />
+        <Access Scope="LocalVariable" UId="236">
+          <Symbol UId="237">
+            <Component Name="上下料阀实际停止时间" UId="238" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="239" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="240" />
+  <NewLine Num="2" UId="241" />
+  <Access Scope="LocalVariable" UId="242">
+    <Symbol UId="243">
+      <Component Name="下阀工作时间延时" UId="244" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="245">
+    <Instruction UId="246">
+      <Token Text="(" UId="247" />
+      <Parameter Name="IN" UId="248">
+        <Token Text=":=" UId="249" />
+        <Access Scope="LocalVariable" UId="250">
+          <Symbol UId="251">
+            <Component Name="上阀工作时间延时" UId="252" />
+            <Token Text="." UId="253" />
+            <Component Name="Q" UId="254" />
+          </Symbol>
+        </Access>
+        <Blank Num="1" UId="255" />
+        <Token Text="AND" UId="256" />
+        <Blank Num="1" UId="257" />
+        <Access Scope="LocalVariable" UId="258">
+          <Symbol UId="259">
+            <Component Name="上阀停止时间延时" UId="260" />
+            <Token Text="." UId="261" />
+            <Component Name="Q" UId="262" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="263" />
+      <Parameter Name="PT" UId="264">
+        <Token Text=":=" UId="265" />
+        <Access Scope="LocalVariable" UId="266">
+          <Symbol UId="267">
+            <Component Name="下下料阀实际工作时间" UId="268" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="269" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="270" />
+  <NewLine Num="2" UId="271" />
+  <Access Scope="LocalVariable" UId="272">
+    <Symbol UId="273">
+      <Component Name="下阀停止时间延时" UId="274" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="275">
+    <Instruction UId="276">
+      <Token Text="(" UId="277" />
+      <Parameter Name="IN" UId="278">
+        <Blank Num="1" UId="279" />
+        <Token Text=":=" UId="280" />
+        <Access Scope="LocalVariable" UId="281">
+          <Symbol UId="282">
+            <Component Name="上阀工作时间延时" UId="283" />
+            <Token Text="." UId="284" />
+            <Component Name="Q" UId="285" />
+          </Symbol>
+        </Access>
+        <Blank Num="1" UId="286" />
+        <Token Text="AND" UId="287" />
+        <Blank Num="1" UId="288" />
+        <Access Scope="LocalVariable" UId="289">
+          <Symbol UId="290">
+            <Component Name="上阀停止时间延时" UId="291" />
+            <Token Text="." UId="292" />
+            <Component Name="Q" UId="293" />
+          </Symbol>
+        </Access>
+        <Blank Num="1" UId="294" />
+        <Token Text="AND" UId="295" />
+        <Blank Num="2" UId="296" />
+        <Access Scope="LocalVariable" UId="297">
+          <Symbol UId="298">
+            <Component Name="下阀工作时间延时" UId="299" />
+            <Token Text="." UId="300" />
+            <Component Name="Q" UId="301" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="302" />
+      <Parameter Name="PT" UId="303">
+        <Blank Num="1" UId="304" />
+        <Token Text=":=" UId="305" />
+        <Blank Num="1" UId="306" />
+        <Access Scope="LocalVariable" UId="307">
+          <Symbol UId="308">
+            <Component Name="下下料阀实际停止时间" UId="309" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="310" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="311" />
+  <NewLine Num="2" UId="312" />
+  <Access Scope="LocalVariable" UId="313">
+    <Symbol UId="314">
+      <Component Name="下阀打开检测" UId="315" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="316">
+    <Instruction UId="317">
+      <Token Text="(" UId="318" />
+      <Parameter Name="CLK" UId="319">
+        <Token Text=":=" UId="320" />
+        <Access Scope="LocalVariable" UId="321">
+          <Symbol UId="322">
+            <Component Name="下下料阀" UId="323" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="324" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="325" />
+  <NewLine Num="3" UId="326" />
+  <Access Scope="LocalVariable" UId="327">
+    <Symbol UId="328">
+      <Component Name="上下料阀" UId="329" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="330" />
+  <Token Text=":=" UId="331" />
+  <Blank Num="1" UId="332" />
+  <Access Scope="LocalVariable" UId="333">
+    <Symbol UId="334">
+      <Component Name="上阀打开辅助" UId="335" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="336" />
+  <Token Text="AND" UId="337" />
+  <Blank Num="1" UId="338" />
+  <Token Text="NOT" UId="339" />
+  <Blank Num="1" UId="340" />
+  <Access Scope="LocalVariable" UId="341">
+    <Symbol UId="342">
+      <Component Name="上阀工作时间延时" UId="343" />
+      <Token Text="." UId="344" />
+      <Component Name="Q" UId="345" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="346" />
+  <Token Text="AND" UId="347" />
+  <Blank Num="1" UId="348" />
+  <Access Scope="LocalVariable" UId="349">
+    <Symbol UId="350">
+      <Component Name="下料启动开关" UId="351" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="352" />
+  <NewLine Num="3" UId="353" />
+  <Access Scope="LocalVariable" UId="354">
+    <Symbol UId="355">
+      <Component Name="下下料阀" UId="356" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="357" />
+  <Token Text=":=" UId="358" />
+  <Blank Num="1" UId="359" />
+  <Access Scope="LocalVariable" UId="360">
+    <Symbol UId="361">
+      <Component Name="上阀工作时间延时" UId="362" />
+      <Token Text="." UId="363" />
+      <Component Name="Q" UId="364" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="365" />
+  <Token Text="AND" UId="366" />
+  <Blank Num="1" UId="367" />
+  <Access Scope="LocalVariable" UId="368">
+    <Symbol UId="369">
+      <Component Name="上阀停止时间延时" UId="370" />
+      <Token Text="." UId="371" />
+      <Component Name="Q" UId="372" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="373" />
+  <Token Text="AND" UId="374" />
+  <Blank Num="1" UId="375" />
+  <Token Text="NOT" UId="376" />
+  <Blank Num="1" UId="377" />
+  <Access Scope="LocalVariable" UId="378">
+    <Symbol UId="379">
+      <Component Name="下阀工作时间延时" UId="380" />
+      <Token Text="." UId="381" />
+      <Component Name="Q" UId="382" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="383" />
+  <Token Text="AND" UId="384" />
+  <Blank Num="1" UId="385" />
+  <Access Scope="LocalVariable" UId="386">
+    <Symbol UId="387">
+      <Component Name="下料启动开关" UId="388" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="389" />
+  <NewLine Num="2" UId="390" />
+  <Token Text="IF" UId="391" />
+  <Blank Num="1" UId="392" />
+  <Access Scope="LocalVariable" UId="393">
+    <Symbol UId="394">
+      <Component Name="下阀打开检测" UId="395" />
+      <Token Text="." UId="396" />
+      <Component Name="Q" UId="397" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="398" />
+  <Token Text="AND" UId="399" />
+  <Blank Num="1" UId="400" />
+  <Access Scope="LocalVariable" UId="401">
+    <Symbol UId="402">
+      <Component Name="下料启动开关" UId="403" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="404" />
+  <Token Text="THEN" UId="405" />
+  <NewLine Num="1" UId="406" />
+  <Blank Num="4" UId="407" />
+  <Access Scope="LocalVariable" UId="408">
+    <Symbol UId="409">
+      <Component Name="振动筛" UId="410" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="411" />
+  <Token Text=":=" UId="412" />
+  <Blank Num="1" UId="413" />
+  <Access Scope="LiteralConstant" UId="414">
+    <Constant UId="415">
+      <ConstantValue UId="417">true</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="418" />
+  <NewLine Num="1" UId="419" />
+  <Token Text="END_IF" UId="420" />
+  <Token Text=";" UId="421" />
+  <NewLine Num="2" UId="422" />
+  <Token Text="IF" UId="423" />
+  <Blank Num="1" UId="424" />
+  <Token Text="NOT" UId="425" />
+  <Blank Num="1" UId="426" />
+  <Access Scope="LocalVariable" UId="427">
+    <Symbol UId="428">
+      <Component Name="下料启动开关" UId="429" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="430" />
+  <Token Text="THEN" UId="431" />
+  <NewLine Num="1" UId="432" />
+  <Blank Num="4" UId="433" />
+  <Access Scope="LocalVariable" UId="434">
+    <Symbol UId="435">
+      <Component Name="上阀打开辅助" UId="436" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="437" />
+  <Token Text=":=" UId="438" />
+  <Blank Num="1" UId="439" />
+  <Access Scope="LiteralConstant" UId="440">
+    <Constant UId="441">
+      <ConstantValue UId="443">false</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="444" />
+  <NewLine Num="1" UId="445" />
+  <Token Text="END_IF" UId="446" />
+  <Token Text=";" UId="447" />
+  <NewLine Num="2" UId="448" />
+  <Token Text="IF" UId="449" />
+  <Blank Num="1" UId="450" />
+  <Access Scope="LocalVariable" UId="451">
+    <Symbol UId="452">
+      <Component Name="上下料阀" UId="453" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="454" />
+  <Token Text="THEN" UId="455" />
+  <NewLine Num="1" UId="456" />
+  <Blank Num="4" UId="457" />
+  <Access Scope="LocalVariable" UId="458">
+    <Symbol UId="459">
+      <Component Name="上阀实际工作时间" UId="460" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="461" />
+  <Token Text=":=" UId="462" />
+  <Blank Num="1" UId="463" />
+  <Access Scope="Call" UId="464">
+    <Instruction Name="DINT_TO_REAL" UId="465">
+      <Token Text="(" UId="466" />
+      <NamelessParameter UId="467">
+        <Access Scope="Call" UId="468">
+          <Instruction Name="TIME_TO_DINT" UId="469">
+            <Token Text="(" UId="470" />
+            <NamelessParameter UId="471">
+              <Access Scope="LocalVariable" UId="472">
+                <Symbol UId="473">
+                  <Component Name="上阀工作时间延时" UId="474" />
+                  <Token Text="." UId="475" />
+                  <Component Name="ET" UId="476" />
+                </Symbol>
+              </Access>
+            </NamelessParameter>
+            <Token Text=")" UId="478" />
+          </Instruction>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="480" />
+    </Instruction>
+  </Access>
+  <Token Text="/" UId="481" />
+  <Access Scope="LiteralConstant" UId="482">
+    <Constant UId="483">
+      <ConstantValue UId="485">1000.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="486" />
+  <NewLine Num="1" UId="487" />
+  <Token Text="END_IF" UId="488" />
+  <Token Text=";" UId="489" />
+  <NewLine Num="2" UId="490" />
+  <Token Text="IF" UId="491" />
+  <Blank Num="1" UId="492" />
+  <Access Scope="LocalVariable" UId="493">
+    <Symbol UId="494">
+      <Component Name="上阀工作时间延时" UId="495" />
+      <Token Text="." UId="496" />
+      <Component Name="Q" UId="497" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="498" />
+  <Token Text="AND" UId="499" />
+  <Blank Num="1" UId="500" />
+  <Token Text="NOT" UId="501" />
+  <Blank Num="1" UId="502" />
+  <Access Scope="LocalVariable" UId="503">
+    <Symbol UId="504">
+      <Component Name="上阀停止时间延时" UId="505" />
+      <Token Text="." UId="506" />
+      <Component Name="Q" UId="507" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="508" />
+  <Token Text="THEN" UId="509" />
+  <NewLine Num="1" UId="510" />
+  <Blank Num="4" UId="511" />
+  <Access Scope="LocalVariable" UId="512">
+    <Symbol UId="513">
+      <Component Name="上阀实际停止时间" UId="514" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="515" />
+  <Token Text=":=" UId="516" />
+  <Blank Num="1" UId="517" />
+  <Access Scope="Call" UId="518">
+    <Instruction Name="DINT_TO_REAL" UId="519">
+      <Token Text="(" UId="520" />
+      <NamelessParameter UId="521">
+        <Access Scope="Call" UId="522">
+          <Instruction Name="TIME_TO_DINT" UId="523">
+            <Token Text="(" UId="524" />
+            <NamelessParameter UId="525">
+              <Access Scope="LocalVariable" UId="526">
+                <Symbol UId="527">
+                  <Component Name="上阀停止时间延时" UId="528" />
+                  <Token Text="." UId="529" />
+                  <Component Name="ET" UId="530" />
+                </Symbol>
+              </Access>
+            </NamelessParameter>
+            <Token Text=")" UId="532" />
+          </Instruction>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="534" />
+    </Instruction>
+  </Access>
+  <Blank Num="1" UId="535" />
+  <Token Text="/" UId="536" />
+  <Blank Num="1" UId="537" />
+  <Access Scope="LiteralConstant" UId="538">
+    <Constant UId="539">
+      <ConstantValue UId="541">1000.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="542" />
+  <NewLine Num="1" UId="543" />
+  <Token Text="END_IF" UId="544" />
+  <Token Text=";" UId="545" />
+  <NewLine Num="2" UId="546" />
+  <Token Text="IF" UId="547" />
+  <Blank Num="1" UId="548" />
+  <Access Scope="LocalVariable" UId="549">
+    <Symbol UId="550">
+      <Component Name="下下料阀" UId="551" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="552" />
+  <Token Text="THEN" UId="553" />
+  <NewLine Num="1" UId="554" />
+  <Blank Num="4" UId="555" />
+  <Access Scope="LocalVariable" UId="556">
+    <Symbol UId="557">
+      <Component Name="下阀实际工作时间" UId="558" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="559" />
+  <Token Text=":=" UId="560" />
+  <Blank Num="1" UId="561" />
+  <Access Scope="Call" UId="562">
+    <Instruction Name="DINT_TO_REAL" UId="563">
+      <Token Text="(" UId="564" />
+      <NamelessParameter UId="565">
+        <Access Scope="Call" UId="566">
+          <Instruction Name="TIME_TO_DINT" UId="567">
+            <Token Text="(" UId="568" />
+            <NamelessParameter UId="569">
+              <Access Scope="LocalVariable" UId="570">
+                <Symbol UId="571">
+                  <Component Name="下阀工作时间延时" UId="572" />
+                  <Token Text="." UId="573" />
+                  <Component Name="ET" UId="574" />
+                </Symbol>
+              </Access>
+            </NamelessParameter>
+            <Token Text=")" UId="576" />
+          </Instruction>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="578" />
+    </Instruction>
+  </Access>
+  <Blank Num="1" UId="579" />
+  <Token Text="/" UId="580" />
+  <Blank Num="1" UId="581" />
+  <Access Scope="LiteralConstant" UId="582">
+    <Constant UId="583">
+      <ConstantValue UId="585">1000.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="586" />
+  <NewLine Num="1" UId="587" />
+  <Token Text="END_IF" UId="588" />
+  <Token Text=";" UId="589" />
+  <NewLine Num="2" UId="590" />
+  <Token Text="IF" UId="591" />
+  <Blank Num="1" UId="592" />
+  <Access Scope="LocalVariable" UId="593">
+    <Symbol UId="594">
+      <Component Name="下阀工作时间延时" UId="595" />
+      <Token Text="." UId="596" />
+      <Component Name="Q" UId="597" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="598" />
+  <Token Text="AND" UId="599" />
+  <Blank Num="1" UId="600" />
+  <Token Text="NOT" UId="601" />
+  <Blank Num="1" UId="602" />
+  <Access Scope="LocalVariable" UId="603">
+    <Symbol UId="604">
+      <Component Name="下阀停止时间延时" UId="605" />
+      <Token Text="." UId="606" />
+      <Component Name="Q" UId="607" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="608" />
+  <Token Text="THEN" UId="609" />
+  <NewLine Num="1" UId="610" />
+  <Blank Num="4" UId="611" />
+  <Access Scope="LocalVariable" UId="612">
+    <Symbol UId="613">
+      <Component Name="下阀实际停止时间" UId="614" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="615" />
+  <Token Text=":=" UId="616" />
+  <Blank Num="1" UId="617" />
+  <Access Scope="Call" UId="618">
+    <Instruction Name="DINT_TO_REAL" UId="619">
+      <Token Text="(" UId="620" />
+      <NamelessParameter UId="621">
+        <Access Scope="Call" UId="622">
+          <Instruction Name="TIME_TO_DINT" UId="623">
+            <Token Text="(" UId="624" />
+            <NamelessParameter UId="625">
+              <Access Scope="LocalVariable" UId="626">
+                <Symbol UId="627">
+                  <Component Name="下阀停止时间延时" UId="628" />
+                  <Token Text="." UId="629" />
+                  <Component Name="ET" UId="630" />
+                </Symbol>
+              </Access>
+            </NamelessParameter>
+            <Token Text=")" UId="632" />
+          </Instruction>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="634" />
+    </Instruction>
+  </Access>
+  <Blank Num="1" UId="635" />
+  <Token Text="/" UId="636" />
+  <Blank Num="1" UId="637" />
+  <Access Scope="LiteralConstant" UId="638">
+    <Constant UId="639">
+      <ConstantValue UId="641">1000.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="642" />
+  <NewLine Num="1" UId="643" />
+  <Token Text="END_IF" UId="644" />
+  <Token Text=";" UId="645" />
+  <NewLine Num="5" UId="646" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="E" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="F" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="10" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="11" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

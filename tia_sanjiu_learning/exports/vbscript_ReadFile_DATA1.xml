@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-05-13T16:51:30.9702032Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <Hmi.RuntimeScripting.VBScript ID="0">
+    <AttributeList>
+      <Code>
+Dim Path
+Dim fs,f
+Dim  i, j,field2
+Dim  field'(99999)
+Dim MaxLines
+Dim data_ID(99999)
+Dim data_T(99999)
+Dim data_1(99999)
+Dim data_2(99999)
+Dim data_3(99999)
+Dim data_4(99999)
+Dim data_5(99999)
+Dim data_6(99999)
+Dim data_7(99999)
+Dim data_8(99999)
+Dim data_9(99999)
+Dim data_10(99999)
+Dim data_11(99999)
+Dim SizeOfFile
+Dim Lines,sumPag,CurtPag,startLines,endLines
+Dim stime,etime,dt,sDiffMin,SdiffMax
+
+If SmartTags("VBS_Run")=1 Then
+	'Exit Sub
+Else
+	SmartTags("VBS_Run")=1
+End If
+
+If SmartTags("开始时间")&lt;SmartTags("结束时间") Then
+	stime = SmartTags("开始时间")
+	etime=SmartTags("结束时间")
+Else
+	etime = SmartTags("开始时间")
+	stime=SmartTags("结束时间")	
+End If
+
+
+'指定日志文件所在目录
+Path = "\Storage Card USB\DATA1\DATA10.txt"'"\\DESKTOP-CEFLV5H\winccprojects\DATA10.csv"
+'读取日志文件
+SmartTags("data_执行说明")="读取日志文件中"
+'Set fs = CreateObject("Scripting.FileSystemObject")
+Set fs = CreateObject("FileCtl.file")
+SmartTags("data_执行说明")="FileCtr完成"
+'Set f = fs.OpenTextFile(Path,1,1)
+'field = f.ReadAll
+'field = Split(field,vbCrLf)
+'获取日志文件数量
+MaxLines = 0
+
+fs.open Path,1,1
+SizeOfFile = fs.lof
+Do While fs.EOF &lt;&gt;True
+	'field(MaxLines) = fs.lineinputstring
+	'MaxLines = MaxLines +1
+	field = CStr(fs.inputB(SizeOfFile))
+Loop
+SmartTags("data_执行说明")="归档文件读取完成"
+field = Split(field,vbCrLf)
+Lines=UBound(field,1)-3
+'Lines = MaxLines-3
+'判断是否有归档数据
+If Lines &lt;1 Then
+	SmartTags("data_执行说明")="不存在归档信息"
+	Exit Sub
+End If
+
+'收集
+
+Dim Find1
+For i =0 To Lines
+	
+	field2 = Replace(field(i + 1 ),Chr(34),"")
+	field2 =Split(field2 ,vbTab)
+	
+	Dim adrr 
+	adrr = InStr(field2(2),".")
+	
+	If adrr&gt;0 Then
+	field2(2) = Left(field2(2),adrr+1)
+	Else
+		field2(2)=field2(2) &amp; ".0"
+	End If
+	
+	
+	If field2(0) = "PV_JF进风温度" Then
+		If SmartTags("启用时间段搜索") Then 
+			dt = field2(1)
+			SmartTags("data_执行说明")="时间" &amp; dt
+			sDiffMin = DateDiff("s",stime,dt)
+			SdiffMax = DateDiff("s",dt,etime)
+			'SmartTags("data_执行说明")="时间段" &amp; sDiffMin &amp; "-" &amp; SdiffMax
+		Else
+			sDiffMin = 1
+			SdiffMax = 1
+		End If
+		If (sDiffMin &gt; 0) And (SdiffMax&gt;0)  Then
+			Find1=Find1+1	
+			data_ID(Find1-1) = Find1
+			data_T(Find1-1) = field2(1)
+			data_1(Find1-1) = field2(2)
+		End If
+	End If
+	If Find1&gt;99999 Then
+		Exit For	
+	End If
+	If Find1 &gt; 0 Then 
+		If field2(0) = "PV_CF出风温度" Then
+			data_2(Find1-1) = field2(2)	
+		End If
+		
+		If field2(0) = "PV_GX高效压差" Then
+			data_3(Find1-1) = field2(2)
+		End If
+	
+		If field2(0) = "PV_BD布袋压差" Then
+			data_4(Find1-1) = field2(2)
+		End If	
+	
+		If field2(0) = "PV_ZT主塔压力" Then
+			data_5(Find1-1) = field2(2)
+		End If
+
+		If field2(0) = "PV_LX离心雾化" Then
+			data_6(Find1-1) = field2(2)
+		End If
+	
+		If field2(0) = "PV_YF引风反馈" Then
+			data_7(Find1-1) = field2(2)
+		End If
+
+		
+
+	End If
+		
+	
+Next
+'显示日志数据
+
+If Find1 &lt;1 Then
+	SmartTags("data_执行说明")="当前时间段不存在归档信息"
+	Exit Sub
+End If
+sumPag = Find1 \ 15
+If (sumPag *15)&lt; Find1 Then	
+	sumPag =sumPag +1
+End If
+SmartTags("变量记录总页数")=sumPag
+CurtPag = SmartTags("变量记录当前页数")
+If (CurtPag &lt; 1) Or (CurtPag&gt;sumPag) Then
+	CurtPag = 1
+	SmartTags("变量记录当前页数")=CurtPag
+End If
+startLines = (CurtPag-1) * 15
+SmartTags("data_执行说明")="显示数据" &amp; Find1 &amp; "-" &amp; startLines
+	For i =1 To 15
+	If startLines+i &lt; Find1 Then
+		SmartTags("data_id_" &amp; i) = startLines + i
+		SmartTags("data_时间_" &amp; i) = data_T(startLines + i-1)
+
+		SmartTags("data_进风温度_" &amp; i) = data_1(startLines + i-1)			
+		
+		SmartTags("data_出风温度_" &amp; i) = data_2(startLines + i-1)
+	
+		SmartTags("data_高效压差_" &amp; i) = data_3(startLines + i-1)
+	
+		SmartTags("data_布袋压差_" &amp; i) = data_4(startLines + i-1)
+	
+		SmartTags("data_塔内压力_" &amp; i) =data_5(startLines + i-1)
+	
+		SmartTags("data_雾化频率_" &amp; i) =data_6(startLines + i-1)
+		
+		SmartTags("data_引风频率_" &amp; i) =data_7(startLines + i-1)
+	
+	
+	Else
+		SmartTags("data_id_" &amp; i) =startLines + i
+		SmartTags("data_时间_" &amp; i) = ""
+		SmartTags("data_进风温度_" &amp; i) = 0.0
+		SmartTags("data_出风温度_" &amp; i) = 0.0
+		SmartTags("data_高效压差_" &amp; i) = 0.0
+		SmartTags("data_布袋压差_" &amp; i) = 0.0
+		SmartTags("data_塔内压力_" &amp; i) = 0.0
+		SmartTags("data_雾化频率_" &amp; i) = 0.0
+		SmartTags("data_引风频率_" &amp; i) = 0.0
+		
+	
+	End If
+	Next
+	SmartTags("data_执行说明")="归档数据加载完成"	
+	'SmartTags("data_执行说明")=field2(2)
+	
+	SmartTags("VBS_Run")=0
+	fs.close
+	Set  fs  = Nothing
+</Code>
+      <Name>ReadFile_DATA1</Name>
+      <PreCode>
+
+</PreCode>
+      <Type>Sub</Type>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </Hmi.RuntimeScripting.VBScript>
+</Document>

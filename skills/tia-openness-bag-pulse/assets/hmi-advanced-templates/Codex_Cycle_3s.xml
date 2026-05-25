@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <Hmi.Cycle.Cycle ID="0">
+    <AttributeList>
+      <CycleTime>3</CycleTime>
+      <CycleUnit>Second</CycleUnit>
+      <Name>Codex_Cycle_3s</Name>
+      <StartAtStartingPoint>true</StartAtStartingPoint>
+      <StartingPoint>****-**-**T**:**:**</StartingPoint>
+      <TriggerAtShutdown>false</TriggerAtShutdown>
+      <TriggerAtStartup>false</TriggerAtStartup>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text><body><p>Codex cycle import/export loop test.</p></body></Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </Hmi.Cycle.Cycle>
+</Document>

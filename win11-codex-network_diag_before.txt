@@ -1,0 +1,73 @@
+=== timestamp === 
+鍛ㄦ棩 2026/05/17 
+02:31
+=== whoami === 
+admin\win11
+=== ipconfig all === 
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : Admin
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Mixed
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Ethernet0:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) 82574L Gigabit Network Connection
+   Physical Address. . . . . . . . . : 00-0C-29-30-6E-EE
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::a2f8:9be7:f62a:2b8a%13(Preferred) 
+   Autoconfiguration IPv4 Address. . : 169.254.102.108(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 100666409
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-31-9A-6B-80-00-0C-29-30-6E-EE
+   DNS Servers . . . . . . . . . . . : 192.168.169.1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+=== route print ipv4 === 
+===========================================================================
+Interface List
+ 13...00 0c 29 30 6e ee ......Intel(R) 82574L Gigabit Network Connection
+  1...........................Software Loopback Interface 1
+===========================================================================
+
+IPv4 Route Table
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+      169.254.0.0      255.255.0.0         On-link   169.254.102.108    281
+  169.254.102.108  255.255.255.255         On-link   169.254.102.108    281
+  169.254.255.255  255.255.255.255         On-link   169.254.102.108    281
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link   169.254.102.108    281
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+  255.255.255.255  255.255.255.255         On-link   169.254.102.108    281
+===========================================================================
+Persistent Routes:
+  None
+=== ping vmnet8 gateway === 
+
+Pinging 192.168.50.1 with 32 bytes of data:
+PING: transmit failed. 常见故障。 
+
+Ping statistics for 192.168.50.1:
+    Packets: Sent = 1, Received = 0, Lost = 1 (100% loss),
+=== ping public ip === 
+
+Pinging 8.8.8.8 with 32 bytes of data:
+PING: transmit failed. 常见故障。 
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 1, Received = 0, Lost = 1 (100% loss),
+=== nslookup === 
+*** UnKnown can't find www.baidu.com: No response from server
+Server:  UnKnown
+Address:  192.168.169.1
+

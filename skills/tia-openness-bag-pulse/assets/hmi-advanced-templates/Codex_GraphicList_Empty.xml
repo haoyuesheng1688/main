@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <Hmi.TextGraphicList.GraphicList ID="0">
+    <AttributeList>
+      <ListRange>Decimal</ListRange>
+      <Name>Codex_GraphicList_Empty</Name>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text><body><p>Codex empty graphic list import/export loop test.</p></body></Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </Hmi.TextGraphicList.GraphicList>
+</Document>

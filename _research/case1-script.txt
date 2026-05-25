@@ -1,0 +1,16 @@
+Option Explicit
+Function action
+Dim fso
+Dim folder
+Dim file
+
+folder = "C:\WinCC_AI"
+Set fso = CreateObject("Scripting.FileSystemObject")
+If Not fso.FolderExists(folder) Then
+    fso.CreateFolder folder
+End If
+
+Set file = fso.CreateTextFile(folder & "\case1_loop.txt", True)
+file.WriteLine "WINCC_CASE1_OK"
+file.Close
+End Function

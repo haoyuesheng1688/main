@@ -1,0 +1,4 @@
+﻿OK_IMPORT_PLC_LINKED_TAGTABLE=Codex_Popup_PLC_Named_Int_Tags
+OK_EXPORT_PLC_LINKED_TAGTABLE=C:\Users\QF100\Documents\New project\tia_popup_touch_sim\exports\Codex_Popup_PLC_Named_Int_Tags_plc_linked_export.xml
+TagCount=29
+ProjectSaved=True

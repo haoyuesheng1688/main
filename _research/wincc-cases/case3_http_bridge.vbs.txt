@@ -1,0 +1,10 @@
+Dim http, body
+Set http = CreateObject("MSXML2.XMLHTTP")
+body = "{""input"":""hello from WinCC""}"
+
+http.Open "POST", "http://127.0.0.1:8000/infer", False
+http.setRequestHeader "Content-Type", "application/json"
+http.Send body
+
+HMIRuntime.Tags("Codex_Out").Value = http.responseText
+HMIRuntime.Tags("Codex_Out").Write

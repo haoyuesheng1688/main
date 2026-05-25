@@ -1,0 +1,79 @@
+=== set static vmnet8 test === 
+
+Idx     Met         MTU          State                Name
+---  ----------  ----------  ------------  ---------------------------
+  1          75  4294967295  connected     Loopback Pseudo-Interface 1
+ 13          25        1500  connected     Ethernet0
+
+
+
+The configured DNS server is incorrect or does not exist.
+
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : Admin
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Mixed
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Ethernet0:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) 82574L Gigabit Network Connection
+   Physical Address. . . . . . . . . : 00-0C-29-30-6E-EE
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::a2f8:9be7:f62a:2b8a%13(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.50.130(Tentative) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.50.2
+   DHCPv6 IAID . . . . . . . . . . . : 100666409
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-31-9A-6B-80-00-0C-29-30-6E-EE
+   DNS Servers . . . . . . . . . . . : 192.168.50.2
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+===========================================================================
+Interface List
+ 13...00 0c 29 30 6e ee ......Intel(R) 82574L Gigabit Network Connection
+  1...........................Software Loopback Interface 1
+===========================================================================
+
+IPv4 Route Table
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+          0.0.0.0          0.0.0.0     192.168.50.2                d     26
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link                 d    281
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+  255.255.255.255  255.255.255.255         On-link                 d    281
+===========================================================================
+Persistent Routes:
+  Network Address          Netmask  Gateway Address  Metric
+          0.0.0.0          0.0.0.0     192.168.50.2       1
+===========================================================================
+=== ping gateway === 
+
+Pinging 192.168.50.2 with 32 bytes of data:
+PING: transmit failed. 常见故障。 
+PING: transmit failed. 常见故障。 
+
+Ping statistics for 192.168.50.2:
+    Packets: Sent = 2, Received = 0, Lost = 2 (100% loss),
+=== ping public === 
+
+Pinging 8.8.8.8 with 32 bytes of data:
+PING: transmit failed. 常见故障。 
+PING: transmit failed. 常见故障。 
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 2, Received = 0, Lost = 2 (100% loss),
+=== nslookup === 
+*** UnKnown can't find www.baidu.com: No response from server
+Server:  UnKnown
+Address:  192.168.50.2
+

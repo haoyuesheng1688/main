@@ -1,0 +1,1084 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-04-13T11:12:43.3805723Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="模拟量数据输入" Datatype="Int" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="上限模拟" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><StartValue>27648.0</StartValue></Member>
+    <Member Name="下限模拟" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><StartValue>5530.0</StartValue></Member>
+    <Member Name="上限工程" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><StartValue>100.0</StartValue></Member>
+    <Member Name="下限工程" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><StartValue>0.0</StartValue></Member>
+    <Member Name="修正值" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="错误确认" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="高高限工程量" Datatype="Real" Remanence="Retain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><StartValue>90.0</StartValue></Member>
+    <Member Name="高限工程量" Datatype="Real" Remanence="Retain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><StartValue>80.0</StartValue></Member>
+    <Member Name="低限工程量" Datatype="Real" Remanence="Retain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><StartValue>20.0</StartValue></Member>
+    <Member Name="低低限工程量" Datatype="Real" Remanence="Retain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><StartValue>10.0</StartValue></Member>
+    <Member Name="高高限位滤波时间设定" Datatype="Time" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><StartValue>T#1s</StartValue></Member>
+    <Member Name="高限位滤波时间设定" Datatype="Time" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><StartValue>T#1s</StartValue></Member>
+    <Member Name="低限位滤波时间设定" Datatype="Time" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><StartValue>T#1s</StartValue></Member>
+    <Member Name="低低限位滤波时间设定" Datatype="Time" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><StartValue>T#1s</StartValue></Member>
+    <Member Name="MODE" Datatype="Byte" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="zh-CN">0报警输出不自动消除，1报警情况结束自动消除   2.高高或低低限位保持报警，其余自动确认报警  </MultiLanguageText></Comment><StartValue>16#1</StartValue></Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="工程量数据输出" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="断线错误" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="超过高高限位" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="超过高限位" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="低于低限位" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="低于低低限位" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="InOut">
+    <Member Name="风机" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Static">
+    <Member Name="临时模拟量数据输入" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="缩放比例" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="T" Datatype="Struct" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Member Name="高高限位滤波时间" Datatype="TON_TIME" Version="1.0"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="高限位滤波时间" Datatype="TON_TIME" Version="1.0"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="低限位滤波时间" Datatype="TON_TIME" Version="1.0"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="低低限位滤波时间" Datatype="TON_TIME" Version="1.0"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>0-模拟量输入压差</Name>
+      <Number>69</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Access Scope="LocalVariable" UId="21">
+    <Symbol UId="22">
+      <Component Name="临时模拟量数据输入" UId="23" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="24" />
+  <Token Text=":=" UId="25" />
+  <Blank Num="1" UId="26" />
+  <Access Scope="Call" UId="27">
+    <Instruction Name="INT_TO_REAL" UId="28">
+      <Token Text="(" UId="29" />
+      <NamelessParameter UId="30">
+        <Access Scope="LocalVariable" UId="31">
+          <Symbol UId="32">
+            <Component Name="模拟量数据输入" UId="33" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="35" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="36" />
+  <Blank Num="2" UId="37" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="38">
+    <Text UId="39">将模拟量输入转换为real类型</Text>
+  </LineComment>
+  <NewLine Num="1" UId="40" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="41">
+    <Text UId="42"> IF #临时模拟量数据输入 &gt; #模拟量Max THEN</Text>
+  </LineComment>
+  <NewLine Num="1" UId="43" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="44">
+    <Text UId="45">     #临时模拟量数据输入 := #模拟量Max;</Text>
+  </LineComment>
+  <NewLine Num="1" UId="46" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="47">
+    <Text UId="48"> END_IF;</Text>
+  </LineComment>
+  <NewLine Num="1" UId="49" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="50">
+    <Text UId="51"> IF #临时模拟量数据输入 &lt; #模拟量Min THEN</Text>
+  </LineComment>
+  <NewLine Num="1" UId="52" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="53">
+    <Text UId="54">     #临时模拟量数据输入 := #模拟量Min;</Text>
+  </LineComment>
+  <NewLine Num="1" UId="55" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="56">
+    <Text UId="57"> END_IF;</Text>
+  </LineComment>
+  <NewLine Num="1" UId="58" />
+  <Access Scope="LocalVariable" UId="59">
+    <Symbol UId="60">
+      <Component Name="缩放比例" UId="61" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="62" />
+  <Token Text=":=" UId="63" />
+  <Blank Num="1" UId="64" />
+  <Token Text="(" UId="65" />
+  <Access Scope="LocalVariable" UId="66">
+    <Symbol UId="67">
+      <Component Name="上限工程" UId="68" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="69" />
+  <Token Text="-" UId="70" />
+  <Blank Num="1" UId="71" />
+  <Access Scope="LocalVariable" UId="72">
+    <Symbol UId="73">
+      <Component Name="下限工程" UId="74" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="75" />
+  <Blank Num="1" UId="76" />
+  <Token Text="/" UId="77" />
+  <Blank Num="1" UId="78" />
+  <Token Text="(" UId="79" />
+  <Access Scope="LocalVariable" UId="80">
+    <Symbol UId="81">
+      <Component Name="上限模拟" UId="82" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="83" />
+  <Token Text="-" UId="84" />
+  <Blank Num="1" UId="85" />
+  <Access Scope="LocalVariable" UId="86">
+    <Symbol UId="87">
+      <Component Name="下限模拟" UId="88" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="89" />
+  <Token Text=";" UId="90" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="91">
+    <Text UId="92">算出实际值与模拟量的缩放比例</Text>
+  </LineComment>
+  <NewLine Num="1" UId="93" />
+  <Access Scope="LocalVariable" UId="94">
+    <Symbol UId="95">
+      <Component Name="工程量数据输出" UId="96" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="97" />
+  <Token Text=":=" UId="98" />
+  <Blank Num="1" UId="99" />
+  <Token Text="(" UId="100" />
+  <Access Scope="LocalVariable" UId="101">
+    <Symbol UId="102">
+      <Component Name="模拟量数据输入" UId="103" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="104" />
+  <Token Text="-" UId="105" />
+  <Blank Num="1" UId="106" />
+  <Access Scope="LocalVariable" UId="107">
+    <Symbol UId="108">
+      <Component Name="下限模拟" UId="109" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="110" />
+  <Blank Num="1" UId="111" />
+  <Token Text="*" UId="112" />
+  <Blank Num="1" UId="113" />
+  <Access Scope="LocalVariable" UId="114">
+    <Symbol UId="115">
+      <Component Name="缩放比例" UId="116" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="117" />
+  <Token Text="+" UId="118" />
+  <Blank Num="1" UId="119" />
+  <Access Scope="LocalVariable" UId="120">
+    <Symbol UId="121">
+      <Component Name="下限工程" UId="122" />
+    </Symbol>
+  </Access>
+  <Token Text="+" UId="123" />
+  <Access Scope="LocalVariable" UId="124">
+    <Symbol UId="125">
+      <Component Name="修正值" UId="126" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="127" />
+  <Blank Num="6" UId="128" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="129">
+    <Text UId="130">转换完成</Text>
+  </LineComment>
+  <NewLine Num="3" UId="131" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="132">
+    <Text UId="133">2</Text>
+  </LineComment>
+  <NewLine Num="1" UId="134" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="135">
+    <Text UId="136" />
+  </LineComment>
+  <NewLine Num="1" UId="137" />
+  <Token Text="IF" UId="138" />
+  <Blank Num="1" UId="139" />
+  <Token Text="(" UId="140" />
+  <Access Scope="LocalVariable" UId="141">
+    <Symbol UId="142">
+      <Component Name="临时模拟量数据输入" UId="143" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="144" />
+  <Token Text="&gt;" UId="145" />
+  <Blank Num="1" UId="146" />
+  <Access Scope="LiteralConstant" UId="147">
+    <Constant UId="148">
+      <ConstantValue UId="150">30000</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="151" />
+  <Token Text="OR" UId="152" />
+  <Blank Num="1" UId="153" />
+  <Access Scope="LocalVariable" UId="154">
+    <Symbol UId="155">
+      <Component Name="临时模拟量数据输入" UId="156" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="157" />
+  <Token Text="&lt;" UId="158" />
+  <Blank Num="1" UId="159" />
+  <Access Scope="LiteralConstant" UId="160">
+    <Constant UId="161">
+      <ConstantValue UId="163">4000</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="164" />
+  <Token Text="OR" UId="165" />
+  <Blank Num="1" UId="166" />
+  <Access Scope="LocalVariable" UId="167">
+    <Symbol UId="168">
+      <Component Name="断线错误" UId="169" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="170" />
+  <NewLine Num="1" UId="171" />
+  <Blank Num="4" UId="172" />
+  <Token Text="AND" UId="173" />
+  <Blank Num="1" UId="174" />
+  <Token Text="NOT" UId="175" />
+  <Blank Num="1" UId="176" />
+  <Access Scope="LocalVariable" UId="177">
+    <Symbol UId="178">
+      <Component Name="错误确认" UId="179" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="180" />
+  <Token Text="THEN" UId="181" />
+  <NewLine Num="1" UId="182" />
+  <Blank Num="4" UId="183" />
+  <Access Scope="LocalVariable" UId="184">
+    <Symbol UId="185">
+      <Component Name="断线错误" UId="186" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="187" />
+  <Token Text=":=" UId="188" />
+  <Blank Num="1" UId="189" />
+  <Access Scope="LiteralConstant" UId="190">
+    <Constant UId="191">
+      <ConstantValue UId="193">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="194" />
+  <NewLine Num="1" UId="195" />
+  <Token Text="ELSE" UId="196" />
+  <NewLine Num="1" UId="197" />
+  <Blank Num="4" UId="198" />
+  <Access Scope="LocalVariable" UId="199">
+    <Symbol UId="200">
+      <Component Name="断线错误" UId="201" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="202" />
+  <Token Text=":=" UId="203" />
+  <Blank Num="1" UId="204" />
+  <Access Scope="LiteralConstant" UId="205">
+    <Constant UId="206">
+      <ConstantValue UId="208">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="209" />
+  <NewLine Num="1" UId="210" />
+  <Token Text="END_IF" UId="211" />
+  <Token Text=";" UId="212" />
+  <NewLine Num="2" UId="213" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="214">
+    <Text UId="215">3</Text>
+  </LineComment>
+  <NewLine Num="1" UId="216" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="217">
+    <Text UId="218" />
+  </LineComment>
+  <NewLine Num="2" UId="219" />
+  <Access Scope="LocalVariable" UId="220">
+    <Symbol UId="221">
+      <Component Name="T" UId="222" />
+      <Token Text="." UId="223" />
+      <Component Name="高高限位滤波时间" UId="224" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="225">
+    <Instruction UId="226">
+      <Token Text="(" UId="227" />
+      <Parameter Name="IN" UId="228">
+        <Blank Num="1" UId="229" />
+        <Token Text=":=" UId="230" />
+        <Blank Num="1" UId="231" />
+        <Access Scope="LocalVariable" UId="232">
+          <Symbol UId="233">
+            <Component Name="工程量数据输出" UId="234" />
+          </Symbol>
+        </Access>
+        <Blank Num="1" UId="235" />
+        <Token Text="&gt;" UId="236" />
+        <Blank Num="1" UId="237" />
+        <Access Scope="LocalVariable" UId="238">
+          <Symbol UId="239">
+            <Component Name="高高限工程量" UId="240" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="241" />
+      <NewLine Num="1" UId="242" />
+      <Blank Num="12" UId="243" />
+      <Parameter Name="PT" UId="244">
+        <Blank Num="1" UId="245" />
+        <Token Text=":=" UId="246" />
+        <Blank Num="1" UId="247" />
+        <Access Scope="LocalVariable" UId="248">
+          <Symbol UId="249">
+            <Component Name="高高限位滤波时间设定" UId="250" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="251" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="252" />
+  <NewLine Num="1" UId="253" />
+  <Token Text="IF" UId="254" />
+  <Blank Num="1" UId="255" />
+  <Access Scope="LocalVariable" UId="256">
+    <Symbol UId="257">
+      <Component Name="T" UId="258" />
+      <Token Text="." UId="259" />
+      <Component Name="高高限位滤波时间" UId="260" />
+      <Token Text="." UId="261" />
+      <Component Name="Q" UId="262" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="263" />
+  <Token Text="OR" UId="264" />
+  <Blank Num="1" UId="265" />
+  <Token Text="(" UId="266" />
+  <Access Scope="LocalVariable" UId="267">
+    <Symbol UId="268">
+      <Component Name="超过高高限位" UId="269" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="270" />
+  <Token Text="AND" UId="271" />
+  <Blank Num="1" UId="272" />
+  <Token Text="(" UId="273" />
+  <Access Scope="LocalVariable" UId="274">
+    <Symbol UId="275">
+      <Component Name="MODE" UId="276" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="277" />
+  <Token Text="=" UId="278" />
+  <Blank Num="1" UId="279" />
+  <Access Scope="LiteralConstant" UId="280">
+    <Constant UId="281">
+      <ConstantValue UId="283">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="284" />
+  <Token Text="OR" UId="285" />
+  <Blank Num="1" UId="286" />
+  <Access Scope="LocalVariable" UId="287">
+    <Symbol UId="288">
+      <Component Name="MODE" UId="289" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="290" />
+  <Token Text="=" UId="291" />
+  <Blank Num="1" UId="292" />
+  <Access Scope="LiteralConstant" UId="293">
+    <Constant UId="294">
+      <ConstantValue UId="296">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=")" UId="297" />
+  <Token Text=")" UId="298" />
+  <Blank Num="1" UId="299" />
+  <Token Text="AND" UId="300" />
+  <Blank Num="1" UId="301" />
+  <Token Text="NOT" UId="302" />
+  <Blank Num="1" UId="303" />
+  <Access Scope="LocalVariable" UId="304">
+    <Symbol UId="305">
+      <Component Name="错误确认" UId="306" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="307" />
+  <Token Text="THEN" UId="308" />
+  <NewLine Num="1" UId="309" />
+  <Blank Num="4" UId="310" />
+  <NewLine Num="1" UId="311" />
+  <Blank Num="4" UId="312" />
+  <Access Scope="LocalVariable" UId="313">
+    <Symbol UId="314">
+      <Component Name="超过高高限位" UId="315" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="316" />
+  <Token Text=":=" UId="317" />
+  <Blank Num="1" UId="318" />
+  <Access Scope="LiteralConstant" UId="319">
+    <Constant UId="320">
+      <ConstantValue UId="322">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="323" />
+  <NewLine Num="1" UId="324" />
+  <Token Text="ELSE" UId="325" />
+  <NewLine Num="1" UId="326" />
+  <Blank Num="4" UId="327" />
+  <Access Scope="LocalVariable" UId="328">
+    <Symbol UId="329">
+      <Component Name="超过高高限位" UId="330" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="331" />
+  <Token Text=":=" UId="332" />
+  <Blank Num="1" UId="333" />
+  <Access Scope="LiteralConstant" UId="334">
+    <Constant UId="335">
+      <ConstantValue UId="337">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="338" />
+  <NewLine Num="1" UId="339" />
+  <Token Text="END_IF" UId="340" />
+  <Token Text=";" UId="341" />
+  <NewLine Num="2" UId="342" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="343">
+    <Text UId="344"> IF #超过高高限位 AND (#MODE = 0 OR #MODE = 2) AND NOT #错误确认 THEN
+    #超过高高限位 := 1;
+ELSE
+    #超过高高限位 := 0;
+END_IF; </Text>
+  </LineComment>
+  <NewLine Num="2" UId="345" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="346">
+    <Text UId="347">4</Text>
+  </LineComment>
+  <NewLine Num="1" UId="348" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="349">
+    <Text UId="350" />
+  </LineComment>
+  <NewLine Num="1" UId="351" />
+  <Access Scope="LocalVariable" UId="352">
+    <Symbol UId="353">
+      <Component Name="T" UId="354" />
+      <Token Text="." UId="355" />
+      <Component Name="高限位滤波时间" UId="356" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="357">
+    <Instruction UId="358">
+      <Token Text="(" UId="359" />
+      <Parameter Name="IN" UId="360">
+        <Blank Num="1" UId="361" />
+        <Token Text=":=" UId="362" />
+        <Blank Num="1" UId="363" />
+        <Access Scope="LocalVariable" UId="364">
+          <Symbol UId="365">
+            <Component Name="工程量数据输出" UId="366" />
+          </Symbol>
+        </Access>
+        <Blank Num="1" UId="367" />
+        <Token Text="&gt;=" UId="368" />
+        <Blank Num="1" UId="369" />
+        <Access Scope="LocalVariable" UId="370">
+          <Symbol UId="371">
+            <Component Name="高限工程量" UId="372" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="373" />
+      <NewLine Num="1" UId="374" />
+      <Blank Num="11" UId="375" />
+      <Parameter Name="PT" UId="376">
+        <Blank Num="1" UId="377" />
+        <Token Text=":=" UId="378" />
+        <Blank Num="1" UId="379" />
+        <Access Scope="LocalVariable" UId="380">
+          <Symbol UId="381">
+            <Component Name="高限位滤波时间设定" UId="382" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="383" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="384" />
+  <NewLine Num="1" UId="385" />
+  <Token Text="IF" UId="386" />
+  <Blank Num="1" UId="387" />
+  <Access Scope="LocalVariable" UId="388">
+    <Symbol UId="389">
+      <Component Name="T" UId="390" />
+      <Token Text="." UId="391" />
+      <Component Name="高限位滤波时间" UId="392" />
+      <Token Text="." UId="393" />
+      <Component Name="Q" UId="394" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="395" />
+  <Token Text="OR" UId="396" />
+  <Blank Num="1" UId="397" />
+  <Token Text="(" UId="398" />
+  <Access Scope="LocalVariable" UId="399">
+    <Symbol UId="400">
+      <Component Name="超过高限位" UId="401" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="402" />
+  <Token Text="AND" UId="403" />
+  <Blank Num="1" UId="404" />
+  <Access Scope="LocalVariable" UId="405">
+    <Symbol UId="406">
+      <Component Name="MODE" UId="407" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="408" />
+  <Token Text="=" UId="409" />
+  <Blank Num="1" UId="410" />
+  <Access Scope="LiteralConstant" UId="411">
+    <Constant UId="412">
+      <ConstantValue UId="414">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=")" UId="415" />
+  <Blank Num="1" UId="416" />
+  <Token Text="AND" UId="417" />
+  <Blank Num="1" UId="418" />
+  <Token Text="NOT" UId="419" />
+  <Blank Num="1" UId="420" />
+  <Access Scope="LocalVariable" UId="421">
+    <Symbol UId="422">
+      <Component Name="错误确认" UId="423" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="424" />
+  <Token Text="THEN" UId="425" />
+  <NewLine Num="1" UId="426" />
+  <Blank Num="4" UId="427" />
+  <Access Scope="LocalVariable" UId="428">
+    <Symbol UId="429">
+      <Component Name="超过高限位" UId="430" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="431" />
+  <Token Text=":=" UId="432" />
+  <Blank Num="1" UId="433" />
+  <Access Scope="LiteralConstant" UId="434">
+    <Constant UId="435">
+      <ConstantValue UId="437">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="438" />
+  <NewLine Num="1" UId="439" />
+  <Token Text="ELSE" UId="440" />
+  <NewLine Num="1" UId="441" />
+  <Blank Num="4" UId="442" />
+  <Access Scope="LocalVariable" UId="443">
+    <Symbol UId="444">
+      <Component Name="超过高限位" UId="445" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="446" />
+  <Token Text=":=" UId="447" />
+  <Blank Num="1" UId="448" />
+  <Access Scope="LiteralConstant" UId="449">
+    <Constant UId="450">
+      <ConstantValue UId="452">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="453" />
+  <NewLine Num="1" UId="454" />
+  <Token Text="END_IF" UId="455" />
+  <Token Text=";" UId="456" />
+  <NewLine Num="2" UId="457" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="458">
+    <Text UId="459">5</Text>
+  </LineComment>
+  <NewLine Num="1" UId="460" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="461">
+    <Text UId="462" />
+  </LineComment>
+  <NewLine Num="1" UId="463" />
+  <Access Scope="LocalVariable" UId="464">
+    <Symbol UId="465">
+      <Component Name="T" UId="466" />
+      <Token Text="." UId="467" />
+      <Component Name="低限位滤波时间" UId="468" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="469">
+    <Instruction UId="470">
+      <Token Text="(" UId="471" />
+      <Parameter Name="IN" UId="472">
+        <Blank Num="1" UId="473" />
+        <Token Text=":=" UId="474" />
+        <Blank Num="1" UId="475" />
+        <Access Scope="LocalVariable" UId="476">
+          <Symbol UId="477">
+            <Component Name="工程量数据输出" UId="478" />
+          </Symbol>
+        </Access>
+        <Blank Num="1" UId="479" />
+        <Token Text="&lt;=" UId="480" />
+        <Blank Num="1" UId="481" />
+        <Access Scope="LocalVariable" UId="482">
+          <Symbol UId="483">
+            <Component Name="低限工程量" UId="484" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="485" />
+      <NewLine Num="1" UId="486" />
+      <Blank Num="11" UId="487" />
+      <Parameter Name="PT" UId="488">
+        <Blank Num="1" UId="489" />
+        <Token Text=":=" UId="490" />
+        <Blank Num="1" UId="491" />
+        <Access Scope="LocalVariable" UId="492">
+          <Symbol UId="493">
+            <Component Name="低限位滤波时间设定" UId="494" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="495" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="496" />
+  <NewLine Num="2" UId="497" />
+  <Token Text="IF" UId="498" />
+  <Blank Num="1" UId="499" />
+  <Access Scope="LocalVariable" UId="500">
+    <Symbol UId="501">
+      <Component Name="T" UId="502" />
+      <Token Text="." UId="503" />
+      <Component Name="低限位滤波时间" UId="504" />
+      <Token Text="." UId="505" />
+      <Component Name="Q" UId="506" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="507" />
+  <Token Text="OR" UId="508" />
+  <Blank Num="1" UId="509" />
+  <Token Text="(" UId="510" />
+  <Access Scope="LocalVariable" UId="511">
+    <Symbol UId="512">
+      <Component Name="低于低限位" UId="513" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="514" />
+  <Token Text="AND" UId="515" />
+  <Blank Num="1" UId="516" />
+  <Access Scope="LocalVariable" UId="517">
+    <Symbol UId="518">
+      <Component Name="MODE" UId="519" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="520" />
+  <Token Text="=" UId="521" />
+  <Blank Num="1" UId="522" />
+  <Access Scope="LiteralConstant" UId="523">
+    <Constant UId="524">
+      <ConstantValue UId="526">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=")" UId="527" />
+  <Blank Num="1" UId="528" />
+  <Token Text="AND" UId="529" />
+  <Blank Num="1" UId="530" />
+  <Access Scope="LocalVariable" UId="531">
+    <Symbol UId="532">
+      <Component Name="风机" UId="533" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="534" />
+  <Token Text="AND" UId="535" />
+  <Blank Num="1" UId="536" />
+  <Token Text="NOT" UId="537" />
+  <Blank Num="1" UId="538" />
+  <Access Scope="LocalVariable" UId="539">
+    <Symbol UId="540">
+      <Component Name="错误确认" UId="541" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="542" />
+  <Token Text="THEN" UId="543" />
+  <NewLine Num="1" UId="544" />
+  <Blank Num="4" UId="545" />
+  <Access Scope="LocalVariable" UId="546">
+    <Symbol UId="547">
+      <Component Name="低于低限位" UId="548" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="549" />
+  <Token Text=":=" UId="550" />
+  <Blank Num="1" UId="551" />
+  <Access Scope="LiteralConstant" UId="552">
+    <Constant UId="553">
+      <ConstantValue UId="555">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="556" />
+  <NewLine Num="1" UId="557" />
+  <Token Text="ELSE" UId="558" />
+  <NewLine Num="1" UId="559" />
+  <Blank Num="4" UId="560" />
+  <Access Scope="LocalVariable" UId="561">
+    <Symbol UId="562">
+      <Component Name="低于低限位" UId="563" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="564" />
+  <Token Text=":=" UId="565" />
+  <Blank Num="1" UId="566" />
+  <Access Scope="LiteralConstant" UId="567">
+    <Constant UId="568">
+      <ConstantValue UId="570">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="571" />
+  <NewLine Num="1" UId="572" />
+  <Token Text="END_IF" UId="573" />
+  <Token Text=";" UId="574" />
+  <NewLine Num="2" UId="575" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="576">
+    <Text UId="577"> IF #低于低限位 AND #MODE=0 THEN
+    #低于低限位 := 1;
+ELSE
+    #低于低限位 := 0;
+END_IF; </Text>
+  </LineComment>
+  <NewLine Num="2" UId="578" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="579">
+    <Text UId="580">6</Text>
+  </LineComment>
+  <NewLine Num="1" UId="581" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="582">
+    <Text UId="583" />
+  </LineComment>
+  <NewLine Num="1" UId="584" />
+  <Access Scope="LocalVariable" UId="585">
+    <Symbol UId="586">
+      <Component Name="T" UId="587" />
+      <Token Text="." UId="588" />
+      <Component Name="低低限位滤波时间" UId="589" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="590">
+    <Instruction UId="591">
+      <Token Text="(" UId="592" />
+      <Parameter Name="IN" UId="593">
+        <Blank Num="1" UId="594" />
+        <Token Text=":=" UId="595" />
+        <Blank Num="1" UId="596" />
+        <Access Scope="LocalVariable" UId="597">
+          <Symbol UId="598">
+            <Component Name="工程量数据输出" UId="599" />
+          </Symbol>
+        </Access>
+        <Blank Num="1" UId="600" />
+        <Token Text="&lt;=" UId="601" />
+        <Blank Num="1" UId="602" />
+        <Access Scope="LocalVariable" UId="603">
+          <Symbol UId="604">
+            <Component Name="低低限工程量" UId="605" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="606" />
+      <NewLine Num="1" UId="607" />
+      <Blank Num="12" UId="608" />
+      <Parameter Name="PT" UId="609">
+        <Blank Num="1" UId="610" />
+        <Token Text=":=" UId="611" />
+        <Blank Num="1" UId="612" />
+        <Access Scope="LocalVariable" UId="613">
+          <Symbol UId="614">
+            <Component Name="低低限位滤波时间设定" UId="615" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="616" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="617" />
+  <NewLine Num="1" UId="618" />
+  <Token Text="IF" UId="619" />
+  <Blank Num="1" UId="620" />
+  <Access Scope="LocalVariable" UId="621">
+    <Symbol UId="622">
+      <Component Name="T" UId="623" />
+      <Token Text="." UId="624" />
+      <Component Name="低低限位滤波时间" UId="625" />
+      <Token Text="." UId="626" />
+      <Component Name="Q" UId="627" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="628" />
+  <Token Text="OR" UId="629" />
+  <Blank Num="1" UId="630" />
+  <Token Text="(" UId="631" />
+  <Access Scope="LocalVariable" UId="632">
+    <Symbol UId="633">
+      <Component Name="低于低低限位" UId="634" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="635" />
+  <Token Text="AND" UId="636" />
+  <Blank Num="1" UId="637" />
+  <Token Text="(" UId="638" />
+  <Access Scope="LocalVariable" UId="639">
+    <Symbol UId="640">
+      <Component Name="MODE" UId="641" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="642" />
+  <Token Text="=" UId="643" />
+  <Blank Num="1" UId="644" />
+  <Access Scope="LiteralConstant" UId="645">
+    <Constant UId="646">
+      <ConstantValue UId="648">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="649" />
+  <Token Text="OR" UId="650" />
+  <Blank Num="1" UId="651" />
+  <Access Scope="LocalVariable" UId="652">
+    <Symbol UId="653">
+      <Component Name="MODE" UId="654" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="655" />
+  <Token Text="=" UId="656" />
+  <Blank Num="1" UId="657" />
+  <Access Scope="LiteralConstant" UId="658">
+    <Constant UId="659">
+      <ConstantValue UId="661">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=")" UId="662" />
+  <Token Text=")" UId="663" />
+  <Blank Num="1" UId="664" />
+  <Token Text="AND" UId="665" />
+  <Blank Num="1" UId="666" />
+  <Token Text="NOT" UId="667" />
+  <Blank Num="1" UId="668" />
+  <Access Scope="LocalVariable" UId="669">
+    <Symbol UId="670">
+      <Component Name="错误确认" UId="671" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="672" />
+  <Token Text="THEN" UId="673" />
+  <NewLine Num="1" UId="674" />
+  <Blank Num="4" UId="675" />
+  <Access Scope="LocalVariable" UId="676">
+    <Symbol UId="677">
+      <Component Name="低于低低限位" UId="678" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="679" />
+  <Token Text=":=" UId="680" />
+  <Blank Num="1" UId="681" />
+  <Access Scope="LiteralConstant" UId="682">
+    <Constant UId="683">
+      <ConstantValue UId="685">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="686" />
+  <NewLine Num="1" UId="687" />
+  <Token Text="ELSE" UId="688" />
+  <NewLine Num="1" UId="689" />
+  <Blank Num="4" UId="690" />
+  <Access Scope="LocalVariable" UId="691">
+    <Symbol UId="692">
+      <Component Name="低于低低限位" UId="693" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="694" />
+  <Token Text=":=" UId="695" />
+  <Blank Num="1" UId="696" />
+  <Access Scope="LiteralConstant" UId="697">
+    <Constant UId="698">
+      <ConstantValue UId="700">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="701" />
+  <NewLine Num="1" UId="702" />
+  <Token Text="END_IF" UId="703" />
+  <Token Text=";" UId="704" />
+  <NewLine Num="2" UId="705" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="706">
+    <Text UId="707"> IF #低于低低限位 AND (#MODE=0 OR #MODE=2) AND NOT #错误确认  THEN
+    #低于低低限位 := 1;
+ELSE
+    #低于低低限位 := 0;
+END_IF; </Text>
+  </LineComment>
+  <NewLine Num="2" UId="708" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="E" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="F" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="10" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="11" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

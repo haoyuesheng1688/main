@@ -1,0 +1,4 @@
+interface:
+  display_name: "Excel Psychro Tool"
+  short_description: "Build an Excel moist-air calculator."
+  default_prompt: "Use $excel-psychrometric-tool to build or refresh an Excel moist-air calculator workbook."

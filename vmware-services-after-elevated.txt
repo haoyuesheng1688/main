@@ -1,0 +1,7 @@
+﻿
+Status  Name               DisplayName        
+------  ----               -----------        
+Running VMnetDHCP          VMware DHCP Service
+Running VMware NAT Service VMware NAT Service 
+
+

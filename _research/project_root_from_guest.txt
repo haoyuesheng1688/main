@@ -1,0 +1,45 @@
+﻿
+Name               FullName                                                             Mode  
+----               --------                                                             ----  
+Config             C:\Users\Public\Documents\Siemens\WinCCProjects\1\Config             d-----
+CROSSREF           C:\Users\Public\Documents\Siemens\WinCCProjects\1\CROSSREF           d-----
+DESKTOP-4MJ4MK5    C:\Users\Public\Documents\Siemens\WinCCProjects\1\DESKTOP-4MJ4MK5    d-----
+Downloads          C:\Users\Public\Documents\Siemens\WinCCProjects\1\Downloads          d-----
+GraCS              C:\Users\Public\Documents\Siemens\WinCCProjects\1\GraCS              d-----
+GraMT              C:\Users\Public\Documents\Siemens\WinCCProjects\1\GraMT              d-----
+Horn               C:\Users\Public\Documents\Siemens\WinCCProjects\1\Horn               d-----
+Library            C:\Users\Public\Documents\Siemens\WinCCProjects\1\Library            d-----
+MELD               C:\Users\Public\Documents\Siemens\WinCCProjects\1\MELD               d-----
+OPC                C:\Users\Public\Documents\Siemens\WinCCProjects\1\OPC                d-----
+OSOnlineDelta      C:\Users\Public\Documents\Siemens\WinCCProjects\1\OSOnlineDelta      d-----
+Packages           C:\Users\Public\Documents\Siemens\WinCCProjects\1\Packages           d-----
+PAS                C:\Users\Public\Documents\Siemens\WinCCProjects\1\PAS                d-----
+PASS               C:\Users\Public\Documents\Siemens\WinCCProjects\1\PASS               d-----
+PDE                C:\Users\Public\Documents\Siemens\WinCCProjects\1\PDE                d-----
+PRT                C:\Users\Public\Documents\Siemens\WinCCProjects\1\PRT                d-----
+Redundancy         C:\Users\Public\Documents\Siemens\WinCCProjects\1\Redundancy         d-----
+RootPath           C:\Users\Public\Documents\Siemens\WinCCProjects\1\RootPath           d-----
+Simulation         C:\Users\Public\Documents\Siemens\WinCCProjects\1\Simulation         d-----
+SSM                C:\Users\Public\Documents\Siemens\WinCCProjects\1\SSM                d-----
+TEXTBIB            C:\Users\Public\Documents\Siemens\WinCCProjects\1\TEXTBIB            d-----
+TRG                C:\Users\Public\Documents\Siemens\WinCCProjects\1\TRG                d-----
+TXTDIST            C:\Users\Public\Documents\Siemens\WinCCProjects\1\TXTDIST            d-----
+UArchive           C:\Users\Public\Documents\Siemens\WinCCProjects\1\UArchive           d-----
+WebNavigator       C:\Users\Public\Documents\Siemens\WinCCProjects\1\WebNavigator       d-----
+1.dcf              C:\Users\Public\Documents\Siemens\WinCCProjects\1\1.dcf              -a----
+1.ldf              C:\Users\Public\Documents\Siemens\WinCCProjects\1\1.ldf              -a----
+1.MCP              C:\Users\Public\Documents\Siemens\WinCCProjects\1\1.MCP              -a----
+1.mdf              C:\Users\Public\Documents\Siemens\WinCCProjects\1\1.mdf              -a----
+1.sto              C:\Users\Public\Documents\Siemens\WinCCProjects\1\1.sto              -a----
+1RT.ldf            C:\Users\Public\Documents\Siemens\WinCCProjects\1\1RT.ldf            -a----
+1RT.mdf            C:\Users\Public\Documents\Siemens\WinCCProjects\1\1RT.mdf            -a----
+1_CCSearch.db      C:\Users\Public\Documents\Siemens\WinCCProjects\1\1_CCSearch.db      -a----
+1_CCSearch.db-shm  C:\Users\Public\Documents\Siemens\WinCCProjects\1\1_CCSearch.db-shm  -a----
+1_CCSearch.db-wal  C:\Users\Public\Documents\Siemens\WinCCProjects\1\1_CCSearch.db-wal  -a----
+@PROJECT.PDT       C:\Users\Public\Documents\Siemens\WinCCProjects\1\@PROJECT.PDT       -a----
+CCConfigStudio.ini C:\Users\Public\Documents\Siemens\WinCCProjects\1\CCConfigStudio.ini -a----
+Deltaloader.cfg    C:\Users\Public\Documents\Siemens\WinCCProjects\1\Deltaloader.cfg    -a----
+ProjectOpened.lck  C:\Users\Public\Documents\Siemens\WinCCProjects\1\ProjectOpened.lck  -a----
+
+
+

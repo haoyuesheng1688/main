@@ -1,0 +1,1426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-04-13T11:12:41.8044851Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output">
+    <Member Name="MBY等待保压" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="MBY正在充气" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="MBY保压不佳" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="MBY正在保压" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="MBY保压正常" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="InOut">
+    <Member Name="模式设定" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="MBY保压" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="MQT其他阀" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="MCQ充气阀" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="当前阶段" Datatype="Int" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="SV保压低设定" Datatype="Real" Remanence="Retain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="SV保压高设定" Datatype="Real" Remanence="Retain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="SV保压差值" Datatype="Real" Remanence="Retain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="SV保压时" Datatype="UInt" Remanence="Retain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="SV保压分" Datatype="UInt" Remanence="Retain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="SV保压秒" Datatype="UInt" Remanence="Retain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="PV塔内压力" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="PV保压前" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="PV保压后" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="PV保压当前差值" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="PV保压时" Datatype="UInt" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="PV保压分" Datatype="UInt" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="PV保压秒" Datatype="UInt" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Static">
+    <Member Name="T_1HZ" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>B1-开式保压</Name>
+      <Number>34</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Token Text="IF" UId="21" />
+  <Blank Num="1" UId="22" />
+  <Access Scope="LocalVariable" UId="23">
+    <Symbol UId="24">
+      <Component Name="模式设定" UId="25" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="26" />
+  <Token Text="=" UId="27" />
+  <Blank Num="1" UId="28" />
+  <Access Scope="LiteralConstant" UId="29">
+    <Constant UId="30">
+      <ConstantValue UId="32">3.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="33" />
+  <Token Text="OR" UId="34" />
+  <Blank Num="1" UId="35" />
+  <Access Scope="LocalVariable" UId="36">
+    <Symbol UId="37">
+      <Component Name="模式设定" UId="38" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="39" />
+  <Token Text="=" UId="40" />
+  <Blank Num="1" UId="41" />
+  <Access Scope="LiteralConstant" UId="42">
+    <Constant UId="43">
+      <ConstantValue UId="45">4.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="46" />
+  <Token Text="THEN" UId="47" />
+  <NewLine Num="1" UId="48" />
+  <Blank Num="4" UId="49" />
+  <NewLine Num="1" UId="50" />
+  <Blank Num="4" UId="51" />
+  <NewLine Num="1" UId="52" />
+  <Blank Num="4" UId="53" />
+  <Token Text="IF" UId="54" />
+  <Blank Num="1" UId="55" />
+  <Access Scope="LocalVariable" UId="56">
+    <Symbol UId="57">
+      <Component Name="MBY保压" UId="58" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="59" />
+  <Token Text="THEN" UId="60" />
+  <NewLine Num="1" UId="61" />
+  <Blank Num="7" UId="62" />
+  <NewLine Num="1" UId="63" />
+  <Blank Num="8" UId="64" />
+  <Token Text="IF" UId="65" />
+  <Blank Num="1" UId="66" />
+  <Access Scope="LocalVariable" UId="67">
+    <Symbol UId="68">
+      <Component Name="当前阶段" UId="69" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="70" />
+  <Token Text="=" UId="71" />
+  <Blank Num="1" UId="72" />
+  <Access Scope="LiteralConstant" UId="73">
+    <Constant UId="74">
+      <ConstantValue UId="76">5</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="77" />
+  <Token Text="THEN" UId="78" />
+  <NewLine Num="1" UId="79" />
+  <Blank Num="12" UId="80" />
+  <Access Scope="LocalVariable" UId="81">
+    <Symbol UId="82">
+      <Component Name="当前阶段" UId="83" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="84" />
+  <Token Text=":=" UId="85" />
+  <Blank Num="1" UId="86" />
+  <Access Scope="LiteralConstant" UId="87">
+    <Constant UId="88">
+      <ConstantValue UId="90">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="91" />
+  <NewLine Num="1" UId="92" />
+  <Blank Num="8" UId="93" />
+  <Token Text="END_IF" UId="94" />
+  <Token Text=";" UId="95" />
+  <NewLine Num="1" UId="96" />
+  <Blank Num="8" UId="97" />
+  <NewLine Num="1" UId="98" />
+  <Blank Num="3" UId="99" />
+  <Token Text="ELSE" UId="100" />
+  <NewLine Num="1" UId="101" />
+  <Blank Num="8" UId="102" />
+  <Access Scope="LocalVariable" UId="103">
+    <Symbol UId="104">
+      <Component Name="当前阶段" UId="105" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="106" />
+  <Token Text=":=" UId="107" />
+  <Blank Num="1" UId="108" />
+  <Access Scope="LiteralConstant" UId="109">
+    <Constant UId="110">
+      <ConstantValue UId="112">5</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="113" />
+  <Blank Num="1" UId="114" />
+  <NewLine Num="1" UId="115" />
+  <Blank Num="4" UId="116" />
+  <Token Text="END_IF" UId="117" />
+  <Token Text=";" UId="118" />
+  <NewLine Num="1" UId="119" />
+  <Blank Num="4" UId="120" />
+  <NewLine Num="1" UId="121" />
+  <Blank Num="4" UId="122" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="123">
+    <Text UId="124"> IF #MCZ重置 THEN
+        #当前阶段 := 4;
+        #MCZ重置 := FALSE;
+        
+    END_IF;
+    </Text>
+  </LineComment>
+  <NewLine Num="1" UId="125" />
+  <Blank Num="4" UId="126" />
+  <Token Text="CASE" UId="127" />
+  <Blank Num="1" UId="128" />
+  <Access Scope="LocalVariable" UId="129">
+    <Symbol UId="130">
+      <Component Name="当前阶段" UId="131" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="132" />
+  <Token Text="OF" UId="133" />
+  <NewLine Num="1" UId="134" />
+  <Blank Num="8" UId="135" />
+  <Access Scope="LiteralConstant" UId="136">
+    <Constant UId="137">
+      <ConstantValue UId="139">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="140" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="141">
+    <Text UId="142">开始充气</Text>
+  </LineComment>
+  <NewLine Num="1" UId="143" />
+  <Blank Num="12" UId="144" />
+  <Access Scope="LocalVariable" UId="145">
+    <Symbol UId="146">
+      <Component Name="MQT其他阀" UId="147" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="148" />
+  <Token Text=":=" UId="149" />
+  <Blank Num="1" UId="150" />
+  <Access Scope="LiteralConstant" UId="151">
+    <Constant UId="152">
+      <ConstantValue UId="154">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="155" />
+  <NewLine Num="1" UId="156" />
+  <Blank Num="12" UId="157" />
+  <Access Scope="LocalVariable" UId="158">
+    <Symbol UId="159">
+      <Component Name="MCQ充气阀" UId="160" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="161" />
+  <Token Text=":=" UId="162" />
+  <Blank Num="1" UId="163" />
+  <Access Scope="LiteralConstant" UId="164">
+    <Constant UId="165">
+      <ConstantValue UId="167">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="168" />
+  <NewLine Num="1" UId="169" />
+  <Blank Num="12" UId="170" />
+  <Access Scope="LocalVariable" UId="171">
+    <Symbol UId="172">
+      <Component Name="MBY等待保压" UId="173" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="174" />
+  <Token Text=":=" UId="175" />
+  <Blank Num="1" UId="176" />
+  <Access Scope="LiteralConstant" UId="177">
+    <Constant UId="178">
+      <ConstantValue UId="180">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="181" />
+  <NewLine Num="1" UId="182" />
+  <Blank Num="12" UId="183" />
+  <Access Scope="LocalVariable" UId="184">
+    <Symbol UId="185">
+      <Component Name="MBY正在充气" UId="186" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="187" />
+  <Token Text=":=" UId="188" />
+  <Blank Num="1" UId="189" />
+  <Access Scope="LiteralConstant" UId="190">
+    <Constant UId="191">
+      <ConstantValue UId="193">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="194" />
+  <NewLine Num="1" UId="195" />
+  <Blank Num="12" UId="196" />
+  <Access Scope="LocalVariable" UId="197">
+    <Symbol UId="198">
+      <Component Name="MBY保压不佳" UId="199" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="200" />
+  <Token Text=":=" UId="201" />
+  <Blank Num="1" UId="202" />
+  <Access Scope="LiteralConstant" UId="203">
+    <Constant UId="204">
+      <ConstantValue UId="206">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="207" />
+  <NewLine Num="1" UId="208" />
+  <Blank Num="12" UId="209" />
+  <Access Scope="LocalVariable" UId="210">
+    <Symbol UId="211">
+      <Component Name="MBY正在保压" UId="212" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="213" />
+  <Token Text=":=" UId="214" />
+  <Blank Num="1" UId="215" />
+  <Access Scope="LiteralConstant" UId="216">
+    <Constant UId="217">
+      <ConstantValue UId="219">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="220" />
+  <NewLine Num="1" UId="221" />
+  <Blank Num="12" UId="222" />
+  <Access Scope="LocalVariable" UId="223">
+    <Symbol UId="224">
+      <Component Name="MBY保压正常" UId="225" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="226" />
+  <Token Text=":=" UId="227" />
+  <Blank Num="1" UId="228" />
+  <Access Scope="LiteralConstant" UId="229">
+    <Constant UId="230">
+      <ConstantValue UId="232">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="233" />
+  <NewLine Num="1" UId="234" />
+  <Blank Num="12" UId="235" />
+  <NewLine Num="1" UId="236" />
+  <Blank Num="12" UId="237" />
+  <Token Text="IF" UId="238" />
+  <Blank Num="1" UId="239" />
+  <Token Text="(" UId="240" />
+  <Access Scope="LocalVariable" UId="241">
+    <Symbol UId="242">
+      <Component Name="PV塔内压力" UId="243" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="244" />
+  <Token Text="&gt;=" UId="245" />
+  <Blank Num="1" UId="246" />
+  <Access Scope="LocalVariable" UId="247">
+    <Symbol UId="248">
+      <Component Name="SV保压低设定" UId="249" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="250" />
+  <Blank Num="1" UId="251" />
+  <Token Text="AND" UId="252" />
+  <Blank Num="1" UId="253" />
+  <Token Text="(" UId="254" />
+  <Access Scope="LocalVariable" UId="255">
+    <Symbol UId="256">
+      <Component Name="PV塔内压力" UId="257" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="258" />
+  <Token Text="&lt;=" UId="259" />
+  <Blank Num="1" UId="260" />
+  <Access Scope="LocalVariable" UId="261">
+    <Symbol UId="262">
+      <Component Name="SV保压高设定" UId="263" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="264" />
+  <Blank Num="1" UId="265" />
+  <Token Text="THEN" UId="266" />
+  <NewLine Num="1" UId="267" />
+  <Blank Num="16" UId="268" />
+  <Access Scope="LocalVariable" UId="269">
+    <Symbol UId="270">
+      <Component Name="MCQ充气阀" UId="271" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="272" />
+  <Token Text=":=" UId="273" />
+  <Blank Num="1" UId="274" />
+  <Access Scope="LiteralConstant" UId="275">
+    <Constant UId="276">
+      <ConstantValue UId="278">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="279" />
+  <NewLine Num="1" UId="280" />
+  <Blank Num="16" UId="281" />
+  <Access Scope="LocalVariable" UId="282">
+    <Symbol UId="283">
+      <Component Name="PV保压前" UId="284" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="285" />
+  <Token Text=":=" UId="286" />
+  <Blank Num="1" UId="287" />
+  <Access Scope="LocalVariable" UId="288">
+    <Symbol UId="289">
+      <Component Name="PV塔内压力" UId="290" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="291" />
+  <NewLine Num="1" UId="292" />
+  <Blank Num="16" UId="293" />
+  <Access Scope="LocalVariable" UId="294">
+    <Symbol UId="295">
+      <Component Name="当前阶段" UId="296" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="297" />
+  <Token Text=":=" UId="298" />
+  <Blank Num="1" UId="299" />
+  <Access Scope="LiteralConstant" UId="300">
+    <Constant UId="301">
+      <ConstantValue UId="303">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="304" />
+  <NewLine Num="1" UId="305" />
+  <Blank Num="12" UId="306" />
+  <Token Text="END_IF" UId="307" />
+  <Token Text=";" UId="308" />
+  <NewLine Num="1" UId="309" />
+  <Blank Num="8" UId="310" />
+  <Access Scope="LiteralConstant" UId="311">
+    <Constant UId="312">
+      <ConstantValue UId="314">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="315" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="316">
+    <Text UId="317">时间记录</Text>
+  </LineComment>
+  <NewLine Num="1" UId="318" />
+  <Blank Num="12" UId="319" />
+  <Token Text="IF" UId="320" />
+  <Blank Num="1" UId="321" />
+  <Access Scope="LocalVariable" UId="322">
+    <Symbol UId="323">
+      <Component Name="T_1HZ" UId="324" />
+      <Token Text="." UId="325" />
+      <Component Name="Q" UId="326" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="327" />
+  <Token Text="THEN" UId="328" />
+  <NewLine Num="1" UId="329" />
+  <Blank Num="16" UId="330" />
+  <Access Scope="LocalVariable" UId="331">
+    <Symbol UId="332">
+      <Component Name="PV保压秒" UId="333" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="334" />
+  <Token Text="+=" UId="335" />
+  <Blank Num="1" UId="336" />
+  <Access Scope="LiteralConstant" UId="337">
+    <Constant UId="338">
+      <ConstantValue UId="340">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="341" />
+  <NewLine Num="1" UId="342" />
+  <Blank Num="16" UId="343" />
+  <Token Text="IF" UId="344" />
+  <Blank Num="1" UId="345" />
+  <Access Scope="LocalVariable" UId="346">
+    <Symbol UId="347">
+      <Component Name="PV保压秒" UId="348" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="349" />
+  <Token Text="&gt;=" UId="350" />
+  <Blank Num="1" UId="351" />
+  <Access Scope="LiteralConstant" UId="352">
+    <Constant UId="353">
+      <ConstantValue UId="355">60</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="356" />
+  <Token Text="THEN" UId="357" />
+  <NewLine Num="1" UId="358" />
+  <Blank Num="20" UId="359" />
+  <Access Scope="LocalVariable" UId="360">
+    <Symbol UId="361">
+      <Component Name="PV保压分" UId="362" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="363" />
+  <Token Text="+=" UId="364" />
+  <Blank Num="1" UId="365" />
+  <Access Scope="LiteralConstant" UId="366">
+    <Constant UId="367">
+      <ConstantValue UId="369">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="370" />
+  <NewLine Num="1" UId="371" />
+  <Blank Num="20" UId="372" />
+  <Access Scope="LocalVariable" UId="373">
+    <Symbol UId="374">
+      <Component Name="PV保压秒" UId="375" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="376" />
+  <Token Text=":=" UId="377" />
+  <Blank Num="1" UId="378" />
+  <Access Scope="LiteralConstant" UId="379">
+    <Constant UId="380">
+      <ConstantValue UId="382">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="383" />
+  <NewLine Num="1" UId="384" />
+  <Blank Num="20" UId="385" />
+  <Token Text="IF" UId="386" />
+  <Blank Num="1" UId="387" />
+  <Access Scope="LocalVariable" UId="388">
+    <Symbol UId="389">
+      <Component Name="PV保压分" UId="390" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="391" />
+  <Token Text="&gt;=" UId="392" />
+  <Blank Num="1" UId="393" />
+  <Access Scope="LiteralConstant" UId="394">
+    <Constant UId="395">
+      <ConstantValue UId="397">60</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="398" />
+  <Token Text="THEN" UId="399" />
+  <NewLine Num="1" UId="400" />
+  <Blank Num="24" UId="401" />
+  <Access Scope="LocalVariable" UId="402">
+    <Symbol UId="403">
+      <Component Name="PV保压时" UId="404" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="405" />
+  <Token Text="+=" UId="406" />
+  <Blank Num="1" UId="407" />
+  <Access Scope="LiteralConstant" UId="408">
+    <Constant UId="409">
+      <ConstantValue UId="411">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="412" />
+  <NewLine Num="1" UId="413" />
+  <Blank Num="24" UId="414" />
+  <Access Scope="LocalVariable" UId="415">
+    <Symbol UId="416">
+      <Component Name="PV保压分" UId="417" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="418" />
+  <Token Text=":=" UId="419" />
+  <Blank Num="1" UId="420" />
+  <Access Scope="LiteralConstant" UId="421">
+    <Constant UId="422">
+      <ConstantValue UId="424">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="425" />
+  <NewLine Num="1" UId="426" />
+  <Blank Num="20" UId="427" />
+  <Token Text="END_IF" UId="428" />
+  <Token Text=";" UId="429" />
+  <NewLine Num="1" UId="430" />
+  <Blank Num="16" UId="431" />
+  <Token Text="END_IF" UId="432" />
+  <Token Text=";" UId="433" />
+  <NewLine Num="1" UId="434" />
+  <Blank Num="12" UId="435" />
+  <Token Text="END_IF" UId="436" />
+  <Token Text=";" UId="437" />
+  <NewLine Num="1" UId="438" />
+  <Blank Num="12" UId="439" />
+  <Token Text="IF" UId="440" />
+  <Blank Num="1" UId="441" />
+  <Token Text="(" UId="442" />
+  <Access Scope="LocalVariable" UId="443">
+    <Symbol UId="444">
+      <Component Name="PV保压时" UId="445" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="446" />
+  <Token Text="&gt;" UId="447" />
+  <Blank Num="1" UId="448" />
+  <Access Scope="LocalVariable" UId="449">
+    <Symbol UId="450">
+      <Component Name="SV保压时" UId="451" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="452" />
+  <Blank Num="1" UId="453" />
+  <Token Text="OR" UId="454" />
+  <Blank Num="1" UId="455" />
+  <Token Text="(" UId="456" />
+  <Token Text="(" UId="457" />
+  <Access Scope="LocalVariable" UId="458">
+    <Symbol UId="459">
+      <Component Name="PV保压时" UId="460" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="461" />
+  <Token Text="=" UId="462" />
+  <Blank Num="1" UId="463" />
+  <Access Scope="LocalVariable" UId="464">
+    <Symbol UId="465">
+      <Component Name="SV保压时" UId="466" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="467" />
+  <Blank Num="1" UId="468" />
+  <Token Text="AND" UId="469" />
+  <Blank Num="1" UId="470" />
+  <Token Text="(" UId="471" />
+  <Access Scope="LocalVariable" UId="472">
+    <Symbol UId="473">
+      <Component Name="PV保压分" UId="474" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="475" />
+  <Token Text="&gt;" UId="476" />
+  <Blank Num="1" UId="477" />
+  <Access Scope="LocalVariable" UId="478">
+    <Symbol UId="479">
+      <Component Name="SV保压分" UId="480" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="481" />
+  <Token Text=")" UId="482" />
+  <Blank Num="1" UId="483" />
+  <Token Text="OR" UId="484" />
+  <Blank Num="1" UId="485" />
+  <Token Text="(" UId="486" />
+  <Token Text="(" UId="487" />
+  <Access Scope="LocalVariable" UId="488">
+    <Symbol UId="489">
+      <Component Name="PV保压时" UId="490" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="491" />
+  <Token Text="=" UId="492" />
+  <Blank Num="1" UId="493" />
+  <Access Scope="LocalVariable" UId="494">
+    <Symbol UId="495">
+      <Component Name="SV保压时" UId="496" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="497" />
+  <Blank Num="1" UId="498" />
+  <Token Text="AND" UId="499" />
+  <Blank Num="1" UId="500" />
+  <Token Text="(" UId="501" />
+  <Access Scope="LocalVariable" UId="502">
+    <Symbol UId="503">
+      <Component Name="PV保压分" UId="504" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="505" />
+  <Token Text="=" UId="506" />
+  <Blank Num="1" UId="507" />
+  <Access Scope="LocalVariable" UId="508">
+    <Symbol UId="509">
+      <Component Name="SV保压分" UId="510" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="511" />
+  <Blank Num="1" UId="512" />
+  <Token Text="AND" UId="513" />
+  <Blank Num="1" UId="514" />
+  <Token Text="(" UId="515" />
+  <Access Scope="LocalVariable" UId="516">
+    <Symbol UId="517">
+      <Component Name="PV保压秒" UId="518" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="519" />
+  <Token Text="&gt;=" UId="520" />
+  <Blank Num="1" UId="521" />
+  <Access Scope="LocalVariable" UId="522">
+    <Symbol UId="523">
+      <Component Name="SV保压秒" UId="524" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="525" />
+  <Token Text=")" UId="526" />
+  <Blank Num="1" UId="527" />
+  <Token Text="THEN" UId="528" />
+  <NewLine Num="1" UId="529" />
+  <Blank Num="16" UId="530" />
+  <Access Scope="LocalVariable" UId="531">
+    <Symbol UId="532">
+      <Component Name="PV保压后" UId="533" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="534" />
+  <Token Text=":=" UId="535" />
+  <Blank Num="1" UId="536" />
+  <Access Scope="LocalVariable" UId="537">
+    <Symbol UId="538">
+      <Component Name="PV塔内压力" UId="539" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="540" />
+  <NewLine Num="1" UId="541" />
+  <Blank Num="16" UId="542" />
+  <Access Scope="LocalVariable" UId="543">
+    <Symbol UId="544">
+      <Component Name="当前阶段" UId="545" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="546" />
+  <Token Text=":=" UId="547" />
+  <Blank Num="1" UId="548" />
+  <Access Scope="LiteralConstant" UId="549">
+    <Constant UId="550">
+      <ConstantValue UId="552">3</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="553" />
+  <NewLine Num="1" UId="554" />
+  <Blank Num="12" UId="555" />
+  <Token Text="END_IF" UId="556" />
+  <Token Text=";" UId="557" />
+  <NewLine Num="1" UId="558" />
+  <Blank Num="12" UId="559" />
+  <NewLine Num="1" UId="560" />
+  <Blank Num="12" UId="561" />
+  <Access Scope="LocalVariable" UId="562">
+    <Symbol UId="563">
+      <Component Name="MBY等待保压" UId="564" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="565" />
+  <Token Text=":=" UId="566" />
+  <Blank Num="1" UId="567" />
+  <Access Scope="LiteralConstant" UId="568">
+    <Constant UId="569">
+      <ConstantValue UId="571">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="572" />
+  <NewLine Num="1" UId="573" />
+  <Blank Num="12" UId="574" />
+  <Access Scope="LocalVariable" UId="575">
+    <Symbol UId="576">
+      <Component Name="MBY正在充气" UId="577" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="578" />
+  <Token Text=":=" UId="579" />
+  <Blank Num="1" UId="580" />
+  <Access Scope="LiteralConstant" UId="581">
+    <Constant UId="582">
+      <ConstantValue UId="584">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="585" />
+  <NewLine Num="1" UId="586" />
+  <Blank Num="12" UId="587" />
+  <Access Scope="LocalVariable" UId="588">
+    <Symbol UId="589">
+      <Component Name="MBY保压不佳" UId="590" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="591" />
+  <Token Text=":=" UId="592" />
+  <Blank Num="1" UId="593" />
+  <Access Scope="LiteralConstant" UId="594">
+    <Constant UId="595">
+      <ConstantValue UId="597">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="598" />
+  <NewLine Num="1" UId="599" />
+  <Blank Num="12" UId="600" />
+  <Access Scope="LocalVariable" UId="601">
+    <Symbol UId="602">
+      <Component Name="MBY正在保压" UId="603" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="604" />
+  <Token Text=":=" UId="605" />
+  <Blank Num="1" UId="606" />
+  <Access Scope="LiteralConstant" UId="607">
+    <Constant UId="608">
+      <ConstantValue UId="610">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="611" />
+  <NewLine Num="1" UId="612" />
+  <Blank Num="12" UId="613" />
+  <Access Scope="LocalVariable" UId="614">
+    <Symbol UId="615">
+      <Component Name="MBY保压正常" UId="616" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="617" />
+  <Token Text=":=" UId="618" />
+  <Blank Num="1" UId="619" />
+  <Access Scope="LiteralConstant" UId="620">
+    <Constant UId="621">
+      <ConstantValue UId="623">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="624" />
+  <NewLine Num="1" UId="625" />
+  <Blank Num="12" UId="626" />
+  <NewLine Num="1" UId="627" />
+  <Blank Num="8" UId="628" />
+  <Access Scope="LiteralConstant" UId="629">
+    <Constant UId="630">
+      <ConstantValue UId="632">3</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="633" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="634">
+    <Text UId="635">保压结束</Text>
+  </LineComment>
+  <NewLine Num="1" UId="636" />
+  <Blank Num="12" UId="637" />
+  <Access Scope="LocalVariable" UId="638">
+    <Symbol UId="639">
+      <Component Name="PV保压当前差值" UId="640" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="641" />
+  <Token Text=":=" UId="642" />
+  <Blank Num="1" UId="643" />
+  <Access Scope="Call" UId="644">
+    <Instruction Name="ABS" UId="645">
+      <Token Text="(" UId="646" />
+      <NamelessParameter UId="647">
+        <Access Scope="LocalVariable" UId="648">
+          <Symbol UId="649">
+            <Component Name="PV保压前" UId="650" />
+          </Symbol>
+        </Access>
+        <Blank Num="1" UId="651" />
+        <Token Text="-" UId="652" />
+        <Blank Num="1" UId="653" />
+        <Access Scope="LocalVariable" UId="654">
+          <Symbol UId="655">
+            <Component Name="PV保压后" UId="656" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="658" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="659" />
+  <NewLine Num="1" UId="660" />
+  <Blank Num="12" UId="661" />
+  <Access Scope="LocalVariable" UId="662">
+    <Symbol UId="663">
+      <Component Name="MBY保压正常" UId="664" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="665" />
+  <Token Text=":=" UId="666" />
+  <Blank Num="1" UId="667" />
+  <Access Scope="LocalVariable" UId="668">
+    <Symbol UId="669">
+      <Component Name="PV保压当前差值" UId="670" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="671" />
+  <Token Text="&lt;" UId="672" />
+  <Blank Num="1" UId="673" />
+  <Access Scope="LocalVariable" UId="674">
+    <Symbol UId="675">
+      <Component Name="SV保压差值" UId="676" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="677" />
+  <NewLine Num="1" UId="678" />
+  <Blank Num="12" UId="679" />
+  <Access Scope="LocalVariable" UId="680">
+    <Symbol UId="681">
+      <Component Name="MBY保压不佳" UId="682" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="683" />
+  <Token Text=":=" UId="684" />
+  <Blank Num="1" UId="685" />
+  <Token Text="NOT" UId="686" />
+  <Blank Num="1" UId="687" />
+  <Token Text="(" UId="688" />
+  <Access Scope="LocalVariable" UId="689">
+    <Symbol UId="690">
+      <Component Name="PV保压当前差值" UId="691" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="692" />
+  <Token Text="&lt;" UId="693" />
+  <Blank Num="1" UId="694" />
+  <Access Scope="LocalVariable" UId="695">
+    <Symbol UId="696">
+      <Component Name="SV保压差值" UId="697" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="698" />
+  <Token Text=";" UId="699" />
+  <NewLine Num="1" UId="700" />
+  <Blank Num="12" UId="701" />
+  <Token Text="IF" UId="702" />
+  <Blank Num="1" UId="703" />
+  <Access Scope="LocalVariable" UId="704">
+    <Symbol UId="705">
+      <Component Name="MBY保压正常" UId="706" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="707" />
+  <Token Text="OR" UId="708" />
+  <Blank Num="1" UId="709" />
+  <Access Scope="LocalVariable" UId="710">
+    <Symbol UId="711">
+      <Component Name="MBY保压不佳" UId="712" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="713" />
+  <Token Text="THEN" UId="714" />
+  <NewLine Num="1" UId="715" />
+  <Blank Num="16" UId="716" />
+  <Access Scope="LocalVariable" UId="717">
+    <Symbol UId="718">
+      <Component Name="MBY正在保压" UId="719" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="720" />
+  <Token Text=":=" UId="721" />
+  <Blank Num="1" UId="722" />
+  <Access Scope="LiteralConstant" UId="723">
+    <Constant UId="724">
+      <ConstantValue UId="726">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="727" />
+  <NewLine Num="1" UId="728" />
+  <Blank Num="16" UId="729" />
+  <Access Scope="LocalVariable" UId="730">
+    <Symbol UId="731">
+      <Component Name="当前阶段" UId="732" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="733" />
+  <Token Text=":=" UId="734" />
+  <Access Scope="LiteralConstant" UId="735">
+    <Constant UId="736">
+      <ConstantValue UId="738">4</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="739" />
+  <NewLine Num="1" UId="740" />
+  <Blank Num="12" UId="741" />
+  <Token Text="END_IF" UId="742" />
+  <Token Text=";" UId="743" />
+  <NewLine Num="1" UId="744" />
+  <Blank Num="8" UId="745" />
+  <Access Scope="LiteralConstant" UId="746">
+    <Constant UId="747">
+      <ConstantValue UId="749">4</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="750" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="751">
+    <Text UId="752">停止保压，并记录数据</Text>
+  </LineComment>
+  <NewLine Num="1" UId="753" />
+  <Blank Num="12" UId="754" />
+  <NewLine Num="1" UId="755" />
+  <Blank Num="12" UId="756" />
+  <NewLine Num="1" UId="757" />
+  <Blank Num="11" UId="758" />
+  <NewLine Num="1" UId="759" />
+  <Blank Num="12" UId="760" />
+  <Access Scope="LocalVariable" UId="761">
+    <Symbol UId="762">
+      <Component Name="MBY正在充气" UId="763" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="764" />
+  <Token Text=":=" UId="765" />
+  <Blank Num="1" UId="766" />
+  <Access Scope="LiteralConstant" UId="767">
+    <Constant UId="768">
+      <ConstantValue UId="770">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="771" />
+  <NewLine Num="1" UId="772" />
+  <Blank Num="12" UId="773" />
+  <NewLine Num="1" UId="774" />
+  <Blank Num="12" UId="775" />
+  <Access Scope="LocalVariable" UId="776">
+    <Symbol UId="777">
+      <Component Name="MBY正在保压" UId="778" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="779" />
+  <Token Text=":=" UId="780" />
+  <Blank Num="1" UId="781" />
+  <Access Scope="LiteralConstant" UId="782">
+    <Constant UId="783">
+      <ConstantValue UId="785">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="786" />
+  <NewLine Num="1" UId="787" />
+  <Blank Num="11" UId="788" />
+  <NewLine Num="1" UId="789" />
+  <Blank Num="12" UId="790" />
+  <NewLine Num="1" UId="791" />
+  <Blank Num="12" UId="792" />
+  <NewLine Num="1" UId="793" />
+  <Blank Num="8" UId="794" />
+  <Access Scope="LiteralConstant" UId="795">
+    <Constant UId="796">
+      <ConstantValue UId="798">5</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="799" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="800">
+    <Text UId="801">清空数据</Text>
+  </LineComment>
+  <NewLine Num="1" UId="802" />
+  <Blank Num="12" UId="803" />
+  <Access Scope="LocalVariable" UId="804">
+    <Symbol UId="805">
+      <Component Name="MCQ充气阀" UId="806" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="807" />
+  <Token Text=":=" UId="808" />
+  <Blank Num="1" UId="809" />
+  <Access Scope="LiteralConstant" UId="810">
+    <Constant UId="811">
+      <ConstantValue UId="813">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="814" />
+  <NewLine Num="1" UId="815" />
+  <Blank Num="12" UId="816" />
+  <Access Scope="LocalVariable" UId="817">
+    <Symbol UId="818">
+      <Component Name="MBY保压" UId="819" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="820" />
+  <Token Text=":=" UId="821" />
+  <Blank Num="1" UId="822" />
+  <Access Scope="LiteralConstant" UId="823">
+    <Constant UId="824">
+      <ConstantValue UId="826">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="827" />
+  <NewLine Num="1" UId="828" />
+  <Blank Num="12" UId="829" />
+  <Access Scope="LocalVariable" UId="830">
+    <Symbol UId="831">
+      <Component Name="PV保压前" UId="832" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="833" />
+  <Token Text=":=" UId="834" />
+  <Blank Num="1" UId="835" />
+  <Access Scope="LiteralConstant" UId="836">
+    <Constant UId="837">
+      <ConstantValue UId="839">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="840" />
+  <NewLine Num="1" UId="841" />
+  <Blank Num="12" UId="842" />
+  <Access Scope="LocalVariable" UId="843">
+    <Symbol UId="844">
+      <Component Name="PV保压后" UId="845" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="846" />
+  <Token Text=":=" UId="847" />
+  <Blank Num="1" UId="848" />
+  <Access Scope="LiteralConstant" UId="849">
+    <Constant UId="850">
+      <ConstantValue UId="852">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="853" />
+  <NewLine Num="1" UId="854" />
+  <Blank Num="12" UId="855" />
+  <Access Scope="LocalVariable" UId="856">
+    <Symbol UId="857">
+      <Component Name="PV保压时" UId="858" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="859" />
+  <Token Text=":=" UId="860" />
+  <Blank Num="1" UId="861" />
+  <Access Scope="LiteralConstant" UId="862">
+    <Constant UId="863">
+      <ConstantValue UId="865">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="866" />
+  <NewLine Num="1" UId="867" />
+  <Blank Num="12" UId="868" />
+  <Access Scope="LocalVariable" UId="869">
+    <Symbol UId="870">
+      <Component Name="PV保压分" UId="871" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="872" />
+  <Token Text=":=" UId="873" />
+  <Blank Num="1" UId="874" />
+  <Access Scope="LiteralConstant" UId="875">
+    <Constant UId="876">
+      <ConstantValue UId="878">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="879" />
+  <NewLine Num="1" UId="880" />
+  <Blank Num="12" UId="881" />
+  <Access Scope="LocalVariable" UId="882">
+    <Symbol UId="883">
+      <Component Name="PV保压秒" UId="884" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="885" />
+  <Token Text=":=" UId="886" />
+  <Blank Num="1" UId="887" />
+  <Access Scope="LiteralConstant" UId="888">
+    <Constant UId="889">
+      <ConstantValue UId="891">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="892" />
+  <NewLine Num="1" UId="893" />
+  <Blank Num="12" UId="894" />
+  <NewLine Num="1" UId="895" />
+  <Blank Num="12" UId="896" />
+  <NewLine Num="1" UId="897" />
+  <Blank Num="12" UId="898" />
+  <Access Scope="LocalVariable" UId="899">
+    <Symbol UId="900">
+      <Component Name="MBY等待保压" UId="901" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="902" />
+  <Token Text=":=" UId="903" />
+  <Blank Num="1" UId="904" />
+  <Access Scope="LiteralConstant" UId="905">
+    <Constant UId="906">
+      <ConstantValue UId="908">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="909" />
+  <NewLine Num="1" UId="910" />
+  <Blank Num="12" UId="911" />
+  <Access Scope="LocalVariable" UId="912">
+    <Symbol UId="913">
+      <Component Name="MBY正在充气" UId="914" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="915" />
+  <Token Text=":=" UId="916" />
+  <Blank Num="1" UId="917" />
+  <Access Scope="LiteralConstant" UId="918">
+    <Constant UId="919">
+      <ConstantValue UId="921">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="922" />
+  <NewLine Num="1" UId="923" />
+  <Blank Num="12" UId="924" />
+  <NewLine Num="1" UId="925" />
+  <Blank Num="12" UId="926" />
+  <Access Scope="LocalVariable" UId="927">
+    <Symbol UId="928">
+      <Component Name="MBY正在保压" UId="929" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="930" />
+  <Token Text=":=" UId="931" />
+  <Blank Num="1" UId="932" />
+  <Access Scope="LiteralConstant" UId="933">
+    <Constant UId="934">
+      <ConstantValue UId="936">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="937" />
+  <NewLine Num="1" UId="938" />
+  <Blank Num="12" UId="939" />
+  <Access Scope="LocalVariable" UId="940">
+    <Symbol UId="941">
+      <Component Name="MBY保压正常" UId="942" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="943" />
+  <Token Text=":=" UId="944" />
+  <Blank Num="1" UId="945" />
+  <Access Scope="LiteralConstant" UId="946">
+    <Constant UId="947">
+      <ConstantValue UId="949">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="950" />
+  <NewLine Num="1" UId="951" />
+  <Blank Num="12" UId="952" />
+  <Access Scope="LocalVariable" UId="953">
+    <Symbol UId="954">
+      <Component Name="MBY保压不佳" UId="955" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="956" />
+  <Token Text=":=" UId="957" />
+  <Blank Num="1" UId="958" />
+  <Access Scope="LiteralConstant" UId="959">
+    <Constant UId="960">
+      <ConstantValue UId="962">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="963" />
+  <NewLine Num="1" UId="964" />
+  <Blank Num="12" UId="965" />
+  <NewLine Num="1" UId="966" />
+  <Blank Num="12" UId="967" />
+  <Access Scope="LocalVariable" UId="968">
+    <Symbol UId="969">
+      <Component Name="PV保压当前差值" UId="970" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="971" />
+  <Token Text=":=" UId="972" />
+  <Blank Num="1" UId="973" />
+  <Access Scope="LiteralConstant" UId="974">
+    <Constant UId="975">
+      <ConstantValue UId="977">0.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="978" />
+  <NewLine Num="1" UId="979" />
+  <Blank Num="4" UId="980" />
+  <Token Text="END_CASE" UId="981" />
+  <Token Text=";" UId="982" />
+  <NewLine Num="1" UId="983" />
+  <Blank Num="4" UId="984" />
+  <NewLine Num="1" UId="985" />
+  <Blank Num="4" UId="986" />
+  <Access Scope="LocalVariable" UId="987">
+    <Symbol UId="988">
+      <Component Name="T_1HZ" UId="989" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="990">
+    <Instruction UId="991">
+      <Token Text="(" UId="992" />
+      <Parameter Name="IN" UId="993">
+        <Blank Num="1" UId="994" />
+        <Token Text=":=" UId="995" />
+        <Blank Num="1" UId="996" />
+        <Token Text="NOT" UId="997" />
+        <Blank Num="1" UId="998" />
+        <Access Scope="LocalVariable" UId="999">
+          <Symbol UId="1000">
+            <Component Name="T_1HZ" UId="1001" />
+            <Token Text="." UId="1002" />
+            <Component Name="Q" UId="1003" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1004" />
+      <NewLine Num="1" UId="1005" />
+      <Blank Num="11" UId="1006" />
+      <Parameter Name="PT" UId="1007">
+        <Blank Num="1" UId="1008" />
+        <Token Text=":=" UId="1009" />
+        <Blank Num="1" UId="1010" />
+        <Access Scope="TypedConstant" UId="1011">
+          <Constant UId="1012">
+            <ConstantValue UId="1013">T#1S</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1014" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1015" />
+  <NewLine Num="1" UId="1016" />
+  <Token Text="END_IF" UId="1017" />
+  <Token Text=";" UId="1018" />
+  <NewLine Num="1" UId="1019" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="E" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="F" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="10" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="11" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

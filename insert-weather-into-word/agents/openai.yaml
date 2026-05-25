@@ -1,0 +1,7 @@
+interface:
+  display_name: "Insert Weather Into Word"
+  short_description: "Insert live weather into open Word docs"
+  default_prompt: "Use $insert-weather-into-word to look up current weather and type it into the active Word document."
+
+policy:
+  allow_implicit_invocation: true

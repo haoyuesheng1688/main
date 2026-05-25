@@ -1,0 +1,7 @@
+﻿ProjectName=三九-15
+HmiTarget=HMI_RT_2
+CompileState=Warning
+CompileMessage=Warning|qiaofeng-hmi|Time stamp: 2026/5/14 0:48 - 1149372 bytes used of 12582912 bytes, maximum
+CompileMessage=Warning|Languages & resources|
+CompileMessage=Warning||Compiling finished (errors: 0; warnings: 63)
+ProjectSaved=True

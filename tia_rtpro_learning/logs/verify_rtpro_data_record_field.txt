@@ -1,0 +1,75 @@
+﻿VerifyTime=2026-05-14 01:46:31
+SqlServer=.\WINCC
+DatabaseLike=CC_HMI_HWS3%
+ArchiveName=DATA1
+FieldName=环境检测
+ProcessTag=PV_HJ环境氧浓度检测
+DisplayTagPrefix=data_环境检测
+ScreenName=D2_数据记录
+
+== Online WinCC Databases ==
+
+name                            state_desc create_date       
+----                            ---------- -----------       
+CC_HMI_HWS3_26_04_18_19_19_21   ONLINE     2026/4/18 20:21:51
+CC_HMI_HWS3_26_04_18_19_19_21LT ONLINE     2026/4/18 19:19:47
+
+== Runtime Archive DB: CC_HMI_HWS3_26_04_18_19_19_21 ==
+-- Archive --
+
+ARCHIVNAME ARCHIVTYPE RECORDTYPE TIMEMODIFY         RecordId
+---------- ---------- ---------- ----------         --------
+DATA1          131073    8388624 2025/8/26 21:06:46        1
+-- All DATA1 Tags --
+
+TLGTAGID RecordId ARCNAME VARNAME PROCVARNAME SCANTIME                       ARCTIME                        VARSTARTEVENT   TIMEMODIFY        
+-------- -------- ------- ------- ----------- --------                       -------                        -------------   ----------        
+      17        1 DATA1   进风温度    PV_JF进风温度   1 s                            10 s                           C5_变量记录_DB_开始记录 2025/8/26 22:02:24
+      18        2 DATA1   出风温度    PV_CF出风温度   1 s                            10 s                           C5_变量记录_DB_开始记录 2025/8/26 22:02:18
+      19        3 DATA1   尾气温度    PV_WQ尾气温度   1 s                            10 s                           C5_变量记录_DB_开始记录 2025/8/26 22:02:24
+      20        4 DATA1   进风高效压差  PV_JF进风高效压差 1 s                            10 s                           C5_变量记录_DB_开始记录 2025/8/26 22:02:24
+      21        5 DATA1   出风高效压差  PV_CF出风高效压差 1 s                            10 s                           C5_变量记录_DB_开始记录 2025/8/26 22:02:24
+      22        6 DATA1   布袋压差    PV_BD布袋压差   1 s                            10 s                           C5_变量记录_DB_开始记录 2025/8/26 22:02:24
+      23        7 DATA1   塔内压力    PV_TN塔内压力   1 s                            10 s                           C5_变量记录_DB_开始记录 2025/8/26 22:02:24
+      24        8 DATA1   管道压力    PV_GD管道压力   1 s                            10 s                           C5_变量记录_DB_开始记录 2025/8/26 22:02:24
+      25        9 DATA1   露点温度    送风露点        1 s                            10 s                           C5_变量记录_DB_开始记录 2025/8/26 22:02:24
+-- Target Field --
+<no rows>
+TargetFieldPresent=False
+
+== LT Metadata DB: CC_HMI_HWS3_26_04_18_19_19_21LT ==
+-- Data Logging Tag Mapping --
+
+TLGTAGID CLASSICID CLASSICFOREIGNID VALIDATIONFLAGINRT
+-------- --------- ---------------- ------------------
+      17 进风温度      DATA1                         False
+      18 出风温度      DATA1                         False
+      19 尾气温度      DATA1                         False
+      20 进风高效压差    DATA1                         False
+      21 出风高效压差    DATA1                         False
+      22 布袋压差      DATA1                         False
+      23 塔内压力      DATA1                         False
+      24 管道压力      DATA1                         False
+      25 露点温度      DATA1                         False
+-- Target Field Mapping --
+<no rows>
+TargetMappingPresent=False
+-- Display Tags --
+
+TagId TagName      HmiDataTypeName ESAddress                       PLCNAME
+----- -------      --------------- ---------                       -------
+  769 PV_HJ环境氧浓度检测 Real            0001:TS:10:8A0E0003.2F95F14B.C0 PLC-5X
+DisplayTagCount=1
+-- Screen --
+
+ScreenId                               ScreenName UnvalidatedScreenName
+--------                               ---------- ---------------------
+B3C21002100F000510CB008D9B030000000000 D2_数据记录    D2_数据记录
+-- VB Script Modules --
+
+FlexId                                 Name            UsageCount IsDeleted
+------                                 ----            ---------- ---------
+B3C21002100F000910E2006CBD030000000000 Audit_Write.bmo          0 False    
+B3C21002100F000910E2003365040000000000 MSF1_CSV.bmo             0 False    
+B3C21002100F000910E2003465040000000000 MSF2_CSV.bmo             0 False
+

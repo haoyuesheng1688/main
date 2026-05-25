@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-05-13T16:51:30.9561907Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <Hmi.RuntimeScripting.VBScript ID="0">
+    <AttributeList>
+      <Code>
+Dim Path
+Dim fs,f
+Dim  i, j, field2,ss
+Dim field'(99999)
+Dim MaxLines
+Dim HiField(10,8)
+Dim Lines,sumPag,CurtPag,startLines,endLines
+Dim SizeOfFile
+
+'指定日志文件所在目录\Storage Card USB\
+Path ="\Storage Card USB\AuditTrail\AuditTrail0.txt" '"\\DESKTOP-CEFLV5H\winccprojects\AuditTrail0.csv"
+'读取日志文件
+SmartTags("执行说明")="读取日志文件中"
+'Set fs = CreateObject("Scripting.FileSystemObject")'FileCtl.FileSystem
+Set fs = CreateObject("FileCtl.file")
+SmartTags("执行说明")="已创建对象"
+'Set f = fs.OpenTextFile(Path,1,1)
+fs.open Path,1,1
+SizeOfFile = fs.LOF
+
+SmartTags("执行说明")="已打开文件"
+'field = f.ReadAll
+'field = Split(field,vbCrLf)
+MaxLines = 0
+Do While fs.EOF &lt;&gt;True
+	'field(MaxLines) = fs.lineinputstring
+	'MaxLines = MaxLines +1
+	field = CStr(fs.inputB(SizeOfFile))
+Loop
+field = Split(field,vbCrLf)
+'获取日志文件数量
+SmartTags("执行说明")="日志文件读取完成"
+Lines=UBound(field,1)-2'MaxLines - 2
+'获取总页数
+If Lines &lt;1 Then
+	SmartTags("执行说明")="不存在日志信息"
+	Exit Sub
+End If
+ sumPag= Lines \ 15
+
+If (sumPag*15) &lt; Lines Then
+	sumPag=sumPag+1
+End If
+SmartTags("日志总页数")=sumPag
+	
+
+'显示日志数据
+	CurtPag = SmartTags("日志当前页数")
+	If (CurtPag &gt; sumPag) Or (CurtPag &lt; 1)  Then
+		
+		CurtPag = 1 
+		SmartTags("日志当前页数")=1
+	End If
+	
+	startLines = (CurtPag -1) * 15
+	SmartTags("执行说明")="日志显示" &amp; startLines &amp; field(0)
+	For i = 1 To 15
+		
+		If (i+startLines) &lt;= Lines Then 	
+			field2 =Split( field(i + startLines ),vbTab)
+			SmartTags("Audit_编号" &amp; i )=field2(0)
+			SmartTags("Audit_时间" &amp; i )=field2(1)
+			SmartTags("Audit_用户" &amp; i )=field2(3)
+			SmartTags("Audit_对象" &amp; i )=field2(4)
+			SmartTags("Audit_描述" &amp; i )=field2(5)
+		Else
+			SmartTags("Audit_编号" &amp; i )=""
+			SmartTags("Audit_时间" &amp; i )=""
+			SmartTags("Audit_用户" &amp; i )=""
+			SmartTags("Audit_对象" &amp; i )=""
+			SmartTags("Audit_描述" &amp; i )=""
+		End If
+		
+	Next
+	SmartTags("执行说明")="日志加载完成"	
+	fs.Close
+	Set  fs  = Nothing
+</Code>
+      <Name>ReadFile_Audit</Name>
+      <PreCode>
+
+</PreCode>
+      <Type>Sub</Type>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </Hmi.RuntimeScripting.VBScript>
+</Document>

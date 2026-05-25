@@ -1,0 +1,1178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-04-13T11:12:41.6152652Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="HMI上限" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><StartValue>50.0</StartValue></Member>
+    <Member Name="HMI下限" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="PLC上限" Datatype="Int" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><StartValue>27648</StartValue></Member>
+    <Member Name="PLC下限" Datatype="Int" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><StartValue>0</StartValue></Member>
+    <Member Name="泵报警信号" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="泵输入电流" Datatype="Int" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="泵输出反馈" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="泵报警输出" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="InOut">
+    <Member Name="模式设定" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="泵控制按钮" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="频率设定" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="泵输出Q" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="泵速度AO" Datatype="Int" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="安全停机" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="泵正反转按钮" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="泵正反输出" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="动画" Datatype="Int" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Static">
+    <Member Name="Temp_1" Datatype="Int" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="DBD1" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="DBD2" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="DBD3" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>A4-蠕动泵控制</Name>
+      <Number>9</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <NewLine Num="1" UId="21" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="22">
+    <Text UId="23">手动控制--------------------------------------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine Num="1" UId="24" />
+  <Token Text="IF" UId="25" />
+  <Blank Num="1" UId="26" />
+  <Access Scope="LocalVariable" UId="27">
+    <Symbol UId="28">
+      <Component Name="模式设定" UId="29" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="30" />
+  <Token Text="=" UId="31" />
+  <Blank Num="1" UId="32" />
+  <Access Scope="LiteralConstant" UId="33">
+    <Constant UId="34">
+      <ConstantValue UId="36">2.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="37" />
+  <Token Text="OR" UId="38" />
+  <Blank Num="1" UId="39" />
+  <Access Scope="LocalVariable" UId="40">
+    <Symbol UId="41">
+      <Component Name="模式设定" UId="42" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="43" />
+  <Token Text="=" UId="44" />
+  <Blank Num="1" UId="45" />
+  <Access Scope="LiteralConstant" UId="46">
+    <Constant UId="47">
+      <ConstantValue UId="49">3.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="50" />
+  <Token Text="OR" UId="51" />
+  <Blank Num="1" UId="52" />
+  <Access Scope="LocalVariable" UId="53">
+    <Symbol UId="54">
+      <Component Name="模式设定" UId="55" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="56" />
+  <Token Text="=" UId="57" />
+  <Blank Num="1" UId="58" />
+  <Access Scope="LiteralConstant" UId="59">
+    <Constant UId="60">
+      <ConstantValue UId="62">4.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="63" />
+  <Token Text="THEN" UId="64" />
+  <NewLine Num="1" UId="65" />
+  <Blank Num="4" UId="66" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="67">
+    <Text UId="68">预热器加热手动控制</Text>
+  </LineComment>
+  <NewLine Num="1" UId="69" />
+  <Blank Num="4" UId="70" />
+  <Token Text="IF" UId="71" />
+  <Blank Num="1" UId="72" />
+  <Access Scope="LocalVariable" UId="73">
+    <Symbol UId="74">
+      <Component Name="泵控制按钮" UId="75" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="76" />
+  <Token Text="THEN" UId="77" />
+  <NewLine Num="1" UId="78" />
+  <Blank Num="8" UId="79" />
+  <Access Scope="LocalVariable" UId="80">
+    <Symbol UId="81">
+      <Component Name="泵输出Q" UId="82" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="83" />
+  <Token Text=":=" UId="84" />
+  <Blank Num="1" UId="85" />
+  <Access Scope="LiteralConstant" UId="86">
+    <Constant UId="87">
+      <ConstantValue UId="89">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="90" />
+  <NewLine Num="1" UId="91" />
+  <Blank Num="8" UId="92" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="93">
+    <Text UId="94"> #泵速度AO := REAL_TO_INT((#频率设定 - #工程下限) * (#模拟高限 - #模拟低限) / (#工程上限 - #工程下限) + #模拟低限); </Text>
+  </LineComment>
+  <NewLine Num="1" UId="95" />
+  <Blank Num="8" UId="96" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="97">
+    <Text UId="98"> #泵速度AO := REAL_TO_INT(#频率设定 * 27648.0 / 50.0); </Text>
+  </LineComment>
+  <NewLine Num="1" UId="99" />
+  <Blank Num="8" UId="100" />
+  <Access Scope="LocalVariable" UId="101">
+    <Symbol UId="102">
+      <Component Name="DBD1" UId="103" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="104" />
+  <Token Text=":=" UId="105" />
+  <Blank Num="1" UId="106" />
+  <Access Scope="Call" UId="107">
+    <Instruction Name="NORM_X" UId="108">
+      <TemplateValue Name="dest_type" Type="Type" UId="109">Real</TemplateValue>
+      <Token Text="(" UId="110" />
+      <Parameter Name="MIN" UId="111">
+        <Blank Num="1" UId="112" />
+        <Token Text=":=" UId="113" />
+        <Blank Num="1" UId="114" />
+        <Access Scope="LocalVariable" UId="115">
+          <Symbol UId="116">
+            <Component Name="HMI下限" UId="117" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="118" />
+      <Blank Num="1" UId="119" />
+      <Parameter Name="VALUE" UId="120">
+        <Blank Num="1" UId="121" />
+        <Token Text=":=" UId="122" />
+        <Blank Num="1" UId="123" />
+        <Access Scope="LocalVariable" UId="124">
+          <Symbol UId="125">
+            <Component Name="频率设定" UId="126" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="127" />
+      <Blank Num="1" UId="128" />
+      <Parameter Name="MAX" UId="129">
+        <Blank Num="1" UId="130" />
+        <Token Text=":=" UId="131" />
+        <Blank Num="1" UId="132" />
+        <Access Scope="LocalVariable" UId="133">
+          <Symbol UId="134">
+            <Component Name="HMI上限" UId="135" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="137" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="138" />
+  <NewLine Num="1" UId="139" />
+  <Blank Num="8" UId="140" />
+  <Access Scope="LocalVariable" UId="141">
+    <Symbol UId="142">
+      <Component Name="泵速度AO" UId="143" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="144" />
+  <Token Text=":=" UId="145" />
+  <Blank Num="1" UId="146" />
+  <Access Scope="Call" UId="147">
+    <Instruction Name="SCALE_X" UId="148">
+      <TemplateValue Name="dest_type" Type="Type" UId="149">Int</TemplateValue>
+      <Token Text="(" UId="150" />
+      <Parameter Name="MIN" UId="151">
+        <Blank Num="1" UId="152" />
+        <Token Text=":=" UId="153" />
+        <Blank Num="1" UId="154" />
+        <Access Scope="LocalVariable" UId="155">
+          <Symbol UId="156">
+            <Component Name="PLC下限" UId="157" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="158" />
+      <Blank Num="1" UId="159" />
+      <Parameter Name="VALUE" UId="160">
+        <Blank Num="1" UId="161" />
+        <Token Text=":=" UId="162" />
+        <Blank Num="1" UId="163" />
+        <Access Scope="LocalVariable" UId="164">
+          <Symbol UId="165">
+            <Component Name="DBD1" UId="166" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="167" />
+      <Blank Num="1" UId="168" />
+      <Parameter Name="MAX" UId="169">
+        <Blank Num="1" UId="170" />
+        <Token Text=":=" UId="171" />
+        <Blank Num="1" UId="172" />
+        <Access Scope="LocalVariable" UId="173">
+          <Symbol UId="174">
+            <Component Name="PLC上限" UId="175" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="177" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="178" />
+  <NewLine Num="1" UId="179" />
+  <Blank Num="4" UId="180" />
+  <Token Text="ELSE" UId="181" />
+  <NewLine Num="1" UId="182" />
+  <Blank Num="8" UId="183" />
+  <Access Scope="LocalVariable" UId="184">
+    <Symbol UId="185">
+      <Component Name="泵输出Q" UId="186" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="187" />
+  <Token Text=":=" UId="188" />
+  <Blank Num="1" UId="189" />
+  <Access Scope="LiteralConstant" UId="190">
+    <Constant UId="191">
+      <ConstantValue UId="193">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="194" />
+  <NewLine Num="1" UId="195" />
+  <Blank Num="4" UId="196" />
+  <Token Text="END_IF" UId="197" />
+  <Token Text=";" UId="198" />
+  <NewLine Num="1" UId="199" />
+  <Blank Num="4" UId="200" />
+  <NewLine Num="1" UId="201" />
+  <Blank Num="4" UId="202" />
+  <Token Text="IF" UId="203" />
+  <Blank Num="1" UId="204" />
+  <Access Scope="LocalVariable" UId="205">
+    <Symbol UId="206">
+      <Component Name="泵正反转按钮" UId="207" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="208" />
+  <Token Text="THEN" UId="209" />
+  <NewLine Num="1" UId="210" />
+  <Blank Num="8" UId="211" />
+  <Access Scope="LocalVariable" UId="212">
+    <Symbol UId="213">
+      <Component Name="泵正反输出" UId="214" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="215" />
+  <Token Text=":=" UId="216" />
+  <Blank Num="1" UId="217" />
+  <Access Scope="LiteralConstant" UId="218">
+    <Constant UId="219">
+      <ConstantValue UId="221">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="222" />
+  <NewLine Num="1" UId="223" />
+  <Blank Num="4" UId="224" />
+  <Token Text="ELSE" UId="225" />
+  <NewLine Num="1" UId="226" />
+  <Blank Num="8" UId="227" />
+  <Access Scope="LocalVariable" UId="228">
+    <Symbol UId="229">
+      <Component Name="泵正反输出" UId="230" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="231" />
+  <Token Text=":=" UId="232" />
+  <Blank Num="1" UId="233" />
+  <Access Scope="LiteralConstant" UId="234">
+    <Constant UId="235">
+      <ConstantValue UId="237">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="238" />
+  <NewLine Num="1" UId="239" />
+  <Blank Num="4" UId="240" />
+  <Token Text="END_IF" UId="241" />
+  <Token Text=";" UId="242" />
+  <NewLine Num="1" UId="243" />
+  <Token Text="END_IF" UId="244" />
+  <Token Text=";" UId="245" />
+  <NewLine Num="2" UId="246" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="247">
+    <Text UId="248">自动启动--------------------------------------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine Num="3" UId="249" />
+  <Token Text="IF" UId="250" />
+  <Blank Num="1" UId="251" />
+  <Access Scope="LocalVariable" UId="252">
+    <Symbol UId="253">
+      <Component Name="模式设定" UId="254" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="255" />
+  <Token Text="=" UId="256" />
+  <Blank Num="1" UId="257" />
+  <Access Scope="LiteralConstant" UId="258">
+    <Constant UId="259">
+      <ConstantValue UId="261">1.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="262" />
+  <Token Text="THEN" UId="263" />
+  <NewLine Num="1" UId="264" />
+  <Blank Num="4" UId="265" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="266">
+    <Text UId="267"> #泵速度AO := REAL_TO_INT((#频率设定 - #工程下限) * (#模拟高限 - #模拟低限) / (#工程上限 - #工程下限) + #模拟低限); </Text>
+  </LineComment>
+  <NewLine Num="1" UId="268" />
+  <Blank Num="4" UId="269" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="270">
+    <Text UId="271"> #泵速度AO := REAL_TO_INT(#频率设定 * 27648.0 / 50.0); </Text>
+  </LineComment>
+  <NewLine Num="1" UId="272" />
+  <Blank Num="4" UId="273" />
+  <Access Scope="LocalVariable" UId="274">
+    <Symbol UId="275">
+      <Component Name="DBD2" UId="276" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="277" />
+  <Token Text=":=" UId="278" />
+  <Blank Num="1" UId="279" />
+  <Access Scope="Call" UId="280">
+    <Instruction Name="NORM_X" UId="281">
+      <TemplateValue Name="dest_type" Type="Type" UId="282">Real</TemplateValue>
+      <Token Text="(" UId="283" />
+      <Parameter Name="MIN" UId="284">
+        <Blank Num="1" UId="285" />
+        <Token Text=":=" UId="286" />
+        <Blank Num="1" UId="287" />
+        <Access Scope="LocalVariable" UId="288">
+          <Symbol UId="289">
+            <Component Name="HMI下限" UId="290" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="291" />
+      <Blank Num="1" UId="292" />
+      <Parameter Name="VALUE" UId="293">
+        <Blank Num="1" UId="294" />
+        <Token Text=":=" UId="295" />
+        <Blank Num="1" UId="296" />
+        <Access Scope="LocalVariable" UId="297">
+          <Symbol UId="298">
+            <Component Name="频率设定" UId="299" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="300" />
+      <Blank Num="1" UId="301" />
+      <Parameter Name="MAX" UId="302">
+        <Blank Num="1" UId="303" />
+        <Token Text=":=" UId="304" />
+        <Blank Num="1" UId="305" />
+        <Access Scope="LocalVariable" UId="306">
+          <Symbol UId="307">
+            <Component Name="HMI上限" UId="308" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="310" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="311" />
+  <NewLine Num="1" UId="312" />
+  <Blank Num="4" UId="313" />
+  <Access Scope="LocalVariable" UId="314">
+    <Symbol UId="315">
+      <Component Name="泵速度AO" UId="316" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="317" />
+  <Token Text=":=" UId="318" />
+  <Blank Num="1" UId="319" />
+  <Access Scope="Call" UId="320">
+    <Instruction Name="SCALE_X" UId="321">
+      <TemplateValue Name="dest_type" Type="Type" UId="322">Int</TemplateValue>
+      <Token Text="(" UId="323" />
+      <Parameter Name="MIN" UId="324">
+        <Blank Num="1" UId="325" />
+        <Token Text=":=" UId="326" />
+        <Blank Num="1" UId="327" />
+        <Access Scope="LocalVariable" UId="328">
+          <Symbol UId="329">
+            <Component Name="PLC下限" UId="330" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="331" />
+      <Blank Num="1" UId="332" />
+      <Parameter Name="VALUE" UId="333">
+        <Blank Num="1" UId="334" />
+        <Token Text=":=" UId="335" />
+        <Blank Num="1" UId="336" />
+        <Access Scope="LocalVariable" UId="337">
+          <Symbol UId="338">
+            <Component Name="DBD2" UId="339" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="340" />
+      <Blank Num="1" UId="341" />
+      <Parameter Name="MAX" UId="342">
+        <Blank Num="1" UId="343" />
+        <Token Text=":=" UId="344" />
+        <Blank Num="1" UId="345" />
+        <Access Scope="LocalVariable" UId="346">
+          <Symbol UId="347">
+            <Component Name="PLC上限" UId="348" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="350" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="351" />
+  <NewLine Num="1" UId="352" />
+  <Blank Num="4" UId="353" />
+  <NewLine Num="1" UId="354" />
+  <Blank Num="4" UId="355" />
+  <NewLine Num="1" UId="356" />
+  <Blank Num="3" UId="357" />
+  <NewLine Num="1" UId="358" />
+  <Token Text="END_IF" UId="359" />
+  <Token Text=";" UId="360" />
+  <NewLine Num="3" UId="361" />
+  <Token Text="IF" UId="362" />
+  <Blank Num="1" UId="363" />
+  <Access Scope="LocalVariable" UId="364">
+    <Symbol UId="365">
+      <Component Name="泵输出Q" UId="366" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="367" />
+  <Token Text="THEN" UId="368" />
+  <NewLine Num="1" UId="369" />
+  <Blank Num="4" UId="370" />
+  <Access Scope="LocalVariable" UId="371">
+    <Symbol UId="372">
+      <Component Name="DBD3" UId="373" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="374" />
+  <Token Text=":=" UId="375" />
+  <Blank Num="1" UId="376" />
+  <Access Scope="Call" UId="377">
+    <Instruction Name="NORM_X" UId="378">
+      <TemplateValue Name="dest_type" Type="Type" UId="379">Real</TemplateValue>
+      <Token Text="(" UId="380" />
+      <Parameter Name="MIN" UId="381">
+        <Blank Num="1" UId="382" />
+        <Token Text=":=" UId="383" />
+        <Blank Num="1" UId="384" />
+        <Access Scope="LocalVariable" UId="385">
+          <Symbol UId="386">
+            <Component Name="PLC下限" UId="387" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="388" />
+      <Blank Num="1" UId="389" />
+      <Parameter Name="VALUE" UId="390">
+        <Blank Num="1" UId="391" />
+        <Token Text=":=" UId="392" />
+        <Blank Num="1" UId="393" />
+        <Access Scope="LocalVariable" UId="394">
+          <Symbol UId="395">
+            <Component Name="泵输入电流" UId="396" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="397" />
+      <Blank Num="1" UId="398" />
+      <Parameter Name="MAX" UId="399">
+        <Blank Num="1" UId="400" />
+        <Token Text=":=" UId="401" />
+        <Blank Num="1" UId="402" />
+        <Access Scope="LocalVariable" UId="403">
+          <Symbol UId="404">
+            <Component Name="PLC上限" UId="405" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="407" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="408" />
+  <NewLine Num="1" UId="409" />
+  <Blank Num="4" UId="410" />
+  <Access Scope="LocalVariable" UId="411">
+    <Symbol UId="412">
+      <Component Name="泵输出反馈" UId="413" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="414" />
+  <Token Text=":=" UId="415" />
+  <Blank Num="1" UId="416" />
+  <Access Scope="Call" UId="417">
+    <Instruction Name="SCALE_X" UId="418">
+      <TemplateValue Name="dest_type" Type="Type" UId="419">Real</TemplateValue>
+      <Token Text="(" UId="420" />
+      <Parameter Name="MIN" UId="421">
+        <Blank Num="1" UId="422" />
+        <Token Text=":=" UId="423" />
+        <Blank Num="1" UId="424" />
+        <Access Scope="LocalVariable" UId="425">
+          <Symbol UId="426">
+            <Component Name="HMI下限" UId="427" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="428" />
+      <Blank Num="1" UId="429" />
+      <Parameter Name="VALUE" UId="430">
+        <Blank Num="1" UId="431" />
+        <Token Text=":=" UId="432" />
+        <Blank Num="1" UId="433" />
+        <Access Scope="LocalVariable" UId="434">
+          <Symbol UId="435">
+            <Component Name="DBD3" UId="436" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="437" />
+      <Blank Num="1" UId="438" />
+      <Parameter Name="MAX" UId="439">
+        <Blank Num="1" UId="440" />
+        <Token Text=":=" UId="441" />
+        <Blank Num="1" UId="442" />
+        <Access Scope="LocalVariable" UId="443">
+          <Symbol UId="444">
+            <Component Name="HMI上限" UId="445" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="447" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="448" />
+  <NewLine Num="1" UId="449" />
+  <Token Text="ELSE" UId="450" />
+  <NewLine Num="1" UId="451" />
+  <Blank Num="4" UId="452" />
+  <Access Scope="LocalVariable" UId="453">
+    <Symbol UId="454">
+      <Component Name="泵输出反馈" UId="455" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="456" />
+  <Token Text=":=" UId="457" />
+  <Blank Num="1" UId="458" />
+  <Access Scope="LiteralConstant" UId="459">
+    <Constant UId="460">
+      <ConstantValue UId="462">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="463" />
+  <NewLine Num="1" UId="464" />
+  <Token Text="END_IF" UId="465" />
+  <Token Text=";" UId="466" />
+  <NewLine Num="2" UId="467" />
+  <Token Text="IF" UId="468" />
+  <Blank Num="1" UId="469" />
+  <Access Scope="LocalVariable" UId="470">
+    <Symbol UId="471">
+      <Component Name="泵报警信号" UId="472" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="473" />
+  <Token Text="THEN" UId="474" />
+  <NewLine Num="1" UId="475" />
+  <Blank Num="4" UId="476" />
+  <Access Scope="LocalVariable" UId="477">
+    <Symbol UId="478">
+      <Component Name="泵报警输出" UId="479" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="480" />
+  <Token Text=":=" UId="481" />
+  <Blank Num="1" UId="482" />
+  <Access Scope="LiteralConstant" UId="483">
+    <Constant UId="484">
+      <ConstantValue UId="486">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="487" />
+  <NewLine Num="1" UId="488" />
+  <Token Text="ELSE" UId="489" />
+  <NewLine Num="1" UId="490" />
+  <Blank Num="4" UId="491" />
+  <Access Scope="LocalVariable" UId="492">
+    <Symbol UId="493">
+      <Component Name="泵报警输出" UId="494" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="495" />
+  <Token Text=":=" UId="496" />
+  <Blank Num="1" UId="497" />
+  <Access Scope="LiteralConstant" UId="498">
+    <Constant UId="499">
+      <ConstantValue UId="501">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="502" />
+  <NewLine Num="1" UId="503" />
+  <Token Text="END_IF" UId="504" />
+  <Token Text=";" UId="505" />
+  <NewLine Num="3" UId="506" />
+  <Token Text="IF" UId="507" />
+  <Blank Num="1" UId="508" />
+  <Access Scope="LocalVariable" UId="509">
+    <Symbol UId="510">
+      <Component Name="泵报警信号" UId="511" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="512" />
+  <Token Text="THEN" UId="513" />
+  <NewLine Num="1" UId="514" />
+  <Blank Num="4" UId="515" />
+  <Access Scope="LocalVariable" UId="516">
+    <Symbol UId="517">
+      <Component Name="泵报警输出" UId="518" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="519" />
+  <Token Text=":=" UId="520" />
+  <Blank Num="1" UId="521" />
+  <Access Scope="LiteralConstant" UId="522">
+    <Constant UId="523">
+      <ConstantValue UId="525">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="526" />
+  <NewLine Num="1" UId="527" />
+  <Token Text="ELSE" UId="528" />
+  <NewLine Num="1" UId="529" />
+  <Blank Num="4" UId="530" />
+  <Access Scope="LocalVariable" UId="531">
+    <Symbol UId="532">
+      <Component Name="泵报警输出" UId="533" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="534" />
+  <Token Text=":=" UId="535" />
+  <Blank Num="1" UId="536" />
+  <Access Scope="LiteralConstant" UId="537">
+    <Constant UId="538">
+      <ConstantValue UId="540">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="541" />
+  <NewLine Num="1" UId="542" />
+  <Token Text="END_IF" UId="543" />
+  <Token Text=";" UId="544" />
+  <NewLine Num="2" UId="545" />
+  <Token Text="IF" UId="546" />
+  <Blank Num="1" UId="547" />
+  <Access Scope="LocalVariable" UId="548">
+    <Symbol UId="549">
+      <Component Name="泵报警输出" UId="550" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="551" />
+  <Token Text="THEN" UId="552" />
+  <NewLine Num="1" UId="553" />
+  <Blank Num="4" UId="554" />
+  <Access Scope="LocalVariable" UId="555">
+    <Symbol UId="556">
+      <Component Name="泵速度AO" UId="557" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="558" />
+  <Token Text=":=" UId="559" />
+  <Blank Num="1" UId="560" />
+  <Access Scope="LiteralConstant" UId="561">
+    <Constant UId="562">
+      <ConstantValue UId="564">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="565" />
+  <NewLine Num="1" UId="566" />
+  <Blank Num="4" UId="567" />
+  <Access Scope="LocalVariable" UId="568">
+    <Symbol UId="569">
+      <Component Name="泵控制按钮" UId="570" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="571" />
+  <Token Text=":=" UId="572" />
+  <Blank Num="1" UId="573" />
+  <Access Scope="LiteralConstant" UId="574">
+    <Constant UId="575">
+      <ConstantValue UId="577">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="578" />
+  <NewLine Num="1" UId="579" />
+  <Blank Num="4" UId="580" />
+  <Access Scope="LocalVariable" UId="581">
+    <Symbol UId="582">
+      <Component Name="泵输出Q" UId="583" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="584" />
+  <Token Text=":=" UId="585" />
+  <Blank Num="1" UId="586" />
+  <Access Scope="LiteralConstant" UId="587">
+    <Constant UId="588">
+      <ConstantValue UId="590">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="591" />
+  <NewLine Num="1" UId="592" />
+  <Token Text="END_IF" UId="593" />
+  <Token Text=";" UId="594" />
+  <NewLine Num="1" UId="595" />
+  <Token Text="IF" UId="596" />
+  <Blank Num="1" UId="597" />
+  <Access Scope="LocalVariable" UId="598">
+    <Symbol UId="599">
+      <Component Name="模式设定" UId="600" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="601" />
+  <Token Text="=" UId="602" />
+  <Blank Num="1" UId="603" />
+  <Access Scope="LiteralConstant" UId="604">
+    <Constant UId="605">
+      <ConstantValue UId="607">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="608" />
+  <Token Text="AND" UId="609" />
+  <Blank Num="1" UId="610" />
+  <Access Scope="LocalVariable" UId="611">
+    <Symbol UId="612">
+      <Component Name="泵报警输出" UId="613" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="614" />
+  <Token Text="THEN" UId="615" />
+  <NewLine Num="1" UId="616" />
+  <Blank Num="4" UId="617" />
+  <NewLine Num="1" UId="618" />
+  <Blank Num="4" UId="619" />
+  <Access Scope="LocalVariable" UId="620">
+    <Symbol UId="621">
+      <Component Name="安全停机" UId="622" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="623" />
+  <Token Text=":=" UId="624" />
+  <Blank Num="1" UId="625" />
+  <Access Scope="LiteralConstant" UId="626">
+    <Constant UId="627">
+      <ConstantValue UId="629">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="630" />
+  <NewLine Num="1" UId="631" />
+  <Token Text="END_IF" UId="632" />
+  <Token Text=";" UId="633" />
+  <NewLine Num="3" UId="634" />
+  <Token Text="IF" UId="635" />
+  <Blank Num="1" UId="636" />
+  <Access Scope="LocalVariable" UId="637">
+    <Symbol UId="638">
+      <Component Name="泵输出Q" UId="639" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="640" />
+  <Token Text="AND" UId="641" />
+  <Blank Num="1" UId="642" />
+  <Access Scope="LocalVariable" UId="643">
+    <Symbol UId="644">
+      <Component Name="频率设定" UId="645" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="646" />
+  <Token Text="&gt;" UId="647" />
+  <Blank Num="1" UId="648" />
+  <Access Scope="LiteralConstant" UId="649">
+    <Constant UId="650">
+      <ConstantValue UId="652">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="653" />
+  <Token Text="THEN" UId="654" />
+  <NewLine Num="1" UId="655" />
+  <Blank Num="4" UId="656" />
+  <Token Text="IF" UId="657" />
+  <Blank Num="1" UId="658" />
+  <Access Scope="GlobalVariable" UId="659">
+    <Symbol UId="660">
+      <Component Name="Clock_10Hz" UId="661" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="662" />
+  <Token Text="THEN" UId="663" />
+  <NewLine Num="1" UId="664" />
+  <Blank Num="8" UId="665" />
+  <Access Scope="LocalVariable" UId="666">
+    <Symbol UId="667">
+      <Component Name="Temp_1" UId="668" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="669" />
+  <Token Text=":=" UId="670" />
+  <Blank Num="1" UId="671" />
+  <Access Scope="LocalVariable" UId="672">
+    <Symbol UId="673">
+      <Component Name="Temp_1" UId="674" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="675" />
+  <Token Text="+" UId="676" />
+  <Blank Num="1" UId="677" />
+  <Access Scope="LiteralConstant" UId="678">
+    <Constant UId="679">
+      <ConstantValue UId="681">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="682" />
+  <NewLine Num="1" UId="683" />
+  <Blank Num="4" UId="684" />
+  <Token Text="END_IF" UId="685" />
+  <Token Text=";" UId="686" />
+  <NewLine Num="1" UId="687" />
+  <Blank Num="4" UId="688" />
+  <NewLine Num="1" UId="689" />
+  <Blank Num="4" UId="690" />
+  <Token Text="IF" UId="691" />
+  <Blank Num="1" UId="692" />
+  <Access Scope="LocalVariable" UId="693">
+    <Symbol UId="694">
+      <Component Name="Temp_1" UId="695" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="696" />
+  <Token Text="=" UId="697" />
+  <Access Scope="LiteralConstant" UId="698">
+    <Constant UId="699">
+      <ConstantValue UId="701">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="702" />
+  <Token Text="THEN" UId="703" />
+  <NewLine Num="1" UId="704" />
+  <Blank Num="8" UId="705" />
+  <Access Scope="LocalVariable" UId="706">
+    <Symbol UId="707">
+      <Component Name="Temp_1" UId="708" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="709" />
+  <Token Text=":=" UId="710" />
+  <Blank Num="1" UId="711" />
+  <Access Scope="LiteralConstant" UId="712">
+    <Constant UId="713">
+      <ConstantValue UId="715">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="716" />
+  <NewLine Num="1" UId="717" />
+  <Blank Num="4" UId="718" />
+  <Token Text="END_IF" UId="719" />
+  <Token Text=";" UId="720" />
+  <NewLine Num="1" UId="721" />
+  <Blank Num="4" UId="722" />
+  <Token Text="IF" UId="723" />
+  <Blank Num="1" UId="724" />
+  <Access Scope="LocalVariable" UId="725">
+    <Symbol UId="726">
+      <Component Name="Temp_1" UId="727" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="728" />
+  <Token Text="=" UId="729" />
+  <Blank Num="1" UId="730" />
+  <Access Scope="LiteralConstant" UId="731">
+    <Constant UId="732">
+      <ConstantValue UId="734">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="735" />
+  <Token Text="THEN" UId="736" />
+  <NewLine Num="1" UId="737" />
+  <Blank Num="8" UId="738" />
+  <Access Scope="LocalVariable" UId="739">
+    <Symbol UId="740">
+      <Component Name="动画" UId="741" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="742" />
+  <Token Text=":=" UId="743" />
+  <Blank Num="1" UId="744" />
+  <Access Scope="LiteralConstant" UId="745">
+    <Constant UId="746">
+      <ConstantValue UId="748">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="749" />
+  <NewLine Num="1" UId="750" />
+  <Blank Num="4" UId="751" />
+  <Token Text="END_IF" UId="752" />
+  <Token Text=";" UId="753" />
+  <NewLine Num="1" UId="754" />
+  <Blank Num="4" UId="755" />
+  <Token Text="IF" UId="756" />
+  <Blank Num="1" UId="757" />
+  <Access Scope="LocalVariable" UId="758">
+    <Symbol UId="759">
+      <Component Name="Temp_1" UId="760" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="761" />
+  <Token Text="=" UId="762" />
+  <Blank Num="1" UId="763" />
+  <Access Scope="LiteralConstant" UId="764">
+    <Constant UId="765">
+      <ConstantValue UId="767">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="768" />
+  <Token Text="THEN" UId="769" />
+  <NewLine Num="1" UId="770" />
+  <Blank Num="12" UId="771" />
+  <NewLine Num="1" UId="772" />
+  <Blank Num="8" UId="773" />
+  <Access Scope="LocalVariable" UId="774">
+    <Symbol UId="775">
+      <Component Name="动画" UId="776" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="777" />
+  <Token Text=":=" UId="778" />
+  <Blank Num="1" UId="779" />
+  <Access Scope="LiteralConstant" UId="780">
+    <Constant UId="781">
+      <ConstantValue UId="783">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="784" />
+  <NewLine Num="1" UId="785" />
+  <Blank Num="4" UId="786" />
+  <Token Text="END_IF" UId="787" />
+  <Token Text=";" UId="788" />
+  <NewLine Num="1" UId="789" />
+  <Blank Num="4" UId="790" />
+  <NewLine Num="1" UId="791" />
+  <Token Text="END_IF" UId="792" />
+  <Token Text=";" UId="793" />
+  <NewLine Num="1" UId="794" />
+  <Token Text="IF" UId="795" />
+  <Blank Num="1" UId="796" />
+  <Token Text="NOT" UId="797" />
+  <Blank Num="1" UId="798" />
+  <Access Scope="LocalVariable" UId="799">
+    <Symbol UId="800">
+      <Component Name="泵输出Q" UId="801" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="802" />
+  <Token Text="THEN" UId="803" />
+  <NewLine Num="1" UId="804" />
+  <Blank Num="4" UId="805" />
+  <Access Scope="LocalVariable" UId="806">
+    <Symbol UId="807">
+      <Component Name="动画" UId="808" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="809" />
+  <Token Text=":=" UId="810" />
+  <Blank Num="1" UId="811" />
+  <Access Scope="LiteralConstant" UId="812">
+    <Constant UId="813">
+      <ConstantValue UId="815">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="816" />
+  <NewLine Num="1" UId="817" />
+  <Token Text="END_IF" UId="818" />
+  <Token Text=";" UId="819" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="E" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="F" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="10" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="11" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

@@ -1,0 +1,9 @@
+#include "apdefap.h"
+
+void OnClick(char* lpszPictureName, char* lpszObjectName, char* lpszPropertyName)
+{
+  if (GetTagBit("Codex_Bit"))
+    SetTagBit("Codex_Bit", 0);
+  else
+    SetTagBit("Codex_Bit", 1);
+}

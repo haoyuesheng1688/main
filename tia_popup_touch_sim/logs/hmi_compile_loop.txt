@@ -1,0 +1,6 @@
+﻿ProjectName=VIP-TEST-3-弹框
+HmiTarget=HMI_RT_1
+CompileState=Warning
+CompileMessage=Warning|HMI_1|Time stamp: 2026/5/14 0:31 - 310308 bytes used of 12582912 bytes, maximum
+CompileMessage=Warning||Compiling finished (errors: 0; warnings: 2)
+ProjectSaved=True

@@ -1,0 +1,16 @@
+﻿ProjectName=VIP-TEST-3-弹框
+HmiTarget=HMI_RT_1
+BeforeCycles=19
+BeforeTextLists=1
+BeforeGraphicLists=0
+OK_CYCLE_LOOP=Codex_Cycle_3s|CreateNew|C:\Users\QF100\Documents\New project\tia_hmi_knowledge\exports\Codex_Cycle_3s_export.xml
+OK_TEXTLIST_LOOP=Codex_TextList_Status|CreateNew|C:\Users\QF100\Documents\New project\tia_hmi_knowledge\exports\Codex_TextList_Status_export.xml
+OK_GRAPHICLIST_LOOP=Codex_GraphicList_Empty|CreateNew|C:\Users\QF100\Documents\New project\tia_hmi_knowledge\exports\Codex_GraphicList_Empty_export.xml
+AfterCycles=20
+AfterTextLists=2
+AfterGraphicLists=1
+CompileState=Success
+CompileMessages=2
+CompileMessage=Information|HMI_1|Time stamp: 2026/5/13 21:54 - 266712 bytes used of 12582912 bytes, maximum
+CompileMessage=Success||Compiling finished (errors: 0; warnings: 0)
+ProjectSaved=True

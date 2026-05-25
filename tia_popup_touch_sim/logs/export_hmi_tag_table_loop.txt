@@ -1,0 +1,4 @@
+﻿ProjectName=VIP-TEST-3-弹框
+HmiTarget=HMI_RT_1
+OK_EXPORT_HMI_TAG_TABLE=Codex_Popup_PLC_Named_Int_Tags
+ExportPath=C:\Users\QF100\Documents\New project\tia_popup_touch_sim\exports\Codex_Popup_PLC_Named_Int_Tags_current_export.xml

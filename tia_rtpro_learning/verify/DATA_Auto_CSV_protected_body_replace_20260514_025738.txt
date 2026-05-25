@@ -1,0 +1,11 @@
+﻿ProcessId=36644
+ScriptName=DATA_Auto_CSV
+CurrentPath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\exports\rtpro_vb_protected_body\DATA_Auto_CSV_current_before_replace_20260514_025738.vbs
+BasePath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\exports\rtpro_vb_body\DATA_Auto_CSV_export_full_20260514_024724.vbs
+BodyPath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\imports\rtpro_vb_protected_body\DATA_Auto_CSV_patched_body_20260514_025738.vbs
+AfterPath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\verify\DATA_Auto_CSV_after_protected_body_replace_20260514_025738.vbs
+FindRegex=(?s)(?<=Sub\s+DATA_Auto_CSV\(\)\s*\r?\n).*?(?=\r?\nEnd\s+Sub\s*$)
+CleanAfter=False
+Dim9=True
+Env=True
+Corrupt=True

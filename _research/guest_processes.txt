@@ -1,0 +1,12 @@
+﻿
+ProcessName         Id MainWindowTitle
+-----------         -- ---------------
+CCScriptEditor   22112                
+OpcUaServerWinCC  7368                
+PassDBRT         17232                
+script           20544                
+SDiagRT           2544                
+WinCCExplorer    16632                
+
+
+

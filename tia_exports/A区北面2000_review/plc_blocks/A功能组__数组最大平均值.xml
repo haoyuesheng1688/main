@@ -1,0 +1,1150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-04-13T11:12:42.3691653Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="输入数组" Datatype="Variant" Accessibility="Public">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">输入的数组，这里是泛型类型(P#这种数组指针写法)</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="max_out" Datatype="Variant" Accessibility="Public">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">最大值输出（无效输出）</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="最大值在数组内的索引" Datatype="DInt" Accessibility="Public">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">最大值索引（由于输入数组的类型不确定，无法给出最大值，只能得到数组最大值的索引，其他地方通过索引去访问）</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="报错消息" Datatype="String" Accessibility="Public">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">报错消息</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="平均值" Datatype="LReal" Accessibility="Public">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">平均值</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Temp">
+    <Member Name="arr_length" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">传入数组的长度值</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="i" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">循环次数</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="arr_int_temp" Datatype="Array[0..#max_length] of Int">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">把输入的数组暂存变量int</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="max_number_temp_int" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">最大值暂存int</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="arr_real_temp" Datatype="Array[0..#max_length] of Real">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">把输入的数组暂存变量real</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="max_number_temp_real" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">最大值的暂存real</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="max_index_temp" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">最大值的索引暂存</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="sum" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">数组和</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Constant">
+    <Member Name="max_length" Datatype="DInt" Accessibility="Public">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">所能处理的最大数组长度，可修改</MultiLanguageText>
+      </Comment>
+      <StartValue>201</StartValue>
+    </Member>
+  </Section>
+  <Section Name="Return">
+    <Member Name="Ret_Val" Datatype="Void" Accessibility="Public" />
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>数组最大平均值</Name>
+      <Number>34</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <LineComment Inserted="false" NoClosingBracket="false" UId="21">
+    <Text UId="22">本程序的数组输入索引是必须从0开始</Text>
+  </LineComment>
+  <NewLine Num="1" UId="23" />
+  <Token Text="IF" UId="24" />
+  <Blank Num="1" UId="25" />
+  <Access Scope="Call" UId="26">
+    <Instruction Name="IS_ARRAY" UId="27">
+      <Token Text="(" UId="28" />
+      <NamelessParameter UId="29">
+        <Access Scope="LocalVariable" UId="30">
+          <Symbol UId="31">
+            <Component Name="输入数组" UId="32" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="34" />
+    </Instruction>
+  </Access>
+  <Blank Num="1" UId="35" />
+  <Token Text="THEN" UId="36" />
+  <Blank Num="1" UId="37" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="38">
+    <Text UId="39">判断是否是数组</Text>
+  </LineComment>
+  <NewLine Num="1" UId="40" />
+  <Blank Num="4" UId="41" />
+  <NewLine Num="1" UId="42" />
+  <Blank Num="4" UId="43" />
+  <Access Scope="LocalVariable" UId="44">
+    <Symbol UId="45">
+      <Component Name="arr_length" UId="46" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="47" />
+  <Token Text=":=" UId="48" />
+  <Blank Num="1" UId="49" />
+  <Access Scope="Call" UId="50">
+    <Instruction Name="UDINT_TO_DINT" UId="51">
+      <Token Text="(" UId="52" />
+      <NamelessParameter UId="53">
+        <Access Scope="Call" UId="54">
+          <Instruction Name="CountOfElements" UId="55">
+            <Token Text="(" UId="56" />
+            <NamelessParameter UId="57">
+              <Access Scope="LocalVariable" UId="58">
+                <Symbol UId="59">
+                  <Component Name="输入数组" UId="60" />
+                </Symbol>
+              </Access>
+            </NamelessParameter>
+            <Token Text=")" UId="62" />
+          </Instruction>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="64" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="65" />
+  <Blank Num="1" UId="66" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="67">
+    <Text UId="68">找到数组的长度，函数返回值类型是UDINT,要转成DINT</Text>
+  </LineComment>
+  <NewLine Num="1" UId="69" />
+  <Blank Num="4" UId="70" />
+  <NewLine Num="1" UId="71" />
+  <Blank Num="4" UId="72" />
+  <Token Text="IF" UId="73" />
+  <Blank Num="1" UId="74" />
+  <Access Scope="LocalVariable" UId="75">
+    <Symbol UId="76">
+      <Component Name="arr_length" UId="77" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="78" />
+  <Token Text="&lt;" UId="79" />
+  <Blank Num="1" UId="80" />
+  <Access Scope="LocalConstant" UId="81">
+    <Constant Name="max_length" UId="82" />
+  </Access>
+  <Blank Num="1" UId="85" />
+  <Token Text="THEN" UId="86" />
+  <Blank Num="1" UId="87" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="88">
+    <Text UId="89">如果输入的数组的长度小于设定的最大长度 则进行以下判断</Text>
+  </LineComment>
+  <NewLine Num="1" UId="90" />
+  <Blank Num="8" UId="91" />
+  <NewLine Num="1" UId="92" />
+  <Blank Num="8" UId="93" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="94">
+    <Text UId="95">**************************判断数组是整数进行计算***************************************</Text>
+  </LineComment>
+  <NewLine Num="1" UId="96" />
+  <Blank Num="8" UId="97" />
+  <NewLine Num="1" UId="98" />
+  <Blank Num="8" UId="99" />
+  <Token Text="IF" UId="100" />
+  <Blank Num="1" UId="101" />
+  <Access Scope="Call" UId="102">
+    <Instruction Name="TypeOfElements" UId="103">
+      <Token Text="(" UId="104" />
+      <NamelessParameter UId="105">
+        <Access Scope="LocalVariable" UId="106">
+          <Symbol UId="107">
+            <Component Name="输入数组" UId="108" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="110" />
+    </Instruction>
+  </Access>
+  <Blank Num="1" UId="111" />
+  <Token Text="=" UId="112" />
+  <Blank Num="1" UId="113" />
+  <Access Scope="SystemType" UId="114">
+    <DataType UId="115">Int</DataType>
+  </Access>
+  <Blank Num="1" UId="116" />
+  <Token Text="THEN" UId="117" />
+  <Blank Num="1" UId="118" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="119">
+    <Text UId="120">判断输入数组的类型</Text>
+  </LineComment>
+  <NewLine Num="1" UId="121" />
+  <Blank Num="12" UId="122" />
+  <NewLine Num="1" UId="123" />
+  <Blank Num="12" UId="124" />
+  <Access Scope="Call" UId="125">
+    <Instruction Name="VariantGet" UId="126">
+      <Token Text="(" UId="127" />
+      <Parameter Name="SRC" UId="128">
+        <Blank Num="1" UId="129" />
+        <Token Text=":=" UId="130" />
+        <Blank Num="1" UId="131" />
+        <Access Scope="LocalVariable" UId="132">
+          <Symbol UId="133">
+            <Component Name="输入数组" UId="134" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="135" />
+      <NewLine Num="1" UId="136" />
+      <Blank Num="23" UId="137" />
+      <NewLine Num="1" UId="138" />
+      <Blank Num="23" UId="139" />
+      <Parameter Name="DST" UId="140">
+        <Blank Num="1" UId="141" />
+        <Token Text="=&gt;" UId="142" />
+        <Blank Num="1" UId="143" />
+        <Access Scope="LocalVariable" UId="144">
+          <Symbol UId="145">
+            <Component Name="arr_int_temp" UId="146" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="147" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="148" />
+  <NewLine Num="1" UId="149" />
+  <Blank Num="12" UId="150" />
+  <NewLine Num="1" UId="151" />
+  <Blank Num="12" UId="152" />
+  <Access Scope="LocalVariable" UId="153">
+    <Symbol UId="154">
+      <Component Name="max_number_temp_int" UId="155" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="156" />
+  <Token Text=":=" UId="157" />
+  <Blank Num="1" UId="158" />
+  <Access Scope="LocalVariable" UId="159">
+    <Symbol UId="160">
+      <Component Name="arr_int_temp" UId="161">
+        <Token Text="[" UId="162" />
+        <Access Scope="LiteralConstant" UId="163">
+          <Constant UId="164">
+            <ConstantValue UId="166">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="167" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="168" />
+  <Blank Num="1" UId="169" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="170">
+    <Text UId="171">把索引为0的数认为是最大值</Text>
+  </LineComment>
+  <NewLine Num="1" UId="172" />
+  <Blank Num="12" UId="173" />
+  <NewLine Num="1" UId="174" />
+  <Blank Num="12" UId="175" />
+  <Access Scope="LocalVariable" UId="176">
+    <Symbol UId="177">
+      <Component Name="max_index_temp" UId="178" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="179" />
+  <Token Text=":=" UId="180" />
+  <Blank Num="1" UId="181" />
+  <Access Scope="LiteralConstant" UId="182">
+    <Constant UId="183">
+      <ConstantValue UId="185">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="186" />
+  <Blank Num="1" UId="187" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="188">
+    <Text UId="189">把0索引存起来</Text>
+  </LineComment>
+  <NewLine Num="1" UId="190" />
+  <Blank Num="12" UId="191" />
+  <NewLine Num="1" UId="192" />
+  <Blank Num="12" UId="193" />
+  <Token Text="FOR" UId="194" />
+  <Blank Num="1" UId="195" />
+  <Access Scope="LocalVariable" UId="196">
+    <Symbol UId="197">
+      <Component Name="i" UId="198" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="199" />
+  <Token Text=":=" UId="200" />
+  <Blank Num="1" UId="201" />
+  <Access Scope="LiteralConstant" UId="202">
+    <Constant UId="203">
+      <ConstantValue UId="205">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="206" />
+  <Token Text="TO" UId="207" />
+  <Blank Num="1" UId="208" />
+  <Access Scope="LocalConstant" UId="209">
+    <Constant Name="max_length" UId="210" />
+  </Access>
+  <Blank Num="1" UId="213" />
+  <Token Text="-" UId="214" />
+  <Blank Num="1" UId="215" />
+  <Access Scope="LiteralConstant" UId="216">
+    <Constant UId="217">
+      <ConstantValue UId="219">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="220" />
+  <Token Text="DO" UId="221" />
+  <Blank Num="1" UId="222" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="223">
+    <Text UId="224">循环 从最小索引开始，到最大索引结束</Text>
+  </LineComment>
+  <NewLine Num="1" UId="225" />
+  <Blank Num="16" UId="226" />
+  <NewLine Num="1" UId="227" />
+  <Blank Num="16" UId="228" />
+  <Token Text="IF" UId="229" />
+  <Blank Num="1" UId="230" />
+  <Access Scope="LocalVariable" UId="231">
+    <Symbol UId="232">
+      <Component Name="max_number_temp_int" UId="233" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="234" />
+  <Token Text="&lt;" UId="235" />
+  <Blank Num="1" UId="236" />
+  <Access Scope="LocalVariable" UId="237">
+    <Symbol UId="238">
+      <Component Name="arr_int_temp" UId="239">
+        <Token Text="[" UId="240" />
+        <Access Scope="LocalVariable" UId="241">
+          <Symbol UId="242">
+            <Component Name="i" UId="243" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="244" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="245" />
+  <Token Text="THEN" UId="246" />
+  <Blank Num="1" UId="247" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="248">
+    <Text UId="249">如果最大值小于后面索引的值</Text>
+  </LineComment>
+  <NewLine Num="1" UId="250" />
+  <Blank Num="20" UId="251" />
+  <NewLine Num="1" UId="252" />
+  <Blank Num="20" UId="253" />
+  <Access Scope="LocalVariable" UId="254">
+    <Symbol UId="255">
+      <Component Name="max_number_temp_int" UId="256" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="257" />
+  <Token Text=":=" UId="258" />
+  <Blank Num="1" UId="259" />
+  <Access Scope="LocalVariable" UId="260">
+    <Symbol UId="261">
+      <Component Name="arr_int_temp" UId="262">
+        <Token Text="[" UId="263" />
+        <Access Scope="LocalVariable" UId="264">
+          <Symbol UId="265">
+            <Component Name="i" UId="266" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="267" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="268" />
+  <Blank Num="1" UId="269" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="270">
+    <Text UId="271">则把后面索引的值存入最大值变量里</Text>
+  </LineComment>
+  <NewLine Num="1" UId="272" />
+  <Blank Num="20" UId="273" />
+  <NewLine Num="1" UId="274" />
+  <Blank Num="20" UId="275" />
+  <Access Scope="LocalVariable" UId="276">
+    <Symbol UId="277">
+      <Component Name="max_index_temp" UId="278" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="279" />
+  <Token Text=":=" UId="280" />
+  <Blank Num="1" UId="281" />
+  <Access Scope="LocalVariable" UId="282">
+    <Symbol UId="283">
+      <Component Name="i" UId="284" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="285" />
+  <Blank Num="1" UId="286" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="287">
+    <Text UId="288">再把索引存起来</Text>
+  </LineComment>
+  <NewLine Num="1" UId="289" />
+  <Blank Num="20" UId="290" />
+  <NewLine Num="1" UId="291" />
+  <Blank Num="16" UId="292" />
+  <Token Text="END_IF" UId="293" />
+  <Token Text=";" UId="294" />
+  <NewLine Num="1" UId="295" />
+  <Blank Num="16" UId="296" />
+  <NewLine Num="1" UId="297" />
+  <Blank Num="16" UId="298" />
+  <Access Scope="LocalVariable" UId="299">
+    <Symbol UId="300">
+      <Component Name="sum" UId="301" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="302" />
+  <Token Text=":=" UId="303" />
+  <Blank Num="1" UId="304" />
+  <Access Scope="LocalVariable" UId="305">
+    <Symbol UId="306">
+      <Component Name="sum" UId="307" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="308" />
+  <Token Text="+" UId="309" />
+  <Blank Num="1" UId="310" />
+  <Access Scope="LocalVariable" UId="311">
+    <Symbol UId="312">
+      <Component Name="arr_int_temp" UId="313">
+        <Token Text="[" UId="314" />
+        <Access Scope="LocalVariable" UId="315">
+          <Symbol UId="316">
+            <Component Name="i" UId="317" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="318" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="319" />
+  <NewLine Num="1" UId="320" />
+  <Blank Num="16" UId="321" />
+  <NewLine Num="1" UId="322" />
+  <Blank Num="12" UId="323" />
+  <Token Text="END_FOR" UId="324" />
+  <Token Text=";" UId="325" />
+  <NewLine Num="1" UId="326" />
+  <Blank Num="12" UId="327" />
+  <NewLine Num="1" UId="328" />
+  <Blank Num="12" UId="329" />
+  <Access Scope="Call" UId="330">
+    <Instruction Name="VariantPut" UId="331">
+      <Token Text="(" UId="332" />
+      <Parameter Name="SRC" UId="333">
+        <Blank Num="1" UId="334" />
+        <Token Text=":=" UId="335" />
+        <Blank Num="1" UId="336" />
+        <Access Scope="LocalVariable" UId="337">
+          <Symbol UId="338">
+            <Component Name="max_number_temp_int" UId="339" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="340" />
+      <NewLine Num="1" UId="341" />
+      <Blank Num="23" UId="342" />
+      <NewLine Num="1" UId="343" />
+      <Blank Num="23" UId="344" />
+      <Parameter Name="DST" UId="345">
+        <Blank Num="1" UId="346" />
+        <Token Text=":=" UId="347" />
+        <Blank Num="1" UId="348" />
+        <Access Scope="LocalVariable" UId="349">
+          <Symbol UId="350">
+            <Component Name="max_out" UId="351" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="352" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="353" />
+  <Blank Num="1" UId="354" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="355">
+    <Text UId="356">把最大值输出 int</Text>
+  </LineComment>
+  <NewLine Num="1" UId="357" />
+  <Blank Num="12" UId="358" />
+  <NewLine Num="1" UId="359" />
+  <Blank Num="12" UId="360" />
+  <Access Scope="LocalVariable" UId="361">
+    <Symbol UId="362">
+      <Component Name="最大值在数组内的索引" UId="363" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="364" />
+  <Token Text=":=" UId="365" />
+  <Blank Num="1" UId="366" />
+  <Access Scope="LocalVariable" UId="367">
+    <Symbol UId="368">
+      <Component Name="max_index_temp" UId="369" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="370" />
+  <Blank Num="1" UId="371" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="372">
+    <Text UId="373">把最大值的索引输出</Text>
+  </LineComment>
+  <NewLine Num="1" UId="374" />
+  <Blank Num="12" UId="375" />
+  <NewLine Num="1" UId="376" />
+  <Blank Num="12" UId="377" />
+  <Access Scope="LocalVariable" UId="378">
+    <Symbol UId="379">
+      <Component Name="平均值" UId="380" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="381" />
+  <Token Text=":=" UId="382" />
+  <Blank Num="1" UId="383" />
+  <Access Scope="LocalVariable" UId="384">
+    <Symbol UId="385">
+      <Component Name="sum" UId="386" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="387" />
+  <Token Text="/" UId="388" />
+  <Blank Num="1" UId="389" />
+  <Access Scope="LocalVariable" UId="390">
+    <Symbol UId="391">
+      <Component Name="arr_length" UId="392" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="393" />
+  <NewLine Num="1" UId="394" />
+  <Blank Num="12" UId="395" />
+  <NewLine Num="1" UId="396" />
+  <Blank Num="12" UId="397" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="398">
+    <Text UId="399">*******************************如果数组是浮点进行计算*********************************</Text>
+  </LineComment>
+  <NewLine Num="1" UId="400" />
+  <Blank Num="12" UId="401" />
+  <NewLine Num="1" UId="402" />
+  <Blank Num="8" UId="403" />
+  <Token Text="ELSIF" UId="404" />
+  <Blank Num="1" UId="405" />
+  <Access Scope="Call" UId="406">
+    <Instruction Name="TypeOfElements" UId="407">
+      <Token Text="(" UId="408" />
+      <NamelessParameter UId="409">
+        <Access Scope="LocalVariable" UId="410">
+          <Symbol UId="411">
+            <Component Name="输入数组" UId="412" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="414" />
+    </Instruction>
+  </Access>
+  <Blank Num="1" UId="415" />
+  <Token Text="=" UId="416" />
+  <Blank Num="1" UId="417" />
+  <Access Scope="SystemType" UId="418">
+    <DataType UId="419">Real</DataType>
+  </Access>
+  <Blank Num="1" UId="420" />
+  <Token Text="THEN" UId="421" />
+  <Blank Num="1" UId="422" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="423">
+    <Text UId="424">判断输入数组的类型</Text>
+  </LineComment>
+  <NewLine Num="1" UId="425" />
+  <Blank Num="12" UId="426" />
+  <NewLine Num="1" UId="427" />
+  <Blank Num="12" UId="428" />
+  <Access Scope="Call" UId="429">
+    <Instruction Name="VariantGet" UId="430">
+      <Token Text="(" UId="431" />
+      <Parameter Name="SRC" UId="432">
+        <Blank Num="1" UId="433" />
+        <Token Text=":=" UId="434" />
+        <Blank Num="1" UId="435" />
+        <Access Scope="LocalVariable" UId="436">
+          <Symbol UId="437">
+            <Component Name="输入数组" UId="438" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="439" />
+      <NewLine Num="1" UId="440" />
+      <Blank Num="23" UId="441" />
+      <NewLine Num="1" UId="442" />
+      <Blank Num="23" UId="443" />
+      <Parameter Name="DST" UId="444">
+        <Blank Num="1" UId="445" />
+        <Token Text="=&gt;" UId="446" />
+        <Blank Num="1" UId="447" />
+        <Access Scope="LocalVariable" UId="448">
+          <Symbol UId="449">
+            <Component Name="arr_real_temp" UId="450" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="451" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="452" />
+  <Blank Num="1" UId="453" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="454">
+    <Text UId="455">把输入的数组传入到内部数组进行处理</Text>
+  </LineComment>
+  <NewLine Num="1" UId="456" />
+  <Blank Num="12" UId="457" />
+  <NewLine Num="1" UId="458" />
+  <Blank Num="12" UId="459" />
+  <Access Scope="LocalVariable" UId="460">
+    <Symbol UId="461">
+      <Component Name="max_number_temp_real" UId="462" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="463" />
+  <Token Text=":=" UId="464" />
+  <Blank Num="1" UId="465" />
+  <Access Scope="LocalVariable" UId="466">
+    <Symbol UId="467">
+      <Component Name="arr_real_temp" UId="468">
+        <Token Text="[" UId="469" />
+        <Access Scope="LiteralConstant" UId="470">
+          <Constant UId="471">
+            <ConstantValue UId="473">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="474" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="475" />
+  <Blank Num="1" UId="476" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="477">
+    <Text UId="478">把索引为0的数认为是最大值</Text>
+  </LineComment>
+  <NewLine Num="1" UId="479" />
+  <Blank Num="12" UId="480" />
+  <NewLine Num="1" UId="481" />
+  <Blank Num="12" UId="482" />
+  <Access Scope="LocalVariable" UId="483">
+    <Symbol UId="484">
+      <Component Name="max_index_temp" UId="485" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="486" />
+  <Token Text=":=" UId="487" />
+  <Blank Num="1" UId="488" />
+  <Access Scope="LiteralConstant" UId="489">
+    <Constant UId="490">
+      <ConstantValue UId="492">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="493" />
+  <Blank Num="1" UId="494" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="495">
+    <Text UId="496">把0索引存起来</Text>
+  </LineComment>
+  <NewLine Num="1" UId="497" />
+  <Blank Num="12" UId="498" />
+  <NewLine Num="1" UId="499" />
+  <Blank Num="12" UId="500" />
+  <Token Text="FOR" UId="501" />
+  <Blank Num="1" UId="502" />
+  <Access Scope="LocalVariable" UId="503">
+    <Symbol UId="504">
+      <Component Name="i" UId="505" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="506" />
+  <Token Text=":=" UId="507" />
+  <Blank Num="1" UId="508" />
+  <Access Scope="LiteralConstant" UId="509">
+    <Constant UId="510">
+      <ConstantValue UId="512">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="513" />
+  <Token Text="TO" UId="514" />
+  <Blank Num="1" UId="515" />
+  <Access Scope="LocalConstant" UId="516">
+    <Constant Name="max_length" UId="517" />
+  </Access>
+  <Blank Num="1" UId="520" />
+  <Token Text="-" UId="521" />
+  <Blank Num="1" UId="522" />
+  <Access Scope="LiteralConstant" UId="523">
+    <Constant UId="524">
+      <ConstantValue UId="526">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="527" />
+  <Token Text="DO" UId="528" />
+  <Blank Num="1" UId="529" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="530">
+    <Text UId="531">循环 从最小索引开始，到最大索引结束</Text>
+  </LineComment>
+  <NewLine Num="1" UId="532" />
+  <Blank Num="16" UId="533" />
+  <NewLine Num="1" UId="534" />
+  <Blank Num="16" UId="535" />
+  <Token Text="IF" UId="536" />
+  <Blank Num="1" UId="537" />
+  <Access Scope="LocalVariable" UId="538">
+    <Symbol UId="539">
+      <Component Name="max_number_temp_real" UId="540" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="541" />
+  <Token Text="&lt;" UId="542" />
+  <Blank Num="1" UId="543" />
+  <Access Scope="LocalVariable" UId="544">
+    <Symbol UId="545">
+      <Component Name="arr_real_temp" UId="546">
+        <Token Text="[" UId="547" />
+        <Access Scope="LocalVariable" UId="548">
+          <Symbol UId="549">
+            <Component Name="i" UId="550" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="551" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="552" />
+  <Token Text="THEN" UId="553" />
+  <Blank Num="1" UId="554" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="555">
+    <Text UId="556">如果最大值小于后面索引的值</Text>
+  </LineComment>
+  <NewLine Num="1" UId="557" />
+  <Blank Num="20" UId="558" />
+  <NewLine Num="1" UId="559" />
+  <Blank Num="20" UId="560" />
+  <Access Scope="LocalVariable" UId="561">
+    <Symbol UId="562">
+      <Component Name="max_number_temp_real" UId="563" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="564" />
+  <Token Text=":=" UId="565" />
+  <Blank Num="1" UId="566" />
+  <Access Scope="LocalVariable" UId="567">
+    <Symbol UId="568">
+      <Component Name="arr_real_temp" UId="569">
+        <Token Text="[" UId="570" />
+        <Access Scope="LocalVariable" UId="571">
+          <Symbol UId="572">
+            <Component Name="i" UId="573" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="574" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="575" />
+  <Blank Num="1" UId="576" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="577">
+    <Text UId="578">则把后面索引的值存入最大值变量里</Text>
+  </LineComment>
+  <NewLine Num="1" UId="579" />
+  <Blank Num="20" UId="580" />
+  <NewLine Num="1" UId="581" />
+  <Blank Num="20" UId="582" />
+  <Access Scope="LocalVariable" UId="583">
+    <Symbol UId="584">
+      <Component Name="max_index_temp" UId="585" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="586" />
+  <Token Text=":=" UId="587" />
+  <Blank Num="1" UId="588" />
+  <Access Scope="LocalVariable" UId="589">
+    <Symbol UId="590">
+      <Component Name="i" UId="591" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="592" />
+  <Blank Num="1" UId="593" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="594">
+    <Text UId="595">再把索引存起来</Text>
+  </LineComment>
+  <NewLine Num="1" UId="596" />
+  <Blank Num="20" UId="597" />
+  <NewLine Num="1" UId="598" />
+  <Blank Num="16" UId="599" />
+  <Token Text="END_IF" UId="600" />
+  <Token Text=";" UId="601" />
+  <NewLine Num="1" UId="602" />
+  <Blank Num="16" UId="603" />
+  <NewLine Num="1" UId="604" />
+  <Blank Num="16" UId="605" />
+  <Access Scope="LocalVariable" UId="606">
+    <Symbol UId="607">
+      <Component Name="sum" UId="608" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="609" />
+  <Token Text=":=" UId="610" />
+  <Blank Num="1" UId="611" />
+  <Access Scope="LocalVariable" UId="612">
+    <Symbol UId="613">
+      <Component Name="sum" UId="614" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="615" />
+  <Token Text="+" UId="616" />
+  <Blank Num="1" UId="617" />
+  <Access Scope="LocalVariable" UId="618">
+    <Symbol UId="619">
+      <Component Name="arr_real_temp" UId="620">
+        <Token Text="[" UId="621" />
+        <Access Scope="LocalVariable" UId="622">
+          <Symbol UId="623">
+            <Component Name="i" UId="624" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="625" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="626" />
+  <NewLine Num="1" UId="627" />
+  <Blank Num="16" UId="628" />
+  <NewLine Num="1" UId="629" />
+  <Blank Num="12" UId="630" />
+  <Token Text="END_FOR" UId="631" />
+  <Token Text=";" UId="632" />
+  <NewLine Num="1" UId="633" />
+  <Blank Num="12" UId="634" />
+  <NewLine Num="1" UId="635" />
+  <Blank Num="12" UId="636" />
+  <Access Scope="Call" UId="637">
+    <Instruction Name="VariantPut" UId="638">
+      <Token Text="(" UId="639" />
+      <Parameter Name="SRC" UId="640">
+        <Blank Num="1" UId="641" />
+        <Token Text=":=" UId="642" />
+        <Blank Num="1" UId="643" />
+        <Access Scope="LocalVariable" UId="644">
+          <Symbol UId="645">
+            <Component Name="max_number_temp_real" UId="646" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="647" />
+      <NewLine Num="1" UId="648" />
+      <Blank Num="23" UId="649" />
+      <NewLine Num="1" UId="650" />
+      <Blank Num="23" UId="651" />
+      <Parameter Name="DST" UId="652">
+        <Blank Num="1" UId="653" />
+        <Token Text=":=" UId="654" />
+        <Blank Num="1" UId="655" />
+        <Access Scope="LocalVariable" UId="656">
+          <Symbol UId="657">
+            <Component Name="max_out" UId="658" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="659" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="660" />
+  <Blank Num="1" UId="661" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="662">
+    <Text UId="663">把最大值输出 real</Text>
+  </LineComment>
+  <NewLine Num="1" UId="664" />
+  <Blank Num="12" UId="665" />
+  <NewLine Num="1" UId="666" />
+  <Blank Num="12" UId="667" />
+  <Access Scope="LocalVariable" UId="668">
+    <Symbol UId="669">
+      <Component Name="最大值在数组内的索引" UId="670" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="671" />
+  <Token Text=":=" UId="672" />
+  <Blank Num="1" UId="673" />
+  <Access Scope="LocalVariable" UId="674">
+    <Symbol UId="675">
+      <Component Name="max_index_temp" UId="676" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="677" />
+  <Blank Num="1" UId="678" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="679">
+    <Text UId="680">把最大值的索引输出</Text>
+  </LineComment>
+  <NewLine Num="1" UId="681" />
+  <Blank Num="12" UId="682" />
+  <NewLine Num="1" UId="683" />
+  <Blank Num="12" UId="684" />
+  <Access Scope="LocalVariable" UId="685">
+    <Symbol UId="686">
+      <Component Name="平均值" UId="687" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="688" />
+  <Token Text=":=" UId="689" />
+  <Blank Num="1" UId="690" />
+  <Access Scope="LocalVariable" UId="691">
+    <Symbol UId="692">
+      <Component Name="sum" UId="693" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="694" />
+  <Token Text="/" UId="695" />
+  <Blank Num="1" UId="696" />
+  <Access Scope="LocalVariable" UId="697">
+    <Symbol UId="698">
+      <Component Name="arr_length" UId="699" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="700" />
+  <NewLine Num="1" UId="701" />
+  <Blank Num="12" UId="702" />
+  <NewLine Num="1" UId="703" />
+  <Blank Num="8" UId="704" />
+  <Token Text="END_IF" UId="705" />
+  <Token Text=";" UId="706" />
+  <NewLine Num="1" UId="707" />
+  <Blank Num="8" UId="708" />
+  <NewLine Num="1" UId="709" />
+  <Blank Num="4" UId="710" />
+  <Token Text="ELSE" UId="711" />
+  <NewLine Num="1" UId="712" />
+  <Blank Num="8" UId="713" />
+  <NewLine Num="1" UId="714" />
+  <Blank Num="8" UId="715" />
+  <Access Scope="LocalVariable" UId="716">
+    <Symbol UId="717">
+      <Component Name="报错消息" UId="718" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="719" />
+  <Token Text=":=" UId="720" />
+  <Blank Num="1" UId="721" />
+  <Access Scope="LiteralConstant" UId="722">
+    <Constant UId="723">
+      <ConstantValue UId="725">'fault'</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="726" />
+  <Blank Num="1" UId="727" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="728">
+    <Text UId="729">如果输入的数组长度超过200个，那就报错</Text>
+  </LineComment>
+  <NewLine Num="1" UId="730" />
+  <Blank Num="8" UId="731" />
+  <NewLine Num="1" UId="732" />
+  <Blank Num="4" UId="733" />
+  <Token Text="END_IF" UId="734" />
+  <Token Text=";" UId="735" />
+  <NewLine Num="1" UId="736" />
+  <Blank Num="4" UId="737" />
+  <NewLine Num="1" UId="738" />
+  <Token Text="END_IF" UId="739" />
+  <Token Text=";" UId="740" />
+  <NewLine Num="1" UId="741" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="E" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="F" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="10" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="11" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

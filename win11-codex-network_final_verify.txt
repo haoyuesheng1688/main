@@ -1,0 +1,117 @@
+=== restore dhcp === 
+DHCP is already enabled on this interface.
+
+
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet0:
+
+   Connection-specific DNS Suffix  . : localdomain
+   IPv6 Address. . . . . . . . . . . : fd23:75fb:f719::987
+   Link-local IPv6 Address . . . . . : fe80::8693:241a:4a43:ea8c%13
+   IPv4 Address. . . . . . . . . . . : 192.168.50.129
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.50.2
+
+Windows IP Configuration
+
+Successfully flushed the DNS Resolver Cache.
+=== ipconfig all === 
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : Admin
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Mixed
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : localdomain
+
+Ethernet adapter Ethernet0:
+
+   Connection-specific DNS Suffix  . : localdomain
+   Description . . . . . . . . . . . : Intel(R) 82574L Gigabit Network Connection
+   Physical Address. . . . . . . . . : 00-0C-29-1A-96-7C
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : fd23:75fb:f719::987(Preferred) 
+   Lease Obtained. . . . . . . . . . : 2026年5月22日 21:12:18
+   Lease Expires . . . . . . . . . . : 2162年6月29日 3:46:17
+   Link-local IPv6 Address . . . . . : fe80::8693:241a:4a43:ea8c%13(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.50.129(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : 2026年5月22日 21:14:39
+   Lease Expires . . . . . . . . . . : 2026年5月22日 21:47:58
+   Default Gateway . . . . . . . . . : 192.168.50.2
+   DHCP Server . . . . . . . . . . . : 192.168.50.254
+   DHCPv6 IAID . . . . . . . . . . . : 100666409
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-31-74-E8-F9-00-0C-29-1A-96-7C
+   DNS Servers . . . . . . . . . . . : 192.168.50.2
+   Primary WINS Server . . . . . . . : 192.168.50.2
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+=== route === 
+===========================================================================
+Interface List
+ 13...00 0c 29 1a 96 7c ......Intel(R) 82574L Gigabit Network Connection
+  1...........................Software Loopback Interface 1
+===========================================================================
+
+IPv4 Route Table
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+          0.0.0.0          0.0.0.0     192.168.50.2   192.168.50.129     25
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+     192.168.50.0    255.255.255.0         On-link    192.168.50.129    281
+   192.168.50.129  255.255.255.255         On-link    192.168.50.129    281
+   192.168.50.255  255.255.255.255         On-link    192.168.50.129    281
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link    192.168.50.129    281
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+  255.255.255.255  255.255.255.255         On-link    192.168.50.129    281
+===========================================================================
+Persistent Routes:
+  None
+=== ping gateway === 
+
+Pinging 192.168.50.2 with 32 bytes of data:
+Reply from 192.168.50.2: bytes=32 time<1ms TTL=128
+Reply from 192.168.50.2: bytes=32 time<1ms TTL=128
+
+Ping statistics for 192.168.50.2:
+    Packets: Sent = 2, Received = 2, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+=== ping public ip === 
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=174ms TTL=128
+Reply from 8.8.8.8: bytes=32 time=172ms TTL=128
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 2, Received = 2, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 172ms, Maximum = 174ms, Average = 173ms
+=== nslookup === 
+Server:  UnKnown
+Address:  192.168.50.2
+
+Name:    www.baidu.com.localdomain
+Address:  198.18.0.22
+
+=== curl baidu === 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+HTTP/1.1 200 OK
+Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform
+Content-Length: 0
+Content-Type: text/html
+Pragma: no-cache
+Server: bfe
+Date: Fri, 22 May 2026 13:18:06 GMT
+

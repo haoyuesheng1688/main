@@ -1,0 +1,13 @@
+﻿
+Name           Number Type                                     Path          
+----           ------ ----                                     ----          
+DB_Components       2 Siemens.Engineering.SW.Blocks.GlobalDB   DB_Components 
+HMI弹窗               1 Siemens.Engineering.SW.Blocks.FB         HMI弹窗         
+DB_ActivePopup      1 Siemens.Engineering.SW.Blocks.GlobalDB   DB_ActivePopup
+ZBRI-1              2 Siemens.Engineering.SW.Blocks.FB         ZBRI-1        
+ZBRI-1_DB           3 Siemens.Engineering.SW.Blocks.InstanceDB ZBRI-1_DB     
+Startup           100 Siemens.Engineering.SW.Blocks.OB         Startup       
+Main                1 Siemens.Engineering.SW.Blocks.OB         Main          
+
+
+

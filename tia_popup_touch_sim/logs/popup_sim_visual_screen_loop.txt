@@ -1,0 +1,4 @@
+﻿GeneratedVisualScreenXml=C:\Users\QF100\Documents\New project\tia_popup_touch_sim\import\Codex_Popup_Sim_Runtime_Named.visual.xml
+OK_IMPORT_VISUAL_SCREEN=Codex_Popup_Sim_Runtime_Named
+OK_EXPORT_VISUAL_SCREEN=C:\Users\QF100\Documents\New project\tia_popup_touch_sim\exports\Codex_Popup_Sim_Runtime_Named_visual_export.xml
+ProjectSaved=True

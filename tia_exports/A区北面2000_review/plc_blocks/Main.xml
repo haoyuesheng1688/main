@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-04-13T11:12:02.810031Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.OB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Initial_Call" Datatype="Bool" Accessibility="Public" Informative="true">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Initial call of this OB</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Remanence" Datatype="Bool" Accessibility="Public" Informative="true">
+      <Comment>
+        <MultiLanguageText Lang="en-US">=True, if remanent data are available</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>Main</Name>
+      <Number>1</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SecondaryType>ProgramCycle</SecondaryType>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Access Scope="Call" UId="21">
+    <CallInfo UId="22" BlockType="FC">
+      <Instance Scope="GlobalVariable" UId="24">
+        <Component Name="0- IO Configure" UId="23" />
+      </Instance>
+      <Token Text="(" UId="25" />
+      <Token Text=")" UId="26" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="27" />
+  <NewLine Num="1" UId="28" />
+  <Access Scope="Call" UId="29">
+    <CallInfo UId="30" BlockType="FB" Name="A1-阀带反馈">
+      <Instance Scope="GlobalVariable" UId="31">
+        <Component Name="A1-阀带反馈_DB" UId="32" />
+      </Instance>
+      <Token Text="(" UId="33" />
+      <Token Text=")" UId="34" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="35" />
+  <NewLine Num="1" UId="36" />
+  <Access Scope="Call" UId="37">
+    <CallInfo UId="38" BlockType="FB" Name="A2-阀带阀导">
+      <Instance Scope="GlobalVariable" UId="39">
+        <Component Name="A2-阀带阀导_DB" UId="40" />
+      </Instance>
+      <Token Text="(" UId="41" />
+      <Token Text=")" UId="42" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="43" />
+  <NewLine Num="1" UId="44" />
+  <Access Scope="Call" UId="45">
+    <CallInfo UId="46" BlockType="FB" Name="A3-电机控制">
+      <Instance Scope="GlobalVariable" UId="47">
+        <Component Name="A3-电机控制_DB" UId="48" />
+      </Instance>
+      <Token Text="(" UId="49" />
+      <Token Text=")" UId="50" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="51" />
+  <NewLine Num="1" UId="52" />
+  <Access Scope="Call" UId="53">
+    <CallInfo UId="54" BlockType="FB" Name="A4-脉冲控制">
+      <Instance Scope="GlobalVariable" UId="55">
+        <Component Name="A4-脉冲控制_DB" UId="56" />
+      </Instance>
+      <Token Text="(" UId="57" />
+      <Token Text=")" UId="58" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="59" />
+  <NewLine Num="1" UId="60" />
+  <Access Scope="Call" UId="61">
+    <CallInfo UId="62" BlockType="FB" Name="A6-模拟量输入">
+      <Instance Scope="GlobalVariable" UId="63">
+        <Component Name="A6-模拟量输入_DB" UId="64" />
+      </Instance>
+      <Token Text="(" UId="65" />
+      <Token Text=")" UId="66" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="67" />
+  <NewLine Num="1" UId="68" />
+  <Access Scope="Call" UId="69">
+    <CallInfo UId="70" BlockType="FB" Name="A5-模拟量输出">
+      <Instance Scope="GlobalVariable" UId="71">
+        <Component Name="A5-模拟量输出_DB" UId="72" />
+      </Instance>
+      <Token Text="(" UId="73" />
+      <Token Text=")" UId="74" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="75" />
+  <NewLine Num="1" UId="76" />
+  <Access Scope="Call" UId="77">
+    <CallInfo UId="78" BlockType="FB" Name="A7-温度控制">
+      <Instance Scope="GlobalVariable" UId="79">
+        <Component Name="A7-温度控制_DB" UId="80" />
+      </Instance>
+      <Token Text="(" UId="81" />
+      <Token Text=")" UId="82" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="83" />
+  <NewLine Num="1" UId="84" />
+  <Access Scope="Call" UId="85">
+    <CallInfo UId="86" BlockType="FB" Name="B1--ALARM">
+      <Instance Scope="GlobalVariable" UId="87">
+        <Component Name="6-ALLALARM_DB" UId="88" />
+      </Instance>
+      <Token Text="(" UId="89" />
+      <Token Text=")" UId="90" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="91" />
+  <NewLine Num="1" UId="92" />
+  <Access Scope="Call" UId="93">
+    <CallInfo UId="94" BlockType="FB" Name="B2--局部连锁">
+      <Instance Scope="GlobalVariable" UId="95">
+        <Component Name="B2--局部连锁_DB" UId="96" />
+      </Instance>
+      <Token Text="(" UId="97" />
+      <Token Text=")" UId="98" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="99" />
+  <NewLine Num="1" UId="100" />
+  <Access Scope="Call" UId="101">
+    <CallInfo UId="102" BlockType="FB" Name="B3-全局连锁">
+      <Instance Scope="GlobalVariable" UId="103">
+        <Component Name="B3-全局连锁_DB" UId="104" />
+      </Instance>
+      <Token Text="(" UId="105" />
+      <Token Text=")" UId="106" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="107" />
+  <NewLine Num="1" UId="108" />
+  <Access Scope="Call" UId="109">
+    <CallInfo UId="110" BlockType="FB" Name="B4-清洗连锁">
+      <Instance Scope="GlobalVariable" UId="111">
+        <Component Name="B4-清洗连锁_DB" UId="112" />
+      </Instance>
+      <Token Text="(" UId="113" />
+      <Token Text=")" UId="114" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="115" />
+  <NewLine Num="1" UId="116" />
+  <Access Scope="Call" UId="117">
+    <CallInfo UId="118" BlockType="FB" Name="C1-开式自动">
+      <Instance Scope="GlobalVariable" UId="119">
+        <Component Name="C1-开式自动_DB" UId="120" />
+      </Instance>
+      <Token Text="(" UId="121" />
+      <Token Text=")" UId="122" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="123" />
+  <NewLine Num="1" UId="124" />
+  <Access Scope="Call" UId="125">
+    <CallInfo UId="126" BlockType="FB" Name="C2-闭式自动">
+      <Instance Scope="GlobalVariable" UId="127">
+        <Component Name="C2-闭式自动_DB" UId="128" />
+      </Instance>
+      <Token Text="(" UId="129" />
+      <Token Text=")" UId="130" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="131" />
+  <NewLine Num="1" UId="132" />
+  <Access Scope="Call" UId="133">
+    <CallInfo UId="134" BlockType="FB" Name="C3-室内CIP清洗">
+      <Instance Scope="GlobalVariable" UId="135">
+        <Component Name="C3-室内CIP清洗_DB" UId="136" />
+      </Instance>
+      <Token Text="(" UId="137" />
+      <Token Text=")" UId="138" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="139" />
+  <NewLine Num="1" UId="140" />
+  <Access Scope="Call" UId="141">
+    <CallInfo UId="142" BlockType="FB" Name="C4-室外CIP清洗">
+      <Instance Scope="GlobalVariable" UId="143">
+        <Component Name="C4-室外CIP清洗_DB" UId="144" />
+      </Instance>
+      <Token Text="(" UId="145" />
+      <Token Text=")" UId="146" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="147" />
+  <NewLine Num="1" UId="148" />
+  <Access Scope="Call" UId="149">
+    <CallInfo UId="150" BlockType="FB" Name="D1-室内CIP通讯">
+      <Instance Scope="GlobalVariable" UId="151">
+        <Component Name="D1-室内CIP通讯_DB" UId="152" />
+      </Instance>
+      <Token Text="(" UId="153" />
+      <Token Text=")" UId="154" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="155" />
+  <NewLine Num="1" UId="156" />
+  <Access Scope="Call" UId="157">
+    <CallInfo UId="158" BlockType="FB" Name="D2-室外CIP通讯">
+      <Instance Scope="GlobalVariable" UId="159">
+        <Component Name="D2-室外CIP通讯_DB" UId="160" />
+      </Instance>
+      <Token Text="(" UId="161" />
+      <Token Text=")" UId="162" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="163" />
+  <NewLine Num="2" UId="164" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="E" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="F" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text>"Main Program Sweep (Cycle)"</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="10" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text>"Main Program Sweep (Cycle)"</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="11" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>"Main Program Sweep (Cycle)"</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.OB>
+</Document>

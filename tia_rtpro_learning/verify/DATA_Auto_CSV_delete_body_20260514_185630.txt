@@ -1,0 +1,10 @@
+﻿BeforePath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\verify\DATA_Auto_CSV_before_delete_body_20260514_185630.vbs
+SelectedPath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\verify\DATA_Auto_CSV_selected_delete_body_20260514_185630.vbs
+AfterPath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\verify\DATA_Auto_CSV_after_delete_body_20260514_185630.vbs
+ScreenPath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\verify\screen_after_delete_body_20260514_185630.png
+SubLine=3
+EndLine=156
+SelectedLength=36
+ShrinkCount=1
+AfterLineCount=156
+BodyEmpty=False

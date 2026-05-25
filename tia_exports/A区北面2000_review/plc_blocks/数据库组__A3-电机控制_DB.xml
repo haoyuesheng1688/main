@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-04-13T11:12:44.3447416Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <DBAccessibleFromOPCUA>true</DBAccessibleFromOPCUA>
+      <DBAccessibleFromWebserver>true</DBAccessibleFromWebserver>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <InstanceOfName>A3-电机控制</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="进料泵控制" Datatype="&quot;A4-蠕动泵控制&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="HMI上限" Datatype="Real" /><Member Name="HMI下限" Datatype="Real" /><Member Name="PLC上限" Datatype="Int" /><Member Name="PLC下限" Datatype="Int" /><Member Name="泵报警信号" Datatype="Bool" /><Member Name="泵输入电流" Datatype="Int" /></Section><Section Name="Output"><Member Name="泵输出反馈" Datatype="Real" /><Member Name="泵报警输出" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="模式设定" Datatype="Real" /><Member Name="泵控制按钮" Datatype="Bool" /><Member Name="频率设定" Datatype="Real" /><Member Name="泵输出Q" Datatype="Bool" /><Member Name="泵速度AO" Datatype="Int" /><Member Name="安全停机" Datatype="Bool" /><Member Name="泵正反转按钮" Datatype="Bool" /><Member Name="泵正反输出" Datatype="Bool" /><Member Name="动画" Datatype="Int" /></Section><Section Name="Static"><Member Name="Temp_1" Datatype="Int" /><Member Name="DBD1" Datatype="Real" /><Member Name="DBD2" Datatype="Real" /><Member Name="DBD3" Datatype="Real" /></Section></Sections></Member>
+    <Member Name="引风频率" Datatype="&quot;A4--电机控制&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="HMI上限" Datatype="Real" /><Member Name="HMI下限" Datatype="Real" /><Member Name="PLC上限" Datatype="Int" /><Member Name="PLC下限" Datatype="Int" /><Member Name="电机报警信号" Datatype="Bool" /><Member Name="电机输入模拟量" Datatype="Int" /><Member Name="电机输出最小" Datatype="Real" /></Section><Section Name="Output"><Member Name="电机输出反馈" Datatype="Real" /><Member Name="电机报警输出" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="按钮_消警按钮" Datatype="Bool" /><Member Name="模式设定" Datatype="Real" /><Member Name="电机控制按钮" Datatype="Bool" /><Member Name="频率设定" Datatype="Real" /><Member Name="电机输出Q" Datatype="Bool" /><Member Name="电机速度AO" Datatype="Int" /><Member Name="动画" Datatype="Int" /><Member Name="安全停机" Datatype="Bool" /></Section><Section Name="Static"><Member Name="P1" Datatype="Bool" /><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="Temp_1" Datatype="Int" /><Member Name="DBD1" Datatype="Real" /><Member Name="DBD2" Datatype="Real" /><Member Name="DBD3" Datatype="Real" /></Section></Sections></Member>
+    <Member Name="送风频率" Datatype="&quot;A4--电机控制&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="HMI上限" Datatype="Real" /><Member Name="HMI下限" Datatype="Real" /><Member Name="PLC上限" Datatype="Int" /><Member Name="PLC下限" Datatype="Int" /><Member Name="电机报警信号" Datatype="Bool" /><Member Name="电机输入模拟量" Datatype="Int" /><Member Name="电机输出最小" Datatype="Real" /></Section><Section Name="Output"><Member Name="电机输出反馈" Datatype="Real" /><Member Name="电机报警输出" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="按钮_消警按钮" Datatype="Bool" /><Member Name="模式设定" Datatype="Real" /><Member Name="电机控制按钮" Datatype="Bool" /><Member Name="频率设定" Datatype="Real" /><Member Name="电机输出Q" Datatype="Bool" /><Member Name="电机速度AO" Datatype="Int" /><Member Name="动画" Datatype="Int" /><Member Name="安全停机" Datatype="Bool" /></Section><Section Name="Static"><Member Name="P1" Datatype="Bool" /><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="Temp_1" Datatype="Int" /><Member Name="DBD1" Datatype="Real" /><Member Name="DBD2" Datatype="Real" /><Member Name="DBD3" Datatype="Real" /></Section></Sections></Member>
+    <Member Name="离心雾化" Datatype="&quot;A4--电机控制&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="HMI上限" Datatype="Real" /><Member Name="HMI下限" Datatype="Real" /><Member Name="PLC上限" Datatype="Int" /><Member Name="PLC下限" Datatype="Int" /><Member Name="电机报警信号" Datatype="Bool" /><Member Name="电机输入模拟量" Datatype="Int" /><Member Name="电机输出最小" Datatype="Real" /></Section><Section Name="Output"><Member Name="电机输出反馈" Datatype="Real" /><Member Name="电机报警输出" Datatype="Bool" /></Section><Section Name="InOut"><Member Name="按钮_消警按钮" Datatype="Bool" /><Member Name="模式设定" Datatype="Real" /><Member Name="电机控制按钮" Datatype="Bool" /><Member Name="频率设定" Datatype="Real" /><Member Name="电机输出Q" Datatype="Bool" /><Member Name="电机速度AO" Datatype="Int" /><Member Name="动画" Datatype="Int" /><Member Name="安全停机" Datatype="Bool" /></Section><Section Name="Static"><Member Name="P1" Datatype="Bool" /><Member Name="TON1" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="Temp_1" Datatype="Int" /><Member Name="DBD1" Datatype="Real" /><Member Name="DBD2" Datatype="Real" /><Member Name="DBD3" Datatype="Real" /></Section></Sections></Member>
+  </Section>
+</Sections></Interface>
+      <Name>A3-电机控制_DB</Name>
+      <Number>5</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

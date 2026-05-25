@@ -1,0 +1,7 @@
+﻿ProjectName=赛奥5-last16_20260507M2
+ProjectPath=H:\程序优化\S4-弹窗\A3-赛奥5-高手\8赛奥5-last16_20260507M2\赛奥5-last16_20260507M2.ap17
+CompileDevice=HMI-5X|Siemens.Engineering.HW.DeviceImpl
+CompileState=Success
+CompileMessage=||
+CompileMessagesReadWarning=Access to a disposed object of type 'System.Collections.Generic.IEnumerator`1[[Siemens.Engineering.Compiler.CompilerResultMessage, Siemens.Engineering, Version=17.0.0.0, Culture=neutral, PublicKeyToken=d29ec89bac048f84]]' is not possible.
+ProjectModified=

@@ -1,0 +1,7 @@
+Dim inTag, outTag
+Set inTag = HMIRuntime.Tags("Codex_In")
+Set outTag = HMIRuntime.Tags("Codex_Out")
+
+inTag.Read
+outTag.Value = CStr(inTag.Value)
+outTag.Write

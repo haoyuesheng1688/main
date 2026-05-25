@@ -1,0 +1,16 @@
+﻿ProjectName=三九-15
+ProjectPath=H:\程序优化\S4-弹窗\A2-三九-归档\三九-15\三九-15.ap17
+HmiTarget=HMI_RT_2
+EXPORT_TAG_TABLE=默认变量表|C:\Users\QF100\Documents\New project\tia_sanjiu_learning\exports\tag_tables\tagtable_默认变量表.xml
+EXPORT_TAG_TABLE=SV|C:\Users\QF100\Documents\New project\tia_sanjiu_learning\exports\tag_tables\tagtable_SV.xml
+EXPORT_TAG_TABLE=M|C:\Users\QF100\Documents\New project\tia_sanjiu_learning\exports\tag_tables\tagtable_M.xml
+EXPORT_TAG_TABLE=PV|C:\Users\QF100\Documents\New project\tia_sanjiu_learning\exports\tag_tables\tagtable_PV.xml
+EXPORT_TAG_TABLE=IOM|C:\Users\QF100\Documents\New project\tia_sanjiu_learning\exports\tag_tables\tagtable_IOM.xml
+EXPORT_TAG_TABLE=CS|C:\Users\QF100\Documents\New project\tia_sanjiu_learning\exports\tag_tables\tagtable_CS.xml
+EXPORT_TAG_TABLE=YB|C:\Users\QF100\Documents\New project\tia_sanjiu_learning\exports\tag_tables\tagtable_YB.xml
+EXPORT_TAG_TABLE=变量归档|C:\Users\QF100\Documents\New project\tia_sanjiu_learning\exports\tag_tables\tagtable_变量归档.xml
+EXPORT_TAG_TABLE=操作日志|C:\Users\QF100\Documents\New project\tia_sanjiu_learning\exports\tag_tables\tagtable_操作日志.xml
+EXPORT_TAG_TABLE=KS|C:\Users\QF100\Documents\New project\tia_sanjiu_learning\exports\tag_tables\tagtable_KS.xml
+EXPORT_TAG_TABLE=配方|C:\Users\QF100\Documents\New project\tia_sanjiu_learning\exports\tag_tables\tagtable_配方.xml
+EXPORT_SCREEN=C1_数据记录|C:\Users\QF100\Documents\New project\tia_sanjiu_learning\exports\screens\screen_C1_数据记录.xml
+EXPORT_SCREEN=C2_操作日志|C:\Users\QF100\Documents\New project\tia_sanjiu_learning\exports\screens\screen_C2_操作日志.xml

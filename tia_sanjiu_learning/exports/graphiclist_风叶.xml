@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-05-13T16:51:30.9145688Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <Hmi.TextGraphicList.GraphicList ID="0">
+    <AttributeList>
+      <ListRange>Bit</ListRange>
+      <Mode>Simple</Mode>
+      <Name>风叶</Name>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <Hmi.TextGraphicList.GraphicListEntry ID="5" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>SingleValue</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>0</From>
+          <To>0</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>风叶1</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+      <Hmi.TextGraphicList.GraphicListEntry ID="7" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>SingleValue</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>1</From>
+          <To>1</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>风叶2</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+    </ObjectList>
+  </Hmi.TextGraphicList.GraphicList>
+</Document>

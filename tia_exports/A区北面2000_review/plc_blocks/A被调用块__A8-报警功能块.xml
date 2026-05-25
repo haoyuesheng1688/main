@@ -1,0 +1,1870 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-04-13T11:12:41.6982641Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="报警0" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警1" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警2" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警3" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警4" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警5" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警6" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警7" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警8" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警9" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警10" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警11" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警12" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警13" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警14" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警15" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="报警" Datatype="Word" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="报警文本" Datatype="Array[0..15] of WString[20]" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="off" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>A8-报警功能块</Name>
+      <Number>13</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Blank Num="1" UId="21" />
+  <Token Text="IF" UId="22" />
+  <Blank Num="1" UId="23" />
+  <Token Text="NOT" UId="24" />
+  <Blank Num="2" UId="25" />
+  <Access Scope="LocalVariable" UId="26">
+    <Symbol UId="27">
+      <Component Name="off" UId="28" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="29" />
+  <Token Text="THEN" UId="30" />
+  <NewLine Num="1" UId="31" />
+  <Blank Num="6" UId="32" />
+  <NewLine Num="1" UId="33" />
+  <Blank Num="8" UId="34" />
+  <Access Scope="LocalVariable" UId="35">
+    <Symbol UId="36">
+      <Component Name="报警文本" UId="37">
+        <Token Text="[" UId="38" />
+        <Access Scope="LiteralConstant" UId="39">
+          <Constant UId="40">
+            <ConstantValue UId="42">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="43" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="44" />
+  <Token Text=":=" UId="45" />
+  <Blank Num="1" UId="46" />
+  <Access Scope="Call" UId="47">
+    <Instruction Name="GetSymbolName" UId="48">
+      <Token Text="(" UId="49" />
+      <Parameter Name="variable" UId="50">
+        <Blank Num="1" UId="51" />
+        <Token Text=":=" UId="52" />
+        <Blank Num="1" UId="53" />
+        <Access Scope="LocalVariable" UId="54">
+          <Symbol UId="55">
+            <Component Name="报警0" UId="56" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="57" />
+      <Blank Num="1" UId="58" />
+      <Parameter Name="size" UId="59">
+        <Blank Num="1" UId="60" />
+        <Token Text=":=" UId="61" />
+        <Blank Num="1" UId="62" />
+        <Access Scope="LiteralConstant" UId="63">
+          <Constant UId="64">
+            <ConstantValue UId="66">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="68" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="69" />
+  <NewLine Num="1" UId="70" />
+  <Blank Num="8" UId="71" />
+  <Access Scope="LocalVariable" UId="72">
+    <Symbol UId="73">
+      <Component Name="报警文本" UId="74">
+        <Token Text="[" UId="75" />
+        <Access Scope="LiteralConstant" UId="76">
+          <Constant UId="77">
+            <ConstantValue UId="79">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="80" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="81" />
+  <Token Text=":=" UId="82" />
+  <Blank Num="1" UId="83" />
+  <Access Scope="Call" UId="84">
+    <Instruction Name="GetSymbolName" UId="85">
+      <Token Text="(" UId="86" />
+      <Parameter Name="variable" UId="87">
+        <Blank Num="1" UId="88" />
+        <Token Text=":=" UId="89" />
+        <Blank Num="1" UId="90" />
+        <Access Scope="LocalVariable" UId="91">
+          <Symbol UId="92">
+            <Component Name="报警1" UId="93" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="94" />
+      <Blank Num="1" UId="95" />
+      <Parameter Name="size" UId="96">
+        <Blank Num="1" UId="97" />
+        <Token Text=":=" UId="98" />
+        <Blank Num="1" UId="99" />
+        <Access Scope="LiteralConstant" UId="100">
+          <Constant UId="101">
+            <ConstantValue UId="103">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="105" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="106" />
+  <NewLine Num="1" UId="107" />
+  <Blank Num="8" UId="108" />
+  <Access Scope="LocalVariable" UId="109">
+    <Symbol UId="110">
+      <Component Name="报警文本" UId="111">
+        <Token Text="[" UId="112" />
+        <Access Scope="LiteralConstant" UId="113">
+          <Constant UId="114">
+            <ConstantValue UId="116">2</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="117" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="118" />
+  <Token Text=":=" UId="119" />
+  <Blank Num="1" UId="120" />
+  <Access Scope="Call" UId="121">
+    <Instruction Name="GetSymbolName" UId="122">
+      <Token Text="(" UId="123" />
+      <Parameter Name="variable" UId="124">
+        <Blank Num="1" UId="125" />
+        <Token Text=":=" UId="126" />
+        <Blank Num="1" UId="127" />
+        <Access Scope="LocalVariable" UId="128">
+          <Symbol UId="129">
+            <Component Name="报警2" UId="130" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="131" />
+      <Blank Num="1" UId="132" />
+      <Parameter Name="size" UId="133">
+        <Blank Num="1" UId="134" />
+        <Token Text=":=" UId="135" />
+        <Blank Num="1" UId="136" />
+        <Access Scope="LiteralConstant" UId="137">
+          <Constant UId="138">
+            <ConstantValue UId="140">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="142" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="143" />
+  <NewLine Num="1" UId="144" />
+  <Blank Num="8" UId="145" />
+  <Access Scope="LocalVariable" UId="146">
+    <Symbol UId="147">
+      <Component Name="报警文本" UId="148">
+        <Token Text="[" UId="149" />
+        <Access Scope="LiteralConstant" UId="150">
+          <Constant UId="151">
+            <ConstantValue UId="153">3</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="154" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="155" />
+  <Token Text=":=" UId="156" />
+  <Blank Num="1" UId="157" />
+  <Access Scope="Call" UId="158">
+    <Instruction Name="GetSymbolName" UId="159">
+      <Token Text="(" UId="160" />
+      <Parameter Name="variable" UId="161">
+        <Blank Num="1" UId="162" />
+        <Token Text=":=" UId="163" />
+        <Blank Num="1" UId="164" />
+        <Access Scope="LocalVariable" UId="165">
+          <Symbol UId="166">
+            <Component Name="报警3" UId="167" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="168" />
+      <Blank Num="1" UId="169" />
+      <Parameter Name="size" UId="170">
+        <Blank Num="1" UId="171" />
+        <Token Text=":=" UId="172" />
+        <Blank Num="1" UId="173" />
+        <Access Scope="LiteralConstant" UId="174">
+          <Constant UId="175">
+            <ConstantValue UId="177">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="179" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="180" />
+  <NewLine Num="1" UId="181" />
+  <Blank Num="8" UId="182" />
+  <Access Scope="LocalVariable" UId="183">
+    <Symbol UId="184">
+      <Component Name="报警文本" UId="185">
+        <Token Text="[" UId="186" />
+        <Access Scope="LiteralConstant" UId="187">
+          <Constant UId="188">
+            <ConstantValue UId="190">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="191" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="192" />
+  <Token Text=":=" UId="193" />
+  <Blank Num="1" UId="194" />
+  <Access Scope="Call" UId="195">
+    <Instruction Name="GetSymbolName" UId="196">
+      <Token Text="(" UId="197" />
+      <Parameter Name="variable" UId="198">
+        <Blank Num="1" UId="199" />
+        <Token Text=":=" UId="200" />
+        <Blank Num="1" UId="201" />
+        <Access Scope="LocalVariable" UId="202">
+          <Symbol UId="203">
+            <Component Name="报警4" UId="204" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="205" />
+      <Blank Num="1" UId="206" />
+      <Parameter Name="size" UId="207">
+        <Blank Num="1" UId="208" />
+        <Token Text=":=" UId="209" />
+        <Blank Num="1" UId="210" />
+        <Access Scope="LiteralConstant" UId="211">
+          <Constant UId="212">
+            <ConstantValue UId="214">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="216" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="217" />
+  <NewLine Num="1" UId="218" />
+  <Blank Num="8" UId="219" />
+  <Access Scope="LocalVariable" UId="220">
+    <Symbol UId="221">
+      <Component Name="报警文本" UId="222">
+        <Token Text="[" UId="223" />
+        <Access Scope="LiteralConstant" UId="224">
+          <Constant UId="225">
+            <ConstantValue UId="227">5</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="228" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="229" />
+  <Token Text=":=" UId="230" />
+  <Blank Num="1" UId="231" />
+  <Access Scope="Call" UId="232">
+    <Instruction Name="GetSymbolName" UId="233">
+      <Token Text="(" UId="234" />
+      <Parameter Name="variable" UId="235">
+        <Blank Num="1" UId="236" />
+        <Token Text=":=" UId="237" />
+        <Blank Num="1" UId="238" />
+        <Access Scope="LocalVariable" UId="239">
+          <Symbol UId="240">
+            <Component Name="报警5" UId="241" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="242" />
+      <Blank Num="1" UId="243" />
+      <Parameter Name="size" UId="244">
+        <Blank Num="1" UId="245" />
+        <Token Text=":=" UId="246" />
+        <Blank Num="1" UId="247" />
+        <Access Scope="LiteralConstant" UId="248">
+          <Constant UId="249">
+            <ConstantValue UId="251">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="253" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="254" />
+  <NewLine Num="1" UId="255" />
+  <Blank Num="8" UId="256" />
+  <Access Scope="LocalVariable" UId="257">
+    <Symbol UId="258">
+      <Component Name="报警文本" UId="259">
+        <Token Text="[" UId="260" />
+        <Access Scope="LiteralConstant" UId="261">
+          <Constant UId="262">
+            <ConstantValue UId="264">6</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="265" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="266" />
+  <Token Text=":=" UId="267" />
+  <Blank Num="1" UId="268" />
+  <Access Scope="Call" UId="269">
+    <Instruction Name="GetSymbolName" UId="270">
+      <Token Text="(" UId="271" />
+      <Parameter Name="variable" UId="272">
+        <Blank Num="1" UId="273" />
+        <Token Text=":=" UId="274" />
+        <Blank Num="1" UId="275" />
+        <Access Scope="LocalVariable" UId="276">
+          <Symbol UId="277">
+            <Component Name="报警6" UId="278" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="279" />
+      <Blank Num="1" UId="280" />
+      <Parameter Name="size" UId="281">
+        <Blank Num="1" UId="282" />
+        <Token Text=":=" UId="283" />
+        <Blank Num="1" UId="284" />
+        <Access Scope="LiteralConstant" UId="285">
+          <Constant UId="286">
+            <ConstantValue UId="288">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="290" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="291" />
+  <NewLine Num="1" UId="292" />
+  <Blank Num="8" UId="293" />
+  <Access Scope="LocalVariable" UId="294">
+    <Symbol UId="295">
+      <Component Name="报警文本" UId="296">
+        <Token Text="[" UId="297" />
+        <Access Scope="LiteralConstant" UId="298">
+          <Constant UId="299">
+            <ConstantValue UId="301">7</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="302" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="303" />
+  <Token Text=":=" UId="304" />
+  <Blank Num="1" UId="305" />
+  <Access Scope="Call" UId="306">
+    <Instruction Name="GetSymbolName" UId="307">
+      <Token Text="(" UId="308" />
+      <Parameter Name="variable" UId="309">
+        <Blank Num="1" UId="310" />
+        <Token Text=":=" UId="311" />
+        <Blank Num="1" UId="312" />
+        <Access Scope="LocalVariable" UId="313">
+          <Symbol UId="314">
+            <Component Name="报警7" UId="315" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="316" />
+      <Blank Num="1" UId="317" />
+      <Parameter Name="size" UId="318">
+        <Blank Num="1" UId="319" />
+        <Token Text=":=" UId="320" />
+        <Blank Num="1" UId="321" />
+        <Access Scope="LiteralConstant" UId="322">
+          <Constant UId="323">
+            <ConstantValue UId="325">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="327" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="328" />
+  <NewLine Num="1" UId="329" />
+  <Blank Num="8" UId="330" />
+  <NewLine Num="1" UId="331" />
+  <Blank Num="8" UId="332" />
+  <Access Scope="LocalVariable" UId="333">
+    <Symbol UId="334">
+      <Component Name="报警文本" UId="335">
+        <Token Text="[" UId="336" />
+        <Access Scope="LiteralConstant" UId="337">
+          <Constant UId="338">
+            <ConstantValue UId="340">8</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="341" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="342" />
+  <Token Text=":=" UId="343" />
+  <Blank Num="1" UId="344" />
+  <Access Scope="Call" UId="345">
+    <Instruction Name="GetSymbolName" UId="346">
+      <Token Text="(" UId="347" />
+      <Parameter Name="variable" UId="348">
+        <Blank Num="1" UId="349" />
+        <Token Text=":=" UId="350" />
+        <Blank Num="1" UId="351" />
+        <Access Scope="LocalVariable" UId="352">
+          <Symbol UId="353">
+            <Component Name="报警8" UId="354" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="355" />
+      <Blank Num="1" UId="356" />
+      <Parameter Name="size" UId="357">
+        <Blank Num="1" UId="358" />
+        <Token Text=":=" UId="359" />
+        <Blank Num="1" UId="360" />
+        <Access Scope="LiteralConstant" UId="361">
+          <Constant UId="362">
+            <ConstantValue UId="364">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="366" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="367" />
+  <NewLine Num="1" UId="368" />
+  <Blank Num="8" UId="369" />
+  <Access Scope="LocalVariable" UId="370">
+    <Symbol UId="371">
+      <Component Name="报警文本" UId="372">
+        <Token Text="[" UId="373" />
+        <Access Scope="LiteralConstant" UId="374">
+          <Constant UId="375">
+            <ConstantValue UId="377">9</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="378" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="379" />
+  <Token Text=":=" UId="380" />
+  <Blank Num="1" UId="381" />
+  <Access Scope="Call" UId="382">
+    <Instruction Name="GetSymbolName" UId="383">
+      <Token Text="(" UId="384" />
+      <Parameter Name="variable" UId="385">
+        <Blank Num="1" UId="386" />
+        <Token Text=":=" UId="387" />
+        <Blank Num="1" UId="388" />
+        <Access Scope="LocalVariable" UId="389">
+          <Symbol UId="390">
+            <Component Name="报警9" UId="391" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="392" />
+      <Blank Num="1" UId="393" />
+      <Parameter Name="size" UId="394">
+        <Blank Num="1" UId="395" />
+        <Token Text=":=" UId="396" />
+        <Blank Num="1" UId="397" />
+        <Access Scope="LiteralConstant" UId="398">
+          <Constant UId="399">
+            <ConstantValue UId="401">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="403" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="404" />
+  <NewLine Num="1" UId="405" />
+  <Blank Num="8" UId="406" />
+  <Access Scope="LocalVariable" UId="407">
+    <Symbol UId="408">
+      <Component Name="报警文本" UId="409">
+        <Token Text="[" UId="410" />
+        <Access Scope="LiteralConstant" UId="411">
+          <Constant UId="412">
+            <ConstantValue UId="414">10</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="415" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="416" />
+  <Token Text=":=" UId="417" />
+  <Blank Num="1" UId="418" />
+  <Access Scope="Call" UId="419">
+    <Instruction Name="GetSymbolName" UId="420">
+      <Token Text="(" UId="421" />
+      <Parameter Name="variable" UId="422">
+        <Blank Num="1" UId="423" />
+        <Token Text=":=" UId="424" />
+        <Blank Num="1" UId="425" />
+        <Access Scope="LocalVariable" UId="426">
+          <Symbol UId="427">
+            <Component Name="报警10" UId="428" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="429" />
+      <Blank Num="1" UId="430" />
+      <Parameter Name="size" UId="431">
+        <Blank Num="1" UId="432" />
+        <Token Text=":=" UId="433" />
+        <Blank Num="1" UId="434" />
+        <Access Scope="LiteralConstant" UId="435">
+          <Constant UId="436">
+            <ConstantValue UId="438">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="440" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="441" />
+  <NewLine Num="1" UId="442" />
+  <Blank Num="8" UId="443" />
+  <Access Scope="LocalVariable" UId="444">
+    <Symbol UId="445">
+      <Component Name="报警文本" UId="446">
+        <Token Text="[" UId="447" />
+        <Access Scope="LiteralConstant" UId="448">
+          <Constant UId="449">
+            <ConstantValue UId="451">11</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="452" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="453" />
+  <Token Text=":=" UId="454" />
+  <Blank Num="1" UId="455" />
+  <Access Scope="Call" UId="456">
+    <Instruction Name="GetSymbolName" UId="457">
+      <Token Text="(" UId="458" />
+      <Parameter Name="variable" UId="459">
+        <Blank Num="1" UId="460" />
+        <Token Text=":=" UId="461" />
+        <Blank Num="1" UId="462" />
+        <Access Scope="LocalVariable" UId="463">
+          <Symbol UId="464">
+            <Component Name="报警11" UId="465" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="466" />
+      <Blank Num="1" UId="467" />
+      <Parameter Name="size" UId="468">
+        <Blank Num="1" UId="469" />
+        <Token Text=":=" UId="470" />
+        <Blank Num="1" UId="471" />
+        <Access Scope="LiteralConstant" UId="472">
+          <Constant UId="473">
+            <ConstantValue UId="475">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="477" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="478" />
+  <NewLine Num="1" UId="479" />
+  <Blank Num="8" UId="480" />
+  <Access Scope="LocalVariable" UId="481">
+    <Symbol UId="482">
+      <Component Name="报警文本" UId="483">
+        <Token Text="[" UId="484" />
+        <Access Scope="LiteralConstant" UId="485">
+          <Constant UId="486">
+            <ConstantValue UId="488">12</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="489" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="490" />
+  <Token Text=":=" UId="491" />
+  <Blank Num="1" UId="492" />
+  <Access Scope="Call" UId="493">
+    <Instruction Name="GetSymbolName" UId="494">
+      <Token Text="(" UId="495" />
+      <Parameter Name="variable" UId="496">
+        <Blank Num="1" UId="497" />
+        <Token Text=":=" UId="498" />
+        <Blank Num="1" UId="499" />
+        <Access Scope="LocalVariable" UId="500">
+          <Symbol UId="501">
+            <Component Name="报警12" UId="502" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="503" />
+      <Blank Num="1" UId="504" />
+      <Parameter Name="size" UId="505">
+        <Blank Num="1" UId="506" />
+        <Token Text=":=" UId="507" />
+        <Blank Num="1" UId="508" />
+        <Access Scope="LiteralConstant" UId="509">
+          <Constant UId="510">
+            <ConstantValue UId="512">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="514" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="515" />
+  <NewLine Num="1" UId="516" />
+  <Blank Num="8" UId="517" />
+  <Access Scope="LocalVariable" UId="518">
+    <Symbol UId="519">
+      <Component Name="报警文本" UId="520">
+        <Token Text="[" UId="521" />
+        <Access Scope="LiteralConstant" UId="522">
+          <Constant UId="523">
+            <ConstantValue UId="525">13</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="526" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="527" />
+  <Token Text=":=" UId="528" />
+  <Blank Num="1" UId="529" />
+  <Access Scope="Call" UId="530">
+    <Instruction Name="GetSymbolName" UId="531">
+      <Token Text="(" UId="532" />
+      <Parameter Name="variable" UId="533">
+        <Blank Num="1" UId="534" />
+        <Token Text=":=" UId="535" />
+        <Blank Num="1" UId="536" />
+        <Access Scope="LocalVariable" UId="537">
+          <Symbol UId="538">
+            <Component Name="报警13" UId="539" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="540" />
+      <Blank Num="1" UId="541" />
+      <Parameter Name="size" UId="542">
+        <Blank Num="1" UId="543" />
+        <Token Text=":=" UId="544" />
+        <Blank Num="1" UId="545" />
+        <Access Scope="LiteralConstant" UId="546">
+          <Constant UId="547">
+            <ConstantValue UId="549">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="551" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="552" />
+  <NewLine Num="1" UId="553" />
+  <Blank Num="8" UId="554" />
+  <Access Scope="LocalVariable" UId="555">
+    <Symbol UId="556">
+      <Component Name="报警文本" UId="557">
+        <Token Text="[" UId="558" />
+        <Access Scope="LiteralConstant" UId="559">
+          <Constant UId="560">
+            <ConstantValue UId="562">14</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="563" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="564" />
+  <Token Text=":=" UId="565" />
+  <Blank Num="1" UId="566" />
+  <Access Scope="Call" UId="567">
+    <Instruction Name="GetSymbolName" UId="568">
+      <Token Text="(" UId="569" />
+      <Parameter Name="variable" UId="570">
+        <Blank Num="1" UId="571" />
+        <Token Text=":=" UId="572" />
+        <Blank Num="1" UId="573" />
+        <Access Scope="LocalVariable" UId="574">
+          <Symbol UId="575">
+            <Component Name="报警14" UId="576" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="577" />
+      <Blank Num="1" UId="578" />
+      <Parameter Name="size" UId="579">
+        <Blank Num="1" UId="580" />
+        <Token Text=":=" UId="581" />
+        <Blank Num="1" UId="582" />
+        <Access Scope="LiteralConstant" UId="583">
+          <Constant UId="584">
+            <ConstantValue UId="586">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="588" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="589" />
+  <NewLine Num="1" UId="590" />
+  <Blank Num="8" UId="591" />
+  <Access Scope="LocalVariable" UId="592">
+    <Symbol UId="593">
+      <Component Name="报警文本" UId="594">
+        <Token Text="[" UId="595" />
+        <Access Scope="LiteralConstant" UId="596">
+          <Constant UId="597">
+            <ConstantValue UId="599">15</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="600" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="601" />
+  <Token Text=":=" UId="602" />
+  <Blank Num="1" UId="603" />
+  <Access Scope="Call" UId="604">
+    <Instruction Name="GetSymbolName" UId="605">
+      <Token Text="(" UId="606" />
+      <Parameter Name="variable" UId="607">
+        <Blank Num="1" UId="608" />
+        <Token Text=":=" UId="609" />
+        <Blank Num="1" UId="610" />
+        <Access Scope="LocalVariable" UId="611">
+          <Symbol UId="612">
+            <Component Name="报警15" UId="613" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="614" />
+      <Blank Num="1" UId="615" />
+      <Parameter Name="size" UId="616">
+        <Blank Num="1" UId="617" />
+        <Token Text=":=" UId="618" />
+        <Blank Num="1" UId="619" />
+        <Access Scope="LiteralConstant" UId="620">
+          <Constant UId="621">
+            <ConstantValue UId="623">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="625" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="626" />
+  <NewLine Num="1" UId="627" />
+  <Blank Num="7" UId="628" />
+  <NewLine Num="1" UId="629" />
+  <Blank Num="4" UId="630" />
+  <Token Text="END_IF" UId="631" />
+  <Token Text=";" UId="632" />
+  <NewLine Num="2" UId="633" />
+  <Blank Num="4" UId="634" />
+  <Token Text="IF" UId="635" />
+  <Blank Num="1" UId="636" />
+  <Access Scope="LocalVariable" UId="637">
+    <Symbol UId="638">
+      <Component Name="报警0" UId="639" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="640" />
+  <Token Text="THEN" UId="641" />
+  <NewLine Num="1" UId="642" />
+  <Blank Num="8" UId="643" />
+  <Access Scope="LocalVariable" UId="644">
+    <Symbol UId="645">
+      <Component Name="报警" UId="646" />
+      <Token Text="." UId="647" />
+      <Token Text="%X0" UId="648" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="649" />
+  <Token Text=":=" UId="650" />
+  <Blank Num="1" UId="651" />
+  <Access Scope="LiteralConstant" UId="652">
+    <Constant UId="653">
+      <ConstantValue UId="655">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="656" />
+  <NewLine Num="1" UId="657" />
+  <Blank Num="4" UId="658" />
+  <Token Text="ELSE" UId="659" />
+  <NewLine Num="1" UId="660" />
+  <Blank Num="8" UId="661" />
+  <Access Scope="LocalVariable" UId="662">
+    <Symbol UId="663">
+      <Component Name="报警" UId="664" />
+      <Token Text="." UId="665" />
+      <Token Text="%X0" UId="666" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="667" />
+  <Token Text=":=" UId="668" />
+  <Blank Num="1" UId="669" />
+  <Access Scope="LiteralConstant" UId="670">
+    <Constant UId="671">
+      <ConstantValue UId="673">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="674" />
+  <NewLine Num="1" UId="675" />
+  <Blank Num="4" UId="676" />
+  <Token Text="END_IF" UId="677" />
+  <Token Text=";" UId="678" />
+  <NewLine Num="1" UId="679" />
+  <Blank Num="4" UId="680" />
+  <NewLine Num="1" UId="681" />
+  <Blank Num="4" UId="682" />
+  <Token Text="IF" UId="683" />
+  <Blank Num="1" UId="684" />
+  <Access Scope="LocalVariable" UId="685">
+    <Symbol UId="686">
+      <Component Name="报警1" UId="687" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="688" />
+  <Token Text="THEN" UId="689" />
+  <NewLine Num="1" UId="690" />
+  <Blank Num="8" UId="691" />
+  <Access Scope="LocalVariable" UId="692">
+    <Symbol UId="693">
+      <Component Name="报警" UId="694" />
+      <Token Text="." UId="695" />
+      <Token Text="%X1" UId="696" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="697" />
+  <Token Text=":=" UId="698" />
+  <Blank Num="1" UId="699" />
+  <Access Scope="LiteralConstant" UId="700">
+    <Constant UId="701">
+      <ConstantValue UId="703">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="704" />
+  <NewLine Num="1" UId="705" />
+  <Blank Num="4" UId="706" />
+  <Token Text="ELSE" UId="707" />
+  <NewLine Num="1" UId="708" />
+  <Blank Num="8" UId="709" />
+  <Access Scope="LocalVariable" UId="710">
+    <Symbol UId="711">
+      <Component Name="报警" UId="712" />
+      <Token Text="." UId="713" />
+      <Token Text="%X1" UId="714" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="715" />
+  <Token Text=":=" UId="716" />
+  <Blank Num="1" UId="717" />
+  <Access Scope="LiteralConstant" UId="718">
+    <Constant UId="719">
+      <ConstantValue UId="721">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="722" />
+  <NewLine Num="1" UId="723" />
+  <Blank Num="4" UId="724" />
+  <Token Text="END_IF" UId="725" />
+  <Token Text=";" UId="726" />
+  <NewLine Num="1" UId="727" />
+  <Blank Num="4" UId="728" />
+  <NewLine Num="1" UId="729" />
+  <Blank Num="4" UId="730" />
+  <Token Text="IF" UId="731" />
+  <Blank Num="1" UId="732" />
+  <Access Scope="LocalVariable" UId="733">
+    <Symbol UId="734">
+      <Component Name="报警2" UId="735" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="736" />
+  <Token Text="THEN" UId="737" />
+  <NewLine Num="1" UId="738" />
+  <Blank Num="8" UId="739" />
+  <Access Scope="LocalVariable" UId="740">
+    <Symbol UId="741">
+      <Component Name="报警" UId="742" />
+      <Token Text="." UId="743" />
+      <Token Text="%X2" UId="744" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="745" />
+  <Token Text=":=" UId="746" />
+  <Blank Num="1" UId="747" />
+  <Access Scope="LiteralConstant" UId="748">
+    <Constant UId="749">
+      <ConstantValue UId="751">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="752" />
+  <NewLine Num="1" UId="753" />
+  <Blank Num="4" UId="754" />
+  <Token Text="ELSE" UId="755" />
+  <NewLine Num="1" UId="756" />
+  <Blank Num="8" UId="757" />
+  <Access Scope="LocalVariable" UId="758">
+    <Symbol UId="759">
+      <Component Name="报警" UId="760" />
+      <Token Text="." UId="761" />
+      <Token Text="%X2" UId="762" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="763" />
+  <Token Text=":=" UId="764" />
+  <Blank Num="1" UId="765" />
+  <Access Scope="LiteralConstant" UId="766">
+    <Constant UId="767">
+      <ConstantValue UId="769">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="770" />
+  <NewLine Num="1" UId="771" />
+  <Blank Num="4" UId="772" />
+  <Token Text="END_IF" UId="773" />
+  <Token Text=";" UId="774" />
+  <NewLine Num="1" UId="775" />
+  <Blank Num="4" UId="776" />
+  <NewLine Num="1" UId="777" />
+  <Blank Num="4" UId="778" />
+  <NewLine Num="1" UId="779" />
+  <Blank Num="4" UId="780" />
+  <Token Text="IF" UId="781" />
+  <Blank Num="1" UId="782" />
+  <Access Scope="LocalVariable" UId="783">
+    <Symbol UId="784">
+      <Component Name="报警3" UId="785" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="786" />
+  <Token Text="THEN" UId="787" />
+  <NewLine Num="1" UId="788" />
+  <Blank Num="8" UId="789" />
+  <Access Scope="LocalVariable" UId="790">
+    <Symbol UId="791">
+      <Component Name="报警" UId="792" />
+      <Token Text="." UId="793" />
+      <Token Text="%X3" UId="794" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="795" />
+  <Token Text=":=" UId="796" />
+  <Blank Num="1" UId="797" />
+  <Access Scope="LiteralConstant" UId="798">
+    <Constant UId="799">
+      <ConstantValue UId="801">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="802" />
+  <NewLine Num="1" UId="803" />
+  <Blank Num="4" UId="804" />
+  <Token Text="ELSE" UId="805" />
+  <NewLine Num="1" UId="806" />
+  <Blank Num="8" UId="807" />
+  <Access Scope="LocalVariable" UId="808">
+    <Symbol UId="809">
+      <Component Name="报警" UId="810" />
+      <Token Text="." UId="811" />
+      <Token Text="%X3" UId="812" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="813" />
+  <Token Text=":=" UId="814" />
+  <Blank Num="1" UId="815" />
+  <Access Scope="LiteralConstant" UId="816">
+    <Constant UId="817">
+      <ConstantValue UId="819">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="820" />
+  <NewLine Num="1" UId="821" />
+  <Blank Num="4" UId="822" />
+  <Token Text="END_IF" UId="823" />
+  <Token Text=";" UId="824" />
+  <NewLine Num="1" UId="825" />
+  <Blank Num="4" UId="826" />
+  <NewLine Num="1" UId="827" />
+  <Blank Num="4" UId="828" />
+  <Token Text="IF" UId="829" />
+  <Blank Num="1" UId="830" />
+  <Access Scope="LocalVariable" UId="831">
+    <Symbol UId="832">
+      <Component Name="报警4" UId="833" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="834" />
+  <Token Text="THEN" UId="835" />
+  <NewLine Num="1" UId="836" />
+  <Blank Num="8" UId="837" />
+  <Access Scope="LocalVariable" UId="838">
+    <Symbol UId="839">
+      <Component Name="报警" UId="840" />
+      <Token Text="." UId="841" />
+      <Token Text="%X4" UId="842" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="843" />
+  <Token Text=":=" UId="844" />
+  <Blank Num="1" UId="845" />
+  <Access Scope="LiteralConstant" UId="846">
+    <Constant UId="847">
+      <ConstantValue UId="849">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="850" />
+  <NewLine Num="1" UId="851" />
+  <Blank Num="4" UId="852" />
+  <Token Text="ELSE" UId="853" />
+  <NewLine Num="1" UId="854" />
+  <Blank Num="8" UId="855" />
+  <Access Scope="LocalVariable" UId="856">
+    <Symbol UId="857">
+      <Component Name="报警" UId="858" />
+      <Token Text="." UId="859" />
+      <Token Text="%X4" UId="860" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="861" />
+  <Token Text=":=" UId="862" />
+  <Blank Num="1" UId="863" />
+  <Access Scope="LiteralConstant" UId="864">
+    <Constant UId="865">
+      <ConstantValue UId="867">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="868" />
+  <NewLine Num="1" UId="869" />
+  <Blank Num="4" UId="870" />
+  <Token Text="END_IF" UId="871" />
+  <Token Text=";" UId="872" />
+  <NewLine Num="1" UId="873" />
+  <Blank Num="4" UId="874" />
+  <NewLine Num="1" UId="875" />
+  <Blank Num="4" UId="876" />
+  <Token Text="IF" UId="877" />
+  <Blank Num="1" UId="878" />
+  <Access Scope="LocalVariable" UId="879">
+    <Symbol UId="880">
+      <Component Name="报警5" UId="881" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="882" />
+  <Token Text="THEN" UId="883" />
+  <NewLine Num="1" UId="884" />
+  <Blank Num="8" UId="885" />
+  <Access Scope="LocalVariable" UId="886">
+    <Symbol UId="887">
+      <Component Name="报警" UId="888" />
+      <Token Text="." UId="889" />
+      <Token Text="%X5" UId="890" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="891" />
+  <Token Text=":=" UId="892" />
+  <Blank Num="1" UId="893" />
+  <Access Scope="LiteralConstant" UId="894">
+    <Constant UId="895">
+      <ConstantValue UId="897">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="898" />
+  <NewLine Num="1" UId="899" />
+  <Blank Num="4" UId="900" />
+  <Token Text="ELSE" UId="901" />
+  <NewLine Num="1" UId="902" />
+  <Blank Num="8" UId="903" />
+  <Access Scope="LocalVariable" UId="904">
+    <Symbol UId="905">
+      <Component Name="报警" UId="906" />
+      <Token Text="." UId="907" />
+      <Token Text="%X5" UId="908" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="909" />
+  <Token Text=":=" UId="910" />
+  <Blank Num="1" UId="911" />
+  <Access Scope="LiteralConstant" UId="912">
+    <Constant UId="913">
+      <ConstantValue UId="915">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="916" />
+  <NewLine Num="1" UId="917" />
+  <Blank Num="4" UId="918" />
+  <Token Text="END_IF" UId="919" />
+  <Token Text=";" UId="920" />
+  <NewLine Num="1" UId="921" />
+  <Blank Num="4" UId="922" />
+  <NewLine Num="1" UId="923" />
+  <Blank Num="4" UId="924" />
+  <Token Text="IF" UId="925" />
+  <Blank Num="1" UId="926" />
+  <Access Scope="LocalVariable" UId="927">
+    <Symbol UId="928">
+      <Component Name="报警6" UId="929" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="930" />
+  <Token Text="THEN" UId="931" />
+  <NewLine Num="1" UId="932" />
+  <Blank Num="8" UId="933" />
+  <Access Scope="LocalVariable" UId="934">
+    <Symbol UId="935">
+      <Component Name="报警" UId="936" />
+      <Token Text="." UId="937" />
+      <Token Text="%X6" UId="938" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="939" />
+  <Token Text=":=" UId="940" />
+  <Blank Num="1" UId="941" />
+  <Access Scope="LiteralConstant" UId="942">
+    <Constant UId="943">
+      <ConstantValue UId="945">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="946" />
+  <NewLine Num="1" UId="947" />
+  <Blank Num="4" UId="948" />
+  <Token Text="ELSE" UId="949" />
+  <NewLine Num="1" UId="950" />
+  <Blank Num="8" UId="951" />
+  <Access Scope="LocalVariable" UId="952">
+    <Symbol UId="953">
+      <Component Name="报警" UId="954" />
+      <Token Text="." UId="955" />
+      <Token Text="%X6" UId="956" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="957" />
+  <Token Text=":=" UId="958" />
+  <Blank Num="1" UId="959" />
+  <Access Scope="LiteralConstant" UId="960">
+    <Constant UId="961">
+      <ConstantValue UId="963">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="964" />
+  <NewLine Num="1" UId="965" />
+  <Blank Num="4" UId="966" />
+  <Token Text="END_IF" UId="967" />
+  <Token Text=";" UId="968" />
+  <NewLine Num="1" UId="969" />
+  <Blank Num="4" UId="970" />
+  <NewLine Num="1" UId="971" />
+  <Blank Num="4" UId="972" />
+  <Token Text="IF" UId="973" />
+  <Blank Num="1" UId="974" />
+  <Access Scope="LocalVariable" UId="975">
+    <Symbol UId="976">
+      <Component Name="报警7" UId="977" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="978" />
+  <Token Text="THEN" UId="979" />
+  <NewLine Num="1" UId="980" />
+  <Blank Num="8" UId="981" />
+  <Access Scope="LocalVariable" UId="982">
+    <Symbol UId="983">
+      <Component Name="报警" UId="984" />
+      <Token Text="." UId="985" />
+      <Token Text="%X7" UId="986" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="987" />
+  <Token Text=":=" UId="988" />
+  <Blank Num="1" UId="989" />
+  <Access Scope="LiteralConstant" UId="990">
+    <Constant UId="991">
+      <ConstantValue UId="993">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="994" />
+  <NewLine Num="1" UId="995" />
+  <Blank Num="4" UId="996" />
+  <Token Text="ELSE" UId="997" />
+  <NewLine Num="1" UId="998" />
+  <Blank Num="8" UId="999" />
+  <Access Scope="LocalVariable" UId="1000">
+    <Symbol UId="1001">
+      <Component Name="报警" UId="1002" />
+      <Token Text="." UId="1003" />
+      <Token Text="%X7" UId="1004" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1005" />
+  <Token Text=":=" UId="1006" />
+  <Blank Num="1" UId="1007" />
+  <Access Scope="LiteralConstant" UId="1008">
+    <Constant UId="1009">
+      <ConstantValue UId="1011">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1012" />
+  <NewLine Num="1" UId="1013" />
+  <Blank Num="4" UId="1014" />
+  <Token Text="END_IF" UId="1015" />
+  <Token Text=";" UId="1016" />
+  <NewLine Num="1" UId="1017" />
+  <Blank Num="4" UId="1018" />
+  <NewLine Num="1" UId="1019" />
+  <Blank Num="4" UId="1020" />
+  <NewLine Num="1" UId="1021" />
+  <Blank Num="4" UId="1022" />
+  <NewLine Num="1" UId="1023" />
+  <Blank Num="4" UId="1024" />
+  <Token Text="IF" UId="1025" />
+  <Blank Num="1" UId="1026" />
+  <Access Scope="LocalVariable" UId="1027">
+    <Symbol UId="1028">
+      <Component Name="报警8" UId="1029" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1030" />
+  <Token Text="THEN" UId="1031" />
+  <NewLine Num="1" UId="1032" />
+  <Blank Num="8" UId="1033" />
+  <Access Scope="LocalVariable" UId="1034">
+    <Symbol UId="1035">
+      <Component Name="报警" UId="1036" />
+      <Token Text="." UId="1037" />
+      <Token Text="%X8" UId="1038" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1039" />
+  <Token Text=":=" UId="1040" />
+  <Blank Num="1" UId="1041" />
+  <Access Scope="LiteralConstant" UId="1042">
+    <Constant UId="1043">
+      <ConstantValue UId="1045">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1046" />
+  <NewLine Num="1" UId="1047" />
+  <Blank Num="4" UId="1048" />
+  <Token Text="ELSE" UId="1049" />
+  <NewLine Num="1" UId="1050" />
+  <Blank Num="8" UId="1051" />
+  <Access Scope="LocalVariable" UId="1052">
+    <Symbol UId="1053">
+      <Component Name="报警" UId="1054" />
+      <Token Text="." UId="1055" />
+      <Token Text="%X8" UId="1056" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1057" />
+  <Token Text=":=" UId="1058" />
+  <Blank Num="1" UId="1059" />
+  <Access Scope="LiteralConstant" UId="1060">
+    <Constant UId="1061">
+      <ConstantValue UId="1063">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1064" />
+  <NewLine Num="1" UId="1065" />
+  <Blank Num="4" UId="1066" />
+  <Token Text="END_IF" UId="1067" />
+  <Token Text=";" UId="1068" />
+  <NewLine Num="1" UId="1069" />
+  <Blank Num="4" UId="1070" />
+  <NewLine Num="1" UId="1071" />
+  <Blank Num="4" UId="1072" />
+  <Token Text="IF" UId="1073" />
+  <Blank Num="1" UId="1074" />
+  <Access Scope="LocalVariable" UId="1075">
+    <Symbol UId="1076">
+      <Component Name="报警9" UId="1077" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1078" />
+  <Token Text="THEN" UId="1079" />
+  <NewLine Num="1" UId="1080" />
+  <Blank Num="8" UId="1081" />
+  <Access Scope="LocalVariable" UId="1082">
+    <Symbol UId="1083">
+      <Component Name="报警" UId="1084" />
+      <Token Text="." UId="1085" />
+      <Token Text="%X9" UId="1086" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1087" />
+  <Token Text=":=" UId="1088" />
+  <Blank Num="1" UId="1089" />
+  <Access Scope="LiteralConstant" UId="1090">
+    <Constant UId="1091">
+      <ConstantValue UId="1093">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1094" />
+  <NewLine Num="1" UId="1095" />
+  <Blank Num="4" UId="1096" />
+  <Token Text="ELSE" UId="1097" />
+  <NewLine Num="1" UId="1098" />
+  <Blank Num="8" UId="1099" />
+  <Access Scope="LocalVariable" UId="1100">
+    <Symbol UId="1101">
+      <Component Name="报警" UId="1102" />
+      <Token Text="." UId="1103" />
+      <Token Text="%X9" UId="1104" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1105" />
+  <Token Text=":=" UId="1106" />
+  <Blank Num="1" UId="1107" />
+  <Access Scope="LiteralConstant" UId="1108">
+    <Constant UId="1109">
+      <ConstantValue UId="1111">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1112" />
+  <NewLine Num="1" UId="1113" />
+  <Blank Num="4" UId="1114" />
+  <Token Text="END_IF" UId="1115" />
+  <Token Text=";" UId="1116" />
+  <NewLine Num="1" UId="1117" />
+  <Blank Num="4" UId="1118" />
+  <NewLine Num="1" UId="1119" />
+  <Blank Num="4" UId="1120" />
+  <Token Text="IF" UId="1121" />
+  <Blank Num="1" UId="1122" />
+  <Access Scope="LocalVariable" UId="1123">
+    <Symbol UId="1124">
+      <Component Name="报警10" UId="1125" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1126" />
+  <Token Text="THEN" UId="1127" />
+  <NewLine Num="1" UId="1128" />
+  <Blank Num="8" UId="1129" />
+  <Access Scope="LocalVariable" UId="1130">
+    <Symbol UId="1131">
+      <Component Name="报警" UId="1132" />
+      <Token Text="." UId="1133" />
+      <Token Text="%X10" UId="1134" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1135" />
+  <Token Text=":=" UId="1136" />
+  <Blank Num="1" UId="1137" />
+  <Access Scope="LiteralConstant" UId="1138">
+    <Constant UId="1139">
+      <ConstantValue UId="1141">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1142" />
+  <NewLine Num="1" UId="1143" />
+  <Blank Num="4" UId="1144" />
+  <Token Text="ELSE" UId="1145" />
+  <NewLine Num="1" UId="1146" />
+  <Blank Num="8" UId="1147" />
+  <Access Scope="LocalVariable" UId="1148">
+    <Symbol UId="1149">
+      <Component Name="报警" UId="1150" />
+      <Token Text="." UId="1151" />
+      <Token Text="%X10" UId="1152" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1153" />
+  <Token Text=":=" UId="1154" />
+  <Blank Num="1" UId="1155" />
+  <Access Scope="LiteralConstant" UId="1156">
+    <Constant UId="1157">
+      <ConstantValue UId="1159">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1160" />
+  <NewLine Num="1" UId="1161" />
+  <Blank Num="4" UId="1162" />
+  <Token Text="END_IF" UId="1163" />
+  <Token Text=";" UId="1164" />
+  <NewLine Num="1" UId="1165" />
+  <Blank Num="4" UId="1166" />
+  <NewLine Num="1" UId="1167" />
+  <Blank Num="4" UId="1168" />
+  <NewLine Num="1" UId="1169" />
+  <Blank Num="4" UId="1170" />
+  <Token Text="IF" UId="1171" />
+  <Blank Num="1" UId="1172" />
+  <Access Scope="LocalVariable" UId="1173">
+    <Symbol UId="1174">
+      <Component Name="报警11" UId="1175" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1176" />
+  <Token Text="THEN" UId="1177" />
+  <NewLine Num="1" UId="1178" />
+  <Blank Num="8" UId="1179" />
+  <Access Scope="LocalVariable" UId="1180">
+    <Symbol UId="1181">
+      <Component Name="报警" UId="1182" />
+      <Token Text="." UId="1183" />
+      <Token Text="%X11" UId="1184" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1185" />
+  <Token Text=":=" UId="1186" />
+  <Blank Num="1" UId="1187" />
+  <Access Scope="LiteralConstant" UId="1188">
+    <Constant UId="1189">
+      <ConstantValue UId="1191">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1192" />
+  <NewLine Num="1" UId="1193" />
+  <Blank Num="4" UId="1194" />
+  <Token Text="ELSE" UId="1195" />
+  <NewLine Num="1" UId="1196" />
+  <Blank Num="8" UId="1197" />
+  <Access Scope="LocalVariable" UId="1198">
+    <Symbol UId="1199">
+      <Component Name="报警" UId="1200" />
+      <Token Text="." UId="1201" />
+      <Token Text="%X11" UId="1202" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1203" />
+  <Token Text=":=" UId="1204" />
+  <Blank Num="1" UId="1205" />
+  <Access Scope="LiteralConstant" UId="1206">
+    <Constant UId="1207">
+      <ConstantValue UId="1209">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1210" />
+  <NewLine Num="1" UId="1211" />
+  <Blank Num="4" UId="1212" />
+  <Token Text="END_IF" UId="1213" />
+  <Token Text=";" UId="1214" />
+  <NewLine Num="1" UId="1215" />
+  <Blank Num="4" UId="1216" />
+  <NewLine Num="1" UId="1217" />
+  <Blank Num="4" UId="1218" />
+  <Token Text="IF" UId="1219" />
+  <Blank Num="1" UId="1220" />
+  <Access Scope="LocalVariable" UId="1221">
+    <Symbol UId="1222">
+      <Component Name="报警12" UId="1223" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1224" />
+  <Token Text="THEN" UId="1225" />
+  <NewLine Num="1" UId="1226" />
+  <Blank Num="8" UId="1227" />
+  <Access Scope="LocalVariable" UId="1228">
+    <Symbol UId="1229">
+      <Component Name="报警" UId="1230" />
+      <Token Text="." UId="1231" />
+      <Token Text="%X12" UId="1232" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1233" />
+  <Token Text=":=" UId="1234" />
+  <Blank Num="1" UId="1235" />
+  <Access Scope="LiteralConstant" UId="1236">
+    <Constant UId="1237">
+      <ConstantValue UId="1239">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1240" />
+  <NewLine Num="1" UId="1241" />
+  <Blank Num="4" UId="1242" />
+  <Token Text="ELSE" UId="1243" />
+  <NewLine Num="1" UId="1244" />
+  <Blank Num="8" UId="1245" />
+  <Access Scope="LocalVariable" UId="1246">
+    <Symbol UId="1247">
+      <Component Name="报警" UId="1248" />
+      <Token Text="." UId="1249" />
+      <Token Text="%X12" UId="1250" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1251" />
+  <Token Text=":=" UId="1252" />
+  <Blank Num="1" UId="1253" />
+  <Access Scope="LiteralConstant" UId="1254">
+    <Constant UId="1255">
+      <ConstantValue UId="1257">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1258" />
+  <NewLine Num="1" UId="1259" />
+  <Blank Num="4" UId="1260" />
+  <Token Text="END_IF" UId="1261" />
+  <Token Text=";" UId="1262" />
+  <NewLine Num="1" UId="1263" />
+  <Blank Num="4" UId="1264" />
+  <NewLine Num="1" UId="1265" />
+  <Blank Num="4" UId="1266" />
+  <Token Text="IF" UId="1267" />
+  <Blank Num="1" UId="1268" />
+  <Access Scope="LocalVariable" UId="1269">
+    <Symbol UId="1270">
+      <Component Name="报警13" UId="1271" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1272" />
+  <Token Text="THEN" UId="1273" />
+  <NewLine Num="1" UId="1274" />
+  <Blank Num="8" UId="1275" />
+  <Access Scope="LocalVariable" UId="1276">
+    <Symbol UId="1277">
+      <Component Name="报警" UId="1278" />
+      <Token Text="." UId="1279" />
+      <Token Text="%X13" UId="1280" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1281" />
+  <Token Text=":=" UId="1282" />
+  <Blank Num="1" UId="1283" />
+  <Access Scope="LiteralConstant" UId="1284">
+    <Constant UId="1285">
+      <ConstantValue UId="1287">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1288" />
+  <NewLine Num="1" UId="1289" />
+  <Blank Num="4" UId="1290" />
+  <Token Text="ELSE" UId="1291" />
+  <NewLine Num="1" UId="1292" />
+  <Blank Num="8" UId="1293" />
+  <Access Scope="LocalVariable" UId="1294">
+    <Symbol UId="1295">
+      <Component Name="报警" UId="1296" />
+      <Token Text="." UId="1297" />
+      <Token Text="%X13" UId="1298" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1299" />
+  <Token Text=":=" UId="1300" />
+  <Blank Num="1" UId="1301" />
+  <Access Scope="LiteralConstant" UId="1302">
+    <Constant UId="1303">
+      <ConstantValue UId="1305">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1306" />
+  <NewLine Num="1" UId="1307" />
+  <Blank Num="4" UId="1308" />
+  <Token Text="END_IF" UId="1309" />
+  <Token Text=";" UId="1310" />
+  <NewLine Num="1" UId="1311" />
+  <Blank Num="4" UId="1312" />
+  <NewLine Num="1" UId="1313" />
+  <Blank Num="4" UId="1314" />
+  <Token Text="IF" UId="1315" />
+  <Blank Num="1" UId="1316" />
+  <Access Scope="LocalVariable" UId="1317">
+    <Symbol UId="1318">
+      <Component Name="报警14" UId="1319" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1320" />
+  <Token Text="THEN" UId="1321" />
+  <NewLine Num="1" UId="1322" />
+  <Blank Num="8" UId="1323" />
+  <Access Scope="LocalVariable" UId="1324">
+    <Symbol UId="1325">
+      <Component Name="报警" UId="1326" />
+      <Token Text="." UId="1327" />
+      <Token Text="%X14" UId="1328" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1329" />
+  <Token Text=":=" UId="1330" />
+  <Blank Num="1" UId="1331" />
+  <Access Scope="LiteralConstant" UId="1332">
+    <Constant UId="1333">
+      <ConstantValue UId="1335">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1336" />
+  <NewLine Num="1" UId="1337" />
+  <Blank Num="4" UId="1338" />
+  <Token Text="ELSE" UId="1339" />
+  <NewLine Num="1" UId="1340" />
+  <Blank Num="8" UId="1341" />
+  <Access Scope="LocalVariable" UId="1342">
+    <Symbol UId="1343">
+      <Component Name="报警" UId="1344" />
+      <Token Text="." UId="1345" />
+      <Token Text="%X14" UId="1346" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1347" />
+  <Token Text=":=" UId="1348" />
+  <Blank Num="1" UId="1349" />
+  <Access Scope="LiteralConstant" UId="1350">
+    <Constant UId="1351">
+      <ConstantValue UId="1353">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1354" />
+  <NewLine Num="1" UId="1355" />
+  <Blank Num="4" UId="1356" />
+  <Token Text="END_IF" UId="1357" />
+  <Token Text=";" UId="1358" />
+  <NewLine Num="1" UId="1359" />
+  <Blank Num="4" UId="1360" />
+  <NewLine Num="1" UId="1361" />
+  <Blank Num="4" UId="1362" />
+  <Token Text="IF" UId="1363" />
+  <Blank Num="1" UId="1364" />
+  <Access Scope="LocalVariable" UId="1365">
+    <Symbol UId="1366">
+      <Component Name="报警15" UId="1367" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1368" />
+  <Token Text="THEN" UId="1369" />
+  <NewLine Num="1" UId="1370" />
+  <Blank Num="8" UId="1371" />
+  <Access Scope="LocalVariable" UId="1372">
+    <Symbol UId="1373">
+      <Component Name="报警" UId="1374" />
+      <Token Text="." UId="1375" />
+      <Token Text="%X15" UId="1376" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1377" />
+  <Token Text=":=" UId="1378" />
+  <Blank Num="1" UId="1379" />
+  <Access Scope="LiteralConstant" UId="1380">
+    <Constant UId="1381">
+      <ConstantValue UId="1383">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1384" />
+  <NewLine Num="1" UId="1385" />
+  <Blank Num="4" UId="1386" />
+  <Token Text="ELSE" UId="1387" />
+  <NewLine Num="1" UId="1388" />
+  <Blank Num="8" UId="1389" />
+  <Access Scope="LocalVariable" UId="1390">
+    <Symbol UId="1391">
+      <Component Name="报警" UId="1392" />
+      <Token Text="." UId="1393" />
+      <Token Text="%X15" UId="1394" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1395" />
+  <Token Text=":=" UId="1396" />
+  <Blank Num="1" UId="1397" />
+  <Access Scope="LiteralConstant" UId="1398">
+    <Constant UId="1399">
+      <ConstantValue UId="1401">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1402" />
+  <NewLine Num="1" UId="1403" />
+  <Blank Num="4" UId="1404" />
+  <Token Text="END_IF" UId="1405" />
+  <Token Text=";" UId="1406" />
+  <NewLine Num="1" UId="1407" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="E" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="F" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="10" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="11" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

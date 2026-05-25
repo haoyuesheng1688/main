@@ -1,0 +1,21 @@
+# Local cleanup archives and one-off proof artifacts
+_archive/
+
+# Root-level screenshots and UI proof captures
+/*.png
+/*.dmp
+
+# Root-level temporary probes and readback files
+/*probe*.txt
+/codex-*.txt
+/script-*.txt
+/tmp_*
+
+# Office and engineering files should live inside a repo, skill, docs, or archive folder
+/*.xlsx
+/*.xlsm
+/*.zip
+/*.awl
+/*.scl
+/*.mff
+/*.apwz

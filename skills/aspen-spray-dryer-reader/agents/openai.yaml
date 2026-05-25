@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aspen Spray Dryer Reader"
+  short_description: "Attach to Aspen and read live spray dryer process values."
+  default_prompt: "Use $aspen-spray-dryer-reader to connect to the open Aspen session and read the current spray dryer outlet temperature."

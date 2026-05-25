@@ -1,0 +1,11 @@
+﻿ProjectName=三九-15
+ProjectPath=H:\程序优化\S4-弹窗\A2-三九-归档\三九-15\三九-15.ap17
+HmiTarget=HMI_RT_2
+IMPORTED_TAG_TABLE=变量归档
+IMPORTED_VBSCRIPT=ReadFile_DATA1
+IMPORTED_SCREEN=C1_数据记录
+CompileState=Warning
+CompileMessage=Warning|qiaofeng-hmi|Time stamp: 2026/5/14 1:01 - 1161484 bytes used of 12582912 bytes, maximum
+CompileMessage=Warning|Languages & resources|
+CompileMessage=Warning||Compiling finished (errors: 0; warnings: 63)
+ProjectSaved=True

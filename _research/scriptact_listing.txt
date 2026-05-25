@@ -1,0 +1,7 @@
+﻿
+FullName                                                            Name    Length LastWriteTime    
+--------                                                            ----    ------ -------------    
+C:\Users\Public\Documents\Siemens\WinCCProjects\1\ScriptAct\动作1.bac 动作1.bac    178 2026/4/20 4:06:14
+
+
+

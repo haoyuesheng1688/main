@@ -1,0 +1,7 @@
+﻿SourceSnapshot=C:\Users\QF100\Documents\New project\tia_rtpro_learning\exports\rtpro_vb_find_delete_body\DATA_Auto_CSV_original_current_20260514_031954.vbs
+BodyPath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\imports\rtpro_vb_find_delete_body\DATA_Auto_CSV_clean_body_20260514_032139.vbs
+SelectionPath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\verify\DATA_Auto_CSV_body_selection_20260514_032139.vbs
+AfterPath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\verify\DATA_Auto_CSV_after_find_delete_body_20260514_032139.vbs
+ShrinkCount=1
+SelectedLength=28
+Ok=False

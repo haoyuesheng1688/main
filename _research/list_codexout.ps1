@@ -1,0 +1,1 @@
+Get-ChildItem -LiteralPath ''C:\Users\Administrator\Desktop\CodexOut'' -Force | Select-Object Name,Length | Format-Table -AutoSize | Out-String -Width 200 | Set-Content -LiteralPath ''C:\Users\Administrator\Desktop\CodexOut\listing.txt'' -Encoding UTF8

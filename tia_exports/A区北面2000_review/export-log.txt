@@ -1,0 +1,318 @@
+FAIL PLC_BLOCK Cyclic interrupt :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.OB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK Main :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.OB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\Main.xml' already exists."
+FAIL PLC_BLOCK 0- IO Configure :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FC'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\0- IO Configure.xml' already exists."
+FAIL PLC_BLOCK A1-阀带反馈 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\A1-阀带反馈.xml' already exists."
+FAIL PLC_BLOCK A2-阀带阀导 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK A3-电机控制 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK A4-脉冲控制 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\A4-脉冲控制.xml' already exists."
+FAIL PLC_BLOCK A5-模拟量输出 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\A5-模拟量输出.xml' already exists."
+FAIL PLC_BLOCK A6-模拟量输入 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK A7-温度控制 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK B1--ALARM :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\B1--ALARM.xml' already exists."
+FAIL PLC_BLOCK 485调试 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\485调试.xml' already exists."
+FAIL PLC_BLOCK BY1 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\BY1.xml' already exists."
+FAIL PLC_BLOCK BY2 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\BY2.xml' already exists."
+FAIL PLC_BLOCK DH :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\DH.xml' already exists."
+FAIL PLC_BLOCK KS :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\KS.xml' already exists."
+FAIL PLC_BLOCK PV :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK PW :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\PW.xml' already exists."
+FAIL PLC_BLOCK SD :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\SD.xml' already exists."
+FAIL PLC_BLOCK SV :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\SV.xml' already exists."
+FAIL PLC_BLOCK YB :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\YB.xml' already exists."
+FAIL PLC_BLOCK BDKS :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\BDKS.xml' already exists."
+FAIL PLC_BLOCK B2--局部连锁 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK B3-全局连锁 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK B4-清洗连锁 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\B4-清洗连锁.xml' already exists."
+FAIL PLC_BLOCK C1-开式自动 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK C3-室内CIP清洗 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK D1-室内CIP通讯 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK D3-布袋记录 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\D3-布袋记录.xml' already exists."
+FAIL PLC_BLOCK C2-闭式自动 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK BS :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\BS.xml' already exists."
+FAIL PLC_BLOCK BDBS :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\BDBS.xml' already exists."
+FAIL PLC_BLOCK A8-通信心跳 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\A8-通信心跳.xml' already exists."
+FAIL PLC_BLOCK CIP_CUS :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+The export cannot be made because the file 'C:\Users\QF100\Documents\New project\tia_exports\A区北面2000_review\plc_blocks\CIP_CUS.xml' already exists."
+FAIL PLC_BLOCK C4-室外CIP清洗 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK D2-室外CIP通讯 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+OK PLC_BLOCK A_INCIPI清洗__INCIP
+OK PLC_BLOCK A_INCIPI清洗__INCIPCS
+OK PLC_BLOCK A_INCIPI清洗__INCIPCS2
+OK PLC_BLOCK A_INCIPI清洗__INCIPJS
+OK PLC_BLOCK A_INCIPI清洗__INCIPZS
+OK PLC_BLOCK A_INCIPI清洗__INCIPRJ
+FAIL PLC_BLOCK A_INCIPI清洗__INCIP清洗 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+OK PLC_BLOCK A被调用块__A2-数据转换ITR
+OK PLC_BLOCK A被调用块__A2-数据转换RTI
+OK PLC_BLOCK A被调用块__A1-台达DTC
+OK PLC_BLOCK A被调用块__A3-脉冲轮询
+OK PLC_BLOCK A被调用块__A4--电机控制
+OK PLC_BLOCK A被调用块__A4-蠕动泵控制
+OK PLC_BLOCK A被调用块__A8-阀开关报警
+OK PLC_BLOCK A被调用块__A3-普通阀控制
+OK PLC_BLOCK A被调用块__A8-报警功能块
+OK PLC_BLOCK A被调用块__A7-通信心跳块
+OK PLC_BLOCK A被调用块__A9-循环下料控制
+OK PLC_BLOCK A被调用块__B2_循环下料控制_F
+OK PLC_BLOCK A被调用块__B1-开式保压
+FAIL PLC_BLOCK A被调用块__闭路自动喷雾块 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+OK PLC_BLOCK A被调用块__闭式保压块
+OK PLC_BLOCK A被调用块__四参数辅助
+FAIL PLC_BLOCK A被调用块__开式自动喷雾块 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK A被调用块__闭式自动喷雾块 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+OK PLC_BLOCK A范式模块__单元模式
+OK PLC_BLOCK A范式模块__抖动模式
+OK PLC_BLOCK A范式模块__脉冲模式
+OK PLC_BLOCK A范式模块__启停模式
+OK PLC_BLOCK A范式模块__斜坡函数发生器
+OK PLC_BLOCK A范式模块__状态模式
+OK PLC_BLOCK A范式模块__自保持模式
+OK PLC_BLOCK A范式模块__自动流程
+OK PLC_BLOCK A范式模块__步段延迟
+OK PLC_BLOCK A范式模块__步模式
+OK PLC_BLOCK A范式模块__时间累计
+OK PLC_BLOCK A范式模块__沿
+OK PLC_BLOCK A范式模块__步段延迟案例
+OK PLC_BLOCK A范式模块__TX通讯心跳
+OK PLC_BLOCK A范式模块__上升沿
+OK PLC_BLOCK A功能组__0-模拟量输入
+OK PLC_BLOCK A功能组__5-定时器
+OK PLC_BLOCK A功能组__4-点斜率输入->输出
+OK PLC_BLOCK A功能组__4-点斜率输出->输入
+OK PLC_BLOCK A功能组__Real_to_Time
+OK PLC_BLOCK A功能组__数组最大平均值
+OK PLC_BLOCK A功能组__3-延时开关M
+OK PLC_BLOCK A功能组__3-延时开关S
+OK PLC_BLOCK A功能组__0-模拟量滤波
+OK PLC_BLOCK A功能组__5-称重法堵塞
+OK PLC_BLOCK A功能组__5-斜坡函数发生器
+OK PLC_BLOCK A功能组__0-模拟量滤波简
+OK PLC_BLOCK A功能组__0-模拟量输入1PID
+OK PLC_BLOCK A功能组__6-系统时间读取与设置
+OK PLC_BLOCK A功能组__相减日期和时间
+OK PLC_BLOCK A功能组__0-模拟量输入2PID
+OK PLC_BLOCK A功能组__7-PID仿真LSim_PT3
+OK PLC_BLOCK A功能组__1-模拟量输出1
+OK PLC_BLOCK A功能组__随机生成数
+OK PLC_BLOCK A功能组__Byte数组_to_INT
+OK PLC_BLOCK A功能组__LBitToDword
+OK PLC_BLOCK A功能组__LBitToWord
+OK PLC_BLOCK A功能组__1-模拟量输出2
+OK PLC_BLOCK A功能组__0-模拟量输入压差
+OK PLC_BLOCK A闲置__A14-阀反馈报警
+OK PLC_BLOCK 模块组__21模拟量输入
+OK PLC_BLOCK 模块组__23模拟量输出
+OK PLC_BLOCK 模块组__24模拟量其他
+OK PLC_BLOCK 模块组__22模拟量输入修正
+OK PLC_BLOCK 模块组__12放空阀
+OK PLC_BLOCK 模块组__30-加热控制
+OK PLC_BLOCK 模块组__31-温度控制
+OK PLC_BLOCK 模块组__33冷水机控制
+OK PLC_BLOCK 模块组__32-油炉控制
+OK PLC_BLOCK 模块组__52普通脉冲
+OK PLC_BLOCK 模块组__34仪表控制
+OK PLC_BLOCK 模块组__485仪表__油炉控制
+OK PLC_BLOCK 模块组__485仪表__冷水机控制
+OK PLC_BLOCK 模块组__485仪表__称重与流量
+OK PLC_BLOCK 模块组__485仪表__通信心跳
+OK PLC_BLOCK 模块组__acom__10-REAL-TIME
+OK PLC_BLOCK 模块组__acom__10-模拟量输入
+OK PLC_BLOCK 模块组__acom__11-模拟量输出
+OK PLC_BLOCK 模块组__acom__12-2点斜率输出->输入
+OK PLC_BLOCK 模块组__acom__12-2点斜率输入->输出
+OK PLC_BLOCK 模块组__acom__15-称重系统
+OK PLC_BLOCK 模块组__acom__16-普通脉冲
+OK PLC_BLOCK 数据库组__A2-阀带阀导_DB
+OK PLC_BLOCK 数据库组__A4-脉冲控制_DB
+OK PLC_BLOCK 数据库组__A3-电机控制_DB
+OK PLC_BLOCK 数据库组__A6-模拟量输入_DB
+OK PLC_BLOCK 数据库组__A5-模拟量输出_DB
+OK PLC_BLOCK 数据库组__A7-温度控制_DB
+OK PLC_BLOCK 数据库组__A14-阀反馈报警_DB
+OK PLC_BLOCK 数据库组__6-ALLALARM_DB
+OK PLC_BLOCK 数据库组__A1-阀带反馈_DB
+OK PLC_BLOCK 数据库组__B2--局部连锁_DB
+OK PLC_BLOCK 数据库组__B4-清洗连锁_DB
+OK PLC_BLOCK 数据库组__C1-开式自动_DB
+OK PLC_BLOCK 数据库组__B3-全局连锁_DB
+OK PLC_BLOCK 数据库组__C2-闭式自动_DB
+OK PLC_BLOCK 数据库组__C3-室内CIP清洗_DB
+OK PLC_BLOCK 数据库组__C4-室外CIP清洗_DB
+OK PLC_BLOCK 数据库组__D1-室内CIP通讯_DB
+OK PLC_BLOCK 数据库组__D2-室外CIP通讯_DB
+OK PLC_BLOCK A_OUTCIP清洗__OUTCIPCS
+OK PLC_BLOCK A_OUTCIP清洗__OUTCIPCS2
+OK PLC_BLOCK A_OUTCIP清洗__OUTCIPJS
+OK PLC_BLOCK A_OUTCIP清洗__OUTCIPRJ
+OK PLC_BLOCK A_OUTCIP清洗__OUTCIP
+OK PLC_BLOCK A_OUTCIP清洗__OUTCIPZS
+FAIL PLC_BLOCK A_OUTCIP清洗__OUTCIP清洗 :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK A485通讯__A-Modbus :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.FB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK A485通讯__A-Comm :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+FAIL PLC_BLOCK A485通讯__A-Comm_CW :: Exception calling "Export" with "2" argument(s): "Error when calling method 'Export' of type 'Siemens.Engineering.SW.Blocks.GlobalDB'.
+
+Inconsistent blocks and PLC data types (UDT) cannot be exported."
+OK PLC_BLOCK 系统块__程序资源__F_TRIG
+OK PLC_BLOCK 系统块__程序资源__R_TRIG
+OK PLC_BLOCK 系统块__程序资源__GetSymbolName
+OK PLC_BLOCK 系统块__程序资源__MB_CLIENT
+OK PLC_BLOCK 系统块__程序资源__Modbus_Comm_Load
+OK PLC_BLOCK 系统块__程序资源__Send_Config
+OK PLC_BLOCK 系统块__程序资源__Receive_Config
+OK PLC_BLOCK 系统块__程序资源__Modbus_Master
+OK PLC_BLOCK 系统块__程序资源__Send_P2P
+OK PLC_BLOCK 系统块__程序资源__Receive_P2P
+OK PLC_BLOCK 系统块__程序资源__Receive_Reset
+OK PLC_BLOCK 系统块__程序资源__PID_Compact
+OK PLC_TAG 默认变量表
+OK PLC_TAG AIQ
+OK PLC_TAG AIQM
+OK PLC_TAG Alarm
+OK PLC_TAG COM
+OK PLC_TAG IO
+OK PLC_TAG IOM
+OK PLC_TAG M
+OK PLC_TAG MTX
+OK HMI_SCREEN A0_根画面
+OK HMI_SCREEN A1_公司首页
+OK HMI_SCREEN A3_故障报警
+OK HMI_SCREEN A4_历史报警
+OK HMI_SCREEN B1_闭式手动界面
+OK HMI_SCREEN B2_闭式自动界面
+OK HMI_SCREEN B5_冷水流程界面
+OK HMI_SCREEN C1_开式手动界面
+OK HMI_SCREEN C2_开式自动界面
+OK HMI_SCREEN D1_报警参数
+OK HMI_SCREEN D2_连锁参数
+OK HMI_SCREEN D3_数据与曲线
+OK HMI_SCREEN D4_数据记录
+OK HMI_SCREEN D5_操作日志
+OK HMI_SCREEN D6_喷雾压差曲线
+OK HMI_SCREEN D7_喷雾压力曲线
+OK HMI_SCREEN D8_喷雾温度曲线
+OK HMI_SCREEN X1_室外清洗手动流程
+OK HMI_SCREEN X2_室外清洗自动流程
+OK HMI_SCREEN X4_室内清洗手动流程
+OK HMI_SCREEN X5_室内清洗自动流程
+OK HMI_SCREEN X6_室内清洗参数
+OK HMI_SCREEN C3_开式自动参数A
+OK HMI_SCREEN B3_闭式自动参数A
+OK HMI_SCREEN B4_闭式自动参数B
+OK HMI_SCREEN X3_室外清洗参数
+OK HMI_SCREEN C4_开式自动参数B
+OK HMI_TAG 默认变量表
+OK HMI_TAG OUTCIPCS
+OK HMI_TAG OUTCIPCS2
+OK HMI_TAG OUTCIPJS
+OK HMI_TAG OUTCIPRJ
+OK HMI_TAG BY1
+OK HMI_TAG BY2
+OK HMI_TAG INCIP
+OK HMI_TAG DH
+OK HMI_TAG IOM
+OK HMI_TAG KS
+OK HMI_TAG INCIPCS
+OK HMI_TAG INCIPCS2
+OK HMI_TAG INCIPJS
+OK HMI_TAG INCIPRJ
+OK HMI_TAG M
+OK HMI_TAG PV
+OK HMI_TAG PW
+OK HMI_TAG QX
+OK HMI_TAG SV
+OK HMI_TAG YB
+OK HMI_TAG OUTCIP
+OK HMI_TAG 变量归档
+OK HMI_TAG 操作日志
+OK HMI_TAG BDKS
+OK HMI_TAG BDBS
+OK HMI_TAG 变量表_2
+OK HMI_TAG BS
+OK HMI_VBS ReadFile_Audit
+OK HMI_VBS ReadFile_DATA1
+EXPORT_DONE

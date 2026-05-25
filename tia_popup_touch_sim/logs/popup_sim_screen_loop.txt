@@ -1,0 +1,2 @@
+﻿GeneratedTagXml=C:\Users\QF100\Documents\New project\tia_popup_touch_sim\import\Codex_Popup_Sim_Tags.xml
+GeneratedScreenXml=C:\Users\QF100\Documents\New project\tia_popup_touch_sim\import\Codex_Popup_Sim_800x800.xml

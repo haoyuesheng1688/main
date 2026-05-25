@@ -1,0 +1,4 @@
+﻿OK_IMPORT_FULL_INT_TAGTABLE=Codex_Popup_PLC_Named_Int_Tags
+OK_EXPORT_FULL_INT_TAGTABLE=C:\Users\QF100\Documents\New project\tia_popup_touch_sim\exports\Codex_Popup_PLC_Named_Int_Tags_full_int_export.xml
+TagCount=26
+ProjectSaved=True

@@ -1,0 +1,12 @@
+﻿ProcessId=36644
+WindowTitle=Siemens  -  H:\程序优化\S4-弹窗\A3-赛奥5-高手\8赛奥5-last16_20260507M2\赛奥5-last16_20260507M2
+ScriptName=DATA_Auto_CSV
+ExportPath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\exports\rtpro_vb_body\DATA_Auto_CSV_export_full_20260514_023631.vbs
+PatchedPath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\imports\rtpro_vb_body\DATA_Auto_CSV_patched_full_20260514_023631.vbs
+BodyImportPath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\imports\rtpro_vb_body\DATA_Auto_CSV_patched_body_20260514_023631.vbs
+SelectedBodyPath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\verify\DATA_Auto_CSV_selected_body_20260514_023631.vbs
+SubLine=3
+BodyStartLine=4
+EndSubLine=154
+BodyLineCount=150
+SelectOnly=True

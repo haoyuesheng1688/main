@@ -1,0 +1,5 @@
+﻿Project=VIP-TEST-3-弹框
+Hmi=HMI_RT_1
+Exported=默认变量表|C:\Users\QF100\Documents\New project\tia_popup_touch_sim\exports\all_hmi_tag_tables\默认变量表.xml
+Exported=Codex_VBS_Loop_Tags|C:\Users\QF100\Documents\New project\tia_popup_touch_sim\exports\all_hmi_tag_tables\Codex_VBS_Loop_Tags.xml
+Exported=Codex_Popup_Sim_Int_Tags|C:\Users\QF100\Documents\New project\tia_popup_touch_sim\exports\all_hmi_tag_tables\Codex_Popup_Sim_Int_Tags.xml

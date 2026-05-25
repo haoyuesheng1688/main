@@ -1,0 +1,3 @@
+﻿OK_IMPORT_INT_TAGTABLE=Codex_Popup_Sim_Int_Tags
+OK_EXPORT_INT_TAGTABLE=C:\Users\QF100\Documents\New project\tia_popup_touch_sim\exports\Codex_Popup_Sim_Int_Tags_export.xml
+ProjectSaved=True

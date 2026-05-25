@@ -1,0 +1,4 @@
+interface:
+  display_name: "EPLAN IO Closed Loop"
+  short_description: "Export PLC IO points from an open EPLAN Electric P8 project."
+  default_prompt: "Use $eplan-io-closed-loop to connect to the open EPLAN Electric P8 project and export the PLC IO point list."

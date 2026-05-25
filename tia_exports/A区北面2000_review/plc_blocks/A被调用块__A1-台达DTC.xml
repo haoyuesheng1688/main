@@ -1,0 +1,3325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-04-13T11:12:41.3915704Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="站号" Datatype="UInt" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="触发" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="输入模式" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="输入开关" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="A输入设定" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="输入开度" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="结束" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="高高报警" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="高报警" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="低报警" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="低低报警" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="传感器故障" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="输出控制P" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="输出控制I" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="输出控制D" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="输出开度读" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="InOut">
+    <Member Name="B当前量" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="输入设定读" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="输出模式读" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="高高报设置" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="高报设置" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="低报设置" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="低低报设置" Datatype="Real" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="自整定开关" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="Modbus_Master_Instance" Datatype="Modbus_Master" Version="5.1" Accessibility="Public">
+      <Sections>
+        <Section Name="Input">
+          <Member Name="REQ" Datatype="Bool" />
+          <Member Name="MB_ADDR" Datatype="UInt" />
+          <Member Name="MODE" Datatype="USInt" />
+          <Member Name="DATA_ADDR" Datatype="UDInt" />
+          <Member Name="DATA_LEN" Datatype="UInt" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="DONE" Datatype="Bool" />
+          <Member Name="BUSY" Datatype="Bool" />
+          <Member Name="ERROR" Datatype="Bool" />
+          <Member Name="STATUS" Datatype="Word" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="DATA_PTR" Datatype="Variant" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="MB_State" Datatype="SInt" />
+          <Member Name="Blocked_Proc_Timeout" Datatype="Real" />
+          <Member Name="Extended_Addressing" Datatype="Bool" />
+          <Member Name="Compatibility_Mode" Datatype="Bool" />
+          <Member Name="MB_DB" Datatype="P2P_MB_BASE" Version="1.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="S_PORT" Datatype="Word" />
+                <Member Name="S_RESP_TO" Datatype="Word" />
+                <Member Name="S_ICHAR_GAP" Datatype="Word" />
+                <Member Name="S_RETRIES" Datatype="Word" />
+                <Member Name="S_MB_CRC" Datatype="Byte" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="Send_P2P" Datatype="Send_P2P" Version="4.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="REQ" Datatype="Bool" />
+                <Member Name="PORT" Datatype="PORT" />
+                <Member Name="BUFFER" Datatype="Variant" />
+                <Member Name="LENGTH" Datatype="UInt" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="UNIVERSAL" Datatype="Bool" />
+                <Member Name="DONE" Datatype="Bool" />
+                <Member Name="ERROR" Datatype="Bool" />
+                <Member Name="STATUS" Datatype="Word" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="OldPORT" Datatype="PORT" />
+                <Member Name="send_length" Datatype="UInt" />
+                <Member Name="max_record_len" Datatype="UInt" />
+                <Member Name="max_telegram_len" Datatype="UInt" />
+                <Member Name="b_e_REQ" Datatype="Bool" />
+                <Member Name="isClassic" Datatype="Bool" />
+                <Member Name="first_sent" Datatype="Bool" />
+                <Member Name="y_state" Datatype="SInt" />
+                <Member Name="y_nr_rec" Datatype="SInt" />
+                <Member Name="ser_nr_old" Datatype="USInt" />
+                <Member Name="ser_nr" Datatype="USInt" />
+                <Member Name="module_initialized" Datatype="Bool" />
+                <Member Name="SendBuffer" Datatype="Array[0..1026] of Byte" />
+                <Member Name="i_addr" Datatype="UDInt" />
+                <Member Name="o_addr" Datatype="UDInt" />
+                <Member Name="WRREC" Datatype="WRREC" Version="1.1">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="REQ" Datatype="Bool" />
+                      <Member Name="ID" Datatype="HW_IO" />
+                      <Member Name="INDEX" Datatype="DInt" />
+                      <Member Name="LEN" Datatype="UInt" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="DONE" Datatype="Bool" />
+                      <Member Name="BUSY" Datatype="Bool" />
+                      <Member Name="ERROR" Datatype="Bool" />
+                      <Member Name="STATUS" Datatype="DWord" />
+                    </Section>
+                    <Section Name="InOut">
+                      <Member Name="RECORD" Datatype="Variant" />
+                    </Section>
+                    <Section Name="Static" />
+                  </Sections>
+                </Member>
+                <Member Name="PTP_STATUS" Datatype="P2P_SendGetData" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="header" Datatype="P2P_Header" Version="1.0">
+                        <Sections>
+                          <Section Name="None">
+                            <Member Name="block_type" Datatype="Word" />
+                            <Member Name="block_len" Datatype="Word" />
+                            <Member Name="block_ver" Datatype="Word" />
+                            <Member Name="res" Datatype="Word" />
+                          </Section>
+                        </Sections>
+                      </Member>
+                      <Member Name="V24_seqnr_st" Datatype="DWord" />
+                      <Member Name="b_seq_nr_rcv" Datatype="USInt" />
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="InitTimeout" Datatype="TON_TIME" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="PT" Datatype="Time" />
+                      <Member Name="ET" Datatype="Time" />
+                      <Member Name="IN" Datatype="Bool" />
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="Receive_P2P" Datatype="Receive_P2P" Version="4.1">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="PORT" Datatype="PORT" />
+                <Member Name="BUFFER" Datatype="Variant" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="UNIVERSAL" Datatype="Bool" />
+                <Member Name="NDR" Datatype="Bool" />
+                <Member Name="LENGTH" Datatype="UInt" />
+                <Member Name="ERROR" Datatype="Bool" />
+                <Member Name="STATUS" Datatype="Word" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="OldPORT" Datatype="PORT" />
+                <Member Name="received_length" Datatype="UInt" />
+                <Member Name="y_ptp_status" Datatype="SInt" />
+                <Member Name="y_state" Datatype="SInt" />
+                <Member Name="y_seq_nr" Datatype="Byte" />
+                <Member Name="safe_h1" Datatype="Byte" />
+                <Member Name="safe_h2" Datatype="Byte" />
+                <Member Name="safe_h3" Datatype="Byte" />
+                <Member Name="safe_h4" Datatype="Byte" />
+                <Member Name="isClassic" Datatype="Bool" />
+                <Member Name="record_nr" Datatype="Int" />
+                <Member Name="offset" Datatype="UDInt" />
+                <Member Name="RDREC" Datatype="RDREC" Version="1.0">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="REQ" Datatype="Bool" />
+                      <Member Name="ID" Datatype="HW_IO" />
+                      <Member Name="INDEX" Datatype="DInt" />
+                      <Member Name="MLEN" Datatype="UInt" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="VALID" Datatype="Bool" />
+                      <Member Name="BUSY" Datatype="Bool" />
+                      <Member Name="ERROR" Datatype="Bool" />
+                      <Member Name="STATUS" Datatype="DWord" />
+                      <Member Name="LEN" Datatype="UInt" />
+                    </Section>
+                    <Section Name="InOut">
+                      <Member Name="RECORD" Datatype="Variant" />
+                    </Section>
+                    <Section Name="Static" />
+                  </Sections>
+                </Member>
+                <Member Name="ReceiveBuffer" Datatype="Array[0..1027] of Byte" />
+                <Member Name="i_addr" Datatype="UDInt" />
+                <Member Name="o_addr" Datatype="UDInt" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="Receive_Reset" Datatype="Receive_Reset" Version="4.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="REQ" Datatype="Bool" />
+                <Member Name="PORT" Datatype="PORT" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="DONE" Datatype="Bool" />
+                <Member Name="ERROR" Datatype="Bool" />
+                <Member Name="STATUS" Datatype="Word" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="b_e_REQ" Datatype="Bool" />
+                <Member Name="y_state" Datatype="SInt" />
+                <Member Name="WRREC" Datatype="WRREC" Version="1.1">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="REQ" Datatype="Bool" />
+                      <Member Name="ID" Datatype="HW_IO" />
+                      <Member Name="INDEX" Datatype="DInt" />
+                      <Member Name="LEN" Datatype="UInt" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="DONE" Datatype="Bool" />
+                      <Member Name="BUSY" Datatype="Bool" />
+                      <Member Name="ERROR" Datatype="Bool" />
+                      <Member Name="STATUS" Datatype="DWord" />
+                    </Section>
+                    <Section Name="InOut">
+                      <Member Name="RECORD" Datatype="Variant" />
+                    </Section>
+                    <Section Name="Static" />
+                  </Sections>
+                </Member>
+                <Member Name="w_record" Datatype="P2P_ResetData" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="header" Datatype="P2P_Header" Version="1.0">
+                        <Sections>
+                          <Section Name="None">
+                            <Member Name="block_type" Datatype="Word" />
+                            <Member Name="block_len" Datatype="Word" />
+                            <Member Name="block_ver" Datatype="Word" />
+                            <Member Name="res" Datatype="Word" />
+                          </Section>
+                        </Sections>
+                      </Member>
+                      <Member Name="ackn" Datatype="Byte" />
+                      <Member Name="res1" Datatype="Byte" />
+                      <Member Name="res2" Datatype="Byte" />
+                      <Member Name="res3" Datatype="Byte" />
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="S_PORT" Datatype="Word" />
+          <Member Name="S_RESP_TO" Datatype="Word" />
+          <Member Name="S_ICHAR_GAP" Datatype="Word" />
+          <Member Name="S_RETRIES" Datatype="Word" />
+          <Member Name="S_MB_ADDR" Datatype="UInt" />
+          <Member Name="S_MODE" Datatype="USInt" />
+          <Member Name="S_DATA_ADDR" Datatype="UDInt" />
+          <Member Name="S_DATA_LEN" Datatype="UInt" />
+          <Member Name="w_retries" Datatype="Word" />
+          <Member Name="y_SlaveAddrHi" Datatype="Byte" />
+          <Member Name="y_SlaveAddrLo" Datatype="Byte" />
+          <Member Name="StartAddress" Datatype="Word" />
+          <Member Name="Value" Datatype="Word" />
+          <Member Name="y_FCode" Datatype="Byte" />
+          <Member Name="INTERNAL_CDATA" Datatype="Array[1..257] of Byte" />
+          <Member Name="mb_timer" Datatype="TON_TIME" Version="1.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="PT" Datatype="Time" />
+                <Member Name="ET" Datatype="Time" />
+                <Member Name="IN" Datatype="Bool" />
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="TimeElapsed" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+  <Section Name="Static">
+    <Member Name="当前指令ID" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="上一次指令ID" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="modbus_data" Datatype="Struct" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Member Name="触发" Datatype="Bool"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="站号" Datatype="UInt"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="模式" Datatype="USInt"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="地址" Datatype="UDInt"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="数据长度" Datatype="UInt"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="完成" Datatype="Bool"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="忙碌" Datatype="Bool"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="出错" Datatype="Bool"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="故障码" Datatype="Word"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="数据缓存区" Datatype="Array[1..50] of Word"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member></Member>
+    <Member Name="报错代码" Datatype="Array[1..20] of Word" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="进温P读" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="进温I读" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="进温D读" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="T1_SV_写" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="进温AT开关" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="进温AT开关_bak" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="进温AT_写字" Datatype="UInt" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="进温AT_读字" Datatype="UInt" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="T1_P值比对1" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="T1_P值比对2" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="进温启停字" Datatype="UInt" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="T1" Datatype="TON_TIME" Version="1.0" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member>
+  </Section>
+  <Section Name="Temp">
+    <Member Name="tm_int" Datatype="Int" />
+    <Member Name="tm_real" Datatype="Real" />
+  </Section>
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>A1-台达DTC</Name>
+      <Number>33</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <LineComment Inserted="false" NoClosingBracket="false" UId="21">
+    <Text UId="22">程序1</Text>
+  </LineComment>
+  <NewLine Num="2" UId="23" />
+  <Token Text="IF" UId="24" />
+  <Blank Num="1" UId="25" />
+  <Access Scope="LocalVariable" UId="26">
+    <Symbol UId="27">
+      <Component Name="触发" UId="28" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="29" />
+  <Token Text="THEN" UId="30" />
+  <NewLine Num="1" UId="31" />
+  <Blank Num="4" UId="32" />
+  <Access Scope="LocalVariable" UId="33">
+    <Symbol UId="34">
+      <Component Name="当前指令ID" UId="35" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="36" />
+  <Token Text=":=" UId="37" />
+  <Blank Num="1" UId="38" />
+  <Access Scope="LiteralConstant" UId="39">
+    <Constant UId="40">
+      <ConstantValue UId="42">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="43" />
+  <NewLine Num="1" UId="44" />
+  <Token Text="END_IF" UId="45" />
+  <Token Text=";" UId="46" />
+  <NewLine Num="2" UId="47" />
+  <Access Scope="LocalVariable" UId="48">
+    <Symbol UId="49">
+      <Component Name="modbus_data" UId="50" />
+      <Token Text="." UId="51" />
+      <Component Name="站号" UId="52" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="53" />
+  <Token Text=":=" UId="54" />
+  <Blank Num="1" UId="55" />
+  <Access Scope="LocalVariable" UId="56">
+    <Symbol UId="57">
+      <Component Name="站号" UId="58" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="59" />
+  <NewLine Num="2" UId="60" />
+  <Token Text="IF" UId="61" />
+  <Blank Num="1" UId="62" />
+  <Access Scope="LocalVariable" UId="63">
+    <Symbol UId="64">
+      <Component Name="当前指令ID" UId="65" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="66" />
+  <Token Text="=" UId="67" />
+  <Blank Num="1" UId="68" />
+  <Access Scope="LiteralConstant" UId="69">
+    <Constant UId="70">
+      <ConstantValue UId="72">9</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="73" />
+  <Token Text="THEN" UId="74" />
+  <NewLine Num="1" UId="75" />
+  <Blank Num="4" UId="76" />
+  <Token Text="IF" UId="77" />
+  <Blank Num="1" UId="78" />
+  <Access Scope="LocalVariable" UId="79">
+    <Symbol UId="80">
+      <Component Name="进温AT_写字" UId="81" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="82" />
+  <Token Text="=" UId="83" />
+  <Blank Num="1" UId="84" />
+  <Access Scope="LocalVariable" UId="85">
+    <Symbol UId="86">
+      <Component Name="进温AT_读字" UId="87" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="88" />
+  <Token Text="THEN" UId="89" />
+  <NewLine Num="1" UId="90" />
+  <Blank Num="8" UId="91" />
+  <Access Scope="LocalVariable" UId="92">
+    <Symbol UId="93">
+      <Component Name="当前指令ID" UId="94" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="95" />
+  <Token Text=":=" UId="96" />
+  <Blank Num="1" UId="97" />
+  <Access Scope="LiteralConstant" UId="98">
+    <Constant UId="99">
+      <ConstantValue UId="101">10</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="102" />
+  <NewLine Num="1" UId="103" />
+  <Blank Num="4" UId="104" />
+  <Token Text="END_IF" UId="105" />
+  <Token Text=";" UId="106" />
+  <NewLine Num="1" UId="107" />
+  <Token Text="END_IF" UId="108" />
+  <Token Text=";" UId="109" />
+  <NewLine Num="2" UId="110" />
+  <Token Text="CASE" UId="111" />
+  <Blank Num="1" UId="112" />
+  <Access Scope="LocalVariable" UId="113">
+    <Symbol UId="114">
+      <Component Name="当前指令ID" UId="115" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="116" />
+  <Token Text="OF" UId="117" />
+  <NewLine Num="1" UId="118" />
+  <Blank Num="4" UId="119" />
+  <Access Scope="LiteralConstant" UId="120">
+    <Constant UId="121">
+      <ConstantValue UId="123">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="124" />
+  <NewLine Num="1" UId="125" />
+  <Blank Num="8" UId="126" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="127">
+    <Text UId="128">读取地址44097-44098</Text>
+  </LineComment>
+  <NewLine Num="1" UId="129" />
+  <Blank Num="8" UId="130" />
+  <Access Scope="LocalVariable" UId="131">
+    <Symbol UId="132">
+      <Component Name="modbus_data" UId="133" />
+      <Token Text="." UId="134" />
+      <Component Name="模式" UId="135" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="136" />
+  <Token Text=":=" UId="137" />
+  <Blank Num="1" UId="138" />
+  <Access Scope="LiteralConstant" UId="139">
+    <Constant UId="140">
+      <ConstantValue UId="142">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="143" />
+  <NewLine Num="1" UId="144" />
+  <Blank Num="8" UId="145" />
+  <Access Scope="LocalVariable" UId="146">
+    <Symbol UId="147">
+      <Component Name="modbus_data" UId="148" />
+      <Token Text="." UId="149" />
+      <Component Name="地址" UId="150" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="151" />
+  <Token Text=":=" UId="152" />
+  <Blank Num="1" UId="153" />
+  <Access Scope="LiteralConstant" UId="154">
+    <Constant UId="155">
+      <ConstantValue UId="157">44097</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="158" />
+  <NewLine Num="1" UId="159" />
+  <Blank Num="8" UId="160" />
+  <Access Scope="LocalVariable" UId="161">
+    <Symbol UId="162">
+      <Component Name="modbus_data" UId="163" />
+      <Token Text="." UId="164" />
+      <Component Name="数据长度" UId="165" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="166" />
+  <Token Text=":=" UId="167" />
+  <Blank Num="1" UId="168" />
+  <Access Scope="LiteralConstant" UId="169">
+    <Constant UId="170">
+      <ConstantValue UId="172">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="173" />
+  <NewLine Num="1" UId="174" />
+  <Blank Num="4" UId="175" />
+  <Access Scope="LiteralConstant" UId="176">
+    <Constant UId="177">
+      <ConstantValue UId="179">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="180" />
+  <NewLine Num="1" UId="181" />
+  <Blank Num="8" UId="182" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="183">
+    <Text UId="184">读取地址44102</Text>
+  </LineComment>
+  <NewLine Num="1" UId="185" />
+  <Blank Num="8" UId="186" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="187">
+    <Text UId="188"> 1005H-4101-44102  默认0   控制方式 0：PID；1：ON/OFF；2：手动；3：PID 过程控制 </Text>
+  </LineComment>
+  <NewLine Num="1" UId="189" />
+  <Blank Num="8" UId="190" />
+  <Access Scope="LocalVariable" UId="191">
+    <Symbol UId="192">
+      <Component Name="modbus_data" UId="193" />
+      <Token Text="." UId="194" />
+      <Component Name="模式" UId="195" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="196" />
+  <Token Text=":=" UId="197" />
+  <Blank Num="1" UId="198" />
+  <Access Scope="LiteralConstant" UId="199">
+    <Constant UId="200">
+      <ConstantValue UId="202">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="203" />
+  <NewLine Num="1" UId="204" />
+  <Blank Num="8" UId="205" />
+  <Access Scope="LocalVariable" UId="206">
+    <Symbol UId="207">
+      <Component Name="modbus_data" UId="208" />
+      <Token Text="." UId="209" />
+      <Component Name="地址" UId="210" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="211" />
+  <Token Text=":=" UId="212" />
+  <Blank Num="1" UId="213" />
+  <Access Scope="LiteralConstant" UId="214">
+    <Constant UId="215">
+      <ConstantValue UId="217">44102</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="218" />
+  <NewLine Num="1" UId="219" />
+  <Blank Num="8" UId="220" />
+  <Access Scope="LocalVariable" UId="221">
+    <Symbol UId="222">
+      <Component Name="modbus_data" UId="223" />
+      <Token Text="." UId="224" />
+      <Component Name="数据长度" UId="225" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="226" />
+  <Token Text=":=" UId="227" />
+  <Blank Num="1" UId="228" />
+  <Access Scope="LiteralConstant" UId="229">
+    <Constant UId="230">
+      <ConstantValue UId="232">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="233" />
+  <NewLine Num="1" UId="234" />
+  <Blank Num="4" UId="235" />
+  <Access Scope="LiteralConstant" UId="236">
+    <Constant UId="237">
+      <ConstantValue UId="239">3</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="240" />
+  <NewLine Num="1" UId="241" />
+  <Blank Num="8" UId="242" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="243">
+    <Text UId="244">读取地址44106-44108</Text>
+  </LineComment>
+  <NewLine Num="1" UId="245" />
+  <Blank Num="8" UId="246" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="247">
+    <Text UId="248">  
+        1009H-4105-44106  默认476 PB 比例带设定值 1 ~ 9,999, 温度单位为 0.1 度，模拟输入为 1EU
+        100AH-4106-44107  默认260 Ti 积分控制常量设定值 0 ~ 9,999
+        100BH-4107-44108  默认41 Td 微分控制常量设定值 0 ~ 9,999 </Text>
+  </LineComment>
+  <NewLine Num="1" UId="249" />
+  <Blank Num="8" UId="250" />
+  <Access Scope="LocalVariable" UId="251">
+    <Symbol UId="252">
+      <Component Name="modbus_data" UId="253" />
+      <Token Text="." UId="254" />
+      <Component Name="模式" UId="255" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="256" />
+  <Token Text=":=" UId="257" />
+  <Blank Num="1" UId="258" />
+  <Access Scope="LiteralConstant" UId="259">
+    <Constant UId="260">
+      <ConstantValue UId="262">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="263" />
+  <NewLine Num="1" UId="264" />
+  <Blank Num="8" UId="265" />
+  <Access Scope="LocalVariable" UId="266">
+    <Symbol UId="267">
+      <Component Name="modbus_data" UId="268" />
+      <Token Text="." UId="269" />
+      <Component Name="地址" UId="270" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="271" />
+  <Token Text=":=" UId="272" />
+  <Blank Num="1" UId="273" />
+  <Access Scope="LiteralConstant" UId="274">
+    <Constant UId="275">
+      <ConstantValue UId="277">44106</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="278" />
+  <NewLine Num="1" UId="279" />
+  <Blank Num="8" UId="280" />
+  <Access Scope="LocalVariable" UId="281">
+    <Symbol UId="282">
+      <Component Name="modbus_data" UId="283" />
+      <Token Text="." UId="284" />
+      <Component Name="数据长度" UId="285" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="286" />
+  <Token Text=":=" UId="287" />
+  <Blank Num="1" UId="288" />
+  <Access Scope="LiteralConstant" UId="289">
+    <Constant UId="290">
+      <ConstantValue UId="292">3</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="293" />
+  <NewLine Num="1" UId="294" />
+  <Blank Num="4" UId="295" />
+  <Access Scope="LiteralConstant" UId="296">
+    <Constant UId="297">
+      <ConstantValue UId="299">4</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="300" />
+  <NewLine Num="1" UId="301" />
+  <Blank Num="8" UId="302" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="303">
+    <Text UId="304">读取地址44116</Text>
+  </LineComment>
+  <NewLine Num="1" UId="305" />
+  <Blank Num="8" UId="306" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="307">
+    <Text UId="308"> 1013H-4115-44116  默认0   输出 2 输出量读取与写入 单位为 0.1%，写入只在手动控制模式下有效（DTC1000/2000 机种） </Text>
+  </LineComment>
+  <NewLine Num="1" UId="309" />
+  <Blank Num="8" UId="310" />
+  <Access Scope="LocalVariable" UId="311">
+    <Symbol UId="312">
+      <Component Name="modbus_data" UId="313" />
+      <Token Text="." UId="314" />
+      <Component Name="模式" UId="315" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="316" />
+  <Token Text=":=" UId="317" />
+  <Blank Num="1" UId="318" />
+  <Access Scope="LiteralConstant" UId="319">
+    <Constant UId="320">
+      <ConstantValue UId="322">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="323" />
+  <NewLine Num="1" UId="324" />
+  <Blank Num="8" UId="325" />
+  <Access Scope="LocalVariable" UId="326">
+    <Symbol UId="327">
+      <Component Name="modbus_data" UId="328" />
+      <Token Text="." UId="329" />
+      <Component Name="地址" UId="330" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="331" />
+  <Token Text=":=" UId="332" />
+  <Blank Num="1" UId="333" />
+  <Access Scope="LiteralConstant" UId="334">
+    <Constant UId="335">
+      <ConstantValue UId="337">44116</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="338" />
+  <NewLine Num="1" UId="339" />
+  <Blank Num="8" UId="340" />
+  <Access Scope="LocalVariable" UId="341">
+    <Symbol UId="342">
+      <Component Name="modbus_data" UId="343" />
+      <Token Text="." UId="344" />
+      <Component Name="数据长度" UId="345" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="346" />
+  <Token Text=":=" UId="347" />
+  <Blank Num="1" UId="348" />
+  <Access Scope="LiteralConstant" UId="349">
+    <Constant UId="350">
+      <ConstantValue UId="352">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="353" />
+  <NewLine Num="1" UId="354" />
+  <Blank Num="4" UId="355" />
+  <Access Scope="LiteralConstant" UId="356">
+    <Constant UId="357">
+      <ConstantValue UId="359">5</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="360" />
+  <NewLine Num="1" UId="361" />
+  <Blank Num="8" UId="362" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="363">
+    <Text UId="364">读取地址12068</Text>
+  </LineComment>
+  <NewLine Num="1" UId="365" />
+  <Blank Num="8" UId="366" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="367">
+    <Text UId="368"> 0813H-2067-12068  读写自动调谐状态 自动调谐停止：0（预设），自动调谐开始：1 </Text>
+  </LineComment>
+  <NewLine Num="1" UId="369" />
+  <Blank Num="8" UId="370" />
+  <Access Scope="LocalVariable" UId="371">
+    <Symbol UId="372">
+      <Component Name="modbus_data" UId="373" />
+      <Token Text="." UId="374" />
+      <Component Name="模式" UId="375" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="376" />
+  <Token Text=":=" UId="377" />
+  <Blank Num="1" UId="378" />
+  <Access Scope="LiteralConstant" UId="379">
+    <Constant UId="380">
+      <ConstantValue UId="382">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="383" />
+  <NewLine Num="1" UId="384" />
+  <Blank Num="8" UId="385" />
+  <Access Scope="LocalVariable" UId="386">
+    <Symbol UId="387">
+      <Component Name="modbus_data" UId="388" />
+      <Token Text="." UId="389" />
+      <Component Name="地址" UId="390" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="391" />
+  <Token Text=":=" UId="392" />
+  <Blank Num="1" UId="393" />
+  <Access Scope="LiteralConstant" UId="394">
+    <Constant UId="395">
+      <ConstantValue UId="397">12068</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="398" />
+  <NewLine Num="1" UId="399" />
+  <Blank Num="8" UId="400" />
+  <Access Scope="LocalVariable" UId="401">
+    <Symbol UId="402">
+      <Component Name="modbus_data" UId="403" />
+      <Token Text="." UId="404" />
+      <Component Name="数据长度" UId="405" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="406" />
+  <Token Text=":=" UId="407" />
+  <Blank Num="1" UId="408" />
+  <Access Scope="LiteralConstant" UId="409">
+    <Constant UId="410">
+      <ConstantValue UId="412">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="413" />
+  <NewLine Num="1" UId="414" />
+  <Blank Num="4" UId="415" />
+  <Access Scope="LiteralConstant" UId="416">
+    <Constant UId="417">
+      <ConstantValue UId="419">6</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="420" />
+  <NewLine Num="1" UId="421" />
+  <Blank Num="8" UId="422" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="423">
+    <Text UId="424">写入地址44098</Text>
+  </LineComment>
+  <NewLine Num="1" UId="425" />
+  <Blank Num="8" UId="426" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="427">
+    <Text UId="428"> 1001H-4097-44098       默认0 "SV" 设定值 温度以 0.1 度为计量单位，模拟输入为 1EU。 </Text>
+  </LineComment>
+  <NewLine Num="1" UId="429" />
+  <Blank Num="8" UId="430" />
+  <Access Scope="LocalVariable" UId="431">
+    <Symbol UId="432">
+      <Component Name="tm_real" UId="433" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="434" />
+  <Token Text=":=" UId="435" />
+  <Blank Num="1" UId="436" />
+  <Access Scope="LocalVariable" UId="437">
+    <Symbol UId="438">
+      <Component Name="A输入设定" UId="439" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="440" />
+  <Token Text="*" UId="441" />
+  <Blank Num="1" UId="442" />
+  <Access Scope="LiteralConstant" UId="443">
+    <Constant UId="444">
+      <ConstantValue UId="446">10.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="447" />
+  <NewLine Num="1" UId="448" />
+  <Blank Num="8" UId="449" />
+  <Access Scope="LocalVariable" UId="450">
+    <Symbol UId="451">
+      <Component Name="T1_SV_写" UId="452" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="453" />
+  <Token Text=":=" UId="454" />
+  <Blank Num="1" UId="455" />
+  <Access Scope="Call" UId="456">
+    <Instruction Name="REAL_TO_INT" UId="457">
+      <Token Text="(" UId="458" />
+      <NamelessParameter UId="459">
+        <Access Scope="LocalVariable" UId="460">
+          <Symbol UId="461">
+            <Component Name="tm_real" UId="462" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="464" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="465" />
+  <NewLine Num="1" UId="466" />
+  <Blank Num="8" UId="467" />
+  <Access Scope="LocalVariable" UId="468">
+    <Symbol UId="469">
+      <Component Name="modbus_data" UId="470" />
+      <Token Text="." UId="471" />
+      <Component Name="数据缓存区" UId="472">
+        <Token Text="[" UId="473" />
+        <Access Scope="LiteralConstant" UId="474">
+          <Constant UId="475">
+            <ConstantValue UId="477">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="478" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="479" />
+  <Token Text=":=" UId="480" />
+  <Blank Num="1" UId="481" />
+  <Access Scope="Call" UId="482">
+    <Instruction Name="INT_TO_WORD" UId="483">
+      <Token Text="(" UId="484" />
+      <NamelessParameter UId="485">
+        <Access Scope="LocalVariable" UId="486">
+          <Symbol UId="487">
+            <Component Name="T1_SV_写" UId="488" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="490" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="491" />
+  <NewLine Num="1" UId="492" />
+  <Blank Num="8" UId="493" />
+  <Access Scope="LocalVariable" UId="494">
+    <Symbol UId="495">
+      <Component Name="modbus_data" UId="496" />
+      <Token Text="." UId="497" />
+      <Component Name="模式" UId="498" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="499" />
+  <Token Text=":=" UId="500" />
+  <Blank Num="1" UId="501" />
+  <Access Scope="LiteralConstant" UId="502">
+    <Constant UId="503">
+      <ConstantValue UId="505">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="506" />
+  <NewLine Num="1" UId="507" />
+  <Blank Num="8" UId="508" />
+  <Access Scope="LocalVariable" UId="509">
+    <Symbol UId="510">
+      <Component Name="modbus_data" UId="511" />
+      <Token Text="." UId="512" />
+      <Component Name="地址" UId="513" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="514" />
+  <Token Text=":=" UId="515" />
+  <Blank Num="1" UId="516" />
+  <Access Scope="LiteralConstant" UId="517">
+    <Constant UId="518">
+      <ConstantValue UId="520">44098</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="521" />
+  <NewLine Num="1" UId="522" />
+  <Blank Num="8" UId="523" />
+  <Access Scope="LocalVariable" UId="524">
+    <Symbol UId="525">
+      <Component Name="modbus_data" UId="526" />
+      <Token Text="." UId="527" />
+      <Component Name="数据长度" UId="528" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="529" />
+  <Token Text=":=" UId="530" />
+  <Blank Num="1" UId="531" />
+  <Access Scope="LiteralConstant" UId="532">
+    <Constant UId="533">
+      <ConstantValue UId="535">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="536" />
+  <NewLine Num="1" UId="537" />
+  <Blank Num="4" UId="538" />
+  <Access Scope="LiteralConstant" UId="539">
+    <Constant UId="540">
+      <ConstantValue UId="542">7</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="543" />
+  <NewLine Num="1" UId="544" />
+  <Blank Num="8" UId="545" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="546">
+    <Text UId="547">写入地址44102</Text>
+  </LineComment>
+  <NewLine Num="1" UId="548" />
+  <Blank Num="8" UId="549" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="550">
+    <Text UId="551"> 1005H-4101-44102  默认0   控制方式 0：PID；1：ON/OFF；2：手动；3：PID 过程控制 </Text>
+  </LineComment>
+  <NewLine Num="1" UId="552" />
+  <Blank Num="8" UId="553" />
+  <Access Scope="LocalVariable" UId="554">
+    <Symbol UId="555">
+      <Component Name="modbus_data" UId="556" />
+      <Token Text="." UId="557" />
+      <Component Name="数据缓存区" UId="558">
+        <Token Text="[" UId="559" />
+        <Access Scope="LiteralConstant" UId="560">
+          <Constant UId="561">
+            <ConstantValue UId="563">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="564" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="565" />
+  <Token Text=":=" UId="566" />
+  <Blank Num="1" UId="567" />
+  <Access Scope="Call" UId="568">
+    <Instruction Name="INT_TO_WORD" UId="569">
+      <Token Text="(" UId="570" />
+      <NamelessParameter UId="571">
+        <Access Scope="LocalVariable" UId="572">
+          <Symbol UId="573">
+            <Component Name="输入模式" UId="574" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="576" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="577" />
+  <NewLine Num="1" UId="578" />
+  <Blank Num="8" UId="579" />
+  <Access Scope="LocalVariable" UId="580">
+    <Symbol UId="581">
+      <Component Name="modbus_data" UId="582" />
+      <Token Text="." UId="583" />
+      <Component Name="模式" UId="584" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="585" />
+  <Token Text=":=" UId="586" />
+  <Blank Num="1" UId="587" />
+  <Access Scope="LiteralConstant" UId="588">
+    <Constant UId="589">
+      <ConstantValue UId="591">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="592" />
+  <NewLine Num="1" UId="593" />
+  <Blank Num="8" UId="594" />
+  <Access Scope="LocalVariable" UId="595">
+    <Symbol UId="596">
+      <Component Name="modbus_data" UId="597" />
+      <Token Text="." UId="598" />
+      <Component Name="地址" UId="599" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="600" />
+  <Token Text=":=" UId="601" />
+  <Blank Num="1" UId="602" />
+  <Access Scope="LiteralConstant" UId="603">
+    <Constant UId="604">
+      <ConstantValue UId="606">44102</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="607" />
+  <NewLine Num="1" UId="608" />
+  <Blank Num="8" UId="609" />
+  <Access Scope="LocalVariable" UId="610">
+    <Symbol UId="611">
+      <Component Name="modbus_data" UId="612" />
+      <Token Text="." UId="613" />
+      <Component Name="数据长度" UId="614" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="615" />
+  <Token Text=":=" UId="616" />
+  <Blank Num="1" UId="617" />
+  <Access Scope="LiteralConstant" UId="618">
+    <Constant UId="619">
+      <ConstantValue UId="621">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="622" />
+  <NewLine Num="1" UId="623" />
+  <Blank Num="4" UId="624" />
+  <Access Scope="LiteralConstant" UId="625">
+    <Constant UId="626">
+      <ConstantValue UId="628">8</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="629" />
+  <NewLine Num="1" UId="630" />
+  <Blank Num="8" UId="631" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="632">
+    <Text UId="633">写入地址44116</Text>
+  </LineComment>
+  <NewLine Num="1" UId="634" />
+  <Blank Num="8" UId="635" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="636">
+    <Text UId="637"> 1013H-4115-44116  默认0   输出 2 输出量读取与写入 单位为 0.1%，写入只在手动控制模式下有效（DTC1000/2000 机种） </Text>
+  </LineComment>
+  <NewLine Num="1" UId="638" />
+  <Blank Num="8" UId="639" />
+  <Access Scope="LocalVariable" UId="640">
+    <Symbol UId="641">
+      <Component Name="tm_real" UId="642" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="643" />
+  <Token Text=":=" UId="644" />
+  <Blank Num="1" UId="645" />
+  <Access Scope="LocalVariable" UId="646">
+    <Symbol UId="647">
+      <Component Name="输入开度" UId="648" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="649" />
+  <Token Text="*" UId="650" />
+  <Blank Num="1" UId="651" />
+  <Access Scope="LiteralConstant" UId="652">
+    <Constant UId="653">
+      <ConstantValue UId="655">10</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="656" />
+  <NewLine Num="1" UId="657" />
+  <Blank Num="8" UId="658" />
+  <Access Scope="LocalVariable" UId="659">
+    <Symbol UId="660">
+      <Component Name="tm_int" UId="661" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="662" />
+  <Token Text=":=" UId="663" />
+  <Blank Num="1" UId="664" />
+  <Access Scope="Call" UId="665">
+    <Instruction Name="REAL_TO_INT" UId="666">
+      <Token Text="(" UId="667" />
+      <NamelessParameter UId="668">
+        <Access Scope="LocalVariable" UId="669">
+          <Symbol UId="670">
+            <Component Name="tm_real" UId="671" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="673" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="674" />
+  <NewLine Num="1" UId="675" />
+  <Blank Num="8" UId="676" />
+  <Access Scope="LocalVariable" UId="677">
+    <Symbol UId="678">
+      <Component Name="modbus_data" UId="679" />
+      <Token Text="." UId="680" />
+      <Component Name="数据缓存区" UId="681">
+        <Token Text="[" UId="682" />
+        <Access Scope="LiteralConstant" UId="683">
+          <Constant UId="684">
+            <ConstantValue UId="686">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="687" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="688" />
+  <Token Text=":=" UId="689" />
+  <Blank Num="1" UId="690" />
+  <Access Scope="Call" UId="691">
+    <Instruction Name="INT_TO_WORD" UId="692">
+      <Token Text="(" UId="693" />
+      <NamelessParameter UId="694">
+        <Access Scope="LocalVariable" UId="695">
+          <Symbol UId="696">
+            <Component Name="tm_int" UId="697" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="699" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="700" />
+  <NewLine Num="1" UId="701" />
+  <Blank Num="8" UId="702" />
+  <Access Scope="LocalVariable" UId="703">
+    <Symbol UId="704">
+      <Component Name="modbus_data" UId="705" />
+      <Token Text="." UId="706" />
+      <Component Name="模式" UId="707" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="708" />
+  <Token Text=":=" UId="709" />
+  <Blank Num="1" UId="710" />
+  <Access Scope="LiteralConstant" UId="711">
+    <Constant UId="712">
+      <ConstantValue UId="714">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="715" />
+  <NewLine Num="1" UId="716" />
+  <Blank Num="8" UId="717" />
+  <Access Scope="LocalVariable" UId="718">
+    <Symbol UId="719">
+      <Component Name="modbus_data" UId="720" />
+      <Token Text="." UId="721" />
+      <Component Name="地址" UId="722" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="723" />
+  <Token Text=":=" UId="724" />
+  <Blank Num="1" UId="725" />
+  <Access Scope="LiteralConstant" UId="726">
+    <Constant UId="727">
+      <ConstantValue UId="729">44116</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="730" />
+  <NewLine Num="1" UId="731" />
+  <Blank Num="8" UId="732" />
+  <Access Scope="LocalVariable" UId="733">
+    <Symbol UId="734">
+      <Component Name="modbus_data" UId="735" />
+      <Token Text="." UId="736" />
+      <Component Name="数据长度" UId="737" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="738" />
+  <Token Text=":=" UId="739" />
+  <Blank Num="1" UId="740" />
+  <Access Scope="LiteralConstant" UId="741">
+    <Constant UId="742">
+      <ConstantValue UId="744">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="745" />
+  <NewLine Num="1" UId="746" />
+  <Blank Num="4" UId="747" />
+  <Access Scope="LiteralConstant" UId="748">
+    <Constant UId="749">
+      <ConstantValue UId="751">9</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="752" />
+  <NewLine Num="1" UId="753" />
+  <Blank Num="8" UId="754" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="755">
+    <Text UId="756">写入地址2068</Text>
+  </LineComment>
+  <NewLine Num="1" UId="757" />
+  <Blank Num="8" UId="758" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="759">
+    <Text UId="760"> 0813H-2067-12068  读写自动调谐状态 自动调谐停止：0（预设），自动调谐开始：1 </Text>
+  </LineComment>
+  <NewLine Num="1" UId="761" />
+  <Blank Num="8" UId="762" />
+  <NewLine Num="1" UId="763" />
+  <Blank Num="8" UId="764" />
+  <Access Scope="LocalVariable" UId="765">
+    <Symbol UId="766">
+      <Component Name="modbus_data" UId="767" />
+      <Token Text="." UId="768" />
+      <Component Name="数据缓存区" UId="769">
+        <Token Text="[" UId="770" />
+        <Access Scope="LiteralConstant" UId="771">
+          <Constant UId="772">
+            <ConstantValue UId="774">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="775" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="776" />
+  <Token Text=":=" UId="777" />
+  <Blank Num="1" UId="778" />
+  <Access Scope="Call" UId="779">
+    <Instruction Name="UINT_TO_WORD" UId="780">
+      <Token Text="(" UId="781" />
+      <NamelessParameter UId="782">
+        <Access Scope="LocalVariable" UId="783">
+          <Symbol UId="784">
+            <Component Name="进温AT_写字" UId="785" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="787" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="788" />
+  <NewLine Num="1" UId="789" />
+  <Blank Num="8" UId="790" />
+  <Access Scope="LocalVariable" UId="791">
+    <Symbol UId="792">
+      <Component Name="modbus_data" UId="793" />
+      <Token Text="." UId="794" />
+      <Component Name="模式" UId="795" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="796" />
+  <Token Text=":=" UId="797" />
+  <Blank Num="1" UId="798" />
+  <Access Scope="LiteralConstant" UId="799">
+    <Constant UId="800">
+      <ConstantValue UId="802">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="803" />
+  <NewLine Num="1" UId="804" />
+  <Blank Num="8" UId="805" />
+  <Access Scope="LocalVariable" UId="806">
+    <Symbol UId="807">
+      <Component Name="modbus_data" UId="808" />
+      <Token Text="." UId="809" />
+      <Component Name="地址" UId="810" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="811" />
+  <Token Text=":=" UId="812" />
+  <Blank Num="1" UId="813" />
+  <Access Scope="LiteralConstant" UId="814">
+    <Constant UId="815">
+      <ConstantValue UId="817">2068</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="818" />
+  <NewLine Num="1" UId="819" />
+  <Blank Num="8" UId="820" />
+  <Access Scope="LocalVariable" UId="821">
+    <Symbol UId="822">
+      <Component Name="modbus_data" UId="823" />
+      <Token Text="." UId="824" />
+      <Component Name="数据长度" UId="825" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="826" />
+  <Token Text=":=" UId="827" />
+  <Blank Num="1" UId="828" />
+  <Access Scope="LiteralConstant" UId="829">
+    <Constant UId="830">
+      <ConstantValue UId="832">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="833" />
+  <NewLine Num="1" UId="834" />
+  <Blank Num="4" UId="835" />
+  <Access Scope="LiteralConstant" UId="836">
+    <Constant UId="837">
+      <ConstantValue UId="839">10</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="840" />
+  <NewLine Num="1" UId="841" />
+  <Blank Num="8" UId="842" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="843">
+    <Text UId="844">写入地址2069</Text>
+  </LineComment>
+  <NewLine Num="1" UId="845" />
+  <Blank Num="8" UId="846" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="847">
+    <Text UId="848"> 0814H-2068-12069  控制执行/停止设定 0：停止，1：执行（预设） </Text>
+  </LineComment>
+  <NewLine Num="1" UId="849" />
+  <Blank Num="8" UId="850" />
+  <Access Scope="LocalVariable" UId="851">
+    <Symbol UId="852">
+      <Component Name="modbus_data" UId="853" />
+      <Token Text="." UId="854" />
+      <Component Name="数据缓存区" UId="855">
+        <Token Text="[" UId="856" />
+        <Access Scope="LiteralConstant" UId="857">
+          <Constant UId="858">
+            <ConstantValue UId="860">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="861" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="862" />
+  <Token Text=":=" UId="863" />
+  <Blank Num="1" UId="864" />
+  <Access Scope="Call" UId="865">
+    <Instruction Name="UINT_TO_WORD" UId="866">
+      <Token Text="(" UId="867" />
+      <NamelessParameter UId="868">
+        <Access Scope="LocalVariable" UId="869">
+          <Symbol UId="870">
+            <Component Name="进温启停字" UId="871" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="873" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="874" />
+  <NewLine Num="1" UId="875" />
+  <Blank Num="8" UId="876" />
+  <Access Scope="LocalVariable" UId="877">
+    <Symbol UId="878">
+      <Component Name="modbus_data" UId="879" />
+      <Token Text="." UId="880" />
+      <Component Name="模式" UId="881" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="882" />
+  <Token Text=":=" UId="883" />
+  <Blank Num="1" UId="884" />
+  <Access Scope="LiteralConstant" UId="885">
+    <Constant UId="886">
+      <ConstantValue UId="888">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="889" />
+  <NewLine Num="1" UId="890" />
+  <Blank Num="8" UId="891" />
+  <Access Scope="LocalVariable" UId="892">
+    <Symbol UId="893">
+      <Component Name="modbus_data" UId="894" />
+      <Token Text="." UId="895" />
+      <Component Name="地址" UId="896" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="897" />
+  <Token Text=":=" UId="898" />
+  <Blank Num="1" UId="899" />
+  <Access Scope="LiteralConstant" UId="900">
+    <Constant UId="901">
+      <ConstantValue UId="903">2069</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="904" />
+  <NewLine Num="1" UId="905" />
+  <Blank Num="8" UId="906" />
+  <Access Scope="LocalVariable" UId="907">
+    <Symbol UId="908">
+      <Component Name="modbus_data" UId="909" />
+      <Token Text="." UId="910" />
+      <Component Name="数据长度" UId="911" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="912" />
+  <Token Text=":=" UId="913" />
+  <Blank Num="1" UId="914" />
+  <Access Scope="LiteralConstant" UId="915">
+    <Constant UId="916">
+      <ConstantValue UId="918">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="919" />
+  <NewLine Num="1" UId="920" />
+  <Blank Num="8" UId="921" />
+  <NewLine Num="1" UId="922" />
+  <Token Text="END_CASE" UId="923" />
+  <Token Text=";" UId="924" />
+  <NewLine Num="5" UId="925" />
+  <Access Scope="LocalVariable" UId="926">
+    <Symbol UId="927">
+      <Component Name="modbus_data" UId="928" />
+      <Token Text="." UId="929" />
+      <Component Name="触发" UId="930" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="931" />
+  <Token Text=":=" UId="932" />
+  <Blank Num="1" UId="933" />
+  <Access Scope="LocalVariable" UId="934">
+    <Symbol UId="935">
+      <Component Name="当前指令ID" UId="936" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="937" />
+  <Token Text="&lt;&gt;" UId="938" />
+  <Blank Num="1" UId="939" />
+  <Access Scope="LocalVariable" UId="940">
+    <Symbol UId="941">
+      <Component Name="上一次指令ID" UId="942" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="943" />
+  <NewLine Num="1" UId="944" />
+  <Access Scope="LocalVariable" UId="945">
+    <Symbol UId="946">
+      <Component Name="上一次指令ID" UId="947" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="948" />
+  <Token Text=":=" UId="949" />
+  <Blank Num="1" UId="950" />
+  <Access Scope="LocalVariable" UId="951">
+    <Symbol UId="952">
+      <Component Name="当前指令ID" UId="953" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="954" />
+  <NewLine Num="4" UId="955" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="956">
+    <Text UId="957">程序2</Text>
+  </LineComment>
+  <NewLine Num="3" UId="958" />
+  <Access Scope="LocalVariable" UId="959">
+    <Symbol UId="960">
+      <Component Name="Modbus_Master_Instance" UId="961" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="962">
+    <Instruction UId="963">
+      <Token Text="(" UId="964" />
+      <Parameter Name="REQ" UId="965">
+        <Blank Num="1" UId="966" />
+        <Token Text=":=" UId="967" />
+        <Blank Num="1" UId="968" />
+        <Access Scope="LocalVariable" UId="969">
+          <Symbol UId="970">
+            <Component Name="modbus_data" UId="971" />
+            <Token Text="." UId="972" />
+            <Component Name="触发" UId="973" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="974" />
+      <NewLine Num="1" UId="975" />
+      <Blank Num="24" UId="976" />
+      <Parameter Name="MB_ADDR" UId="977">
+        <Blank Num="1" UId="978" />
+        <Token Text=":=" UId="979" />
+        <Blank Num="1" UId="980" />
+        <Access Scope="LocalVariable" UId="981">
+          <Symbol UId="982">
+            <Component Name="modbus_data" UId="983" />
+            <Token Text="." UId="984" />
+            <Component Name="站号" UId="985" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="986" />
+      <NewLine Num="1" UId="987" />
+      <Blank Num="24" UId="988" />
+      <Parameter Name="MODE" UId="989">
+        <Blank Num="1" UId="990" />
+        <Token Text=":=" UId="991" />
+        <Blank Num="1" UId="992" />
+        <Access Scope="LocalVariable" UId="993">
+          <Symbol UId="994">
+            <Component Name="modbus_data" UId="995" />
+            <Token Text="." UId="996" />
+            <Component Name="模式" UId="997" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="998" />
+      <NewLine Num="1" UId="999" />
+      <Blank Num="24" UId="1000" />
+      <Parameter Name="DATA_ADDR" UId="1001">
+        <Blank Num="1" UId="1002" />
+        <Token Text=":=" UId="1003" />
+        <Blank Num="1" UId="1004" />
+        <Access Scope="LocalVariable" UId="1005">
+          <Symbol UId="1006">
+            <Component Name="modbus_data" UId="1007" />
+            <Token Text="." UId="1008" />
+            <Component Name="地址" UId="1009" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1010" />
+      <NewLine Num="1" UId="1011" />
+      <Blank Num="24" UId="1012" />
+      <Parameter Name="DATA_LEN" UId="1013">
+        <Blank Num="1" UId="1014" />
+        <Token Text=":=" UId="1015" />
+        <Blank Num="1" UId="1016" />
+        <Access Scope="LocalVariable" UId="1017">
+          <Symbol UId="1018">
+            <Component Name="modbus_data" UId="1019" />
+            <Token Text="." UId="1020" />
+            <Component Name="数据长度" UId="1021" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1022" />
+      <NewLine Num="1" UId="1023" />
+      <Blank Num="24" UId="1024" />
+      <Parameter Name="DONE" UId="1025">
+        <Blank Num="1" UId="1026" />
+        <Token Text="=&gt;" UId="1027" />
+        <Blank Num="1" UId="1028" />
+        <Access Scope="LocalVariable" UId="1029">
+          <Symbol UId="1030">
+            <Component Name="modbus_data" UId="1031" />
+            <Token Text="." UId="1032" />
+            <Component Name="完成" UId="1033" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1034" />
+      <NewLine Num="1" UId="1035" />
+      <Blank Num="24" UId="1036" />
+      <Parameter Name="BUSY" UId="1037">
+        <Blank Num="1" UId="1038" />
+        <Token Text="=&gt;" UId="1039" />
+        <Blank Num="1" UId="1040" />
+        <Access Scope="LocalVariable" UId="1041">
+          <Symbol UId="1042">
+            <Component Name="modbus_data" UId="1043" />
+            <Token Text="." UId="1044" />
+            <Component Name="忙碌" UId="1045" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1046" />
+      <NewLine Num="1" UId="1047" />
+      <Blank Num="24" UId="1048" />
+      <Parameter Name="ERROR" UId="1049">
+        <Blank Num="1" UId="1050" />
+        <Token Text="=&gt;" UId="1051" />
+        <Blank Num="1" UId="1052" />
+        <Access Scope="LocalVariable" UId="1053">
+          <Symbol UId="1054">
+            <Component Name="modbus_data" UId="1055" />
+            <Token Text="." UId="1056" />
+            <Component Name="出错" UId="1057" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1058" />
+      <NewLine Num="1" UId="1059" />
+      <Blank Num="24" UId="1060" />
+      <Parameter Name="STATUS" UId="1061">
+        <Blank Num="1" UId="1062" />
+        <Token Text="=&gt;" UId="1063" />
+        <Blank Num="1" UId="1064" />
+        <Access Scope="LocalVariable" UId="1065">
+          <Symbol UId="1066">
+            <Component Name="modbus_data" UId="1067" />
+            <Token Text="." UId="1068" />
+            <Component Name="故障码" UId="1069" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1070" />
+      <NewLine Num="1" UId="1071" />
+      <Blank Num="24" UId="1072" />
+      <Parameter Name="DATA_PTR" UId="1073">
+        <Blank Num="1" UId="1074" />
+        <Token Text=":=" UId="1075" />
+        <Blank Num="1" UId="1076" />
+        <Access Scope="LocalVariable" UId="1077">
+          <Symbol UId="1078">
+            <Component Name="modbus_data" UId="1079" />
+            <Token Text="." UId="1080" />
+            <Component Name="数据缓存区" UId="1081" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1082" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1083" />
+  <NewLine Num="2" UId="1084" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="1085">
+    <Text UId="1086">程序3</Text>
+  </LineComment>
+  <NewLine Num="2" UId="1087" />
+  <Token Text="IF" UId="1088" />
+  <Blank Num="1" UId="1089" />
+  <Access Scope="LocalVariable" UId="1090">
+    <Symbol UId="1091">
+      <Component Name="modbus_data" UId="1092" />
+      <Token Text="." UId="1093" />
+      <Component Name="完成" UId="1094" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1095" />
+  <Token Text="THEN" UId="1096" />
+  <NewLine Num="1" UId="1097" />
+  <Blank Num="4" UId="1098" />
+  <Token Text="CASE" UId="1099" />
+  <Blank Num="1" UId="1100" />
+  <Access Scope="LocalVariable" UId="1101">
+    <Symbol UId="1102">
+      <Component Name="当前指令ID" UId="1103" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1104" />
+  <Token Text="OF" UId="1105" />
+  <NewLine Num="1" UId="1106" />
+  <Blank Num="8" UId="1107" />
+  <Access Scope="LiteralConstant" UId="1108">
+    <Constant UId="1109">
+      <ConstantValue UId="1111">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="1112" />
+  <NewLine Num="1" UId="1113" />
+  <Blank Num="12" UId="1114" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="1115">
+    <Text UId="1116">44097</Text>
+  </LineComment>
+  <NewLine Num="1" UId="1117" />
+  <Blank Num="12" UId="1118" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="1119">
+    <Text UId="1120"> 1000H-4096-44097       PV 目前测量值
+            （温度以 0.1 刻度为计量单位，模拟输入为 1EU。
+            下列读值表示错误发生：
+            8002H（32770） 输入读值尚未取得
+            8003H（32771） 未接传感器
+            8004H（32772） 传感器型式错误
+            8006H（34774） 输入值无法测量,输入 ADC 错误
+            8007H（32775） 内存无法读写） </Text>
+  </LineComment>
+  <NewLine Num="1" UId="1121" />
+  <Blank Num="12" UId="1122" />
+  <Access Scope="LocalVariable" UId="1123">
+    <Symbol UId="1124">
+      <Component Name="tm_int" UId="1125" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1126" />
+  <Token Text=":=" UId="1127" />
+  <Blank Num="1" UId="1128" />
+  <Access Scope="Call" UId="1129">
+    <Instruction Name="WORD_TO_INT" UId="1130">
+      <Token Text="(" UId="1131" />
+      <NamelessParameter UId="1132">
+        <Access Scope="LocalVariable" UId="1133">
+          <Symbol UId="1134">
+            <Component Name="modbus_data" UId="1135" />
+            <Token Text="." UId="1136" />
+            <Component Name="数据缓存区" UId="1137">
+              <Token Text="[" UId="1138" />
+              <Access Scope="LiteralConstant" UId="1139">
+                <Constant UId="1140">
+                  <ConstantValue UId="1142">1</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="1143" />
+            </Component>
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1145" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1146" />
+  <NewLine Num="1" UId="1147" />
+  <Blank Num="12" UId="1148" />
+  <Access Scope="LocalVariable" UId="1149">
+    <Symbol UId="1150">
+      <Component Name="tm_real" UId="1151" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1152" />
+  <Token Text=":=" UId="1153" />
+  <Blank Num="1" UId="1154" />
+  <Access Scope="Call" UId="1155">
+    <Instruction Name="INT_TO_REAL" UId="1156">
+      <Token Text="(" UId="1157" />
+      <NamelessParameter UId="1158">
+        <Access Scope="LocalVariable" UId="1159">
+          <Symbol UId="1160">
+            <Component Name="tm_int" UId="1161" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1163" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1164" />
+  <NewLine Num="1" UId="1165" />
+  <Blank Num="12" UId="1166" />
+  <Access Scope="LocalVariable" UId="1167">
+    <Symbol UId="1168">
+      <Component Name="B当前量" UId="1169" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1170" />
+  <Token Text=":=" UId="1171" />
+  <Blank Num="1" UId="1172" />
+  <Access Scope="LocalVariable" UId="1173">
+    <Symbol UId="1174">
+      <Component Name="tm_real" UId="1175" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1176" />
+  <Token Text="/" UId="1177" />
+  <Blank Num="1" UId="1178" />
+  <Access Scope="LiteralConstant" UId="1179">
+    <Constant UId="1180">
+      <ConstantValue UId="1182">10</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1183" />
+  <NewLine Num="1" UId="1184" />
+  <Blank Num="12" UId="1185" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="1186">
+    <Text UId="1187">44098</Text>
+  </LineComment>
+  <NewLine Num="1" UId="1188" />
+  <Blank Num="12" UId="1189" />
+  <Access Scope="LocalVariable" UId="1190">
+    <Symbol UId="1191">
+      <Component Name="tm_int" UId="1192" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1193" />
+  <Token Text=":=" UId="1194" />
+  <Blank Num="1" UId="1195" />
+  <Access Scope="Call" UId="1196">
+    <Instruction Name="WORD_TO_INT" UId="1197">
+      <Token Text="(" UId="1198" />
+      <NamelessParameter UId="1199">
+        <Access Scope="LocalVariable" UId="1200">
+          <Symbol UId="1201">
+            <Component Name="modbus_data" UId="1202" />
+            <Token Text="." UId="1203" />
+            <Component Name="数据缓存区" UId="1204">
+              <Token Text="[" UId="1205" />
+              <Access Scope="LiteralConstant" UId="1206">
+                <Constant UId="1207">
+                  <ConstantValue UId="1209">2</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="1210" />
+            </Component>
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1212" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1213" />
+  <NewLine Num="1" UId="1214" />
+  <Blank Num="12" UId="1215" />
+  <Access Scope="LocalVariable" UId="1216">
+    <Symbol UId="1217">
+      <Component Name="tm_real" UId="1218" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1219" />
+  <Token Text=":=" UId="1220" />
+  <Blank Num="1" UId="1221" />
+  <Access Scope="Call" UId="1222">
+    <Instruction Name="INT_TO_REAL" UId="1223">
+      <Token Text="(" UId="1224" />
+      <NamelessParameter UId="1225">
+        <Access Scope="LocalVariable" UId="1226">
+          <Symbol UId="1227">
+            <Component Name="tm_int" UId="1228" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1230" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1231" />
+  <NewLine Num="1" UId="1232" />
+  <Blank Num="12" UId="1233" />
+  <Access Scope="LocalVariable" UId="1234">
+    <Symbol UId="1235">
+      <Component Name="输入设定读" UId="1236" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1237" />
+  <Token Text=":=" UId="1238" />
+  <Blank Num="1" UId="1239" />
+  <Access Scope="LocalVariable" UId="1240">
+    <Symbol UId="1241">
+      <Component Name="tm_real" UId="1242" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1243" />
+  <Token Text="/" UId="1244" />
+  <Blank Num="1" UId="1245" />
+  <Access Scope="LiteralConstant" UId="1246">
+    <Constant UId="1247">
+      <ConstantValue UId="1249">10</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1250" />
+  <NewLine Num="1" UId="1251" />
+  <Blank Num="12" UId="1252" />
+  <NewLine Num="1" UId="1253" />
+  <Blank Num="8" UId="1254" />
+  <Access Scope="LiteralConstant" UId="1255">
+    <Constant UId="1256">
+      <ConstantValue UId="1258">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="1259" />
+  <NewLine Num="1" UId="1260" />
+  <Blank Num="12" UId="1261" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="1262">
+    <Text UId="1263">44102</Text>
+  </LineComment>
+  <NewLine Num="1" UId="1264" />
+  <Blank Num="12" UId="1265" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="1266">
+    <Text UId="1267"> 1005H-4101-44102  默认0   控制方式 0：PID；1：ON/OFF；2：手动；3：PID 过程控制 </Text>
+  </LineComment>
+  <NewLine Num="1" UId="1268" />
+  <Blank Num="12" UId="1269" />
+  <Access Scope="LocalVariable" UId="1270">
+    <Symbol UId="1271">
+      <Component Name="tm_int" UId="1272" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1273" />
+  <Token Text=":=" UId="1274" />
+  <Blank Num="1" UId="1275" />
+  <Access Scope="Call" UId="1276">
+    <Instruction Name="WORD_TO_INT" UId="1277">
+      <Token Text="(" UId="1278" />
+      <NamelessParameter UId="1279">
+        <Access Scope="LocalVariable" UId="1280">
+          <Symbol UId="1281">
+            <Component Name="modbus_data" UId="1282" />
+            <Token Text="." UId="1283" />
+            <Component Name="数据缓存区" UId="1284">
+              <Token Text="[" UId="1285" />
+              <Access Scope="LiteralConstant" UId="1286">
+                <Constant UId="1287">
+                  <ConstantValue UId="1289">1</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="1290" />
+            </Component>
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1292" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1293" />
+  <NewLine Num="1" UId="1294" />
+  <Blank Num="12" UId="1295" />
+  <Access Scope="LocalVariable" UId="1296">
+    <Symbol UId="1297">
+      <Component Name="输出模式读" UId="1298" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1299" />
+  <Token Text=":=" UId="1300" />
+  <Blank Num="1" UId="1301" />
+  <Access Scope="LocalVariable" UId="1302">
+    <Symbol UId="1303">
+      <Component Name="tm_int" UId="1304" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1305" />
+  <NewLine Num="1" UId="1306" />
+  <Blank Num="8" UId="1307" />
+  <Access Scope="LiteralConstant" UId="1308">
+    <Constant UId="1309">
+      <ConstantValue UId="1311">3</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="1312" />
+  <NewLine Num="1" UId="1313" />
+  <Blank Num="12" UId="1314" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="1315">
+    <Text UId="1316">   1009H-4105-44106  默认476 PB 比例带设定值 1 ~ 9,999, 温度单位为 0.1 度，模拟输入为 1EU
+                 100AH-4106-44107  默认260 Ti 积分控制常量设定值 0 ~ 9,999
+                 100BH-4107-44108  默认41 Td 微分控制常量设定值 0 ~ 9,999 </Text>
+  </LineComment>
+  <NewLine Num="1" UId="1317" />
+  <Blank Num="17" UId="1318" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="1319">
+    <Text UId="1320">44106</Text>
+  </LineComment>
+  <NewLine Num="1" UId="1321" />
+  <Blank Num="17" UId="1322" />
+  <Access Scope="LocalVariable" UId="1323">
+    <Symbol UId="1324">
+      <Component Name="tm_int" UId="1325" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1326" />
+  <Token Text=":=" UId="1327" />
+  <Blank Num="1" UId="1328" />
+  <Access Scope="Call" UId="1329">
+    <Instruction Name="WORD_TO_INT" UId="1330">
+      <Token Text="(" UId="1331" />
+      <NamelessParameter UId="1332">
+        <Access Scope="LocalVariable" UId="1333">
+          <Symbol UId="1334">
+            <Component Name="modbus_data" UId="1335" />
+            <Token Text="." UId="1336" />
+            <Component Name="数据缓存区" UId="1337">
+              <Token Text="[" UId="1338" />
+              <Access Scope="LiteralConstant" UId="1339">
+                <Constant UId="1340">
+                  <ConstantValue UId="1342">1</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="1343" />
+            </Component>
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1345" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1346" />
+  <NewLine Num="1" UId="1347" />
+  <Blank Num="17" UId="1348" />
+  <Access Scope="LocalVariable" UId="1349">
+    <Symbol UId="1350">
+      <Component Name="进温P读" UId="1351" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1352" />
+  <Token Text=":=" UId="1353" />
+  <Blank Num="1" UId="1354" />
+  <Access Scope="LocalVariable" UId="1355">
+    <Symbol UId="1356">
+      <Component Name="tm_int" UId="1357" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1358" />
+  <NewLine Num="1" UId="1359" />
+  <Blank Num="17" UId="1360" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="1361">
+    <Text UId="1362">44107</Text>
+  </LineComment>
+  <NewLine Num="1" UId="1363" />
+  <Blank Num="17" UId="1364" />
+  <Access Scope="LocalVariable" UId="1365">
+    <Symbol UId="1366">
+      <Component Name="tm_int" UId="1367" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1368" />
+  <Token Text=":=" UId="1369" />
+  <Blank Num="1" UId="1370" />
+  <Access Scope="Call" UId="1371">
+    <Instruction Name="WORD_TO_INT" UId="1372">
+      <Token Text="(" UId="1373" />
+      <NamelessParameter UId="1374">
+        <Access Scope="LocalVariable" UId="1375">
+          <Symbol UId="1376">
+            <Component Name="modbus_data" UId="1377" />
+            <Token Text="." UId="1378" />
+            <Component Name="数据缓存区" UId="1379">
+              <Token Text="[" UId="1380" />
+              <Access Scope="LiteralConstant" UId="1381">
+                <Constant UId="1382">
+                  <ConstantValue UId="1384">2</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="1385" />
+            </Component>
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1387" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1388" />
+  <NewLine Num="1" UId="1389" />
+  <Blank Num="17" UId="1390" />
+  <Access Scope="LocalVariable" UId="1391">
+    <Symbol UId="1392">
+      <Component Name="进温I读" UId="1393" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1394" />
+  <Token Text=":=" UId="1395" />
+  <Blank Num="1" UId="1396" />
+  <Access Scope="LocalVariable" UId="1397">
+    <Symbol UId="1398">
+      <Component Name="tm_int" UId="1399" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1400" />
+  <NewLine Num="1" UId="1401" />
+  <Blank Num="17" UId="1402" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="1403">
+    <Text UId="1404">44108</Text>
+  </LineComment>
+  <NewLine Num="1" UId="1405" />
+  <Blank Num="17" UId="1406" />
+  <Access Scope="LocalVariable" UId="1407">
+    <Symbol UId="1408">
+      <Component Name="tm_int" UId="1409" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1410" />
+  <Token Text=":=" UId="1411" />
+  <Blank Num="1" UId="1412" />
+  <Access Scope="Call" UId="1413">
+    <Instruction Name="WORD_TO_INT" UId="1414">
+      <Token Text="(" UId="1415" />
+      <NamelessParameter UId="1416">
+        <Access Scope="LocalVariable" UId="1417">
+          <Symbol UId="1418">
+            <Component Name="modbus_data" UId="1419" />
+            <Token Text="." UId="1420" />
+            <Component Name="数据缓存区" UId="1421">
+              <Token Text="[" UId="1422" />
+              <Access Scope="LiteralConstant" UId="1423">
+                <Constant UId="1424">
+                  <ConstantValue UId="1426">3</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="1427" />
+            </Component>
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1429" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1430" />
+  <NewLine Num="1" UId="1431" />
+  <Blank Num="17" UId="1432" />
+  <Access Scope="LocalVariable" UId="1433">
+    <Symbol UId="1434">
+      <Component Name="进温D读" UId="1435" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1436" />
+  <Token Text=":=" UId="1437" />
+  <Blank Num="1" UId="1438" />
+  <Access Scope="LocalVariable" UId="1439">
+    <Symbol UId="1440">
+      <Component Name="tm_int" UId="1441" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1442" />
+  <NewLine Num="1" UId="1443" />
+  <Blank Num="13" UId="1444" />
+  <Access Scope="LiteralConstant" UId="1445">
+    <Constant UId="1446">
+      <ConstantValue UId="1448">4</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="1449" />
+  <NewLine Num="1" UId="1450" />
+  <Blank Num="17" UId="1451" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="1452">
+    <Text UId="1453">44116</Text>
+  </LineComment>
+  <NewLine Num="1" UId="1454" />
+  <Blank Num="17" UId="1455" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="1456">
+    <Text UId="1457"> 1013H-4115-44116  默认0   输出 2 输出量读取与写入 单位为 0.1%，写入只在手动控制模式下有效（DTC1000/2000 机种） </Text>
+  </LineComment>
+  <NewLine Num="1" UId="1458" />
+  <Blank Num="17" UId="1459" />
+  <Access Scope="LocalVariable" UId="1460">
+    <Symbol UId="1461">
+      <Component Name="tm_int" UId="1462" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1463" />
+  <Token Text=":=" UId="1464" />
+  <Blank Num="1" UId="1465" />
+  <Access Scope="Call" UId="1466">
+    <Instruction Name="WORD_TO_INT" UId="1467">
+      <Token Text="(" UId="1468" />
+      <NamelessParameter UId="1469">
+        <Access Scope="LocalVariable" UId="1470">
+          <Symbol UId="1471">
+            <Component Name="modbus_data" UId="1472" />
+            <Token Text="." UId="1473" />
+            <Component Name="数据缓存区" UId="1474">
+              <Token Text="[" UId="1475" />
+              <Access Scope="LiteralConstant" UId="1476">
+                <Constant UId="1477">
+                  <ConstantValue UId="1479">1</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="1480" />
+            </Component>
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1482" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1483" />
+  <NewLine Num="1" UId="1484" />
+  <Blank Num="17" UId="1485" />
+  <Access Scope="LocalVariable" UId="1486">
+    <Symbol UId="1487">
+      <Component Name="tm_real" UId="1488" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1489" />
+  <Token Text=":=" UId="1490" />
+  <Blank Num="1" UId="1491" />
+  <Access Scope="Call" UId="1492">
+    <Instruction Name="INT_TO_REAL" UId="1493">
+      <Token Text="(" UId="1494" />
+      <NamelessParameter UId="1495">
+        <Access Scope="LocalVariable" UId="1496">
+          <Symbol UId="1497">
+            <Component Name="tm_int" UId="1498" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1500" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1501" />
+  <NewLine Num="1" UId="1502" />
+  <Blank Num="17" UId="1503" />
+  <Access Scope="LocalVariable" UId="1504">
+    <Symbol UId="1505">
+      <Component Name="输出开度读" UId="1506" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1507" />
+  <Token Text=":=" UId="1508" />
+  <Blank Num="1" UId="1509" />
+  <Access Scope="LocalVariable" UId="1510">
+    <Symbol UId="1511">
+      <Component Name="tm_real" UId="1512" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1513" />
+  <Token Text="/" UId="1514" />
+  <Blank Num="1" UId="1515" />
+  <Access Scope="LiteralConstant" UId="1516">
+    <Constant UId="1517">
+      <ConstantValue UId="1519">10</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1520" />
+  <NewLine Num="1" UId="1521" />
+  <Blank Num="13" UId="1522" />
+  <Access Scope="LiteralConstant" UId="1523">
+    <Constant UId="1524">
+      <ConstantValue UId="1526">5</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=":" UId="1527" />
+  <NewLine Num="1" UId="1528" />
+  <Blank Num="17" UId="1529" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="1530">
+    <Text UId="1531">12068</Text>
+  </LineComment>
+  <NewLine Num="1" UId="1532" />
+  <Blank Num="17" UId="1533" />
+  <LineComment Inserted="true" NoClosingBracket="false" UId="1534">
+    <Text UId="1535"> 0813H-2067-12068  读写自动调谐状态 自动调谐停止：0（预设），自动调谐开始：1 </Text>
+  </LineComment>
+  <NewLine Num="1" UId="1536" />
+  <Blank Num="17" UId="1537" />
+  <Access Scope="LocalVariable" UId="1538">
+    <Symbol UId="1539">
+      <Component Name="进温AT_读字" UId="1540" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1541" />
+  <Token Text=":=" UId="1542" />
+  <Blank Num="1" UId="1543" />
+  <Access Scope="Call" UId="1544">
+    <Instruction Name="WORD_TO_UINT" UId="1545">
+      <Token Text="(" UId="1546" />
+      <NamelessParameter UId="1547">
+        <Access Scope="LocalVariable" UId="1548">
+          <Symbol UId="1549">
+            <Component Name="modbus_data" UId="1550" />
+            <Token Text="." UId="1551" />
+            <Component Name="数据缓存区" UId="1552">
+              <Token Text="[" UId="1553" />
+              <Access Scope="LiteralConstant" UId="1554">
+                <Constant UId="1555">
+                  <ConstantValue UId="1557">1</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="1558" />
+            </Component>
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1560" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1561" />
+  <NewLine Num="1" UId="1562" />
+  <Blank Num="9" UId="1563" />
+  <Token Text="END_CASE" UId="1564" />
+  <Token Text=";" UId="1565" />
+  <NewLine Num="1" UId="1566" />
+  <Blank Num="5" UId="1567" />
+  <Token Text="END_IF" UId="1568" />
+  <Token Text=";" UId="1569" />
+  <NewLine Num="1" UId="1570" />
+  <Blank Num="5" UId="1571" />
+  <NewLine Num="1" UId="1572" />
+  <Blank Num="5" UId="1573" />
+  <Token Text="IF" UId="1574" />
+  <Blank Num="1" UId="1575" />
+  <Access Scope="LocalVariable" UId="1576">
+    <Symbol UId="1577">
+      <Component Name="modbus_data" UId="1578" />
+      <Token Text="." UId="1579" />
+      <Component Name="出错" UId="1580" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1581" />
+  <Token Text="AND" UId="1582" />
+  <Blank Num="1" UId="1583" />
+  <Access Scope="LocalVariable" UId="1584">
+    <Symbol UId="1585">
+      <Component Name="当前指令ID" UId="1586" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1587" />
+  <Token Text="&gt;" UId="1588" />
+  <Blank Num="1" UId="1589" />
+  <Access Scope="LiteralConstant" UId="1590">
+    <Constant UId="1591">
+      <ConstantValue UId="1593">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="1594" />
+  <Token Text="AND" UId="1595" />
+  <Blank Num="1" UId="1596" />
+  <Access Scope="LocalVariable" UId="1597">
+    <Symbol UId="1598">
+      <Component Name="当前指令ID" UId="1599" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1600" />
+  <Token Text="&lt;" UId="1601" />
+  <Blank Num="1" UId="1602" />
+  <Access Scope="LiteralConstant" UId="1603">
+    <Constant UId="1604">
+      <ConstantValue UId="1606">12</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="1607" />
+  <Token Text="THEN" UId="1608" />
+  <NewLine Num="1" UId="1609" />
+  <Blank Num="9" UId="1610" />
+  <Access Scope="LocalVariable" UId="1611">
+    <Symbol UId="1612">
+      <Component Name="报错代码" UId="1613">
+        <Token Text="[" UId="1614" />
+        <Access Scope="LocalVariable" UId="1615">
+          <Symbol UId="1616">
+            <Component Name="当前指令ID" UId="1617" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="1618" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1619" />
+  <Token Text=":=" UId="1620" />
+  <Blank Num="1" UId="1621" />
+  <Access Scope="LocalVariable" UId="1622">
+    <Symbol UId="1623">
+      <Component Name="modbus_data" UId="1624" />
+      <Token Text="." UId="1625" />
+      <Component Name="故障码" UId="1626" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1627" />
+  <NewLine Num="1" UId="1628" />
+  <Blank Num="5" UId="1629" />
+  <Token Text="END_IF" UId="1630" />
+  <Token Text=";" UId="1631" />
+  <NewLine Num="1" UId="1632" />
+  <Blank Num="5" UId="1633" />
+  <NewLine Num="1" UId="1634" />
+  <Blank Num="5" UId="1635" />
+  <Token Text="IF" UId="1636" />
+  <Blank Num="1" UId="1637" />
+  <Access Scope="LocalVariable" UId="1638">
+    <Symbol UId="1639">
+      <Component Name="modbus_data" UId="1640" />
+      <Token Text="." UId="1641" />
+      <Component Name="完成" UId="1642" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1643" />
+  <Token Text="OR" UId="1644" />
+  <Blank Num="1" UId="1645" />
+  <Access Scope="LocalVariable" UId="1646">
+    <Symbol UId="1647">
+      <Component Name="modbus_data" UId="1648" />
+      <Token Text="." UId="1649" />
+      <Component Name="出错" UId="1650" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1651" />
+  <Token Text="THEN" UId="1652" />
+  <NewLine Num="1" UId="1653" />
+  <Blank Num="9" UId="1654" />
+  <Access Scope="LocalVariable" UId="1655">
+    <Symbol UId="1656">
+      <Component Name="当前指令ID" UId="1657" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1658" />
+  <Token Text=":=" UId="1659" />
+  <Blank Num="1" UId="1660" />
+  <Access Scope="LocalVariable" UId="1661">
+    <Symbol UId="1662">
+      <Component Name="当前指令ID" UId="1663" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1664" />
+  <Token Text="+" UId="1665" />
+  <Blank Num="1" UId="1666" />
+  <Access Scope="LiteralConstant" UId="1667">
+    <Constant UId="1668">
+      <ConstantValue UId="1670">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1671" />
+  <NewLine Num="1" UId="1672" />
+  <Blank Num="5" UId="1673" />
+  <Token Text="END_IF" UId="1674" />
+  <Token Text=";" UId="1675" />
+  <NewLine Num="1" UId="1676" />
+  <Blank Num="5" UId="1677" />
+  <NewLine Num="1" UId="1678" />
+  <Blank Num="5" UId="1679" />
+  <Token Text="IF" UId="1680" />
+  <Blank Num="1" UId="1681" />
+  <Access Scope="LocalVariable" UId="1682">
+    <Symbol UId="1683">
+      <Component Name="当前指令ID" UId="1684" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1685" />
+  <Token Text="&gt;" UId="1686" />
+  <Blank Num="1" UId="1687" />
+  <Access Scope="LiteralConstant" UId="1688">
+    <Constant UId="1689">
+      <ConstantValue UId="1691">10</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="1692" />
+  <Token Text="THEN" UId="1693" />
+  <NewLine Num="1" UId="1694" />
+  <Blank Num="9" UId="1695" />
+  <Access Scope="LocalVariable" UId="1696">
+    <Symbol UId="1697">
+      <Component Name="当前指令ID" UId="1698" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1699" />
+  <Token Text=":=" UId="1700" />
+  <Blank Num="1" UId="1701" />
+  <Access Scope="LiteralConstant" UId="1702">
+    <Constant UId="1703">
+      <ConstantValue UId="1705">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1706" />
+  <NewLine Num="1" UId="1707" />
+  <Blank Num="9" UId="1708" />
+  <Access Scope="LocalVariable" UId="1709">
+    <Symbol UId="1710">
+      <Component Name="上一次指令ID" UId="1711" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1712" />
+  <Token Text=":=" UId="1713" />
+  <Blank Num="1" UId="1714" />
+  <Access Scope="LiteralConstant" UId="1715">
+    <Constant UId="1716">
+      <ConstantValue UId="1718">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1719" />
+  <NewLine Num="1" UId="1720" />
+  <Blank Num="9" UId="1721" />
+  <Access Scope="LocalVariable" UId="1722">
+    <Symbol UId="1723">
+      <Component Name="结束" UId="1724" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1725" />
+  <Token Text=":=" UId="1726" />
+  <Blank Num="1" UId="1727" />
+  <Access Scope="LiteralConstant" UId="1728">
+    <Constant UId="1729">
+      <ConstantValue UId="1731">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1732" />
+  <NewLine Num="1" UId="1733" />
+  <Blank Num="5" UId="1734" />
+  <Token Text="ELSE" UId="1735" />
+  <NewLine Num="1" UId="1736" />
+  <Blank Num="9" UId="1737" />
+  <Access Scope="LocalVariable" UId="1738">
+    <Symbol UId="1739">
+      <Component Name="结束" UId="1740" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1741" />
+  <Token Text=":=" UId="1742" />
+  <Blank Num="1" UId="1743" />
+  <Access Scope="LiteralConstant" UId="1744">
+    <Constant UId="1745">
+      <ConstantValue UId="1747">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1748" />
+  <NewLine Num="1" UId="1749" />
+  <Blank Num="5" UId="1750" />
+  <Token Text="END_IF" UId="1751" />
+  <Token Text=";" UId="1752" />
+  <NewLine Num="1" UId="1753" />
+  <Blank Num="5" UId="1754" />
+  <NewLine Num="1" UId="1755" />
+  <Blank Num="5" UId="1756" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="1757">
+    <Text UId="1758">程序4</Text>
+  </LineComment>
+  <NewLine Num="1" UId="1759" />
+  <Blank Num="5" UId="1760" />
+  <NewLine Num="1" UId="1761" />
+  <Blank Num="5" UId="1762" />
+  <Token Text="IF" UId="1763" />
+  <Blank Num="1" UId="1764" />
+  <Token Text="NOT" UId="1765" />
+  <Blank Num="1" UId="1766" />
+  <Access Scope="LocalVariable" UId="1767">
+    <Symbol UId="1768">
+      <Component Name="自整定开关" UId="1769" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1770" />
+  <Token Text="THEN" UId="1771" />
+  <NewLine Num="1" UId="1772" />
+  <Blank Num="9" UId="1773" />
+  <Access Scope="LocalVariable" UId="1774">
+    <Symbol UId="1775">
+      <Component Name="进温AT_写字" UId="1776" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1777" />
+  <Token Text=":=" UId="1778" />
+  <Blank Num="1" UId="1779" />
+  <Access Scope="LiteralConstant" UId="1780">
+    <Constant UId="1781">
+      <ConstantValue UId="1783">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1784" />
+  <NewLine Num="1" UId="1785" />
+  <Blank Num="9" UId="1786" />
+  <Access Scope="LocalVariable" UId="1787">
+    <Symbol UId="1788">
+      <Component Name="T1_P值比对1" UId="1789" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1790" />
+  <Token Text=":=" UId="1791" />
+  <Blank Num="1" UId="1792" />
+  <Access Scope="LocalVariable" UId="1793">
+    <Symbol UId="1794">
+      <Component Name="进温P读" UId="1795" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1796" />
+  <NewLine Num="1" UId="1797" />
+  <Blank Num="9" UId="1798" />
+  <Access Scope="LocalVariable" UId="1799">
+    <Symbol UId="1800">
+      <Component Name="T1_P值比对2" UId="1801" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1802" />
+  <Token Text=":=" UId="1803" />
+  <Blank Num="1" UId="1804" />
+  <Access Scope="LocalVariable" UId="1805">
+    <Symbol UId="1806">
+      <Component Name="进温P读" UId="1807" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1808" />
+  <NewLine Num="1" UId="1809" />
+  <Blank Num="5" UId="1810" />
+  <Token Text="END_IF" UId="1811" />
+  <Token Text=";" UId="1812" />
+  <NewLine Num="1" UId="1813" />
+  <Blank Num="5" UId="1814" />
+  <Token Text="IF" UId="1815" />
+  <Blank Num="1" UId="1816" />
+  <Access Scope="LocalVariable" UId="1817">
+    <Symbol UId="1818">
+      <Component Name="自整定开关" UId="1819" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1820" />
+  <Token Text="THEN" UId="1821" />
+  <NewLine Num="1" UId="1822" />
+  <Blank Num="9" UId="1823" />
+  <NewLine Num="1" UId="1824" />
+  <Blank Num="9" UId="1825" />
+  <Access Scope="LocalVariable" UId="1826">
+    <Symbol UId="1827">
+      <Component Name="进温AT_写字" UId="1828" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1829" />
+  <Token Text=":=" UId="1830" />
+  <Blank Num="1" UId="1831" />
+  <Access Scope="LiteralConstant" UId="1832">
+    <Constant UId="1833">
+      <ConstantValue UId="1835">65280</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1836" />
+  <NewLine Num="1" UId="1837" />
+  <Blank Num="9" UId="1838" />
+  <NewLine Num="1" UId="1839" />
+  <Blank Num="9" UId="1840" />
+  <Access Scope="LocalVariable" UId="1841">
+    <Symbol UId="1842">
+      <Component Name="T1_P值比对2" UId="1843" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1844" />
+  <Token Text=":=" UId="1845" />
+  <Blank Num="1" UId="1846" />
+  <Access Scope="LocalVariable" UId="1847">
+    <Symbol UId="1848">
+      <Component Name="进温P读" UId="1849" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1850" />
+  <NewLine Num="1" UId="1851" />
+  <Blank Num="5" UId="1852" />
+  <Token Text="END_IF" UId="1853" />
+  <Token Text=";" UId="1854" />
+  <NewLine Num="1" UId="1855" />
+  <Blank Num="5" UId="1856" />
+  <Token Text="IF" UId="1857" />
+  <Blank Num="1" UId="1858" />
+  <Access Scope="LocalVariable" UId="1859">
+    <Symbol UId="1860">
+      <Component Name="T1_P值比对1" UId="1861" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1862" />
+  <Token Text="&lt;&gt;" UId="1863" />
+  <Blank Num="1" UId="1864" />
+  <Access Scope="LocalVariable" UId="1865">
+    <Symbol UId="1866">
+      <Component Name="T1_P值比对2" UId="1867" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1868" />
+  <Token Text="THEN" UId="1869" />
+  <NewLine Num="1" UId="1870" />
+  <Blank Num="9" UId="1871" />
+  <Access Scope="LocalVariable" UId="1872">
+    <Symbol UId="1873">
+      <Component Name="自整定开关" UId="1874" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1875" />
+  <Token Text=":=" UId="1876" />
+  <Blank Num="1" UId="1877" />
+  <Access Scope="LiteralConstant" UId="1878">
+    <Constant UId="1879">
+      <ConstantValue UId="1881">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1882" />
+  <NewLine Num="1" UId="1883" />
+  <Blank Num="5" UId="1884" />
+  <Token Text="END_IF" UId="1885" />
+  <Token Text=";" UId="1886" />
+  <NewLine Num="1" UId="1887" />
+  <Blank Num="5" UId="1888" />
+  <NewLine Num="1" UId="1889" />
+  <Blank Num="5" UId="1890" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="1891">
+    <Text UId="1892">程序5</Text>
+  </LineComment>
+  <NewLine Num="1" UId="1893" />
+  <Blank Num="5" UId="1894" />
+  <NewLine Num="1" UId="1895" />
+  <Blank Num="5" UId="1896" />
+  <NewLine Num="1" UId="1897" />
+  <Blank Num="5" UId="1898" />
+  <Token Text="IF" UId="1899" />
+  <Blank Num="1" UId="1900" />
+  <Access Scope="LocalVariable" UId="1901">
+    <Symbol UId="1902">
+      <Component Name="自整定开关" UId="1903" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1904" />
+  <Token Text="THEN" UId="1905" />
+  <NewLine Num="1" UId="1906" />
+  <Blank Num="9" UId="1907" />
+  <Access Scope="LocalVariable" UId="1908">
+    <Symbol UId="1909">
+      <Component Name="进温AT_写字" UId="1910" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1911" />
+  <Token Text=":=" UId="1912" />
+  <Blank Num="1" UId="1913" />
+  <Access Scope="LiteralConstant" UId="1914">
+    <Constant UId="1915">
+      <ConstantValue UId="1917">16#FF00</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1918" />
+  <NewLine Num="1" UId="1919" />
+  <Blank Num="5" UId="1920" />
+  <Token Text="ELSE" UId="1921" />
+  <NewLine Num="1" UId="1922" />
+  <Blank Num="9" UId="1923" />
+  <Access Scope="LocalVariable" UId="1924">
+    <Symbol UId="1925">
+      <Component Name="进温AT_写字" UId="1926" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1927" />
+  <Token Text=":=" UId="1928" />
+  <Blank Num="1" UId="1929" />
+  <Access Scope="LiteralConstant" UId="1930">
+    <Constant UId="1931">
+      <ConstantValue UId="1933">16#0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1934" />
+  <NewLine Num="1" UId="1935" />
+  <Blank Num="5" UId="1936" />
+  <Token Text="END_IF" UId="1937" />
+  <Token Text=";" UId="1938" />
+  <NewLine Num="1" UId="1939" />
+  <Blank Num="5" UId="1940" />
+  <NewLine Num="1" UId="1941" />
+  <Blank Num="5" UId="1942" />
+  <Token Text="IF" UId="1943" />
+  <Blank Num="1" UId="1944" />
+  <Access Scope="LocalVariable" UId="1945">
+    <Symbol UId="1946">
+      <Component Name="输入开关" UId="1947" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1948" />
+  <Token Text="THEN" UId="1949" />
+  <NewLine Num="1" UId="1950" />
+  <Blank Num="9" UId="1951" />
+  <Access Scope="LocalVariable" UId="1952">
+    <Symbol UId="1953">
+      <Component Name="进温启停字" UId="1954" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1955" />
+  <Token Text=":=" UId="1956" />
+  <Blank Num="1" UId="1957" />
+  <Access Scope="LiteralConstant" UId="1958">
+    <Constant UId="1959">
+      <ConstantValue UId="1961">16#FF00</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1962" />
+  <NewLine Num="1" UId="1963" />
+  <Blank Num="5" UId="1964" />
+  <Token Text="ELSE" UId="1965" />
+  <NewLine Num="1" UId="1966" />
+  <Blank Num="9" UId="1967" />
+  <Access Scope="LocalVariable" UId="1968">
+    <Symbol UId="1969">
+      <Component Name="进温启停字" UId="1970" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1971" />
+  <Token Text=":=" UId="1972" />
+  <Blank Num="1" UId="1973" />
+  <Access Scope="LiteralConstant" UId="1974">
+    <Constant UId="1975">
+      <ConstantValue UId="1977">16#0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1978" />
+  <NewLine Num="1" UId="1979" />
+  <Blank Num="5" UId="1980" />
+  <Token Text="END_IF" UId="1981" />
+  <Token Text=";" UId="1982" />
+  <NewLine Num="1" UId="1983" />
+  <Blank Num="5" UId="1984" />
+  <NewLine Num="1" UId="1985" />
+  <Blank Num="4" UId="1986" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="1987">
+    <Text UId="1988">程序6</Text>
+  </LineComment>
+  <NewLine Num="1" UId="1989" />
+  <Blank Num="4" UId="1990" />
+  <NewLine Num="1" UId="1991" />
+  <Blank Num="5" UId="1992" />
+  <Access Scope="LocalVariable" UId="1993">
+    <Symbol UId="1994">
+      <Component Name="输出控制P" UId="1995" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="1996" />
+  <Token Text=":=" UId="1997" />
+  <Blank Num="1" UId="1998" />
+  <Access Scope="Call" UId="1999">
+    <Instruction Name="INT_TO_REAL" UId="2000">
+      <Token Text="(" UId="2001" />
+      <NamelessParameter UId="2002">
+        <Access Scope="LocalVariable" UId="2003">
+          <Symbol UId="2004">
+            <Component Name="进温P读" UId="2005" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="2007" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="2008" />
+  <NewLine Num="1" UId="2009" />
+  <Blank Num="5" UId="2010" />
+  <Access Scope="LocalVariable" UId="2011">
+    <Symbol UId="2012">
+      <Component Name="输出控制I" UId="2013" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2014" />
+  <Token Text=":=" UId="2015" />
+  <Blank Num="1" UId="2016" />
+  <Access Scope="Call" UId="2017">
+    <Instruction Name="INT_TO_REAL" UId="2018">
+      <Token Text="(" UId="2019" />
+      <NamelessParameter UId="2020">
+        <Access Scope="LocalVariable" UId="2021">
+          <Symbol UId="2022">
+            <Component Name="进温I读" UId="2023" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="2025" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="2026" />
+  <NewLine Num="1" UId="2027" />
+  <Blank Num="5" UId="2028" />
+  <Access Scope="LocalVariable" UId="2029">
+    <Symbol UId="2030">
+      <Component Name="输出控制D" UId="2031" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2032" />
+  <Token Text=":=" UId="2033" />
+  <Blank Num="1" UId="2034" />
+  <Access Scope="Call" UId="2035">
+    <Instruction Name="INT_TO_REAL" UId="2036">
+      <Token Text="(" UId="2037" />
+      <NamelessParameter UId="2038">
+        <Access Scope="LocalVariable" UId="2039">
+          <Symbol UId="2040">
+            <Component Name="进温D读" UId="2041" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="2043" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="2044" />
+  <NewLine Num="1" UId="2045" />
+  <Blank Num="5" UId="2046" />
+  <NewLine Num="1" UId="2047" />
+  <Blank Num="5" UId="2048" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="2049">
+    <Text UId="2050">报警</Text>
+  </LineComment>
+  <NewLine Num="1" UId="2051" />
+  <Blank Num="5" UId="2052" />
+  <Token Text="IF" UId="2053" />
+  <Blank Num="1" UId="2054" />
+  <Access Scope="LocalVariable" UId="2055">
+    <Symbol UId="2056">
+      <Component Name="B当前量" UId="2057" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2058" />
+  <Token Text="&gt;" UId="2059" />
+  <Blank Num="1" UId="2060" />
+  <Access Scope="LocalVariable" UId="2061">
+    <Symbol UId="2062">
+      <Component Name="高报设置" UId="2063" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2064" />
+  <Token Text="THEN" UId="2065" />
+  <NewLine Num="1" UId="2066" />
+  <Blank Num="9" UId="2067" />
+  <Access Scope="LocalVariable" UId="2068">
+    <Symbol UId="2069">
+      <Component Name="高报警" UId="2070" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2071" />
+  <Token Text=":=" UId="2072" />
+  <Blank Num="1" UId="2073" />
+  <Access Scope="LiteralConstant" UId="2074">
+    <Constant UId="2075">
+      <ConstantValue UId="2077">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2078" />
+  <NewLine Num="1" UId="2079" />
+  <Blank Num="5" UId="2080" />
+  <Token Text="ELSE" UId="2081" />
+  <NewLine Num="1" UId="2082" />
+  <Blank Num="9" UId="2083" />
+  <Access Scope="LocalVariable" UId="2084">
+    <Symbol UId="2085">
+      <Component Name="高报警" UId="2086" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2087" />
+  <Token Text=":=" UId="2088" />
+  <Blank Num="1" UId="2089" />
+  <Access Scope="LiteralConstant" UId="2090">
+    <Constant UId="2091">
+      <ConstantValue UId="2093">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2094" />
+  <NewLine Num="1" UId="2095" />
+  <Blank Num="5" UId="2096" />
+  <Token Text="END_IF" UId="2097" />
+  <Token Text=";" UId="2098" />
+  <NewLine Num="1" UId="2099" />
+  <Blank Num="5" UId="2100" />
+  <NewLine Num="1" UId="2101" />
+  <Blank Num="5" UId="2102" />
+  <Token Text="IF" UId="2103" />
+  <Blank Num="1" UId="2104" />
+  <Access Scope="LocalVariable" UId="2105">
+    <Symbol UId="2106">
+      <Component Name="B当前量" UId="2107" />
+    </Symbol>
+  </Access>
+  <Blank Num="2" UId="2108" />
+  <Token Text="&gt;" UId="2109" />
+  <Blank Num="1" UId="2110" />
+  <Access Scope="LocalVariable" UId="2111">
+    <Symbol UId="2112">
+      <Component Name="高高报设置" UId="2113" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2114" />
+  <Token Text="THEN" UId="2115" />
+  <NewLine Num="1" UId="2116" />
+  <Blank Num="9" UId="2117" />
+  <Access Scope="LocalVariable" UId="2118">
+    <Symbol UId="2119">
+      <Component Name="高高报警" UId="2120" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2121" />
+  <Token Text=":=" UId="2122" />
+  <Blank Num="1" UId="2123" />
+  <Access Scope="LiteralConstant" UId="2124">
+    <Constant UId="2125">
+      <ConstantValue UId="2127">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2128" />
+  <NewLine Num="1" UId="2129" />
+  <Blank Num="5" UId="2130" />
+  <Token Text="ELSE" UId="2131" />
+  <NewLine Num="1" UId="2132" />
+  <Blank Num="9" UId="2133" />
+  <Access Scope="LocalVariable" UId="2134">
+    <Symbol UId="2135">
+      <Component Name="高高报警" UId="2136" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2137" />
+  <Token Text=":=" UId="2138" />
+  <Blank Num="1" UId="2139" />
+  <Access Scope="LiteralConstant" UId="2140">
+    <Constant UId="2141">
+      <ConstantValue UId="2143">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2144" />
+  <NewLine Num="1" UId="2145" />
+  <Blank Num="5" UId="2146" />
+  <Token Text="END_IF" UId="2147" />
+  <Token Text=";" UId="2148" />
+  <NewLine Num="1" UId="2149" />
+  <Blank Num="5" UId="2150" />
+  <NewLine Num="1" UId="2151" />
+  <Blank Num="5" UId="2152" />
+  <Token Text="IF" UId="2153" />
+  <Blank Num="1" UId="2154" />
+  <Access Scope="LocalVariable" UId="2155">
+    <Symbol UId="2156">
+      <Component Name="B当前量" UId="2157" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2158" />
+  <Token Text="&lt;" UId="2159" />
+  <Blank Num="1" UId="2160" />
+  <Access Scope="LocalVariable" UId="2161">
+    <Symbol UId="2162">
+      <Component Name="低报设置" UId="2163" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2164" />
+  <Token Text="THEN" UId="2165" />
+  <NewLine Num="1" UId="2166" />
+  <Blank Num="9" UId="2167" />
+  <Access Scope="LocalVariable" UId="2168">
+    <Symbol UId="2169">
+      <Component Name="低报警" UId="2170" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2171" />
+  <Token Text=":=" UId="2172" />
+  <Blank Num="1" UId="2173" />
+  <Access Scope="LiteralConstant" UId="2174">
+    <Constant UId="2175">
+      <ConstantValue UId="2177">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2178" />
+  <NewLine Num="1" UId="2179" />
+  <Blank Num="5" UId="2180" />
+  <Token Text="ELSE" UId="2181" />
+  <NewLine Num="1" UId="2182" />
+  <Blank Num="9" UId="2183" />
+  <Access Scope="LocalVariable" UId="2184">
+    <Symbol UId="2185">
+      <Component Name="低报警" UId="2186" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2187" />
+  <Token Text=":=" UId="2188" />
+  <Blank Num="1" UId="2189" />
+  <Access Scope="LiteralConstant" UId="2190">
+    <Constant UId="2191">
+      <ConstantValue UId="2193">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2194" />
+  <NewLine Num="1" UId="2195" />
+  <Blank Num="5" UId="2196" />
+  <Token Text="END_IF" UId="2197" />
+  <Token Text=";" UId="2198" />
+  <NewLine Num="1" UId="2199" />
+  <Blank Num="5" UId="2200" />
+  <NewLine Num="1" UId="2201" />
+  <Blank Num="5" UId="2202" />
+  <Token Text="IF" UId="2203" />
+  <Blank Num="1" UId="2204" />
+  <Access Scope="LocalVariable" UId="2205">
+    <Symbol UId="2206">
+      <Component Name="B当前量" UId="2207" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2208" />
+  <Token Text="&lt;" UId="2209" />
+  <Blank Num="1" UId="2210" />
+  <Access Scope="LocalVariable" UId="2211">
+    <Symbol UId="2212">
+      <Component Name="低低报设置" UId="2213" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2214" />
+  <Token Text="THEN" UId="2215" />
+  <NewLine Num="1" UId="2216" />
+  <Blank Num="9" UId="2217" />
+  <Access Scope="LocalVariable" UId="2218">
+    <Symbol UId="2219">
+      <Component Name="低低报警" UId="2220" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2221" />
+  <Token Text=":=" UId="2222" />
+  <Blank Num="1" UId="2223" />
+  <Access Scope="LiteralConstant" UId="2224">
+    <Constant UId="2225">
+      <ConstantValue UId="2227">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2228" />
+  <NewLine Num="1" UId="2229" />
+  <Blank Num="5" UId="2230" />
+  <Token Text="ELSE" UId="2231" />
+  <NewLine Num="1" UId="2232" />
+  <Blank Num="9" UId="2233" />
+  <Access Scope="LocalVariable" UId="2234">
+    <Symbol UId="2235">
+      <Component Name="低低报警" UId="2236" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2237" />
+  <Token Text=":=" UId="2238" />
+  <Blank Num="1" UId="2239" />
+  <Access Scope="LiteralConstant" UId="2240">
+    <Constant UId="2241">
+      <ConstantValue UId="2243">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2244" />
+  <NewLine Num="1" UId="2245" />
+  <Blank Num="5" UId="2246" />
+  <Token Text="END_IF" UId="2247" />
+  <Token Text=";" UId="2248" />
+  <NewLine Num="1" UId="2249" />
+  <Blank Num="5" UId="2250" />
+  <NewLine Num="1" UId="2251" />
+  <Blank Num="5" UId="2252" />
+  <Token Text="IF" UId="2253" />
+  <Blank Num="1" UId="2254" />
+  <Access Scope="LocalVariable" UId="2255">
+    <Symbol UId="2256">
+      <Component Name="B当前量" UId="2257" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2258" />
+  <Token Text="&gt;" UId="2259" />
+  <Blank Num="1" UId="2260" />
+  <Access Scope="LiteralConstant" UId="2261">
+    <Constant UId="2262">
+      <ConstantValue UId="2264">500</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="2265" />
+  <Token Text="AND" UId="2266" />
+  <Blank Num="1" UId="2267" />
+  <Access Scope="LocalVariable" UId="2268">
+    <Symbol UId="2269">
+      <Component Name="B当前量" UId="2270" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2271" />
+  <Token Text="&lt;" UId="2272" />
+  <Blank Num="1" UId="2273" />
+  <Access Scope="LiteralConstant" UId="2274">
+    <Constant UId="2275">
+      <ConstantValue UId="2277">-10</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="2278" />
+  <Token Text="THEN" UId="2279" />
+  <NewLine Num="1" UId="2280" />
+  <Blank Num="9" UId="2281" />
+  <Access Scope="LocalVariable" UId="2282">
+    <Symbol UId="2283">
+      <Component Name="传感器故障" UId="2284" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2285" />
+  <Token Text=":=" UId="2286" />
+  <Blank Num="1" UId="2287" />
+  <Access Scope="LiteralConstant" UId="2288">
+    <Constant UId="2289">
+      <ConstantValue UId="2291">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2292" />
+  <NewLine Num="1" UId="2293" />
+  <Blank Num="5" UId="2294" />
+  <Token Text="ELSE" UId="2295" />
+  <NewLine Num="1" UId="2296" />
+  <Blank Num="9" UId="2297" />
+  <Access Scope="LocalVariable" UId="2298">
+    <Symbol UId="2299">
+      <Component Name="传感器故障" UId="2300" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="2301" />
+  <Token Text=":=" UId="2302" />
+  <Blank Num="1" UId="2303" />
+  <Access Scope="LiteralConstant" UId="2304">
+    <Constant UId="2305">
+      <ConstantValue UId="2307">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2308" />
+  <NewLine Num="1" UId="2309" />
+  <Blank Num="5" UId="2310" />
+  <Token Text="END_IF" UId="2311" />
+  <Token Text=";" UId="2312" />
+  <NewLine Num="1" UId="2313" />
+  <Blank Num="5" UId="2314" />
+  <NewLine Num="1" UId="2315" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="E" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="F" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="10" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="11" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

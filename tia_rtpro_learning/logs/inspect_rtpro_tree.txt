@@ -1,0 +1,85 @@
+﻿START=2026-05-14T01:19:25
+TIA_PROCESS=Id:38280|Mode:WithUserInterface|ProjectPath:H:\程序优化\S4-弹窗\A3-赛奥5-高手\8赛奥5-last16_20260507M2\赛奥5-last16_20260507M2.ap17
+PROJECT=赛奥5-last16_20260507M2|PATH=H:\程序优化\S4-弹窗\A3-赛奥5-高手\8赛奥5-last16_20260507M2\赛奥5-last16_20260507M2.ap17|DEVICES=2
+DEVICE=S7-1500/ET200MP station_1|TYPE=Siemens.Engineering.HW.DeviceImpl|ITEMS=14
+DEVICE_PROPS=S7-1500/ET200MP station_1 PROPERTIES=IsGsd,UnpluggedItems,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/导轨_0|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/导轨_0 PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/PLC-5X|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=4
+ITEM_PROPS=S7-1500/ET200MP station_1/PLC-5X PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM_SERVICE_SOFTWARE_CONTAINER=S7-1500/ET200MP station_1/PLC-5X|TYPE=Siemens.Engineering.HW.Features.SoftwareContainer
+SOFTWARE=S7-1500/ET200MP station_1/PLC-5X|NAME=PLC-5X|TYPE=Siemens.Engineering.SW.PlcSoftware
+SOFTWARE_PROPS=PLC-5X PROPERTIES=BlockGroup,ExternalSourceGroup,TagTableGroup,TechnologicalObjectGroup,TypeGroup,WatchAndForceTableGroup,Name,Parent
+ITEM=S7-1500/ET200MP station_1/PLC-5X/卡读卡器/写卡器_1|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/PLC-5X/卡读卡器/写卡器_1 PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/PLC-5X/CPU 显示_1|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/PLC-5X/CPU 显示_1 PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/PLC-5X/OPC UA_1|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/PLC-5X/OPC UA_1 PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/PLC-5X/PROFINET 接口_1|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=2
+ITEM_PROPS=S7-1500/ET200MP station_1/PLC-5X/PROFINET 接口_1 PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/PLC-5X/PROFINET 接口_1/端口_1|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/PLC-5X/PROFINET 接口_1/端口_1 PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/PLC-5X/PROFINET 接口_1/端口_2|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/PLC-5X/PROFINET 接口_1/端口_2 PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/DI1(16x24VDC BA_1)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=1
+ITEM_PROPS=S7-1500/ET200MP station_1/DI1(16x24VDC BA_1) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/DI1(16x24VDC BA_1)/DI1(16x24VDC BA_1)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/DI1(16x24VDC BA_1)/DI1(16x24VDC BA_1) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/DI2(16x24VDC BA_2)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=1
+ITEM_PROPS=S7-1500/ET200MP station_1/DI2(16x24VDC BA_2) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/DI2(16x24VDC BA_2)/DI2(16x24VDC BA_2)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/DI2(16x24VDC BA_2)/DI2(16x24VDC BA_2) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/DQ1(16x24VDC/0.5A BA_1)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=1
+ITEM_PROPS=S7-1500/ET200MP station_1/DQ1(16x24VDC/0.5A BA_1) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/DQ1(16x24VDC/0.5A BA_1)/DQ1(16x24VDC/0.5A BA_1)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/DQ1(16x24VDC/0.5A BA_1)/DQ1(16x24VDC/0.5A BA_1) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/DQ2(16x24VDC/0.5A BA_2)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=1
+ITEM_PROPS=S7-1500/ET200MP station_1/DQ2(16x24VDC/0.5A BA_2) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/DQ2(16x24VDC/0.5A BA_2)/DQ2(16x24VDC/0.5A BA_2)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/DQ2(16x24VDC/0.5A BA_2)/DQ2(16x24VDC/0.5A BA_2) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/DQ3(16x24VDC/0.5A BA_3)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=1
+ITEM_PROPS=S7-1500/ET200MP station_1/DQ3(16x24VDC/0.5A BA_3) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/DQ3(16x24VDC/0.5A BA_3)/DQ3(16x24VDC/0.5A BA_3)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/DQ3(16x24VDC/0.5A BA_3)/DQ3(16x24VDC/0.5A BA_3) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/AI1(16xI BA_1)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=1
+ITEM_PROPS=S7-1500/ET200MP station_1/AI1(16xI BA_1) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/AI1(16xI BA_1)/AI1(16xI BA_1)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/AI1(16xI BA_1)/AI1(16xI BA_1) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/AI2(16xI BA_2)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=1
+ITEM_PROPS=S7-1500/ET200MP station_1/AI2(16xI BA_2) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/AI2(16xI BA_2)/AI2(16xI BA_2)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/AI2(16xI BA_2)/AI2(16xI BA_2) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/AQ1(4xU/I ST_1)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=1
+ITEM_PROPS=S7-1500/ET200MP station_1/AQ1(4xU/I ST_1) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/AQ1(4xU/I ST_1)/AQ1(4xU/I ST_1)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/AQ1(4xU/I ST_1)/AQ1(4xU/I ST_1) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/AQ2(4xU/I ST_2)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=1
+ITEM_PROPS=S7-1500/ET200MP station_1/AQ2(4xU/I ST_2) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/AQ2(4xU/I ST_2)/AQ2(4xU/I ST_2)|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/AQ2(4xU/I ST_2)/AQ2(4xU/I ST_2) PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/PS 25W 24VDC_1|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=1
+ITEM_PROPS=S7-1500/ET200MP station_1/PS 25W 24VDC_1 PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/PS 25W 24VDC_1/PS 25W 24VDC_1|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/PS 25W 24VDC_1/PS 25W 24VDC_1 PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/PM 190W 120/230VAC|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=1
+ITEM_PROPS=S7-1500/ET200MP station_1/PM 190W 120/230VAC PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/PM 190W 120/230VAC/_1|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/PM 190W 120/230VAC/_1 PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/CM1 PtP RS422/485 HF|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=1
+ITEM_PROPS=S7-1500/ET200MP station_1/CM1 PtP RS422/485 HF PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=S7-1500/ET200MP station_1/CM1 PtP RS422/485 HF/CM1 PtP RS422/485 HF|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=S7-1500/ET200MP station_1/CM1 PtP RS422/485 HF/CM1 PtP RS422/485 HF PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+DEVICE=HMI-5X|TYPE=Siemens.Engineering.HW.DeviceImpl|ITEMS=2
+DEVICE_PROPS=HMI-5X PROPERTIES=IsGsd,UnpluggedItems,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=HMI-5X/SIMATIC PC station|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=1
+ITEM_PROPS=HMI-5X/SIMATIC PC station PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=HMI-5X/SIMATIC PC station/Stationmanager|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=HMI-5X/SIMATIC PC station/Stationmanager PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=HMI-5X/IE general_1|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=1
+ITEM_PROPS=HMI-5X/IE general_1 PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=HMI-5X/IE general_1/PROFINET interface|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=1
+ITEM_PROPS=HMI-5X/IE general_1/PROFINET interface PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+ITEM=HMI-5X/IE general_1/PROFINET interface/Port_1|TYPE=Siemens.Engineering.HW.DeviceItemImpl|CHILDREN=0
+ITEM_PROPS=HMI-5X/IE general_1/PROFINET interface/Port_1 PROPERTIES=Addresses,Channels,Classification,Container,IsBuiltIn,IsPlugged,PositionNumber,DeviceItems,HwIdentifiers,Parent,Items,Name,TypeIdentifier
+END=2026-05-14T01:19:26

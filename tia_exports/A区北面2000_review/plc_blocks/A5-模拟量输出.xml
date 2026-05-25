@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-04-13T11:12:04.1208621Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="进风加热比例调节阀" Datatype="&quot;A2-数据转换RTI&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="I_Max" Datatype="Int" /><Member Name="I_Min" Datatype="Int" /><Member Name="R_Max" Datatype="Real" /><Member Name="R_Min" Datatype="Real" /><Member Name="R_Value" Datatype="Real" /></Section><Section Name="Output"><Member Name="I_ChValue" Datatype="Int" /></Section><Section Name="InOut" /><Section Name="Static" /></Sections></Member>
+    <Member Name="回风加热比例调节阀" Datatype="&quot;A2-数据转换RTI&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="I_Max" Datatype="Int" /><Member Name="I_Min" Datatype="Int" /><Member Name="R_Max" Datatype="Real" /><Member Name="R_Min" Datatype="Real" /><Member Name="R_Value" Datatype="Real" /></Section><Section Name="Output"><Member Name="I_ChValue" Datatype="Int" /></Section><Section Name="InOut" /><Section Name="Static" /></Sections></Member>
+    <Member Name="放空比例调节阀" Datatype="&quot;A2-数据转换RTI&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="I_Max" Datatype="Int" /><Member Name="I_Min" Datatype="Int" /><Member Name="R_Max" Datatype="Real" /><Member Name="R_Min" Datatype="Real" /><Member Name="R_Value" Datatype="Real" /></Section><Section Name="Output"><Member Name="I_ChValue" Datatype="Int" /></Section><Section Name="InOut" /><Section Name="Static" /></Sections></Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>A5-模拟量输出</Name>
+      <Number>29</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Token Text="REGION" UId="21" />
+  <Blank Num="1" UId="22" />
+  <Text UId="23">模拟量输出</Text>
+  <NewLine Num="1" UId="24" />
+  <Blank Num="4" UId="25" />
+  <Access Scope="Call" UId="26">
+    <CallInfo UId="27" BlockType="FB" Name="A2-数据转换RTI">
+      <Instance Scope="LocalVariable" UId="28">
+        <Component Name="进风加热比例调节阀" UId="29" />
+      </Instance>
+      <Token Text="(" UId="30" />
+      <Parameter Name="I_Max" UId="31">
+        <Blank Num="1" UId="32" />
+        <Token Text=":=" UId="33" />
+        <Blank Num="1" UId="34" />
+        <Access Scope="LiteralConstant" UId="35">
+          <Constant UId="36">
+            <ConstantValue UId="38">27648</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="39" />
+      <NewLine Num="1" UId="40" />
+      <Blank Num="15" UId="41" />
+      <Parameter Name="I_Min" UId="42">
+        <Blank Num="1" UId="43" />
+        <Token Text=":=" UId="44" />
+        <Blank Num="1" UId="45" />
+        <Access Scope="LiteralConstant" UId="46">
+          <Constant UId="47">
+            <ConstantValue UId="49">5530</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="50" />
+      <NewLine Num="1" UId="51" />
+      <Blank Num="15" UId="52" />
+      <Parameter Name="R_Max" UId="53">
+        <Blank Num="1" UId="54" />
+        <Token Text=":=" UId="55" />
+        <Blank Num="1" UId="56" />
+        <Access Scope="LiteralConstant" UId="57">
+          <Constant UId="58">
+            <ConstantValue UId="60">100.0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="61" />
+      <NewLine Num="1" UId="62" />
+      <Blank Num="15" UId="63" />
+      <Parameter Name="R_Min" UId="64">
+        <Blank Num="1" UId="65" />
+        <Token Text=":=" UId="66" />
+        <Blank Num="1" UId="67" />
+        <Access Scope="LiteralConstant" UId="68">
+          <Constant UId="69">
+            <ConstantValue UId="71">0.0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="72" />
+      <NewLine Num="1" UId="73" />
+      <Blank Num="15" UId="74" />
+      <Parameter Name="R_Value" UId="75">
+        <Blank Num="1" UId="76" />
+        <Token Text=":=" UId="77" />
+        <Blank Num="1" UId="78" />
+        <Access Scope="GlobalVariable" UId="79">
+          <Symbol UId="80">
+            <Component Name="SV" UId="81" />
+            <Token Text="." UId="82" />
+            <Component Name="JF进风加热比例调节阀" UId="83" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="84" />
+      <NewLine Num="1" UId="85" />
+      <Blank Num="15" UId="86" />
+      <Parameter Name="I_ChValue" UId="87">
+        <Blank Num="1" UId="88" />
+        <Token Text="=&gt;" UId="89" />
+        <Blank Num="1" UId="90" />
+        <Access Scope="GlobalVariable" UId="91">
+          <Symbol UId="92">
+            <Component Name="QWJF进风加热比例调节阀" UId="93" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="94" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="95" />
+  <NewLine Num="1" UId="96" />
+  <Blank Num="4" UId="97" />
+  <NewLine Num="1" UId="98" />
+  <Blank Num="4" UId="99" />
+  <Access Scope="Call" UId="100">
+    <CallInfo UId="101" BlockType="FB" Name="A2-数据转换RTI">
+      <Instance Scope="LocalVariable" UId="102">
+        <Component Name="回风加热比例调节阀" UId="103" />
+      </Instance>
+      <Token Text="(" UId="104" />
+      <Parameter Name="I_Max" UId="105">
+        <Blank Num="1" UId="106" />
+        <Token Text=":=" UId="107" />
+        <Blank Num="1" UId="108" />
+        <Access Scope="LiteralConstant" UId="109">
+          <Constant UId="110">
+            <ConstantValue UId="112">27648</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="113" />
+      <NewLine Num="1" UId="114" />
+      <Blank Num="15" UId="115" />
+      <Parameter Name="I_Min" UId="116">
+        <Blank Num="1" UId="117" />
+        <Token Text=":=" UId="118" />
+        <Blank Num="1" UId="119" />
+        <Access Scope="LiteralConstant" UId="120">
+          <Constant UId="121">
+            <ConstantValue UId="123">5530</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="124" />
+      <NewLine Num="1" UId="125" />
+      <Blank Num="15" UId="126" />
+      <Parameter Name="R_Max" UId="127">
+        <Blank Num="1" UId="128" />
+        <Token Text=":=" UId="129" />
+        <Blank Num="1" UId="130" />
+        <Access Scope="LiteralConstant" UId="131">
+          <Constant UId="132">
+            <ConstantValue UId="134">100.0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="135" />
+      <NewLine Num="1" UId="136" />
+      <Blank Num="15" UId="137" />
+      <Parameter Name="R_Min" UId="138">
+        <Blank Num="1" UId="139" />
+        <Token Text=":=" UId="140" />
+        <Blank Num="1" UId="141" />
+        <Access Scope="LiteralConstant" UId="142">
+          <Constant UId="143">
+            <ConstantValue UId="145">0.0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="146" />
+      <NewLine Num="1" UId="147" />
+      <Blank Num="15" UId="148" />
+      <Parameter Name="R_Value" UId="149">
+        <Blank Num="1" UId="150" />
+        <Token Text=":=" UId="151" />
+        <Blank Num="1" UId="152" />
+        <Access Scope="GlobalVariable" UId="153">
+          <Symbol UId="154">
+            <Component Name="SV" UId="155" />
+            <Token Text="." UId="156" />
+            <Component Name="HF回风加热比例调节阀" UId="157" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="158" />
+      <NewLine Num="1" UId="159" />
+      <Blank Num="15" UId="160" />
+      <Parameter Name="I_ChValue" UId="161">
+        <Blank Num="1" UId="162" />
+        <Token Text="=&gt;" UId="163" />
+        <Blank Num="1" UId="164" />
+        <Access Scope="GlobalVariable" UId="165">
+          <Symbol UId="166">
+            <Component Name="QWHF回风加热比例调节阀" UId="167" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="168" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="169" />
+  <NewLine Num="1" UId="170" />
+  <Blank Num="4" UId="171" />
+  <NewLine Num="1" UId="172" />
+  <Blank Num="4" UId="173" />
+  <Access Scope="Call" UId="174">
+    <CallInfo UId="175" BlockType="FB" Name="A2-数据转换RTI">
+      <Instance Scope="LocalVariable" UId="176">
+        <Component Name="放空比例调节阀" UId="177" />
+      </Instance>
+      <Token Text="(" UId="178" />
+      <Parameter Name="I_Max" UId="179">
+        <Blank Num="1" UId="180" />
+        <Token Text=":=" UId="181" />
+        <Blank Num="1" UId="182" />
+        <Access Scope="LiteralConstant" UId="183">
+          <Constant UId="184">
+            <ConstantValue UId="186">27648</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="187" />
+      <NewLine Num="1" UId="188" />
+      <Blank Num="13" UId="189" />
+      <Parameter Name="I_Min" UId="190">
+        <Blank Num="1" UId="191" />
+        <Token Text=":=" UId="192" />
+        <Blank Num="1" UId="193" />
+        <Access Scope="LiteralConstant" UId="194">
+          <Constant UId="195">
+            <ConstantValue UId="197">5530</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="198" />
+      <NewLine Num="1" UId="199" />
+      <Blank Num="13" UId="200" />
+      <Parameter Name="R_Max" UId="201">
+        <Blank Num="1" UId="202" />
+        <Token Text=":=" UId="203" />
+        <Blank Num="1" UId="204" />
+        <Access Scope="LiteralConstant" UId="205">
+          <Constant UId="206">
+            <ConstantValue UId="208">100.0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="209" />
+      <NewLine Num="1" UId="210" />
+      <Blank Num="13" UId="211" />
+      <Parameter Name="R_Min" UId="212">
+        <Blank Num="1" UId="213" />
+        <Token Text=":=" UId="214" />
+        <Blank Num="1" UId="215" />
+        <Access Scope="LiteralConstant" UId="216">
+          <Constant UId="217">
+            <ConstantValue UId="219">0.0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="220" />
+      <NewLine Num="1" UId="221" />
+      <Blank Num="13" UId="222" />
+      <Parameter Name="R_Value" UId="223">
+        <Blank Num="1" UId="224" />
+        <Token Text=":=" UId="225" />
+        <Blank Num="1" UId="226" />
+        <Access Scope="GlobalVariable" UId="227">
+          <Symbol UId="228">
+            <Component Name="SV" UId="229" />
+            <Token Text="." UId="230" />
+            <Component Name="FK放空比例调节阀" UId="231" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="232" />
+      <NewLine Num="1" UId="233" />
+      <Blank Num="13" UId="234" />
+      <Parameter Name="I_ChValue" UId="235">
+        <Blank Num="1" UId="236" />
+        <Token Text="=&gt;" UId="237" />
+        <Blank Num="1" UId="238" />
+        <Access Scope="GlobalVariable" UId="239">
+          <Symbol UId="240">
+            <Component Name="QWFK放空比例调节阀" UId="241" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="242" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="243" />
+  <NewLine Num="1" UId="244" />
+  <Token Text="END_REGION" UId="245" />
+  <NewLine Num="1" UId="246" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="E" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="F" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="10" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="11" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

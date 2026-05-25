@@ -1,0 +1,2554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-04-13T11:12:43.7188239Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut">
+    <Member Name="油炉温度写" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉温度读" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉循环泵启停" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉报警" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉冷却阀启停状态" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉加热泵启停状态" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉加热器1状态" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉加热器2状态" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉运行状态" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉自整定状态" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉强制冷却状态" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="YL油炉温度写读" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Static">
+    <Member Name="MB_COMM_LOAD" Datatype="Modbus_Comm_Load" Version="5.0" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="PORT" Datatype="PORT" /><Member Name="BAUD" Datatype="UDInt" /><Member Name="PARITY" Datatype="UInt" /><Member Name="FLOW_CTRL" Datatype="UInt" /><Member Name="RTS_ON_DLY" Datatype="UInt" /><Member Name="RTS_OFF_DLY" Datatype="UInt" /><Member Name="RESP_TO" Datatype="UInt" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="Word" /></Section><Section Name="InOut"><Member Name="MB_DB" Datatype="P2P_MB_BASE" Version="1.0"><Sections><Section Name="None" /></Sections></Member></Section><Section Name="Static"><Member Name="ICHAR_GAP" Datatype="Word" /><Member Name="RETRIES" Datatype="Word" /><Member Name="MODE" Datatype="USInt" /><Member Name="LINE_PRE" Datatype="USInt" /><Member Name="BRK_DET" Datatype="USInt" /><Member Name="EN_DIAG_ALARM" Datatype="Bool" /><Member Name="STOP_BITS" Datatype="USInt" /><Member Name="EN_SUPPLY_VOLT" Datatype="Bool" /><Member Name="b_e_REQ" Datatype="Bool" /><Member Name="y_state" Datatype="SInt" /><Member Name="Send_Config" Datatype="Send_Config" Version="4.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="PORT" Datatype="PORT" /><Member Name="RTSONDLY" Datatype="UInt" /><Member Name="RTSOFFDLY" Datatype="UInt" /><Member Name="BREAK" Datatype="UInt" /><Member Name="IDLELINE" Datatype="UInt" /><Member Name="USR_END" Datatype="String[2]" /><Member Name="APP_END" Datatype="String[5]" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="Word" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="b_e_REQ" Datatype="Bool" /><Member Name="y_state" Datatype="SInt" /><Member Name="WRREC" Datatype="WRREC" Version="1.1"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="RDREC" Datatype="RDREC" Version="1.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="MLEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="VALID" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="w_record" Datatype="P2P_SendCfgData" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="RTSONDLY" Datatype="UInt" /><Member Name="RTSOFFDLY" Datatype="UInt" /><Member Name="BREAK" Datatype="UInt" /><Member Name="IDLELINE" Datatype="UInt" /><Member Name="Conditions" Datatype="UInt" /><Member Name="USR_ECHR_MAX" Datatype="Byte" /><Member Name="USR_ECHR_CNT" Datatype="Byte" /><Member Name="USR_END_CHR1" Datatype="Char" /><Member Name="USR_END_CHR2" Datatype="Char" /><Member Name="APP_ECHR_MAX" Datatype="Byte" /><Member Name="APP_ECHR_CNT" Datatype="Byte" /><Member Name="APP_END_CHR1" Datatype="Char" /><Member Name="APP_END_CHR2" Datatype="Char" /><Member Name="APP_END_CHR3" Datatype="Char" /><Member Name="APP_END_CHR4" Datatype="Char" /><Member Name="APP_END_CHR5" Datatype="Char" /><Member Name="reserved" Datatype="Byte" /><Member Name="reserved1" Datatype="Byte" /><Member Name="reserved2" Datatype="Byte" /></Section></Sections></Member><Member Name="r_record" Datatype="P2P_RdEstat" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="SetFtrs" Datatype="Word" /><Member Name="PortCfg" Datatype="Word" /><Member Name="SendCfg" Datatype="Word" /><Member Name="RcvCfg" Datatype="Word" /><Member Name="SgnSet" Datatype="Word" /><Member Name="R3964Err" Datatype="Word" /></Section></Sections></Member></Section></Sections></Member><Member Name="Receive_Config" Datatype="Receive_Config" Version="4.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="PORT" Datatype="PORT" /><Member Name="Receive_Conditions" Datatype="Variant" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="Word" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="b_e_REQ" Datatype="Bool" /><Member Name="y_state" Datatype="SInt" /><Member Name="WRREC" Datatype="WRREC" Version="1.1"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="RDREC" Datatype="RDREC" Version="1.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="MLEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="VALID" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="w_record" Datatype="P2P_RcvCfgData" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="START_STARTCOND" Datatype="UInt" /><Member Name="START_IDLETIME" Datatype="UInt" /><Member Name="START_STARTCHAR" Datatype="Byte" /><Member Name="START_SEQ_CTL_1" Datatype="Byte" /><Member Name="START_SEQ_STR_1_1" Datatype="Char" /><Member Name="START_SEQ_STR_1_2" Datatype="Char" /><Member Name="START_SEQ_STR_1_3" Datatype="Char" /><Member Name="START_SEQ_STR_1_4" Datatype="Char" /><Member Name="START_SEQ_STR_1_5" Datatype="Char" /><Member Name="START_SEQ_CTL_2" Datatype="Byte" /><Member Name="START_SEQ_STR_2_1" Datatype="Char" /><Member Name="START_SEQ_STR_2_2" Datatype="Char" /><Member Name="START_SEQ_STR_2_3" Datatype="Char" /><Member Name="START_SEQ_STR_2_4" Datatype="Char" /><Member Name="START_SEQ_STR_2_5" Datatype="Char" /><Member Name="START_SEQ_CTL_3" Datatype="Byte" /><Member Name="START_SEQ_STR_3_1" Datatype="Char" /><Member Name="START_SEQ_STR_3_2" Datatype="Char" /><Member Name="START_SEQ_STR_3_3" Datatype="Char" /><Member Name="START_SEQ_STR_3_4" Datatype="Char" /><Member Name="START_SEQ_STR_3_5" Datatype="Char" /><Member Name="START_SEQ_CTL_4" Datatype="Byte" /><Member Name="START_SEQ_STR_4_1" Datatype="Char" /><Member Name="START_SEQ_STR_4_2" Datatype="Char" /><Member Name="START_SEQ_STR_4_3" Datatype="Char" /><Member Name="START_SEQ_STR_4_4" Datatype="Char" /><Member Name="START_SEQ_STR_4_5" Datatype="Char" /><Member Name="START_pad" Datatype="Byte" /><Member Name="END_ENDCOND" Datatype="UInt" /><Member Name="END_FIXLEN" Datatype="UInt" /><Member Name="END_MAXLEN" Datatype="UInt" /><Member Name="END_N" Datatype="UInt" /><Member Name="END_LENGTHSIZE" Datatype="UInt" /><Member Name="END_LENGTHM" Datatype="UInt" /><Member Name="END_RCVTIME" Datatype="UInt" /><Member Name="END_MSGTIME" Datatype="UInt" /><Member Name="END_CHARGAP" Datatype="UInt" /><Member Name="END_SEQ_CTL" Datatype="Byte" /><Member Name="END_SEQ_STR_1" Datatype="Char" /><Member Name="END_SEQ_STR_2" Datatype="Char" /><Member Name="END_SEQ_STR_3" Datatype="Char" /><Member Name="END_SEQ_STR_4" Datatype="Char" /><Member Name="END_SEQ_STR_5" Datatype="Char" /><Member Name="GENERAL_MBUF_SIZE" Datatype="USInt" /><Member Name="GENERAL_OW_PROT" Datatype="USInt" /><Member Name="GENERAL_CLR_MBUF" Datatype="USInt" /><Member Name="GENERAL_pad_1" Datatype="Byte" /><Member Name="GENERAL_pad_2" Datatype="Byte" /><Member Name="GENERAL_pad_3" Datatype="Byte" /></Section></Sections></Member><Member Name="r_record" Datatype="P2P_RdEstat" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="SetFtrs" Datatype="Word" /><Member Name="PortCfg" Datatype="Word" /><Member Name="SendCfg" Datatype="Word" /><Member Name="RcvCfg" Datatype="Word" /><Member Name="SgnSet" Datatype="Word" /><Member Name="R3964Err" Datatype="Word" /></Section></Sections></Member></Section></Sections></Member><Member Name="Receive_Conditions" Datatype="Receive_Conditions" Version="2.0"><Sections><Section Name="None"><Member Name="START" Datatype="P2P_RcStart" Version="1.0"><Sections><Section Name="None"><Member Name="STARTCOND" Datatype="Word" /><Member Name="IDLETIME" Datatype="Word" /><Member Name="STARTCHAR" Datatype="Byte" /><Member Name="SEQ" Datatype="Array[1..4] of P2P_Rc_Seq" Version="1.0"><Sections><Section Name="None"><Member Name="CTL" Datatype="Byte" /><Member Name="STR" Datatype="Array[1..5] of Char" /></Section></Sections></Member></Section></Sections></Member><Member Name="END" Datatype="P2P_RcEnd" Version="2.0"><Sections><Section Name="None"><Member Name="ENDCOND" Datatype="Word" /><Member Name="FIXLEN" Datatype="Word" /><Member Name="MAXLEN" Datatype="Word" /><Member Name="N" Datatype="Word" /><Member Name="LENGTHSIZE" Datatype="Word" /><Member Name="LENGTHM" Datatype="Word" /><Member Name="RCVTIME" Datatype="Word" /><Member Name="MSGTIME" Datatype="Word" /><Member Name="CHARGAP" Datatype="Word" /><Member Name="SEQ" Datatype="P2P_Rc_Seq" Version="1.0"><Sections><Section Name="None"><Member Name="CTL" Datatype="Byte" /><Member Name="STR" Datatype="Array[1..5] of Char" /></Section></Sections></Member></Section></Sections></Member><Member Name="GENERAL" Datatype="P2P_RcGeneral" Version="1.0"><Sections><Section Name="None"><Member Name="MBUF_SIZE" Datatype="Byte" /><Member Name="OW_PROT" Datatype="Byte" /><Member Name="CLR_MBUF" Datatype="Byte" /></Section></Sections></Member></Section></Sections></Member><Member Name="WRREC" Datatype="WRREC" Version="1.1"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="RDREC" Datatype="RDREC" Version="1.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="MLEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="VALID" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="port_w_record" Datatype="P2P_MB_PortData" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="PROTOCOL" Datatype="UInt" /><Member Name="BAUD" Datatype="UInt" /><Member Name="PARITY" Datatype="UInt" /><Member Name="DATABITS" Datatype="UInt" /><Member Name="STOPBITS" Datatype="UInt" /><Member Name="FLOWCTRL" Datatype="UInt" /><Member Name="XONCHAR" Datatype="Char" /><Member Name="XOFFCHAR" Datatype="Char" /><Member Name="WAITTIME" Datatype="UInt" /><Member Name="MODE" Datatype="USInt" /><Member Name="LINE_PRE" Datatype="USInt" /><Member Name="BRK_DET" Datatype="USInt" /><Member Name="LibSupport" Datatype="Byte" /><Member Name="ModuleIdent1" Datatype="DWord" /><Member Name="ModuleIdent2" Datatype="DWord" /><Member Name="ModuleIdent3" Datatype="DWord" /></Section></Sections></Member><Member Name="err_record" Datatype="P2P_RdEstat" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="SetFtrs" Datatype="Word" /><Member Name="PortCfg" Datatype="Word" /><Member Name="SendCfg" Datatype="Word" /><Member Name="RcvCfg" Datatype="Word" /><Member Name="SgnSet" Datatype="Word" /><Member Name="R3964Err" Datatype="Word" /></Section></Sections></Member><Member Name="ftrs_w_record" Datatype="P2P_FeaturesData" Version="2.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="MODBUS_CRC" Datatype="SInt" /><Member Name="DIAG_ALARM" Datatype="SInt" /><Member Name="SUPPLY_VOLT" Datatype="SInt" /><Member Name="pad1" Datatype="SInt" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="MB_MASTER_DB" Datatype="Modbus_Master" Version="5.1" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="MB_ADDR" Datatype="UInt" /><Member Name="MODE" Datatype="USInt" /><Member Name="DATA_ADDR" Datatype="UDInt" /><Member Name="DATA_LEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="Word" /></Section><Section Name="InOut"><Member Name="DATA_PTR" Datatype="Variant" /></Section><Section Name="Static"><Member Name="MB_State" Datatype="SInt" /><Member Name="Blocked_Proc_Timeout" Datatype="Real" /><Member Name="Extended_Addressing" Datatype="Bool" /><Member Name="Compatibility_Mode" Datatype="Bool" /><Member Name="MB_DB" Datatype="P2P_MB_BASE" Version="1.0"><Sections><Section Name="None"><Member Name="S_PORT" Datatype="Word" /><Member Name="S_RESP_TO" Datatype="Word" /><Member Name="S_ICHAR_GAP" Datatype="Word" /><Member Name="S_RETRIES" Datatype="Word" /><Member Name="S_MB_CRC" Datatype="Byte" /></Section></Sections></Member><Member Name="Send_P2P" Datatype="Send_P2P" Version="4.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="PORT" Datatype="PORT" /><Member Name="BUFFER" Datatype="Variant" /><Member Name="LENGTH" Datatype="UInt" /></Section><Section Name="Output"><Member Name="UNIVERSAL" Datatype="Bool" /><Member Name="DONE" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="Word" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="OldPORT" Datatype="PORT" /><Member Name="send_length" Datatype="UInt" /><Member Name="max_record_len" Datatype="UInt" /><Member Name="max_telegram_len" Datatype="UInt" /><Member Name="b_e_REQ" Datatype="Bool" /><Member Name="isClassic" Datatype="Bool" /><Member Name="first_sent" Datatype="Bool" /><Member Name="y_state" Datatype="SInt" /><Member Name="y_nr_rec" Datatype="SInt" /><Member Name="ser_nr_old" Datatype="USInt" /><Member Name="ser_nr" Datatype="USInt" /><Member Name="module_initialized" Datatype="Bool" /><Member Name="SendBuffer" Datatype="Array[0..1026] of Byte" /><Member Name="i_addr" Datatype="UDInt" /><Member Name="o_addr" Datatype="UDInt" /><Member Name="WRREC" Datatype="WRREC" Version="1.1"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="PTP_STATUS" Datatype="P2P_SendGetData" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="V24_seqnr_st" Datatype="DWord" /><Member Name="b_seq_nr_rcv" Datatype="USInt" /></Section></Sections></Member><Member Name="InitTimeout" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member><Member Name="Receive_P2P" Datatype="Receive_P2P" Version="4.1"><Sections><Section Name="Input"><Member Name="PORT" Datatype="PORT" /><Member Name="BUFFER" Datatype="Variant" /></Section><Section Name="Output"><Member Name="UNIVERSAL" Datatype="Bool" /><Member Name="NDR" Datatype="Bool" /><Member Name="LENGTH" Datatype="UInt" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="Word" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="OldPORT" Datatype="PORT" /><Member Name="received_length" Datatype="UInt" /><Member Name="y_ptp_status" Datatype="SInt" /><Member Name="y_state" Datatype="SInt" /><Member Name="y_seq_nr" Datatype="Byte" /><Member Name="safe_h1" Datatype="Byte" /><Member Name="safe_h2" Datatype="Byte" /><Member Name="safe_h3" Datatype="Byte" /><Member Name="safe_h4" Datatype="Byte" /><Member Name="isClassic" Datatype="Bool" /><Member Name="record_nr" Datatype="Int" /><Member Name="offset" Datatype="UDInt" /><Member Name="RDREC" Datatype="RDREC" Version="1.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="MLEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="VALID" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="ReceiveBuffer" Datatype="Array[0..1027] of Byte" /><Member Name="i_addr" Datatype="UDInt" /><Member Name="o_addr" Datatype="UDInt" /></Section></Sections></Member><Member Name="Receive_Reset" Datatype="Receive_Reset" Version="4.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="PORT" Datatype="PORT" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="Word" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="b_e_REQ" Datatype="Bool" /><Member Name="y_state" Datatype="SInt" /><Member Name="WRREC" Datatype="WRREC" Version="1.1"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="w_record" Datatype="P2P_ResetData" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="ackn" Datatype="Byte" /><Member Name="res1" Datatype="Byte" /><Member Name="res2" Datatype="Byte" /><Member Name="res3" Datatype="Byte" /></Section></Sections></Member></Section></Sections></Member><Member Name="S_PORT" Datatype="Word" /><Member Name="S_RESP_TO" Datatype="Word" /><Member Name="S_ICHAR_GAP" Datatype="Word" /><Member Name="S_RETRIES" Datatype="Word" /><Member Name="S_MB_ADDR" Datatype="UInt" /><Member Name="S_MODE" Datatype="USInt" /><Member Name="S_DATA_ADDR" Datatype="UDInt" /><Member Name="S_DATA_LEN" Datatype="UInt" /><Member Name="w_retries" Datatype="Word" /><Member Name="y_SlaveAddrHi" Datatype="Byte" /><Member Name="y_SlaveAddrLo" Datatype="Byte" /><Member Name="StartAddress" Datatype="Word" /><Member Name="Value" Datatype="Word" /><Member Name="y_FCode" Datatype="Byte" /><Member Name="INTERNAL_CDATA" Datatype="Array[1..257] of Byte" /><Member Name="mb_timer" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TimeElapsed" Datatype="Bool" /></Section></Sections></Member>
+    <Member Name="CTU" Datatype="CTU_INT" Version="1.0" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="None"><Member Name="CU" Datatype="Bool" /><Member Name="CD" Datatype="Bool" /><Member Name="R" Datatype="Bool" /><Member Name="LD" Datatype="Bool" /><Member Name="QU" Datatype="Bool" /><Member Name="QD" Datatype="Bool" /><Member Name="PV" Datatype="Int" /><Member Name="CV" Datatype="Int" /></Section></Sections></Member>
+    <Member Name="TEMP" Datatype="Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="TP" Datatype="Array[0..40] of Bool" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉温度读辅" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉温度写辅" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="ST1" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="ST2" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="ST3" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="ST4" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="ST5" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="ST16" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="ST17" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="ST18" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="ST20" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="ST21" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="ST22" Datatype="Real" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉状态1" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉状态2" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉启停字" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉加热状态" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="油炉运行标志" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="YL油炉温度写读辅" Datatype="Int" Remanence="SetInIDB" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="Modbus_Comm_Load" Datatype="Modbus_Comm_Load" Version="5.0" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="PORT" Datatype="PORT" /><Member Name="BAUD" Datatype="UDInt" /><Member Name="PARITY" Datatype="UInt" /><Member Name="FLOW_CTRL" Datatype="UInt" /><Member Name="RTS_ON_DLY" Datatype="UInt" /><Member Name="RTS_OFF_DLY" Datatype="UInt" /><Member Name="RESP_TO" Datatype="UInt" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="Word" /></Section><Section Name="InOut"><Member Name="MB_DB" Datatype="P2P_MB_BASE" Version="1.0"><Sections><Section Name="None" /></Sections></Member></Section><Section Name="Static"><Member Name="ICHAR_GAP" Datatype="Word" /><Member Name="RETRIES" Datatype="Word" /><Member Name="MODE" Datatype="USInt" /><Member Name="LINE_PRE" Datatype="USInt" /><Member Name="BRK_DET" Datatype="USInt" /><Member Name="EN_DIAG_ALARM" Datatype="Bool" /><Member Name="STOP_BITS" Datatype="USInt" /><Member Name="EN_SUPPLY_VOLT" Datatype="Bool" /><Member Name="b_e_REQ" Datatype="Bool" /><Member Name="y_state" Datatype="SInt" /><Member Name="Send_Config" Datatype="Send_Config" Version="4.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="PORT" Datatype="PORT" /><Member Name="RTSONDLY" Datatype="UInt" /><Member Name="RTSOFFDLY" Datatype="UInt" /><Member Name="BREAK" Datatype="UInt" /><Member Name="IDLELINE" Datatype="UInt" /><Member Name="USR_END" Datatype="String[2]" /><Member Name="APP_END" Datatype="String[5]" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="Word" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="b_e_REQ" Datatype="Bool" /><Member Name="y_state" Datatype="SInt" /><Member Name="WRREC" Datatype="WRREC" Version="1.1"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="RDREC" Datatype="RDREC" Version="1.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="MLEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="VALID" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="w_record" Datatype="P2P_SendCfgData" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="RTSONDLY" Datatype="UInt" /><Member Name="RTSOFFDLY" Datatype="UInt" /><Member Name="BREAK" Datatype="UInt" /><Member Name="IDLELINE" Datatype="UInt" /><Member Name="Conditions" Datatype="UInt" /><Member Name="USR_ECHR_MAX" Datatype="Byte" /><Member Name="USR_ECHR_CNT" Datatype="Byte" /><Member Name="USR_END_CHR1" Datatype="Char" /><Member Name="USR_END_CHR2" Datatype="Char" /><Member Name="APP_ECHR_MAX" Datatype="Byte" /><Member Name="APP_ECHR_CNT" Datatype="Byte" /><Member Name="APP_END_CHR1" Datatype="Char" /><Member Name="APP_END_CHR2" Datatype="Char" /><Member Name="APP_END_CHR3" Datatype="Char" /><Member Name="APP_END_CHR4" Datatype="Char" /><Member Name="APP_END_CHR5" Datatype="Char" /><Member Name="reserved" Datatype="Byte" /><Member Name="reserved1" Datatype="Byte" /><Member Name="reserved2" Datatype="Byte" /></Section></Sections></Member><Member Name="r_record" Datatype="P2P_RdEstat" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="SetFtrs" Datatype="Word" /><Member Name="PortCfg" Datatype="Word" /><Member Name="SendCfg" Datatype="Word" /><Member Name="RcvCfg" Datatype="Word" /><Member Name="SgnSet" Datatype="Word" /><Member Name="R3964Err" Datatype="Word" /></Section></Sections></Member></Section></Sections></Member><Member Name="Receive_Config" Datatype="Receive_Config" Version="4.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="PORT" Datatype="PORT" /><Member Name="Receive_Conditions" Datatype="Variant" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="Word" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="b_e_REQ" Datatype="Bool" /><Member Name="y_state" Datatype="SInt" /><Member Name="WRREC" Datatype="WRREC" Version="1.1"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="RDREC" Datatype="RDREC" Version="1.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="MLEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="VALID" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="w_record" Datatype="P2P_RcvCfgData" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="START_STARTCOND" Datatype="UInt" /><Member Name="START_IDLETIME" Datatype="UInt" /><Member Name="START_STARTCHAR" Datatype="Byte" /><Member Name="START_SEQ_CTL_1" Datatype="Byte" /><Member Name="START_SEQ_STR_1_1" Datatype="Char" /><Member Name="START_SEQ_STR_1_2" Datatype="Char" /><Member Name="START_SEQ_STR_1_3" Datatype="Char" /><Member Name="START_SEQ_STR_1_4" Datatype="Char" /><Member Name="START_SEQ_STR_1_5" Datatype="Char" /><Member Name="START_SEQ_CTL_2" Datatype="Byte" /><Member Name="START_SEQ_STR_2_1" Datatype="Char" /><Member Name="START_SEQ_STR_2_2" Datatype="Char" /><Member Name="START_SEQ_STR_2_3" Datatype="Char" /><Member Name="START_SEQ_STR_2_4" Datatype="Char" /><Member Name="START_SEQ_STR_2_5" Datatype="Char" /><Member Name="START_SEQ_CTL_3" Datatype="Byte" /><Member Name="START_SEQ_STR_3_1" Datatype="Char" /><Member Name="START_SEQ_STR_3_2" Datatype="Char" /><Member Name="START_SEQ_STR_3_3" Datatype="Char" /><Member Name="START_SEQ_STR_3_4" Datatype="Char" /><Member Name="START_SEQ_STR_3_5" Datatype="Char" /><Member Name="START_SEQ_CTL_4" Datatype="Byte" /><Member Name="START_SEQ_STR_4_1" Datatype="Char" /><Member Name="START_SEQ_STR_4_2" Datatype="Char" /><Member Name="START_SEQ_STR_4_3" Datatype="Char" /><Member Name="START_SEQ_STR_4_4" Datatype="Char" /><Member Name="START_SEQ_STR_4_5" Datatype="Char" /><Member Name="START_pad" Datatype="Byte" /><Member Name="END_ENDCOND" Datatype="UInt" /><Member Name="END_FIXLEN" Datatype="UInt" /><Member Name="END_MAXLEN" Datatype="UInt" /><Member Name="END_N" Datatype="UInt" /><Member Name="END_LENGTHSIZE" Datatype="UInt" /><Member Name="END_LENGTHM" Datatype="UInt" /><Member Name="END_RCVTIME" Datatype="UInt" /><Member Name="END_MSGTIME" Datatype="UInt" /><Member Name="END_CHARGAP" Datatype="UInt" /><Member Name="END_SEQ_CTL" Datatype="Byte" /><Member Name="END_SEQ_STR_1" Datatype="Char" /><Member Name="END_SEQ_STR_2" Datatype="Char" /><Member Name="END_SEQ_STR_3" Datatype="Char" /><Member Name="END_SEQ_STR_4" Datatype="Char" /><Member Name="END_SEQ_STR_5" Datatype="Char" /><Member Name="GENERAL_MBUF_SIZE" Datatype="USInt" /><Member Name="GENERAL_OW_PROT" Datatype="USInt" /><Member Name="GENERAL_CLR_MBUF" Datatype="USInt" /><Member Name="GENERAL_pad_1" Datatype="Byte" /><Member Name="GENERAL_pad_2" Datatype="Byte" /><Member Name="GENERAL_pad_3" Datatype="Byte" /></Section></Sections></Member><Member Name="r_record" Datatype="P2P_RdEstat" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="SetFtrs" Datatype="Word" /><Member Name="PortCfg" Datatype="Word" /><Member Name="SendCfg" Datatype="Word" /><Member Name="RcvCfg" Datatype="Word" /><Member Name="SgnSet" Datatype="Word" /><Member Name="R3964Err" Datatype="Word" /></Section></Sections></Member></Section></Sections></Member><Member Name="Receive_Conditions" Datatype="Receive_Conditions" Version="2.0"><Sections><Section Name="None"><Member Name="START" Datatype="P2P_RcStart" Version="1.0"><Sections><Section Name="None"><Member Name="STARTCOND" Datatype="Word" /><Member Name="IDLETIME" Datatype="Word" /><Member Name="STARTCHAR" Datatype="Byte" /><Member Name="SEQ" Datatype="Array[1..4] of P2P_Rc_Seq" Version="1.0"><Sections><Section Name="None"><Member Name="CTL" Datatype="Byte" /><Member Name="STR" Datatype="Array[1..5] of Char" /></Section></Sections></Member></Section></Sections></Member><Member Name="END" Datatype="P2P_RcEnd" Version="2.0"><Sections><Section Name="None"><Member Name="ENDCOND" Datatype="Word" /><Member Name="FIXLEN" Datatype="Word" /><Member Name="MAXLEN" Datatype="Word" /><Member Name="N" Datatype="Word" /><Member Name="LENGTHSIZE" Datatype="Word" /><Member Name="LENGTHM" Datatype="Word" /><Member Name="RCVTIME" Datatype="Word" /><Member Name="MSGTIME" Datatype="Word" /><Member Name="CHARGAP" Datatype="Word" /><Member Name="SEQ" Datatype="P2P_Rc_Seq" Version="1.0"><Sections><Section Name="None"><Member Name="CTL" Datatype="Byte" /><Member Name="STR" Datatype="Array[1..5] of Char" /></Section></Sections></Member></Section></Sections></Member><Member Name="GENERAL" Datatype="P2P_RcGeneral" Version="1.0"><Sections><Section Name="None"><Member Name="MBUF_SIZE" Datatype="Byte" /><Member Name="OW_PROT" Datatype="Byte" /><Member Name="CLR_MBUF" Datatype="Byte" /></Section></Sections></Member></Section></Sections></Member><Member Name="WRREC" Datatype="WRREC" Version="1.1"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="RDREC" Datatype="RDREC" Version="1.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="MLEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="VALID" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="port_w_record" Datatype="P2P_MB_PortData" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="PROTOCOL" Datatype="UInt" /><Member Name="BAUD" Datatype="UInt" /><Member Name="PARITY" Datatype="UInt" /><Member Name="DATABITS" Datatype="UInt" /><Member Name="STOPBITS" Datatype="UInt" /><Member Name="FLOWCTRL" Datatype="UInt" /><Member Name="XONCHAR" Datatype="Char" /><Member Name="XOFFCHAR" Datatype="Char" /><Member Name="WAITTIME" Datatype="UInt" /><Member Name="MODE" Datatype="USInt" /><Member Name="LINE_PRE" Datatype="USInt" /><Member Name="BRK_DET" Datatype="USInt" /><Member Name="LibSupport" Datatype="Byte" /><Member Name="ModuleIdent1" Datatype="DWord" /><Member Name="ModuleIdent2" Datatype="DWord" /><Member Name="ModuleIdent3" Datatype="DWord" /></Section></Sections></Member><Member Name="err_record" Datatype="P2P_RdEstat" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="SetFtrs" Datatype="Word" /><Member Name="PortCfg" Datatype="Word" /><Member Name="SendCfg" Datatype="Word" /><Member Name="RcvCfg" Datatype="Word" /><Member Name="SgnSet" Datatype="Word" /><Member Name="R3964Err" Datatype="Word" /></Section></Sections></Member><Member Name="ftrs_w_record" Datatype="P2P_FeaturesData" Version="2.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="MODBUS_CRC" Datatype="SInt" /><Member Name="DIAG_ALARM" Datatype="SInt" /><Member Name="SUPPLY_VOLT" Datatype="SInt" /><Member Name="pad1" Datatype="SInt" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="Modbus_Master" Datatype="Modbus_Master" Version="5.1" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="MB_ADDR" Datatype="UInt" /><Member Name="MODE" Datatype="USInt" /><Member Name="DATA_ADDR" Datatype="UDInt" /><Member Name="DATA_LEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="Word" /></Section><Section Name="InOut"><Member Name="DATA_PTR" Datatype="Variant" /></Section><Section Name="Static"><Member Name="MB_State" Datatype="SInt" /><Member Name="Blocked_Proc_Timeout" Datatype="Real" /><Member Name="Extended_Addressing" Datatype="Bool" /><Member Name="Compatibility_Mode" Datatype="Bool" /><Member Name="MB_DB" Datatype="P2P_MB_BASE" Version="1.0"><Sections><Section Name="None"><Member Name="S_PORT" Datatype="Word" /><Member Name="S_RESP_TO" Datatype="Word" /><Member Name="S_ICHAR_GAP" Datatype="Word" /><Member Name="S_RETRIES" Datatype="Word" /><Member Name="S_MB_CRC" Datatype="Byte" /></Section></Sections></Member><Member Name="Send_P2P" Datatype="Send_P2P" Version="4.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="PORT" Datatype="PORT" /><Member Name="BUFFER" Datatype="Variant" /><Member Name="LENGTH" Datatype="UInt" /></Section><Section Name="Output"><Member Name="UNIVERSAL" Datatype="Bool" /><Member Name="DONE" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="Word" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="OldPORT" Datatype="PORT" /><Member Name="send_length" Datatype="UInt" /><Member Name="max_record_len" Datatype="UInt" /><Member Name="max_telegram_len" Datatype="UInt" /><Member Name="b_e_REQ" Datatype="Bool" /><Member Name="isClassic" Datatype="Bool" /><Member Name="first_sent" Datatype="Bool" /><Member Name="y_state" Datatype="SInt" /><Member Name="y_nr_rec" Datatype="SInt" /><Member Name="ser_nr_old" Datatype="USInt" /><Member Name="ser_nr" Datatype="USInt" /><Member Name="module_initialized" Datatype="Bool" /><Member Name="SendBuffer" Datatype="Array[0..1026] of Byte" /><Member Name="i_addr" Datatype="UDInt" /><Member Name="o_addr" Datatype="UDInt" /><Member Name="WRREC" Datatype="WRREC" Version="1.1"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="PTP_STATUS" Datatype="P2P_SendGetData" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="V24_seqnr_st" Datatype="DWord" /><Member Name="b_seq_nr_rcv" Datatype="USInt" /></Section></Sections></Member><Member Name="InitTimeout" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member></Section></Sections></Member><Member Name="Receive_P2P" Datatype="Receive_P2P" Version="4.1"><Sections><Section Name="Input"><Member Name="PORT" Datatype="PORT" /><Member Name="BUFFER" Datatype="Variant" /></Section><Section Name="Output"><Member Name="UNIVERSAL" Datatype="Bool" /><Member Name="NDR" Datatype="Bool" /><Member Name="LENGTH" Datatype="UInt" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="Word" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="OldPORT" Datatype="PORT" /><Member Name="received_length" Datatype="UInt" /><Member Name="y_ptp_status" Datatype="SInt" /><Member Name="y_state" Datatype="SInt" /><Member Name="y_seq_nr" Datatype="Byte" /><Member Name="safe_h1" Datatype="Byte" /><Member Name="safe_h2" Datatype="Byte" /><Member Name="safe_h3" Datatype="Byte" /><Member Name="safe_h4" Datatype="Byte" /><Member Name="isClassic" Datatype="Bool" /><Member Name="record_nr" Datatype="Int" /><Member Name="offset" Datatype="UDInt" /><Member Name="RDREC" Datatype="RDREC" Version="1.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="MLEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="VALID" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="ReceiveBuffer" Datatype="Array[0..1027] of Byte" /><Member Name="i_addr" Datatype="UDInt" /><Member Name="o_addr" Datatype="UDInt" /></Section></Sections></Member><Member Name="Receive_Reset" Datatype="Receive_Reset" Version="4.0"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="PORT" Datatype="PORT" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="Word" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="b_e_REQ" Datatype="Bool" /><Member Name="y_state" Datatype="SInt" /><Member Name="WRREC" Datatype="WRREC" Version="1.1"><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member><Member Name="w_record" Datatype="P2P_ResetData" Version="1.0"><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="ackn" Datatype="Byte" /><Member Name="res1" Datatype="Byte" /><Member Name="res2" Datatype="Byte" /><Member Name="res3" Datatype="Byte" /></Section></Sections></Member></Section></Sections></Member><Member Name="S_PORT" Datatype="Word" /><Member Name="S_RESP_TO" Datatype="Word" /><Member Name="S_ICHAR_GAP" Datatype="Word" /><Member Name="S_RETRIES" Datatype="Word" /><Member Name="S_MB_ADDR" Datatype="UInt" /><Member Name="S_MODE" Datatype="USInt" /><Member Name="S_DATA_ADDR" Datatype="UDInt" /><Member Name="S_DATA_LEN" Datatype="UInt" /><Member Name="w_retries" Datatype="Word" /><Member Name="y_SlaveAddrHi" Datatype="Byte" /><Member Name="y_SlaveAddrLo" Datatype="Byte" /><Member Name="StartAddress" Datatype="Word" /><Member Name="Value" Datatype="Word" /><Member Name="y_FCode" Datatype="Byte" /><Member Name="INTERNAL_CDATA" Datatype="Array[1..257] of Byte" /><Member Name="mb_timer" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TimeElapsed" Datatype="Bool" /></Section></Sections></Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>32-油炉控制</Name>
+      <Number>22</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="FirstScan" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>UDInt</ConstantType>
+        <ConstantValue>19200</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="Modbus_Master" />
+        <Component Name="MB_DB" />
+      </Symbol>
+    </Access>
+    <Part Name="Modbus_Comm_Load" Version="5.0" UId="24">
+      <Instance Scope="LocalVariable" UId="25">
+        <Component Name="Modbus_Comm_Load" />
+      </Instance>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="35">
+      <Powerrail />
+      <NameCon UId="24" Name="en" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="REQ" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="26" />
+      <NameCon UId="24" Name="PORT" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="BAUD" />
+    </Wire>
+    <Wire UId="39">
+      <OpenCon UId="27" />
+      <NameCon UId="24" Name="PARITY" />
+    </Wire>
+    <Wire UId="40">
+      <OpenCon UId="28" />
+      <NameCon UId="24" Name="FLOW_CTRL" />
+    </Wire>
+    <Wire UId="41">
+      <OpenCon UId="29" />
+      <NameCon UId="24" Name="RTS_ON_DLY" />
+    </Wire>
+    <Wire UId="42">
+      <OpenCon UId="30" />
+      <NameCon UId="24" Name="RTS_OFF_DLY" />
+    </Wire>
+    <Wire UId="43">
+      <OpenCon UId="31" />
+      <NameCon UId="24" Name="RESP_TO" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="23" />
+      <NameCon UId="24" Name="MB_DB" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="24" Name="DONE" />
+      <OpenCon UId="32" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="24" Name="ERROR" />
+      <OpenCon UId="33" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="24" Name="STATUS" />
+      <OpenCon UId="34" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Clock_2Hz" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="TEMP" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="23">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>7</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="TEMP" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="25" />
+    <Part Name="CTU" Version="1.0" UId="26">
+      <Instance Scope="LocalVariable" UId="27">
+        <Component Name="CTU" />
+      </Instance>
+      <TemplateValue Name="value_type" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Coil" UId="28" />
+  </Parts>
+  <Wires>
+    <Wire UId="30">
+      <Powerrail />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="31">
+      <IdentCon UId="21" />
+      <NameCon UId="25" Name="operand" />
+    </Wire>
+    <Wire UId="32">
+      <NameCon UId="25" Name="out" />
+      <NameCon UId="26" Name="CU" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="22" />
+      <NameCon UId="26" Name="R" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="23" />
+      <NameCon UId="26" Name="PV" />
+    </Wire>
+    <Wire UId="35">
+      <NameCon UId="26" Name="Q" />
+      <NameCon UId="28" Name="in" />
+    </Wire>
+    <Wire UId="36">
+      <NameCon UId="26" Name="CV" />
+      <OpenCon UId="29" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="24" />
+      <NameCon UId="28" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="10" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="12" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="13" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="15" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="CTU" />
+        <Component Name="CV" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="TP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>0</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="24">
+      <Constant>
+        <ConstantType>UInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>UDInt</ConstantType>
+        <ConstantValue>40006</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>UInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="油炉温度读辅" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="油炉温度读辅" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="ST1" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="ST1" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="31">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>10.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="32">
+      <Symbol>
+        <Component Name="油炉温度读" />
+      </Symbol>
+    </Access>
+    <Part Name="Eq" UId="33">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="PBox" UId="34" />
+    <Part Name="Modbus_Master" Version="5.1" UId="35">
+      <Instance Scope="LocalVariable" UId="36">
+        <Component Name="Modbus_Master" />
+      </Instance>
+    </Part>
+    <Part Name="Convert" UId="37" DisabledENO="true">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+      <TemplateValue Name="DestType" Type="Type">Real</TemplateValue>
+    </Part>
+    <Part Name="Div" UId="38" DisabledENO="true">
+      <AutomaticTyped Name="SrcType" />
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="44">
+      <Powerrail />
+      <NameCon UId="35" Name="en" />
+      <NameCon UId="33" Name="pre" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="21" />
+      <NameCon UId="33" Name="in1" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="22" />
+      <NameCon UId="33" Name="in2" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="33" Name="out" />
+      <NameCon UId="34" Name="in" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="23" />
+      <NameCon UId="34" Name="bit" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="34" Name="out" />
+      <NameCon UId="35" Name="REQ" />
+    </Wire>
+    <Wire UId="50">
+      <IdentCon UId="24" />
+      <NameCon UId="35" Name="MB_ADDR" />
+    </Wire>
+    <Wire UId="51">
+      <OpenCon UId="39" />
+      <NameCon UId="35" Name="MODE" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="25" />
+      <NameCon UId="35" Name="DATA_ADDR" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="26" />
+      <NameCon UId="35" Name="DATA_LEN" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="27" />
+      <NameCon UId="35" Name="DATA_PTR" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="35" Name="eno" />
+      <NameCon UId="37" Name="en" />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="35" Name="DONE" />
+      <OpenCon UId="40" />
+    </Wire>
+    <Wire UId="57">
+      <NameCon UId="35" Name="BUSY" />
+      <OpenCon UId="41" />
+    </Wire>
+    <Wire UId="58">
+      <NameCon UId="35" Name="ERROR" />
+      <OpenCon UId="42" />
+    </Wire>
+    <Wire UId="59">
+      <NameCon UId="35" Name="STATUS" />
+      <OpenCon UId="43" />
+    </Wire>
+    <Wire UId="60">
+      <IdentCon UId="28" />
+      <NameCon UId="37" Name="in" />
+    </Wire>
+    <Wire UId="61">
+      <NameCon UId="37" Name="out" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="62">
+      <IdentCon UId="30" />
+      <NameCon UId="38" Name="in1" />
+    </Wire>
+    <Wire UId="63">
+      <IdentCon UId="31" />
+      <NameCon UId="38" Name="in2" />
+    </Wire>
+    <Wire UId="64">
+      <NameCon UId="38" Name="out" />
+      <IdentCon UId="32" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text>冷水机温度显示</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>冷水机温度显示</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1C" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="20" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="CTU" />
+        <Component Name="CV" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="TP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="24">
+      <Constant>
+        <ConstantType>UInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>USInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>UDInt</ConstantType>
+        <ConstantValue>41026</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>UInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="油炉温度写辅" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="AlwaysTRUE" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="油炉温度写" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="31">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>10.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="32">
+      <Symbol>
+        <Component Name="ST2" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="33">
+      <Symbol>
+        <Component Name="ST2" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="34">
+      <Symbol>
+        <Component Name="油炉温度写辅" />
+      </Symbol>
+    </Access>
+    <Part Name="Eq" UId="35">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="PBox" UId="36" />
+    <Part Name="Modbus_Master" Version="5.1" UId="37">
+      <Instance Scope="LocalVariable" UId="38">
+        <Component Name="Modbus_Master" />
+      </Instance>
+    </Part>
+    <Part Name="Contact" UId="39" />
+    <Part Name="Mul" UId="40" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+      <AutomaticTyped Name="SrcType" />
+    </Part>
+    <Part Name="Convert" UId="41" DisabledENO="true">
+      <TemplateValue Name="SrcType" Type="Type">Real</TemplateValue>
+      <TemplateValue Name="DestType" Type="Type">Int</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="46">
+      <Powerrail />
+      <NameCon UId="37" Name="en" />
+      <NameCon UId="35" Name="pre" />
+      <NameCon UId="39" Name="in" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="21" />
+      <NameCon UId="35" Name="in1" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="22" />
+      <NameCon UId="35" Name="in2" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="35" Name="out" />
+      <NameCon UId="36" Name="in" />
+    </Wire>
+    <Wire UId="50">
+      <IdentCon UId="23" />
+      <NameCon UId="36" Name="bit" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="36" Name="out" />
+      <NameCon UId="37" Name="REQ" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="24" />
+      <NameCon UId="37" Name="MB_ADDR" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="25" />
+      <NameCon UId="37" Name="MODE" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="26" />
+      <NameCon UId="37" Name="DATA_ADDR" />
+    </Wire>
+    <Wire UId="55">
+      <IdentCon UId="27" />
+      <NameCon UId="37" Name="DATA_LEN" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="28" />
+      <NameCon UId="37" Name="DATA_PTR" />
+    </Wire>
+    <Wire UId="57">
+      <NameCon UId="37" Name="DONE" />
+      <OpenCon UId="42" />
+    </Wire>
+    <Wire UId="58">
+      <NameCon UId="37" Name="BUSY" />
+      <OpenCon UId="43" />
+    </Wire>
+    <Wire UId="59">
+      <NameCon UId="37" Name="ERROR" />
+      <OpenCon UId="44" />
+    </Wire>
+    <Wire UId="60">
+      <NameCon UId="37" Name="STATUS" />
+      <OpenCon UId="45" />
+    </Wire>
+    <Wire UId="61">
+      <IdentCon UId="29" />
+      <NameCon UId="39" Name="operand" />
+    </Wire>
+    <Wire UId="62">
+      <NameCon UId="39" Name="out" />
+      <NameCon UId="40" Name="en" />
+      <NameCon UId="41" Name="en" />
+    </Wire>
+    <Wire UId="63">
+      <IdentCon UId="30" />
+      <NameCon UId="40" Name="in1" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="31" />
+      <NameCon UId="40" Name="in2" />
+    </Wire>
+    <Wire UId="65">
+      <NameCon UId="40" Name="out" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="66">
+      <IdentCon UId="33" />
+      <NameCon UId="41" Name="in" />
+    </Wire>
+    <Wire UId="67">
+      <NameCon UId="41" Name="out" />
+      <IdentCon UId="34" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="21" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="22" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text>冷水机温度设定</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="24" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>冷水机温度设定</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="25" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="26" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="27" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="29" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="CTU" />
+        <Component Name="CV" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>2</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="TP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="24">
+      <Constant>
+        <ConstantType>UInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>USInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>UDInt</ConstantType>
+        <ConstantValue>40513</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>UInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="油炉启停字" />
+      </Symbol>
+    </Access>
+    <Part Name="Eq" UId="29">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="PBox" UId="30" />
+    <Part Name="Modbus_Master" Version="5.1" UId="31">
+      <Instance Scope="LocalVariable" UId="32">
+        <Component Name="Modbus_Master" />
+      </Instance>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="37">
+      <Powerrail />
+      <NameCon UId="31" Name="en" />
+      <NameCon UId="29" Name="pre" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="21" />
+      <NameCon UId="29" Name="in1" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="22" />
+      <NameCon UId="29" Name="in2" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="29" Name="out" />
+      <NameCon UId="30" Name="in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="23" />
+      <NameCon UId="30" Name="bit" />
+    </Wire>
+    <Wire UId="42">
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="31" Name="REQ" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="31" Name="MB_ADDR" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="31" Name="MODE" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="26" />
+      <NameCon UId="31" Name="DATA_ADDR" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="27" />
+      <NameCon UId="31" Name="DATA_LEN" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="28" />
+      <NameCon UId="31" Name="DATA_PTR" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="31" Name="DONE" />
+      <OpenCon UId="33" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="31" Name="BUSY" />
+      <OpenCon UId="34" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="31" Name="ERROR" />
+      <OpenCon UId="35" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="31" Name="STATUS" />
+      <OpenCon UId="36" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text>冷水机温度设定</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="2C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>冷水机温度设定</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="30" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="31" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="32" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Token Text="IF" UId="21" />
+  <Blank Num="1" UId="22" />
+  <Access Scope="LocalVariable" UId="23">
+    <Symbol UId="24">
+      <Component Name="油炉循环泵启停" UId="25" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="26" />
+  <Token Text="=" UId="27" />
+  <Blank Num="1" UId="28" />
+  <Access Scope="LiteralConstant" UId="29">
+    <Constant UId="30">
+      <ConstantValue UId="32">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="33" />
+  <Token Text="THEN" UId="34" />
+  <NewLine Num="1" UId="35" />
+  <Blank Num="4" UId="36" />
+  <Access Scope="LocalVariable" UId="37">
+    <Symbol UId="38">
+      <Component Name="油炉启停字" UId="39" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="40" />
+  <Blank Num="1" UId="41" />
+  <Access Scope="LiteralConstant" UId="42">
+    <Constant UId="43">
+      <ConstantValue UId="45">114</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="46" />
+  <NewLine Num="1" UId="47" />
+  <Token Text="ELSE" UId="48" />
+  <NewLine Num="1" UId="49" />
+  <Blank Num="4" UId="50" />
+  <Access Scope="LocalVariable" UId="51">
+    <Symbol UId="52">
+      <Component Name="油炉启停字" UId="53" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="54" />
+  <Token Text=":=" UId="55" />
+  <Blank Num="1" UId="56" />
+  <Access Scope="LiteralConstant" UId="57">
+    <Constant UId="58">
+      <ConstantValue UId="60">112</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="61" />
+  <NewLine Num="1" UId="62" />
+  <Token Text="END_IF" UId="63" />
+  <Token Text=";" UId="64" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="33" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="35" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="36" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="37" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="38" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="39" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="CTU" />
+        <Component Name="CV" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>3</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="TP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>3</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="24">
+      <Constant>
+        <ConstantType>UInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>USInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>UDInt</ConstantType>
+        <ConstantValue>40004</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>UInt</ConstantType>
+        <ConstantValue>2</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="油炉状态1" />
+      </Symbol>
+    </Access>
+    <Part Name="Eq" UId="29">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="PBox" UId="30" />
+    <Part Name="Modbus_Master" Version="5.1" UId="31">
+      <Instance Scope="LocalVariable" UId="32">
+        <Component Name="Modbus_Master" />
+      </Instance>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="37">
+      <Powerrail />
+      <NameCon UId="31" Name="en" />
+      <NameCon UId="29" Name="pre" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="21" />
+      <NameCon UId="29" Name="in1" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="22" />
+      <NameCon UId="29" Name="in2" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="29" Name="out" />
+      <NameCon UId="30" Name="in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="23" />
+      <NameCon UId="30" Name="bit" />
+    </Wire>
+    <Wire UId="42">
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="31" Name="REQ" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="31" Name="MB_ADDR" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="31" Name="MODE" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="26" />
+      <NameCon UId="31" Name="DATA_ADDR" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="27" />
+      <NameCon UId="31" Name="DATA_LEN" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="28" />
+      <NameCon UId="31" Name="DATA_PTR" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="31" Name="DONE" />
+      <OpenCon UId="33" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="31" Name="BUSY" />
+      <OpenCon UId="34" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="31" Name="ERROR" />
+      <OpenCon UId="35" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="31" Name="STATUS" />
+      <OpenCon UId="36" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="3C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text>冷水机状态，超温报警，低温报警，压力报警</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>冷水机状态，超温报警，低温报警，压力报警</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="40" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="41" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="42" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="43" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="44" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Token Text="IF" UId="21" />
+  <Blank Num="1" UId="22" />
+  <Access Scope="LocalVariable" UId="23">
+    <Symbol UId="24">
+      <Component Name="油炉状态1" UId="25" />
+    </Symbol>
+  </Access>
+  <Token Text="&gt;" UId="26" />
+  <Access Scope="LiteralConstant" UId="27">
+    <Constant UId="28">
+      <ConstantValue UId="30">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="31" />
+  <Token Text="OR" UId="32" />
+  <Blank Num="1" UId="33" />
+  <Access Scope="LocalVariable" UId="34">
+    <Symbol UId="35">
+      <Component Name="油炉状态2" UId="36" />
+    </Symbol>
+  </Access>
+  <Token Text="&gt;" UId="37" />
+  <Access Scope="LiteralConstant" UId="38">
+    <Constant UId="39">
+      <ConstantValue UId="41">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="42" />
+  <Token Text="THEN" UId="43" />
+  <NewLine Num="1" UId="44" />
+  <Blank Num="4" UId="45" />
+  <Access Scope="LocalVariable" UId="46">
+    <Symbol UId="47">
+      <Component Name="油炉报警" UId="48" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="49" />
+  <Token Text=":=" UId="50" />
+  <Blank Num="1" UId="51" />
+  <Access Scope="LiteralConstant" UId="52">
+    <Constant UId="53">
+      <ConstantValue UId="55">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="56" />
+  <NewLine Num="1" UId="57" />
+  <Token Text="ELSE" UId="58" />
+  <NewLine Num="1" UId="59" />
+  <Blank Num="4" UId="60" />
+  <Access Scope="LocalVariable" UId="61">
+    <Symbol UId="62">
+      <Component Name="油炉报警" UId="63" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="64" />
+  <Token Text=":=" UId="65" />
+  <Blank Num="1" UId="66" />
+  <Access Scope="LiteralConstant" UId="67">
+    <Constant UId="68">
+      <ConstantValue UId="70">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="71" />
+  <NewLine Num="1" UId="72" />
+  <Token Text="END_IF" UId="73" />
+  <Token Text=";" UId="74" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="45" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="46" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="47" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="48" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="49" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="4A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="4B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="4C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="4D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="CTU" />
+        <Component Name="CV" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>4</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="TP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>4</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="24">
+      <Constant>
+        <ConstantType>UInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>UDInt</ConstantType>
+        <ConstantValue>40003</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>UInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="油炉加热状态" />
+      </Symbol>
+    </Access>
+    <Part Name="Eq" UId="28">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="PBox" UId="29" />
+    <Part Name="Modbus_Master" Version="5.1" UId="30">
+      <Instance Scope="LocalVariable" UId="31">
+        <Component Name="Modbus_Master" />
+      </Instance>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="37">
+      <Powerrail />
+      <NameCon UId="30" Name="en" />
+      <NameCon UId="28" Name="pre" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="21" />
+      <NameCon UId="28" Name="in1" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="22" />
+      <NameCon UId="28" Name="in2" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="28" Name="out" />
+      <NameCon UId="29" Name="in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="23" />
+      <NameCon UId="29" Name="bit" />
+    </Wire>
+    <Wire UId="42">
+      <NameCon UId="29" Name="out" />
+      <NameCon UId="30" Name="REQ" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="30" Name="MB_ADDR" />
+    </Wire>
+    <Wire UId="44">
+      <OpenCon UId="32" />
+      <NameCon UId="30" Name="MODE" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="25" />
+      <NameCon UId="30" Name="DATA_ADDR" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="26" />
+      <NameCon UId="30" Name="DATA_LEN" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="27" />
+      <NameCon UId="30" Name="DATA_PTR" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="30" Name="DONE" />
+      <OpenCon UId="33" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="30" Name="BUSY" />
+      <OpenCon UId="34" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="30" Name="ERROR" />
+      <OpenCon UId="35" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="30" Name="STATUS" />
+      <OpenCon UId="36" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="4F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text>冷水机温度设定</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="50" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="51" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>冷水机温度设定</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="52" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="53" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="54" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="55" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="56" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Token Text="IF" UId="21" />
+  <Blank Num="1" UId="22" />
+  <Access Scope="LocalVariable" UId="23">
+    <Symbol UId="24">
+      <Component Name="油炉加热状态" UId="25" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="26" />
+  <Token Text="&gt;=" UId="27" />
+  <Blank Num="1" UId="28" />
+  <Access Scope="LiteralConstant" UId="29">
+    <Constant UId="30">
+      <ConstantValue UId="32">8</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="33" />
+  <Token Text="THEN" UId="34" />
+  <NewLine Num="1" UId="35" />
+  <Blank Num="4" UId="36" />
+  <Access Scope="LocalVariable" UId="37">
+    <Symbol UId="38">
+      <Component Name="油炉冷却阀启停状态" UId="39" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="40" />
+  <Token Text=":=" UId="41" />
+  <Blank Num="1" UId="42" />
+  <Access Scope="LiteralConstant" UId="43">
+    <Constant UId="44">
+      <ConstantValue UId="46">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="47" />
+  <NewLine Num="1" UId="48" />
+  <Token Text="ELSE" UId="49" />
+  <NewLine Num="1" UId="50" />
+  <Blank Num="4" UId="51" />
+  <Access Scope="LocalVariable" UId="52">
+    <Symbol UId="53">
+      <Component Name="油炉冷却阀启停状态" UId="54" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="55" />
+  <Token Text=":=" UId="56" />
+  <Blank Num="1" UId="57" />
+  <Access Scope="LiteralConstant" UId="58">
+    <Constant UId="59">
+      <ConstantValue UId="61">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="62" />
+  <NewLine Num="1" UId="63" />
+  <Token Text="END_IF" UId="64" />
+  <Token Text=";" UId="65" />
+  <NewLine Num="2" UId="66" />
+  <Token Text="IF" UId="67" />
+  <Blank Num="1" UId="68" />
+  <Access Scope="LocalVariable" UId="69">
+    <Symbol UId="70">
+      <Component Name="油炉加热状态" UId="71" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="72" />
+  <Token Text="&gt;=" UId="73" />
+  <Blank Num="1" UId="74" />
+  <Access Scope="LiteralConstant" UId="75">
+    <Constant UId="76">
+      <ConstantValue UId="78">4</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="79" />
+  <Token Text="THEN" UId="80" />
+  <NewLine Num="1" UId="81" />
+  <Blank Num="4" UId="82" />
+  <Access Scope="LocalVariable" UId="83">
+    <Symbol UId="84">
+      <Component Name="油炉加热泵启停状态" UId="85" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="86" />
+  <Token Text=":=" UId="87" />
+  <Blank Num="1" UId="88" />
+  <Access Scope="LiteralConstant" UId="89">
+    <Constant UId="90">
+      <ConstantValue UId="92">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="93" />
+  <NewLine Num="1" UId="94" />
+  <Token Text="ELSE" UId="95" />
+  <NewLine Num="1" UId="96" />
+  <Blank Num="4" UId="97" />
+  <Access Scope="LocalVariable" UId="98">
+    <Symbol UId="99">
+      <Component Name="油炉加热泵启停状态" UId="100" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="101" />
+  <Token Text=":=" UId="102" />
+  <Blank Num="1" UId="103" />
+  <Access Scope="LiteralConstant" UId="104">
+    <Constant UId="105">
+      <ConstantValue UId="107">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="108" />
+  <NewLine Num="1" UId="109" />
+  <Token Text="END_IF" UId="110" />
+  <Token Text=";" UId="111" />
+  <NewLine Num="3" UId="112" />
+  <Token Text="IF" UId="113" />
+  <Blank Num="1" UId="114" />
+  <Access Scope="LocalVariable" UId="115">
+    <Symbol UId="116">
+      <Component Name="油炉加热状态" UId="117" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="118" />
+  <Token Text="&gt;=" UId="119" />
+  <Blank Num="1" UId="120" />
+  <Access Scope="LiteralConstant" UId="121">
+    <Constant UId="122">
+      <ConstantValue UId="124">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="125" />
+  <Token Text="THEN" UId="126" />
+  <NewLine Num="1" UId="127" />
+  <Blank Num="4" UId="128" />
+  <Access Scope="LocalVariable" UId="129">
+    <Symbol UId="130">
+      <Component Name="油炉加热器2状态" UId="131" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="132" />
+  <Token Text=":=" UId="133" />
+  <Blank Num="1" UId="134" />
+  <Access Scope="LiteralConstant" UId="135">
+    <Constant UId="136">
+      <ConstantValue UId="138">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="139" />
+  <NewLine Num="1" UId="140" />
+  <Token Text="ELSE" UId="141" />
+  <NewLine Num="1" UId="142" />
+  <Blank Num="4" UId="143" />
+  <Access Scope="LocalVariable" UId="144">
+    <Symbol UId="145">
+      <Component Name="油炉加热器2状态" UId="146" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="147" />
+  <Token Text=":=" UId="148" />
+  <Blank Num="1" UId="149" />
+  <Access Scope="LiteralConstant" UId="150">
+    <Constant UId="151">
+      <ConstantValue UId="153">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="154" />
+  <NewLine Num="1" UId="155" />
+  <Token Text="END_IF" UId="156" />
+  <Token Text=";" UId="157" />
+  <NewLine Num="2" UId="158" />
+  <Token Text="IF" UId="159" />
+  <Blank Num="1" UId="160" />
+  <Access Scope="LocalVariable" UId="161">
+    <Symbol UId="162">
+      <Component Name="油炉加热状态" UId="163" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="164" />
+  <Token Text="&gt;=" UId="165" />
+  <Blank Num="1" UId="166" />
+  <Access Scope="LiteralConstant" UId="167">
+    <Constant UId="168">
+      <ConstantValue UId="170">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="171" />
+  <Token Text="THEN" UId="172" />
+  <NewLine Num="1" UId="173" />
+  <Blank Num="4" UId="174" />
+  <Access Scope="LocalVariable" UId="175">
+    <Symbol UId="176">
+      <Component Name="油炉加热器1状态" UId="177" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="178" />
+  <Token Text=":=" UId="179" />
+  <Blank Num="1" UId="180" />
+  <Access Scope="LiteralConstant" UId="181">
+    <Constant UId="182">
+      <ConstantValue UId="184">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="185" />
+  <NewLine Num="1" UId="186" />
+  <Token Text="ELSE" UId="187" />
+  <NewLine Num="1" UId="188" />
+  <Blank Num="4" UId="189" />
+  <Access Scope="LocalVariable" UId="190">
+    <Symbol UId="191">
+      <Component Name="油炉加热器1状态" UId="192" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="193" />
+  <Token Text=":=" UId="194" />
+  <Blank Num="1" UId="195" />
+  <Access Scope="LiteralConstant" UId="196">
+    <Constant UId="197">
+      <ConstantValue UId="199">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="200" />
+  <NewLine Num="1" UId="201" />
+  <Token Text="END_IF" UId="202" />
+  <Token Text=";" UId="203" />
+  <NewLine Num="1" UId="204" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="57" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="58" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="59" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="5A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="5B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="5C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="5D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="5E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="5F" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="CTU" />
+        <Component Name="CV" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>5</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="TP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>5</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="24">
+      <Constant>
+        <ConstantType>UInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>UDInt</ConstantType>
+        <ConstantValue>40013</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>UInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="油炉运行标志" />
+      </Symbol>
+    </Access>
+    <Part Name="Eq" UId="28">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="PBox" UId="29" />
+    <Part Name="Modbus_Master" Version="5.1" UId="30">
+      <Instance Scope="LocalVariable" UId="31">
+        <Component Name="Modbus_Master" />
+      </Instance>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="37">
+      <Powerrail />
+      <NameCon UId="30" Name="en" />
+      <NameCon UId="28" Name="pre" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="21" />
+      <NameCon UId="28" Name="in1" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="22" />
+      <NameCon UId="28" Name="in2" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="28" Name="out" />
+      <NameCon UId="29" Name="in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="23" />
+      <NameCon UId="29" Name="bit" />
+    </Wire>
+    <Wire UId="42">
+      <NameCon UId="29" Name="out" />
+      <NameCon UId="30" Name="REQ" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="30" Name="MB_ADDR" />
+    </Wire>
+    <Wire UId="44">
+      <OpenCon UId="32" />
+      <NameCon UId="30" Name="MODE" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="25" />
+      <NameCon UId="30" Name="DATA_ADDR" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="26" />
+      <NameCon UId="30" Name="DATA_LEN" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="27" />
+      <NameCon UId="30" Name="DATA_PTR" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="30" Name="DONE" />
+      <OpenCon UId="33" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="30" Name="BUSY" />
+      <OpenCon UId="34" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="30" Name="ERROR" />
+      <OpenCon UId="35" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="30" Name="STATUS" />
+      <OpenCon UId="36" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="60" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="61" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text>冷水机温度设定</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="62" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="63" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>冷水机温度设定</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="64" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="65" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="66" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="67" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="68" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="CTU" />
+        <Component Name="CV" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>6</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="TP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>6</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="24">
+      <Constant>
+        <ConstantType>UInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>UDInt</ConstantType>
+        <ConstantValue>41026</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>UInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="YL油炉温度写读辅" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="AlwaysTRUE" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="YL油炉温度写读辅" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="ST22" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="31">
+      <Symbol>
+        <Component Name="ST22" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="32">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>10.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="33">
+      <Symbol>
+        <Component Name="YL油炉温度写读" />
+      </Symbol>
+    </Access>
+    <Part Name="Eq" UId="34">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="PBox" UId="35" />
+    <Part Name="Modbus_Master" Version="5.1" UId="36">
+      <Instance Scope="LocalVariable" UId="37">
+        <Component Name="Modbus_Master" />
+      </Instance>
+    </Part>
+    <Part Name="Contact" UId="38" />
+    <Part Name="Convert" UId="39" DisabledENO="true">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+      <TemplateValue Name="DestType" Type="Type">Real</TemplateValue>
+    </Part>
+    <Part Name="Div" UId="40" DisabledENO="true">
+      <TemplateValue Name="SrcType" Type="Type">Real</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="46">
+      <Powerrail />
+      <NameCon UId="36" Name="en" />
+      <NameCon UId="34" Name="pre" />
+      <NameCon UId="38" Name="in" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="21" />
+      <NameCon UId="34" Name="in1" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="22" />
+      <NameCon UId="34" Name="in2" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="34" Name="out" />
+      <NameCon UId="35" Name="in" />
+    </Wire>
+    <Wire UId="50">
+      <IdentCon UId="23" />
+      <NameCon UId="35" Name="bit" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="35" Name="out" />
+      <NameCon UId="36" Name="REQ" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="24" />
+      <NameCon UId="36" Name="MB_ADDR" />
+    </Wire>
+    <Wire UId="53">
+      <OpenCon UId="41" />
+      <NameCon UId="36" Name="MODE" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="25" />
+      <NameCon UId="36" Name="DATA_ADDR" />
+    </Wire>
+    <Wire UId="55">
+      <IdentCon UId="26" />
+      <NameCon UId="36" Name="DATA_LEN" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="27" />
+      <NameCon UId="36" Name="DATA_PTR" />
+    </Wire>
+    <Wire UId="57">
+      <NameCon UId="36" Name="DONE" />
+      <OpenCon UId="42" />
+    </Wire>
+    <Wire UId="58">
+      <NameCon UId="36" Name="BUSY" />
+      <OpenCon UId="43" />
+    </Wire>
+    <Wire UId="59">
+      <NameCon UId="36" Name="ERROR" />
+      <OpenCon UId="44" />
+    </Wire>
+    <Wire UId="60">
+      <NameCon UId="36" Name="STATUS" />
+      <OpenCon UId="45" />
+    </Wire>
+    <Wire UId="61">
+      <IdentCon UId="28" />
+      <NameCon UId="38" Name="operand" />
+    </Wire>
+    <Wire UId="62">
+      <NameCon UId="38" Name="out" />
+      <NameCon UId="39" Name="en" />
+      <NameCon UId="40" Name="en" />
+    </Wire>
+    <Wire UId="63">
+      <IdentCon UId="29" />
+      <NameCon UId="39" Name="in" />
+    </Wire>
+    <Wire UId="64">
+      <NameCon UId="39" Name="out" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="65">
+      <IdentCon UId="31" />
+      <NameCon UId="40" Name="in1" />
+    </Wire>
+    <Wire UId="66">
+      <IdentCon UId="32" />
+      <NameCon UId="40" Name="in2" />
+    </Wire>
+    <Wire UId="67">
+      <NameCon UId="40" Name="out" />
+      <IdentCon UId="33" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="69" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text>冷水机温du</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="6B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="6C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>冷水机温du</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="6E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="6F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="70" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="71" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Token Text="IF" UId="21" />
+  <Blank Num="1" UId="22" />
+  <Access Scope="LocalVariable" UId="23">
+    <Symbol UId="24">
+      <Component Name="油炉运行标志" UId="25" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="26" />
+  <Token Text="&gt;=" UId="27" />
+  <Blank Num="1" UId="28" />
+  <Access Scope="LiteralConstant" UId="29">
+    <Constant UId="30">
+      <ConstantValue UId="32">4</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="33" />
+  <Token Text="THEN" UId="34" />
+  <NewLine Num="1" UId="35" />
+  <Blank Num="4" UId="36" />
+  <Access Scope="LocalVariable" UId="37">
+    <Symbol UId="38">
+      <Component Name="油炉强制冷却状态" UId="39" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="40" />
+  <Token Text=":=" UId="41" />
+  <Blank Num="1" UId="42" />
+  <Access Scope="LiteralConstant" UId="43">
+    <Constant UId="44">
+      <ConstantValue UId="46">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="47" />
+  <NewLine Num="1" UId="48" />
+  <Token Text="ELSE" UId="49" />
+  <NewLine Num="1" UId="50" />
+  <Blank Num="4" UId="51" />
+  <Access Scope="LocalVariable" UId="52">
+    <Symbol UId="53">
+      <Component Name="油炉强制冷却状态" UId="54" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="55" />
+  <Token Text=":=" UId="56" />
+  <Blank Num="1" UId="57" />
+  <Access Scope="LiteralConstant" UId="58">
+    <Constant UId="59">
+      <ConstantValue UId="61">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="62" />
+  <NewLine Num="1" UId="63" />
+  <Token Text="END_IF" UId="64" />
+  <Token Text=";" UId="65" />
+  <NewLine Num="2" UId="66" />
+  <Token Text="IF" UId="67" />
+  <Blank Num="1" UId="68" />
+  <Access Scope="LocalVariable" UId="69">
+    <Symbol UId="70">
+      <Component Name="油炉运行标志" UId="71" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="72" />
+  <Token Text="&gt;=" UId="73" />
+  <Blank Num="1" UId="74" />
+  <Access Scope="LiteralConstant" UId="75">
+    <Constant UId="76">
+      <ConstantValue UId="78">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="79" />
+  <Token Text="THEN" UId="80" />
+  <NewLine Num="1" UId="81" />
+  <Blank Num="4" UId="82" />
+  <Access Scope="LocalVariable" UId="83">
+    <Symbol UId="84">
+      <Component Name="油炉自整定状态" UId="85" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="86" />
+  <Token Text=":=" UId="87" />
+  <Blank Num="1" UId="88" />
+  <Access Scope="LiteralConstant" UId="89">
+    <Constant UId="90">
+      <ConstantValue UId="92">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="93" />
+  <NewLine Num="1" UId="94" />
+  <Token Text="ELSE" UId="95" />
+  <NewLine Num="1" UId="96" />
+  <Blank Num="4" UId="97" />
+  <Access Scope="LocalVariable" UId="98">
+    <Symbol UId="99">
+      <Component Name="油炉自整定状态" UId="100" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="101" />
+  <Token Text=":=" UId="102" />
+  <Blank Num="1" UId="103" />
+  <Access Scope="LiteralConstant" UId="104">
+    <Constant UId="105">
+      <ConstantValue UId="107">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="108" />
+  <NewLine Num="1" UId="109" />
+  <Token Text="END_IF" UId="110" />
+  <Token Text=";" UId="111" />
+  <NewLine Num="3" UId="112" />
+  <Token Text="IF" UId="113" />
+  <Blank Num="1" UId="114" />
+  <Access Scope="LocalVariable" UId="115">
+    <Symbol UId="116">
+      <Component Name="油炉运行标志" UId="117" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="118" />
+  <Token Text="&gt;=" UId="119" />
+  <Blank Num="1" UId="120" />
+  <Access Scope="LiteralConstant" UId="121">
+    <Constant UId="122">
+      <ConstantValue UId="124">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="125" />
+  <Token Text="THEN" UId="126" />
+  <NewLine Num="1" UId="127" />
+  <Blank Num="4" UId="128" />
+  <Access Scope="LocalVariable" UId="129">
+    <Symbol UId="130">
+      <Component Name="油炉运行状态" UId="131" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="132" />
+  <Token Text=":=" UId="133" />
+  <Blank Num="1" UId="134" />
+  <Access Scope="LiteralConstant" UId="135">
+    <Constant UId="136">
+      <ConstantValue UId="138">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="139" />
+  <NewLine Num="1" UId="140" />
+  <Token Text="ELSE" UId="141" />
+  <NewLine Num="1" UId="142" />
+  <Blank Num="4" UId="143" />
+  <Access Scope="LocalVariable" UId="144">
+    <Symbol UId="145">
+      <Component Name="油炉运行状态" UId="146" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="147" />
+  <Token Text=":=" UId="148" />
+  <Blank Num="1" UId="149" />
+  <Access Scope="LiteralConstant" UId="150">
+    <Constant UId="151">
+      <ConstantValue UId="153">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="154" />
+  <NewLine Num="1" UId="155" />
+  <Token Text="END_IF" UId="156" />
+  <Token Text=";" UId="157" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="72" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="73" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="74" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="75" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="76" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="77" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="78" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-GB</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="79" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="7A" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="7B" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7D" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

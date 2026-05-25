@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-05-13T14:55:42.2439207Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <DBAccessibleFromOPCUA>true</DBAccessibleFromOPCUA>
+      <DBAccessibleFromWebserver>true</DBAccessibleFromWebserver>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="Valve01" Datatype="&quot;UDT_ComponentPopup&quot;" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="zh-CN">阀门</MultiLanguageText></Comment><Sections><Section Name="None"><Member Name="ClickTrig" Datatype="Bool" /><Member Name="Active" Datatype="Bool" /><Member Name="SwitchCnt" Datatype="Int" /><Member Name="Switch" Datatype="Array[1..8] of Bool" /><Member Name="RealCnt" Datatype="Int" /><Member Name="RealValue" Datatype="Array[1..8] of Real" /><Member Name="InfoCnt" Datatype="Int" /><Member Name="InfoTitle" Datatype="String[50]"><StartValue>'阀门01'</StartValue></Member><Member Name="InfoMessage" Datatype="String[200]"><StartValue>'是否确认开启阀门01？'</StartValue></Member><Member Name="InfoSpare1" Datatype="String[50]" /><Member Name="InfoSpare2" Datatype="String[50]" /><Member Name="InfoEnable" Datatype="Array[1..4] of Bool" /><Member Name="LastClick" Datatype="Bool" /><Member Name="ClickCount" Datatype="Int" /><Member Name="FirstClickTime" Datatype="Time" /></Section></Sections></Member>
+    <Member Name="Heater01" Datatype="&quot;UDT_ComponentPopup&quot;" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="zh-CN">电加热</MultiLanguageText></Comment><Sections><Section Name="None"><Member Name="ClickTrig" Datatype="Bool" /><Member Name="Active" Datatype="Bool" /><Member Name="SwitchCnt" Datatype="Int" /><Member Name="Switch" Datatype="Array[1..8] of Bool" /><Member Name="RealCnt" Datatype="Int" /><Member Name="RealValue" Datatype="Array[1..8] of Real" /><Member Name="InfoCnt" Datatype="Int" /><Member Name="InfoTitle" Datatype="String[50]"><StartValue>'电加热01'</StartValue></Member><Member Name="InfoMessage" Datatype="String[200]"><StartValue>'是否确认开启电加热01？'</StartValue></Member><Member Name="InfoSpare1" Datatype="String[50]" /><Member Name="InfoSpare2" Datatype="String[50]" /><Member Name="InfoEnable" Datatype="Array[1..4] of Bool" /><Member Name="LastClick" Datatype="Bool" /><Member Name="ClickCount" Datatype="Int" /><Member Name="FirstClickTime" Datatype="Time" /></Section></Sections></Member>
+    <Member Name="Fan01" Datatype="&quot;UDT_ComponentPopup&quot;" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="zh-CN">循环风机</MultiLanguageText></Comment><Sections><Section Name="None"><Member Name="ClickTrig" Datatype="Bool" /><Member Name="Active" Datatype="Bool" /><Member Name="SwitchCnt" Datatype="Int" /><Member Name="Switch" Datatype="Array[1..8] of Bool" /><Member Name="RealCnt" Datatype="Int" /><Member Name="RealValue" Datatype="Array[1..8] of Real" /><Member Name="InfoCnt" Datatype="Int" /><Member Name="InfoTitle" Datatype="String[50]"><StartValue>'循环风机01'</StartValue></Member><Member Name="InfoMessage" Datatype="String[200]"><StartValue>'是否确认开启循环风机01？'</StartValue></Member><Member Name="InfoSpare1" Datatype="String[50]" /><Member Name="InfoSpare2" Datatype="String[50]" /><Member Name="InfoEnable" Datatype="Array[1..4] of Bool" /><Member Name="LastClick" Datatype="Bool" /><Member Name="ClickCount" Datatype="Int" /><Member Name="FirstClickTime" Datatype="Time" /></Section></Sections></Member>
+  </Section>
+</Sections></Interface>
+      <IsOnlyStoredInLoadMemory>false</IsOnlyStoredInLoadMemory>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <IsWriteProtectedInAS>false</IsWriteProtectedInAS>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DB_Components</Name>
+      <Number>2</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

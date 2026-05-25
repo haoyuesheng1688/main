@@ -1,0 +1,12 @@
+Dim fso, inFile, outFile, promptText
+Set fso = CreateObject("Scripting.FileSystemObject")
+
+If fso.FileExists("C:\CodexBridge\in\prompt.txt") Then
+  Set inFile = fso.OpenTextFile("C:\CodexBridge\in\prompt.txt", 1, False)
+  promptText = inFile.ReadAll
+  inFile.Close
+
+  Set outFile = fso.OpenTextFile("C:\CodexBridge\out\reply.txt", 2, True)
+  outFile.WriteLine "echo:" & promptText
+  outFile.Close
+End If

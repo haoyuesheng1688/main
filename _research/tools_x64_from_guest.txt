@@ -1,0 +1,9 @@
+﻿
+FullName                                           Name            Extension
+--------                                           ----            ---------
+C:\Program Files\Siemens\WinCC\bin                 bin                      
+C:\Program Files\Siemens\WinCC\bin\CCITConnect.exe CCITConnect.exe .exe     
+C:\Program Files\Siemens\WinCC\bin\mosquitto.dll   mosquitto.dll   .dll     
+
+
+

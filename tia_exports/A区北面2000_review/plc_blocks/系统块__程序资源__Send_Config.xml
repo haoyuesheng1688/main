@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-04-13T11:12:44.8952859Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <HeaderAuthor>SIMATIC</HeaderAuthor>
+      <HeaderFamily>Freeport</HeaderFamily>
+      <HeaderName>SendConf</HeaderName>
+      <HeaderVersion>4.0</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="REQ" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Startet die Konfiguration für Senden bei steigender Flanke</MultiLanguageText><MultiLanguageText Lang="en-US">Activates the configuration for sending on rising edge</MultiLanguageText></Comment></Member>
+    <Member Name="PORT" Datatype="PORT" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Kommunikationsport, Hardwarekennung</MultiLanguageText><MultiLanguageText Lang="en-US">Communication port, Hardware Identifier</MultiLanguageText></Comment><StartValue>0</StartValue></Member>
+    <Member Name="RTSONDLY" Datatype="UInt" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Wartezeit nach Aktivierung von RTS, vor Übertragung von Tx-Daten (ms)</MultiLanguageText><MultiLanguageText Lang="en-US">Time to wait after activating RTS before transmission will be initiated (ms)</MultiLanguageText></Comment><StartValue>16#00</StartValue></Member>
+    <Member Name="RTSOFFDLY" Datatype="UInt" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Wartezeit nach Übertragung von Tx-Daten, bevor RTS deaktiviert wird (ms)</MultiLanguageText><MultiLanguageText Lang="en-US">Time to wait before de-activating RTS once transmission has been completed (ms)</MultiLanguageText></Comment><StartValue>16#00</StartValue></Member>
+    <Member Name="BREAK" Datatype="UInt" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Pause vor Start jeder Übertragung (Bitzeiten)</MultiLanguageText><MultiLanguageText Lang="en-US">On start of a message, a break will be sent for the specified no. of bit times</MultiLanguageText></Comment><StartValue>16#00</StartValue></Member>
+    <Member Name="IDLELINE" Datatype="UInt" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Leerlaufzeit vor Start jeder Übertragung (Bitzeiten)</MultiLanguageText><MultiLanguageText Lang="en-US">Number of bits times the line will be idle before the next transmission</MultiLanguageText></Comment><StartValue>16#00</StartValue></Member>
+    <Member Name="USR_END" Datatype="String[2]" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Anzahl der Endekennzeichen</MultiLanguageText><MultiLanguageText Lang="en-US">Number of characters in the end delimiter</MultiLanguageText></Comment><StartValue>''</StartValue></Member>
+    <Member Name="APP_END" Datatype="String[5]" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Anzahl angehängter Zeichen</MultiLanguageText><MultiLanguageText Lang="en-US">Number of characters to be appended to the transmitted message</MultiLanguageText></Comment><StartValue>''</StartValue></Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="DONE" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Anweisung beendet ohne Fehler</MultiLanguageText><MultiLanguageText Lang="en-US">Instruction finished without error</MultiLanguageText></Comment></Member>
+    <Member Name="ERROR" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Anweisung beendet mit Fehler</MultiLanguageText><MultiLanguageText Lang="en-US">Instruction finished with error</MultiLanguageText></Comment></Member>
+    <Member Name="STATUS" Datatype="Word" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Zusätzliche  Fehlerinformation</MultiLanguageText><MultiLanguageText Lang="en-US">Detailed error information</MultiLanguageText></Comment><StartValue>W#16#7000</StartValue></Member>
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="b_e_REQ" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Flankenbit für REQ</MultiLanguageText><MultiLanguageText Lang="en-US">Edge flag for REQ</MultiLanguageText></Comment></Member>
+    <Member Name="y_state" Datatype="SInt" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Status der Anweisung</MultiLanguageText><MultiLanguageText Lang="en-US">State of instruction</MultiLanguageText></Comment><StartValue>16#00</StartValue></Member>
+    <Member Name="WRREC" Datatype="WRREC" Version="1.1" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Lokale Instanz der Anweisung WRREC</MultiLanguageText><MultiLanguageText Lang="en-US">Local instance of instruction WRREC</MultiLanguageText></Comment><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="DONE" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member>
+    <Member Name="RDREC" Datatype="RDREC" Version="1.0" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Lokale Instanz der Anweisung RDREC</MultiLanguageText><MultiLanguageText Lang="en-US">Local instance of instruction RDREC</MultiLanguageText></Comment><Sections><Section Name="Input"><Member Name="REQ" Datatype="Bool" /><Member Name="ID" Datatype="HW_IO" /><Member Name="INDEX" Datatype="DInt" /><Member Name="MLEN" Datatype="UInt" /></Section><Section Name="Output"><Member Name="VALID" Datatype="Bool" /><Member Name="BUSY" Datatype="Bool" /><Member Name="ERROR" Datatype="Bool" /><Member Name="STATUS" Datatype="DWord" /><Member Name="LEN" Datatype="UInt" /></Section><Section Name="InOut"><Member Name="RECORD" Datatype="Variant" /></Section><Section Name="Static" /></Sections></Member>
+    <Member Name="w_record" Datatype="P2P_SendCfgData" Version="1.0" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Nur für internen Gebrauch</MultiLanguageText><MultiLanguageText Lang="en-US">For internal use only</MultiLanguageText></Comment><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="RTSONDLY" Datatype="UInt" /><Member Name="RTSOFFDLY" Datatype="UInt" /><Member Name="BREAK" Datatype="UInt" /><Member Name="IDLELINE" Datatype="UInt" /><Member Name="Conditions" Datatype="UInt" /><Member Name="USR_ECHR_MAX" Datatype="Byte" /><Member Name="USR_ECHR_CNT" Datatype="Byte" /><Member Name="USR_END_CHR1" Datatype="Char" /><Member Name="USR_END_CHR2" Datatype="Char" /><Member Name="APP_ECHR_MAX" Datatype="Byte" /><Member Name="APP_ECHR_CNT" Datatype="Byte" /><Member Name="APP_END_CHR1" Datatype="Char" /><Member Name="APP_END_CHR2" Datatype="Char" /><Member Name="APP_END_CHR3" Datatype="Char" /><Member Name="APP_END_CHR4" Datatype="Char" /><Member Name="APP_END_CHR5" Datatype="Char" /><Member Name="reserved" Datatype="Byte" /><Member Name="reserved1" Datatype="Byte" /><Member Name="reserved2" Datatype="Byte" /></Section></Sections></Member>
+    <Member Name="r_record" Datatype="P2P_RdEstat" Version="1.0" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="de-DE">Nur für internen Gebrauch</MultiLanguageText><MultiLanguageText Lang="en-US">For internal use only</MultiLanguageText></Comment><Sections><Section Name="None"><Member Name="header" Datatype="P2P_Header" Version="1.0"><Sections><Section Name="None"><Member Name="block_type" Datatype="Word" /><Member Name="block_len" Datatype="Word" /><Member Name="block_ver" Datatype="Word" /><Member Name="res" Datatype="Word" /></Section></Sections></Member><Member Name="SetFtrs" Datatype="Word" /><Member Name="PortCfg" Datatype="Word" /><Member Name="SendCfg" Datatype="Word" /><Member Name="RcvCfg" Datatype="Word" /><Member Name="SgnSet" Datatype="Word" /><Member Name="R3964Err" Datatype="Word" /></Section></Sections></Member>
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <Name>Send_Config</Name>
+      <Number>611</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text>Send Configuration</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-GB</Culture>
+              <Text>Send Configuration</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Send Configuration</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

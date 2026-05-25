@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <Hmi.RuntimeScripting.VBScript ID="0">
+    <AttributeList>
+      <Code>
+' Codex closed-loop import/export verification.
+' Keep the object name and the generated Sub name identical: Codex_VBFunction_Loop.
+SmartTags("Codex_VBS_Input") = "IN_OK"
+SmartTags("Codex_VBS_Output") = "OUT_OK"
+</Code>
+      <Name>Codex_VBFunction_Loop</Name>
+      <PreCode>
+
+</PreCode>
+      <Type>Sub</Type>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text><body><p>Codex VBS import/export loop test. Object name and Sub name must match.</p></body></Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </Hmi.RuntimeScripting.VBScript>
+</Document>

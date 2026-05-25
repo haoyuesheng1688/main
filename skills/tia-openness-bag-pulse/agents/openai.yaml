@@ -1,0 +1,4 @@
+interface:
+  display_name: "TIA Openness V17"
+  short_description: "Build and verify PLC/HMI objects in open TIA Portal V17 projects."
+  default_prompt: "Use $tia-openness-bag-pulse to connect to the open TIA Portal V17 project, create or update PLC/HMI objects, use structured HMI tag names, then verify import/export and compile."

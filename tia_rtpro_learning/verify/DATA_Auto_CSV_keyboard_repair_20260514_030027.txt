@@ -1,0 +1,12 @@
+﻿BeforePath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\verify\DATA_Auto_CSV_before_keyboard_repair_20260514_030027.vbs
+MidPath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\verify\DATA_Auto_CSV_mid_keyboard_repair_20260514_030027.vbs
+Mid2Path=C:\Users\QF100\Documents\New project\tia_rtpro_learning\verify\DATA_Auto_CSV_mid2_keyboard_repair_20260514_030027.vbs
+AfterPath=C:\Users\QF100\Documents\New project\tia_rtpro_learning\verify\DATA_Auto_CSV_after_keyboard_repair_20260514_030027.vbs
+StartLine=153
+EndLine=304
+Ok=False
+HasDim8=True
+HasDim9=True
+HasEnv=True
+HasSmartTa=True
+HasBrokenTail=True
