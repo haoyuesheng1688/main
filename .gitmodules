@@ -1,0 +1,39 @@
+[submodule "1stOpt-V11"]
+	path = 1stOpt-V11
+	url = https://github.com/haoyuesheng88/1stOpt-V11.git
+[submodule "200smart-V28"]
+	path = 200smart-V28
+	url = https://github.com/haoyuesheng88/200smart-V28.git
+[submodule "200SMART-V30"]
+	path = 200SMART-V30
+	url = https://github.com/haoyuesheng88/200SMART-V30.git
+[submodule "Aspen-Exchanger-V11"]
+	path = Aspen-Exchanger-V11
+	url = https://github.com/haoyuesheng88/Aspen-Exchanger-V11.git
+[submodule "AutoCAD-2026"]
+	path = AutoCAD-2026
+	url = https://github.com/haoyuesheng88/AutoCAD-2026.git
+[submodule "Eplan-V29"]
+	path = Eplan-V29
+	url = https://github.com/haoyuesheng88/Eplan-V29.git
+[submodule "Hmismart-V5"]
+	path = Hmismart-V5
+	url = https://github.com/haoyuesheng88/Hmismart-V5.git
+[submodule "office-repo"]
+	path = office-repo
+	url = https://github.com/haoyuesheng88/Excel.git
+[submodule "Photoshop-2024"]
+	path = Photoshop-2024
+	url = https://github.com/haoyuesheng88/Photoshop-2024.git
+[submodule "SolidWorks-2024-publish"]
+	path = SolidWorks-2024-publish
+	url = https://github.com/haoyuesheng88/SolidWorks-2024.git
+[submodule "TIA-V17-repo"]
+	path = TIA-V17-repo
+	url = https://github.com/haoyuesheng88/TIA-V17.git
+[submodule "Ubuntu"]
+	path = Ubuntu
+	url = https://github.com/haoyuesheng88/Ubuntu.git
+[submodule "Wps"]
+	path = Wps
+	url = https://github.com/haoyuesheng88/Wps.git
